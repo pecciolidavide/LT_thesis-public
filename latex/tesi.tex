@@ -1,0 +1,54 @@
+\documentclass[11pt, titlepage, twoside, a4paper]{book}
+
+\input{header_tesi.tex}
+
+\hypersetup{
+    pdfauthor={Davide Peccioli},
+    pdftitle={TITOLO TESI},
+}
+
+% \geometry{showframe}
+
+\usetikzlibrary{external}
+\tikzexternalize[prefix=figures/] 
+\AtBeginEnvironment{tikzcd}{\tikzexternaldisable}
+\AtEndEnvironment{tikzcd}{\tikzexternalenable}
+
+\usepackage{adjustbox}
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+
+    FRONTESPIZIO UNITO
+
+\end{titlepage}
+{\pagestyle{empty}
+\null\cleardoublepage}
+
+
+\fancyhead{} % cancella tutti i campi
+\fancyfoot{}
+\fancyhead[RE]{Titolo tesi??}
+\fancyhead[LO]{Indice}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+
+\tableofcontents\cleardoublepage
+
+\hdrnew{Titolo tesi??}
+
+\mainmatter
+
+\input{chapter/introduzione.tex}
+\input{chapter/prerequisiti.tex}
+
+\backmatter
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,163 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{andretta_elements_2022}{book}{}
+      \name{author}{1}{}{%
+        {{hash=37200efe788456eb9c1fdee8ec0fabd4}{%
+           family={Andretta},
+           familyi={A\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \strng{fullhash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \strng{bibnamehash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \strng{authorbibnamehash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \strng{authornamehash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \strng{authorfullhash}{37200efe788456eb9c1fdee8ec0fabd4}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{langid}{english}
+      \field{title}{Elements of Mathematical Logic}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/9A8SI799/Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{di_nasso_direzioni_nodate}{report}{}
+      \name{author}{2}{}{%
+        {{hash=1d929f2d4aa393ab3e3be66af954e964}{%
+           family={Di\bibnamedelima Nasso},
+           familyi={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a47c4a2a2b7a295b087dd9d602b8c6a2}{%
+           family={Forti},
+           familyi={F\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a97c3845511ec0c0a8ed284455016497}
+      \strng{fullhash}{a97c3845511ec0c0a8ed284455016497}
+      \strng{bibnamehash}{a97c3845511ec0c0a8ed284455016497}
+      \strng{authorbibnamehash}{a97c3845511ec0c0a8ed284455016497}
+      \strng{authornamehash}{a97c3845511ec0c0a8ed284455016497}
+      \strng{authorfullhash}{a97c3845511ec0c0a8ed284455016497}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Le direzioni della logica in Italia: metodi e modelli non standard}
+      \true{nocite}
+      \verb{file}
+      \verb Di Nasso-Forti_Le direzioni della logica in Italia, metodi e modelli non standard (2018).pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/YEPXX46W/Di Nasso-Forti_Le direzioni della logica in Italia, metodi e modelli non standard (2018).pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{hurd_introduction_1985}{book}{}
+      \name{author}{2}{}{%
+        {{hash=09c555bd5f039a21a5e7d70f6afa7f2d}{%
+           family={Hurd},
+           familyi={H\bibinitperiod},
+           given={Albert\bibnamedelima Emerson},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d37c0ffeb5f51f81aa366ea4946dbc54}{%
+           family={Loeb},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Orlando San Diego New York [etc.]}%
+      }
+      \list{publisher}{1}{%
+        {Academic press}%
+      }
+      \strng{namehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{fullhash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{bibnamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{authorbibnamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{authornamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{authorfullhash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-12-362440-6}
+      \field{number}{118}
+      \field{series}{Pure and applied mathematics}
+      \field{title}{An introduction to nonstandard real analysis}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{loeb_nonstandard_2015}{collection}{}
+      \name{editor}{2}{}{%
+        {{hash=d37c0ffeb5f51f81aa366ea4946dbc54}{%
+           family={Loeb},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1deaa28c8c2a1f0afc2be43adfd5ed90}{%
+           family={Wolff},
+           familyi={W\bibinitperiod},
+           given={Manfred\bibnamedelimb P.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \strng{fullhash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \strng{bibnamehash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \strng{editorbibnamehash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \strng{editornamehash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \strng{editorfullhash}{4e5cd4e73c4ee53a9b62b28121578add}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Nonstandard Analysis for the Working Mathematician}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Loeb e Wolff - 2015 - Nonstandard Analysis for the Working Mathematician.pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/HBVH7NYW/Loeb e Wolff - 2015 - Nonstandard Analysis for the Working Mathematician.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-94-017-7327-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-94-017-7327-0
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

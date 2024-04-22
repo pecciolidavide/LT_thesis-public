@@ -1,0 +1,313 @@
+\chapter{Campo dei reali non-standard}\stepcounter{capitoloeccolo}
+
+Si parla di modelli non standard dei numeri reali quando si considerano campi reali \emph{non archimedei}, che verifichino un certo principio di \straniero{transfer}: in questo modo le proprietà elementari dei numeri reali sono conservate. Inoltre, in questi campi, esistono numeri infinitesimi ed infiniti, che si comportano come utilizzati da Lebniz. 
+
+In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali non standard, e se ne vedranno le principali proprietà.
+
+\section{Esistenza di un campo non archimedeo}
+
+\definizione{
+    Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento $ \parentesi{n\text{-volte}}{1+\dots+1} \eqqcolon n1 $ sia $ x<n1 $
+}
+\teorema{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
+    Per ogni campo ordinato archimedeo esiste un campo ordinato non archimedeo elementarmente equivalente al primo.    
+% Ogni campo ordinato è elementarmente equivalente ad un campo ordinato non Archimedeo. 
+}
+\dimostrazione{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
+    Si estenda il linguaggio dei campi: \[
+        \mathcal{L}_{\text{Fld}}=\{+,-, \cdot ,0,1,\le\} \subseteq \mathcal{L}'=\mathcal{L}_{\text{Fld}}\cup\{c\}
+    \]dove $ c $ è una costante, e si consideri una $\mathcal{L}_{\text{Fld}}$-struttura $ \mathcal{K}$. 
+
+    Sia ora $ T $ una $ \mathcal{L}'$-teoria:\[
+        T=\operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{n}: 1\le n \in \N \}
+    \]dove $ \tau_{n}  $ è l'enunciato $ n \cdot 1 \le c $.
+
+    $ T $ è finitamente soddisfacibile. Infatti, sia $ 1\le n \in \N $. Allora la $ \mathcal{L}' $-espasione $ \mathcal{K}_{n}  $ tale che $ c^{\mathcal{K}_{n} } = n \cdot 1 $ è tale che \[
+        \mathcal{K}_n \vDash \operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{i}: 1\le i \le n, i \in \N \}.
+    \]
+    
+    Per il teorema di compattezza esiste $ \mathcal{F}' $, una $ \mathcal{L}' $-struttura tale che \[
+        \mathcal{F}'\vDash T'.
+    \]Se $ \mathcal{F} $ è la $ \mathcal{L}_{\text{Fld}} $-ridotta di $ \mathcal{F}' $, \[
+        \mathcal{F}=\left(A,+,-, \cdot ,0,1,\le,\right)
+    \]allora in $ \mathcal{F} $ l'elemento $ c^{\mathcal{F}'} \in A $ è tale che $ n \cdot 1\le  c^{\mathcal{F}'} $ per ogni $ n\ge 1 $. 
+    
+    $\implies$ $ \mathcal{F} $ non è Archimedeo e $ \mathcal{F} $ è elementarmente equivalente a $ \mathcal{K} $.\qed
+}
+
+\osservazione{
+    Il teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
+}
+
+\section{Costruzione di $\starR$}
+
+Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce come ultraprodotto di $ \mathcal{L}$-strutture.
+
+\subsection{Moltiplicazione di $ \mathcal{L} $-strutture}
+
+\paragrafo{Prodotto Cartesiano}{%
+    Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuoti indicizzata su $ I\neq \emptyset $. Il \emph{prodotto cartesiano} degli $ A_{i}$ è l'insieme%
+    \[
+        \prod_{i \in I} A_{i}=\{f:I\longrightarrow U_{i \in I}: f(i) \in A_{i}\text{ per ogni } i \in I  \}  
+    \]Gli elementi $ f \in \prod_{i \in I} A_{i} $ si indicano talvolta come sequenze $ \vec{a}=(a_{i} )_{i \in I} $ dove $ a_{i}=\vec{a}(i)=f(i)  $ è la $ i $-esima coordinata di $ \vec{a} $ (o di $ f $) per ogni $ i \in I $. 
+
+    Quando $ A_{i} =A $ per ogni $ i \in I $ scriviamo $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
+}{}{}
+\paragrafo{Prodotto di strutture}{%
+    Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata da $ I\neq \emptyset $. Il loro \emph{prodotto (diretto)} $ \prod_{i \in I} \mathcal{A}_{i} $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{i \in I} A_{i} $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
+        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $, ed ogni $ \vec{a}_1,\dots,\vec{a}_k \in\prod_{i \in I} A_{i}$ \[
+            (\vec{a}_1,\dots,\vec{a}_k) \in \R^{\mathcal{M}}\qquad \text{sse}\qquad \left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
+        \]
+        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $, ed ogni $ \vec{a}_1,\dots,\vec{a}_k,\vec{b} \in\prod_{i \in I} A_{i}$ \[
+            f^{\mathcal{M}}(\vec{a}_1,\dots,\vec{a}_k) = \vec{b}\qquad \text{sse}\qquad \parbox{12em}{$f^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i)$ per ogni $i \in I$;}
+        \]
+        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \vec{b} \in \prod_{i \in I}A_{i}   $ \[
+            c^{\mathcal{M}}=\vec{b}\qquad\text{sse}\qquad c^{\mathcal{A}_i}=\vec{b}(i)\text{ per ogni }i \in I.
+        \]
+    \end{itemize}
+}{}{}
+\subsection{Filtri e ultrafiltri}
+
+\definizione{
+    Sia $ I\neq \emptyset $ un insieme. $ \mathcal{F} \subseteq \parti{I} $ è un \emph{filtro} se \begin{itemize}
+        \item se $ A \in \mathcal{F} $ e $ A \subseteq B \subseteq I $, allora $ B \in \mathcal{F} $;
+        \item se $ A,B \in \mathcal{F} $, allora $ A \cap B \in \mathcal{F}$.
+    \end{itemize}
+
+    Un filtro $ \mathcal{F} $ si dice \emph{proprio} se $ \emptyset\notin \mathcal{F} $.
+}
+\definizione{
+    Il \emph{filtro di Fréchet} $ \mathcal{F}_{\text{Fr}}^{I} $ su $ I $ è definito nel seguente modo:\citazione{$ A \in \mathcal{F}_{\text{Fr}}^{I} $ se e solo se $ I\setminus A $ è finito.}
+}
+\paragrafo{FIP}{%
+    Una famiglia $ \mathcal{G} \subseteq\parti{I} \setminus\{\emptyset\}$ ha la \emph{proprietà dell'intersezione finita} (brevemente FIP) se ogni intersezione finita di elementi di $ \mathcal{G} $ è non vuota.
+}{}{}
+\paragrafo{Estensione canonica}{%
+    Ogni famiglia $ \mathcal{G}\subseteq\parti{I} \setminus\{\emptyset\}$ con la FIP si estende canonicamente al filtro \[
+        \langle \mathcal{G}\rangle =\{ B \subseteq I: B \supseteq A_1\cap\dots\cap A_{k}\text{ per qualche }k \in \N\text{ e }A_1,\dots,A_{k} \in \mathcal{G}\}.
+    \]Equivalentemente, $ \langle \mathcal{G}\rangle $ è il più piccolo filtro su $ I $ che contiene $ G $
+}{}{}
+\paragrafo{Osservazione}{%
+    $ \langle \mathcal{G}\rangle $ è un filtro proprio; infatti:\begin{itemize}
+        \item se $ A \in \langle \mathcal{G}\rangle $, allora per qualche $ A_1,\dots,A_{k} \in \mathcal{G}  $ \[
+            A \supseteq A_1 \cap \dots\cap A_{k} 
+        \]e se $ B \supseteq A $ allora \[
+            B \supseteq A_1 \cap \dots\cap A_{k} 
+        \]e quindi $ B \in \langle \mathcal{G}\rangle $; 
+        \item se $ B_1, B_2 \in \langle \mathcal{G}\rangle $, allora \begin{align*}
+            B_1 &\supseteq A_1\cap \dots\cap A_{k}\\
+            B_2 &\supseteq C_1\cap \dots\cap C_{k}
+        \end{align*}e allora \[
+            B_1\cap B_2 \supseteq A_1\cap \dots\cap A_{k}\cap C_1\cap \dots\cap C_{k}
+        \]e quindi $ B_1\cap B_2 \in \langle \mathcal{G}\rangle$. 
+    \end{itemize}
+
+    La condizione FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ sia un filtro \emph{proprio}, ma è possibile costruire un filtro in questo modo a partire da una qualsiasi famiglia di sottoinsiemi di $ I $. 
+}{}{}
+\definizione{
+    Un filtro proprio $ \mathcal{F} $ su $ I $ si dice \begin{itemize}
+        \item \emph{ultrafiltro} se per ogni $ A \subseteq I $ si ha $ A \in \mathcal{F} $ o $ I\setminus A \in \mathcal{F} $; 
+        \item \emph{primo} se $ A\cup B \in \mathcal{F} $ implica che $ A \in \mathcal{F} $ o $ B \in \mathcal{F} $;
+        \item \emph{massimale} se non esiste un filtro $ \mathcal{F}' $ su $ I $ tale che $ \mathcal{F} \supsetneq \mathcal{F}' $.
+    \end{itemize}
+}
+\proposizione{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}{
+    Dato $ I \neq \emptyset$, $ \mathcal{F} $ filtro proprio su $ I $, allora sono fatti equivalenti: \begin{enumerate}
+        \item $ \mathcal{F} $ è un ultrafiltro;
+        \item $ \mathcal{F} $ è primo;
+        \item $ \mathcal{F} $ è massimale.
+    \end{enumerate} 
+}
+\dimostrazioneprop{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}{
+    $ \boxed{1.\Rightarrow 2.} $\hspace{1em} Per assurdo, $ A\cup B \in \mathcal{F} $, ma $ A, B\notin \mathcal{F} $. Per $ 1. $ si ha che $ I \setminus A, I \setminus B \in \mathcal{F} $. Allora \[
+        \parentesi{=I\setminus (A\cup B)}{(I\setminus A) \cap (I \setminus B)} \in \mathcal{F}
+    \]allora si ha un assurdo.
+
+    $ \boxed{2.\Rightarrow 3.} $\hspace{1em} Supponiamo per assurdo che esista $ \mathcal{F}'\supseteq \mathcal{F} $. Sia $ A \in \mathcal{F}' \setminus \mathcal{F} $. In particolare, $ I \setminus A \notin \mathcal{F}' $, quindi $ I \setminus A \notin \mathcal{F}$. Ma $ A \cup (I\setminus A) = I \in \mathcal{F} $, e $ A, I\setminus A \notin \mathcal{F} $, che è un assurdo.
+
+    $ \boxed{3.\Rightarrow 1.} $\hspace{1em} Supponiamo per assurdo che $ A \notin \mathcal{F} $ e $ I\setminus A \notin \mathcal{F} $. Sia $ \mathcal{G}=\mathcal{F}\cup \{A\} $. $ \mathcal{G} $ ha la FIP\footnote{Infatti, siano $ A_1,\dots,A_{k} \in \mathcal{G}   $, che assumo senza perdita di generalità tutti diversi. Se $ A_1,\dots,A_{k} \in \mathcal{F}  $, allora $ A_1\cap\dots\cap A_{k}\neq \emptyset  $ perché $ \mathcal{F} $ è un filtro. Se invece $ A_{k} = A  $, allora \[
+        \parentesi{ \in \mathcal{F}}{A_1\cap \dots\cap A_{k-1} }\cap A =  B \cap A
+    \]con $B = A_1\cap \dots\cap A_{k-1}$. 
+    
+    Se capitasse che $ B\cap A =\emptyset$, allora $ B \subseteq I\setminus A $, da cui $ I\setminus A \in \mathcal{F} $, assurdo poiché per ipotesi $ I \setminus A \notin \mathcal{F} $.}. Sia ora $ \mathcal{F}'=\langle \mathcal{G}\rangle $. $ \mathcal{F}' $ è un filtro proprio, e si ha \[
+        \mathcal{F}' \supseteq \mathcal{G}\supseteq \mathcal{F}, \qquad \mathcal{F}'\neq \mathcal{F}
+    \]poiché $ A \in \mathcal{F}'\setminus \mathcal{F} $. Questo è un assurdo.\qed
+}
+\definizione{
+    Un ultrafiltro $ \mathcal{U} $ su $ I $ si dice \emph{libero} se \[
+        A \subseteq I\text{ finito} \,\implies\, I\setminus A \in \mathcal{U}
+    \]
+}
+\paragrafo{Lemma degli ultrafiltri}{%
+    Ogni filtro proprio $ \mathcal{F} $ su $ I $ può essere esteso ad un ultrafiltro $ \mathcal{U}\supseteq \mathcal{F} $ su $ I $.
+}{doijcsoijoijoijoijoijoijoij}{}
+\dimostrazioneprop{doijcsoijoijoijoijoijoijoij}{
+    Sia $ X=\{\mathcal{G}: \mathcal{G} \supseteq \mathcal{F}, \mathcal{G}\text{ filtro proprio su }I\} $. 
+
+    Considero $ (X, \subseteq)$: sia $ C \subseteq X $ una catena, cioè se $ \mathcal{G}, \mathcal{G}' \subseteq C $ allora o $ \mathcal{G} \subseteq \mathcal{G}' $ oppure $ \mathcal{G}' \subseteq \mathcal{G} $. 
+
+    Sia $ \mathcal{H} $ tale che\[
+        \mathcal{H} = \bigcup_{\mathcal{G} \in C} \mathcal{G}
+    \]È evidente che $ \mathcal{G} \subseteq \mathcal{H} $, $ \forall\, \mathcal{G} \in C $. Necessariamente $\emptyset \notin \mathcal{H}$, $ \mathcal{H} \supseteq \mathcal{F} $. Inoltre $ \mathcal{H} $ è un filtro. Infatti: \begin{itemize}
+        \item \emph{chiusura per sovrainsiemi}: se $ A \in \mathcal{H} $, allora $ A \in \mathcal{G} $ per qualche $ \mathcal{G} \in C $ dunque, per ogni $ B \supseteq A $ necessariamente $ B \in \mathcal{G} $, poiché $ \mathcal{G} $ è filtro, e dunque $ B \in \mathcal{H} $;
+        \item \emph{intersezioni finite}: siano $ A, B \in \mathcal{H} $: si ha che $ A \in \mathcal{G} $ e $ B \in \mathcal{G}' $, per qualche $ \mathcal{G}, \mathcal{G}'  \in C$; poiché $ C $ è una catena, allora necessariamente deve valere una delle seguenti: \[
+            A, B \in \mathcal{G} \supseteq \mathcal{G}',\qquad A, B \in \mathcal{G}' \supseteq \mathcal{G};
+        \] 
+        
+        $\implies$ $ A\cap B \in \mathcal{G} $ (oppure $ A\cap B \in \mathcal{G}' $) poiché $ \mathcal{G} $ è filtro 
+        
+        $\implies$ $ A\cap B \in \mathcal{H} $.
+    \end{itemize}
+
+    Per il lemma di Zorn, esiste $ \mathcal{U} $ massimale in $ X $, e necessariamente $ \mathcal{U} \supseteq \mathcal{F} $: per la proposizione precedente, un filtro massimale è un ultrafiltro.\qed
+}
+\subsection{Ultraprodotto di $ \mathcal{L} $-strutture}
+
+\paragrafo{Relazione di equivalenza}{%
+    Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuota indicizzata da $ I \neq \emptyset $. Dato un filtro $ \mathcal{F} $ su $ I $ definiamo la relazione di equivalenza $ \sim_{\mathcal{F}}  $ su $ \prod_{i \in I} A_{i}   $ ponendo per $ \vec{a},\vec{b} \in \prod_{i \in I} A_{i} $ \[
+        \vec{a}\sim_{\mathcal{F}}\vec{b}\qquad\text{sse}\qquad \{i \in I:\vec{a}(i)=\vec{b}(i) \} \in \mathcal{F}. 
+    \]La classe di equivalenza rispetto a $ \sim_{\mathcal{F}}$ di un elemento $ \vec{a} \in \prod_{i \in I}A_{i}$ verrà indicata con $ [\vec{a}] $.
+}{}{}
+\osservazione{
+    $ \sim_{\mathcal{F}} 
+    $ è una relazione di equivalenza: simmetria e riflessività sono ovvie; per la transitività: siano $ \vec{a}\sim_{\mathcal{F}} \vec{b} $, e $ \vec{b}\sim_{\mathcal{F}}\vec{c} $. Allora \begin{align*}
+            X_{\vec{a},\vec{b}}&=\{i \in I: \vec{a}(i) = \vec{b}(i)\} \in \mathcal{F}\\
+            X_{\vec{b},\vec{c}}&=\{i \in I: \vec{b}(i) = \vec{c}(i)\} \in \mathcal{F}
+        \end{align*}
+
+    Si deve dimostrare che l'insieme $ X_{\vec{a},\vec{c}} =\{i \in I: \vec{a}(i) = \vec{b}(i)\} \in \mathcal{F}$, ma \[
+        X_{\vec{a},\vec{b}} \cap X_{\vec{b},\vec{c}} \subseteq X_{\vec{a},\vec{c}}   
+    \]ma $ X_{\vec{a},\vec{b}} \cap X_{\vec{b},\vec{c}} \in \mathcal{F} $, e dunque $ X_{\vec{a},\vec{c}} \in \mathcal{F} $.
+}
+\paragrafo{Prodotto ridotto di insiemi}{%
+    Il \emph{prodotto ridotto} $ \prod_{{\mathcal{F}}} A_{i}$ degli $ A_{i}  $ modulo $ \mathcal{F} $ è il quoziente \[
+        \prod_{i \in I}A_{i}/\sim_{\mathcal{F}} = \left\{[\vec{a}]: \vec{a} \in \prod_{i \in I}A_{i}  \right\}. 
+    \]Se $ \mathcal{F} $ è un ultrafiltro, il prodotto ridotto corrispondente $ \prod_{\mathcal{F}}A_{i}   $ si dice \emph{ultraprodotto}. Quando $ A_{i}=A  $ per ogni $ i \in I $, si parla invece di \emph{potenza ridotta} e scriviamo $ A^{I}/\mathcal{F} $; se $ \mathcal{F} $ è un ultrafiltro, si parla di \emph{ultrapotenza}.
+}{}{}
+\paragrafo{Ultraprodotto di strutture}{%
+    Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata da $ I\neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. L'ultraprodotto $ \prod_{\mathcal{U}}\mathcal{A}_i  $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{\mathcal{U}}A_{i}   $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
+        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n \in \prod_{i \in I}A_{i}  $%
+            \begin{gather*}
+                \left([\vec{a}_1],\dots,[\vec{a}_n]\right) \in R^{\mathcal{M}}\\ 
+                \text{sse}\\ 
+                \left\{i \in I: \left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) \in R^{\mathcal{A}_i}\right\} \in \mathcal{U};
+            \end{gather*}
+        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n,\vec{b} \in \prod_{i \in I}A_{i}  $%
+            \begin{gather*}
+                f^{\mathcal{M}}\left([\vec{a}_1],\dots,[\vec{a}_n]\right)=\left[\vec{b}\right]\\ 
+                \text{sse}\\ 
+                \left\{i \in I: f^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i) \right\} \in \mathcal{U};
+            \end{gather*}
+        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \vec{b} \in \prod_{i \in I}A_{i}   $ \[
+            c^{\mathcal{M}}=\left[\vec{b}\right]\qquad\text{sse}\qquad \{i \in I: c^{\mathcal{A}_i}=\vec{b}(i)\} \in \mathcal{U}.
+        \]
+    \end{itemize}
+    Se $ \mathcal{A}_i = \mathcal{A}$ per ogni $  i \in I $, la $ \mathcal{L} $-struttura $ \mathcal{A}^{I}/\mathcal{U} $ si dice \emph{ultrapotenza} di $ \mathcal{A} $.
+}{}{}
+\proposizione{doijcoijdijcijijoijoijoijcoaijoijoijoij}{
+    Sia $ \mathcal{M}=\prod_{\mathcal{U}}\mathcal{A}_i  $. Si dimostra che per ogni $ \mathcal{L} $-termine $ t(x_1,\dots,x_{n} ) $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n, \vec{b} \in \prod_{i \in I}A_{i}   $\begin{gather*}
+        t^{\mathcal{M}}\left([\vec{a}_1],\dots,[\vec{a}_n]\right)=\left[\vec{b}\right]\\ 
+        \text{sse}\\ 
+        \left\{i \in I: t^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i) \right\} \in \mathcal{U};
+    \end{gather*}
+}
+\teorema[Teorema di Łoś]{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
+    Sia $ (A_{i} )_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata su $ I \neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. Consideriamo l'ultraprodotto $ \mathcal{M}=\prod_{\mathcal{U}} A_{i}   $. Per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ e per ogni $ \vec{a}_1,\dots,\vec{a}_n \in\prod_{i \in I} A_{i}$, si ha \[
+        \mathcal{M}\vDash \varphi\left[[\vec{a}_1],\dots,[\vec{a}_n]\right]\quad\text{sse}\quad X_{\varphi, \vec{a}_1,\dots,\vec{a}_n} \in \mathcal{U}
+    \]dove $ X_{\varphi, \vec{a}_1,\dots,\vec{a}_n} = \left\{i \in I: A_{i}\vDash \varphi\left[[\vec{a}_1],\dots,[\vec{a}_n]\right] \right\} $
+}
+\dimostrazione{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
+    Per induzione sull'altezza della formula. \begin{itemize}
+        \item \emph{$\varphi$ atomica}: $ R \in \operatorname{Rel} $, $ \operatorname{ar}(R)=2 $ e $ t_1 $, $ t_2 $ termini. Sia quindi $ \varphi: R(t_1,t_2) $. \[
+            \mathcal{M}\vDash R(t_1,t_2)\quad\text{sse}\quad [\vec{b}_1] R^{\mathcal{M}} [\vec{b}_2]\quad\text{sse}\quad X_{R} \in \mathcal{U} 
+        \]dove $ [\vec{b}_1] = t_1^{\mathcal{M}} $ e $ [\vec{b}_2] = t_2^{\mathcal{M}} $ e \[
+            X_{R}=\{i \in I: \vec{b}_1 R^{\mathcal{\mathcal{A}_i }} \vec{b}_2\}.
+        \]Ma $ [\vec{b}_1] = t_1^{\mathcal{M}} $ sse \[
+            X_{t_1}=\{i \in I: t_1^{\mathcal{A}_i} = \vec{b}_1(i)\} \in \mathcal{U}
+        \]e $ [\vec{b}_2] = t_2^{\mathcal{M}} $ sse \[
+            X_{t_2}=\{i \in I: t_2^{\mathcal{A}_i} = \vec{b}_2(i)\} \in \mathcal{U}.
+        \]Si ha che $ X_{R} \in \mathcal{U}  $ sse \[
+            X=\{i \in I: \vec{b}_1 R^{\mathcal{\mathcal{A}_i }} \vec{b}_2\,\text{ e }\,t_1^{\mathcal{A}_i} = \vec{b}_1(i)\,\text{ e }\,t_2^{\mathcal{A}_i} = \vec{b}_2(i)\} \in \mathcal{U}
+        \](e questo vale perché $ X_{R}\cap X_{t_1} \cap X_{t_2} \subseteq X$).
+
+        Ma $ \displaystyle X = \{i \in I: \mathcal{A}_i\vDash R(t_1,t_2)\} = X_{\varphi} $. 
+        \item \emph{Ipotesi induttiva:} 
+        \begin{itemize}
+            \item \emph{Negazione:} sia $ \varphi $ la formula $ \lnot\,\psi $, tale che il teorema valga per $ \psi $. \[
+                \mathcal{M}\vDash \varphi\quad\text{sse}\quad \mathcal{M}\nvDash \psi\quad\text{sse}\footnote{Ipotesi induttiva}\quad X_{\psi}\notin \mathcal{U} 
+            \]Ma $ X_{\psi}\notin\mathcal{U}  $ sse $ X_{\varphi} \in \mathcal{U}  $, poiché \begin{itemize}
+                \item $ X_{\varphi}=I\setminus X_{\psi}   $;
+                \item $ \mathcal{U} $ ultrafiltro.
+            \end{itemize}
+            \item \emph{Disgiunzione:} sia $ \varphi $ la formula $ \psi \,\lor\, \chi $ \[
+                \mathcal{M}\vDash \varphi\quad\text{sse}\quad \mathcal{M}\vDash\psi \,\text{ o }\, \mathcal{M}\vDash \chi \quad\text{sse}\footnote{Ipotesi induttiva}\quad X_{\psi} \in U\,\text{ o }\,X_{\chi} \in \mathcal{U}  
+            \]Inoltre, poiché $ \mathcal{U} $ è primo (sse ultrafiltro) \[
+                X_{\psi} \in U\,\text{ o }\,X_{\chi} \in \mathcal{U} \quad\text{sse}\quad X_{\psi}\cup X_{\chi} \in \mathcal{U}   \quad\text{sse}\footnote{Poiché $X_{\psi \,\lor\,\chi} = X_{\psi}\cup X_{\chi}$}\quad X_{\psi \,\lor\,\chi} \in \mathcal{U}.
+            \]
+            \item \emph{Esistenziale:} sia $ \varphi $ la formula $ \exists\, y \, \psi $. \[
+                \mathcal{M}\vDash \exists\, y\,\psi\quad\leadsto\quad \text{esiste }\left[\vec{b}\right] \in \prod_{\mathcal{U}}A:\hspace{0.6em} \mathcal{M}\vDash \psi\left[\vec{b}\right] 
+            \]sse\footnote{Per ipotesi induttiva} $ X_{\psi,\vec{b}} \in \mathcal{U}  $, ma $ X_{\psi,\vec{b}} \subseteq X_{\varphi}  $, poiché \begin{align*}
+                X_{\psi,\vec{b}} &= \{ i \in I: \mathcal{A}_i\vDash \psi\left[\vec{b}(i)\right]\}\\ 
+                X_{\varphi} &= \{i \in I: \mathcal{A}_i\vDash \exists\, y\,\psi\} 
+            \end{align*}e quindi $ X_{\varphi} \in \mathcal{U}$.
+            
+            Viceversa, se $ X_{\varphi} \in \mathcal{U}$, per ogni $ i \in  X_{\varphi}  $ scelgo un $ a_{i} \in A_{i}$ tale che $ \mathcal{A}_i \vDash \psi[a_{i} ]$ (utilizzando l'assioma di scelta). Per ogni $ i \notin X_{\varphi}  $, scelgo $ c_{i} \in A_{i}$ ``a caso''. 
+
+            Sia $ \vec{b} \in \prod_{i \in I}A_{i}$ definito da \[
+                \vec{b}(i) = \begin{cases}
+                    a_{i} & i \in X_{\varphi}\\ 
+                    c_{i} & i \notin X_{\varphi}     
+                \end{cases} 
+            \]e si ha che, necessariamente, \[
+                X_{\psi,\vec{b}} = \left\{i \in I: \mathcal{A}_i\vDash \psi\left[\vec{b}(i)\right]\right\} \supseteq X_{\varphi} \in \mathcal{U}
+            \]e dunque $ X_{\psi,\vec{b}} \in \mathcal{U}  $. Per ipotesi induttiva, $ \mathcal{M}\vDash\psi\left[\left[\vec{b}\right]\right] $, e quindi $ \mathcal{M}\vDash \exists\, y\,\psi $.\qed
+        \end{itemize}
+    \end{itemize}
+}
+\paragrafo{Corollario}{%
+    Sia $ \mathcal{A} $ una $ \mathcal{L} $-struttura e $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \pi: \mathcal{A}\longrightarrow \mathcal{A}^{I}/\mathcal{U} $ definita da $ \pi(a)=[\vec{a}] $ dove $ \vec{a}(i)=a $ per ogni $ i \in I $. Allora $ \pi $ è un'immersione elementare e, in particolare, $ \mathcal{A} $ e $ \mathcal{A}^{I}/\mathcal{U} $ sono elementarmente equivalenti.
+}{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn}{}
+\subsection{$ \starR $ come ultraprodotto}
+
+\proposizione{dkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd}{
+    Esiste un ultrafiltro libero $ \mathcal{U} $ su $ \N $.
+}
+\dimostrazioneprop{dkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd}{
+    Si vuole dimostrare che esiste un ultrafiltro $ \mathcal{U} \subseteq \parti{ \N} $ tale che \[
+        A \subseteq \N\text{ finito} \,\implies\, \N \setminus A \in \mathcal{U}.
+    \]
+
+    Si consideri dunque il filtro di Fréchet su $ \N $: $ \mathcal{F}_{\text{Fr}}^{ \N} $. 
+    
+    Per il lemma \framref{doijcsoijoijoijoijoijoijoij} esiste $ \mathcal{U} $ ultrafiltro su $ \N $ tale che $ \mathcal{U}\supseteq \mathcal{F}_{\text{Fr}}^{ \N} $. Inoltre $ \mathcal{U} $ non può contenere alcun insieme finito. 
+    
+    Infatti, se $ F \subseteq \N $ è finito e $ F \in \mathcal{U} $ 
+    
+    $\implies$ $ \N\setminus F \in \mathcal{F}_{\text{Fr}}^{ \N}$ (per definizione di filtro di Fréchet) 
+    
+    $\implies$ $ \N\setminus F \in \mathcal{U}$ poiché $ \mathcal{F}_{\text{Fr}}^{ \N} \subseteq \mathcal{U} $ 
+    
+    $\implies$ $ F, \N\setminus F \in \mathcal{U} $ e quindi $ \emptyset \in \mathcal{U} $. Assurdo.\qed
+}
+\paragrafo{Definizione di $ \starR $}{%
+    Si consideri il linguaggio dei campi ordinati: \[
+        \mathcal{L}=\{+,-, \cdot ,0,1,\le\}
+    \]e la $ \mathcal{L}$-struttura $ \mathcal{R} = (\R,+,-, \cdot ,0,1,\le ) $. 
+
+    Si definisce il campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard $ \starR $ come l'insieme della $ \mathcal{L} $-struttura \[
+        \null^{*}\mathcal{R} \coloneqq \mathcal{R}^{ \N}/\mathcal{U}
+    \]dove $ \mathcal{U} $ è un ultrafiltro libero di $ \N $.
+}{}{}
+\paragrafo{Proprietà}{%
+    Segue dal corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
+    \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
+    a &\longmapsto \left[\{a\}\right]
+    \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
+        \item $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti;
+        \item questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'esempio 3.21 di \cite{andretta_elements_2022}};
+        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \{a\} $.
+    \end{itemize}
+}{}{}
+%TODO finire capitolo, vedere struttura nel quadernetto
+%TODO sistemare la notazione per i vettori in tutto il capitolo
+%TODO scrivere una mail e LMR.

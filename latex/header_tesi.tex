@@ -3,13 +3,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 \usepackage[babel]{csquotes}
-\usepackage[style=alphabetic]{biblatex}
+\usepackage[style=numeric, hyperref]{biblatex}
 \usepackage{microtype}
 \usepackage{lmodern}
 \usepackage{graphicx} % inserire immagini
 \usepackage{subfig} % sottofigure
 \usepackage{multicol} % due colonne
-\usepackage{ulem} % sottolineare
+% \usepackage{ulem} % sottolineare
 \usepackage{lipsum} % lorem ipsum
 \usepackage{xcolor} % colori in latex
 \usepackage{parskip} % rimuove l'indentazione dei nuovi paragrafi 
@@ -71,7 +71,6 @@
 \newcommand{\hdrnew}[1]{
 	\fancyhead{} % cancella tutti i campi
 	\fancyfoot{}
-	\fancyhead[RO,LE]{\datainizion}
 	\fancyhead[RE]{#1}
 	\fancyhead[LO]{\nouppercase{\leftmark}}
 	% \fancyfoot[LE,RO]{\thepage}
@@ -117,6 +116,7 @@
 \DeclareMathOperator{\cov}{Cov}
 \DeclareMathOperator{\mon}{Mon}
 \newcommand{\R}{\mathds{R}}
+\newcommand{\starR}{\null^{*}\R}
 \newcommand{\borel}{\mathscr{B}}
 \newcommand{\lebesgue}[1]{\mathscr{L}\left(#1\right)}
 \newcommand{\media}{\mathds{E}}
@@ -523,6 +523,8 @@
 %%%%%% GEOMETRY SEMPRE PER ULTIMO
 
 \usepackage[% 
-textwidth=360pt]{geometry}
-\geometry{papersize={16.99cm,24.4cm}, bottom=3cm,% showframe, %
-heightrounded}
+%textwidth=360pt
+]{%
+geometry}
+% \geometry{papersize={16.99cm,24.4cm}, bottom=3cm,% showframe, %
+% heightrounded}

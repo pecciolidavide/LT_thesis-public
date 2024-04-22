@@ -2,6 +2,8 @@
 
 \input{header_tesi.tex}
 
+\bibliography{bibliografia}
+
 \hypersetup{
     pdfauthor={Davide Peccioli},
     pdftitle={TITOLO TESI},
@@ -16,14 +18,15 @@
 
 \usepackage{adjustbox}
 
+\title{Tesi}
+\author{Davide Peccioli}
+
 \begin{document}
 
 \frontmatter
 
 \begin{titlepage}
-
-    FRONTESPIZIO UNITO
-
+    \maketitle
 \end{titlepage}
 {\pagestyle{empty}
 \null\cleardoublepage}
@@ -47,8 +50,11 @@
 \input{chapter/introduzione.tex}
 \input{chapter/prerequisiti.tex}
 
+\input{chapter/corpo/chap1.tex}
+
 \backmatter
 
+\nocite{*}
 \printbibliography
 
 \end{document}

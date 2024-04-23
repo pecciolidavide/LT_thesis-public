@@ -78,4 +78,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione di $ \hbox {}^{*}\mathds {R}$. ({2.21})}{11}{section*.30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Propriet\IeC {\`a}. ({2.22})}{11}{section*.31}% 
+\contentsline {paragraph}{Osservazione. ({2.22})}{11}{section*.31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Propriet\IeC {\`a}. ({2.23})}{12}{section*.32}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Osservazione. ({2.24})}{12}{section*.33}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Funzioni e relazioni su $ \hbox {}^{*}\mathds {R}$. ({2.25})}{12}{section*.34}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Valore assoluto. ({2.26})}{12}{section*.35}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Proposizione. ({2.27})}{13}{section*.36}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\hyperref [totaledjkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj]{\textit {Dimostrazione di (2.27)}}}{13}{section*.37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Propriet\IeC {\`a} di $ \hbox {}^{*}\mathds {R}$}{13}{section.2.3}% 

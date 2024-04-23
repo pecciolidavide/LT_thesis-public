@@ -29,7 +29,7 @@ In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali
     Per il teorema di compattezza esiste $ \mathcal{F}' $, una $ \mathcal{L}' $-struttura tale che \[
         \mathcal{F}'\vDash T'.
     \]Se $ \mathcal{F} $ è la $ \mathcal{L}_{\text{Fld}} $-ridotta di $ \mathcal{F}' $, \[
-        \mathcal{F}=\left(A,+,-, \cdot ,0,1,\le,\right)
+        \mathcal{F}=\left(A,+,-, \cdot ,0,1,\le\right)
     \]allora in $ \mathcal{F} $ l'elemento $ c^{\mathcal{F}'} \in A $ è tale che $ n \cdot 1\le  c^{\mathcal{F}'} $ per ogni $ n\ge 1 $. 
     
     $\implies$ $ \mathcal{F} $ non è Archimedeo e $ \mathcal{F} $ è elementarmente equivalente a $ \mathcal{K} $.\qed
@@ -48,21 +48,23 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
 \paragrafo{Prodotto Cartesiano}{%
     Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuoti indicizzata su $ I\neq \emptyset $. Il \emph{prodotto cartesiano} degli $ A_{i}$ è l'insieme%
     \[
-        \prod_{i \in I} A_{i}=\{f:I\longrightarrow U_{i \in I}: f(i) \in A_{i}\text{ per ogni } i \in I  \}  
-    \]Gli elementi $ f \in \prod_{i \in I} A_{i} $ si indicano talvolta come sequenze $ \vec{a}=(a_{i} )_{i \in I} $ dove $ a_{i}=\vec{a}(i)=f(i)  $ è la $ i $-esima coordinata di $ \vec{a} $ (o di $ f $) per ogni $ i \in I $. 
+        \prod_{i \in I} A_{i}=\left\{f:I\longrightarrow \bigcup_{i \in I} A_{i} \text{ tale che } f(i) \in A_{i}\text{ per ogni } i \in I  \right\}  
+    \]Gli elementi $ f \in \prod_{i \in I} A_{i} $ si indicano come sequenze $ \sequence{a_{i}}_{i \in I} $ dove $ a_{i}=f(i)  $ è la $ i $-esima coordinata di $ \sequence{a_{i} }_{i \in I} $ (o di $ f $) per ogni $ i \in I $. 
 
-    Quando $ A_{i} =A $ per ogni $ i \in I $ scriviamo $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
+    Quando è chiaro l'insieme su cui varia $ i $, si indicherà $ \sequence{a_{i}} $ in luogo di $ \sequence{a_{i}}_{i \in I} $.
+
+    Quando $ A_{i} =A $ per ogni $ i \in I $ si scriverà $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
 }{}{}
 \paragrafo{Prodotto di strutture}{%
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata da $ I\neq \emptyset $. Il loro \emph{prodotto (diretto)} $ \prod_{i \in I} \mathcal{A}_{i} $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{i \in I} A_{i} $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
-        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $, ed ogni $ \vec{a}_1,\dots,\vec{a}_k \in\prod_{i \in I} A_{i}$ \[
-            (\vec{a}_1,\dots,\vec{a}_k) \in \R^{\mathcal{M}}\qquad \text{sse}\qquad \left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
+        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $, ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} \in\prod_{i \in I} A_{i}$ \[
+            \left(\sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}}\right) \in R^{\mathcal{M}}\qquad \text{sse}\qquad \left(a_{i}^{1}, \dots, a_{i}^{k}  \right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
         \]
-        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $, ed ogni $ \vec{a}_1,\dots,\vec{a}_k,\vec{b} \in\prod_{i \in I} A_{i}$ \[
-            f^{\mathcal{M}}(\vec{a}_1,\dots,\vec{a}_k) = \vec{b}\qquad \text{sse}\qquad \parbox{12em}{$f^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i)$ per ogni $i \in I$;}
+        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $, ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}}, \sequence{b_{i} } \in\prod_{i \in I} A_{i}$ \[
+            f^{\mathcal{M}}\left(\sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}}\right) = \sequence{b_{i} }\qquad \text{sse}\qquad \parbox{12em}{$f^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} $ per ogni $i \in I$;}
         \]
-        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \vec{b} \in \prod_{i \in I}A_{i}   $ \[
-            c^{\mathcal{M}}=\vec{b}\qquad\text{sse}\qquad c^{\mathcal{A}_i}=\vec{b}(i)\text{ per ogni }i \in I.
+        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \sequence{b_{i}} \in \prod_{i \in I}A_{i}   $ \[
+            c^{\mathcal{M}}=\sequence{b_{i}}\qquad\text{sse}\qquad c^{\mathcal{A}_i}=b_{i} \text{ per ogni }i \in I.
         \]
     \end{itemize}
 }{}{}
@@ -119,13 +121,21 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
     \end{enumerate} 
 }
 \dimostrazioneprop{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}{
-    $ \boxed{1.\Rightarrow 2.} $\hspace{1em} Per assurdo, $ A\cup B \in \mathcal{F} $, ma $ A, B\notin \mathcal{F} $. Per $ 1. $ si ha che $ I \setminus A, I \setminus B \in \mathcal{F} $. Allora \[
+    $ \boxed{1.\Rightarrow 2.} $\hspace{1em} Per assurdo, $ A\cup B \in \mathcal{F} $, ma $ A, B\notin \mathcal{F} $. 
+    
+    Per $ 1. $ si ha che $ I \setminus A, I \setminus B \in \mathcal{F} $. Allora \[
         \parentesi{=I\setminus (A\cup B)}{(I\setminus A) \cap (I \setminus B)} \in \mathcal{F}
-    \]allora si ha un assurdo.
+    \]che è un assurdo.
 
-    $ \boxed{2.\Rightarrow 3.} $\hspace{1em} Supponiamo per assurdo che esista $ \mathcal{F}'\supseteq \mathcal{F} $. Sia $ A \in \mathcal{F}' \setminus \mathcal{F} $. In particolare, $ I \setminus A \notin \mathcal{F}' $, quindi $ I \setminus A \notin \mathcal{F}$. Ma $ A \cup (I\setminus A) = I \in \mathcal{F} $, e $ A, I\setminus A \notin \mathcal{F} $, che è un assurdo.
+    $ \boxed{2.\Rightarrow 3.} $\hspace{1em} Si supponga per assurdo che esista $ \mathcal{F}'\supseteq \mathcal{F} $. Sia $ A \in \mathcal{F}' \setminus \mathcal{F} $. 
+    
+    In particolare, $ I \setminus A \notin \mathcal{F}' $, quindi $ I \setminus A \notin \mathcal{F}$. 
+    
+    Ma $ A \cup (I\setminus A) = I \in \mathcal{F} $, e $ A, I\setminus A \notin \mathcal{F} $, che è un assurdo.
 
-    $ \boxed{3.\Rightarrow 1.} $\hspace{1em} Supponiamo per assurdo che $ A \notin \mathcal{F} $ e $ I\setminus A \notin \mathcal{F} $. Sia $ \mathcal{G}=\mathcal{F}\cup \{A\} $. $ \mathcal{G} $ ha la FIP\footnote{Infatti, siano $ A_1,\dots,A_{k} \in \mathcal{G}   $, che assumo senza perdita di generalità tutti diversi. Se $ A_1,\dots,A_{k} \in \mathcal{F}  $, allora $ A_1\cap\dots\cap A_{k}\neq \emptyset  $ perché $ \mathcal{F} $ è un filtro. Se invece $ A_{k} = A  $, allora \[
+    $ \boxed{3.\Rightarrow 1.} $\hspace{1em} Si supponga per assurdo che $ A \notin \mathcal{F} $ e $ I\setminus A \notin \mathcal{F} $. 
+    
+    Sia $ \mathcal{G}=\mathcal{F}\cup \{A\} $. $ \mathcal{G} $ ha la FIP\footnote{Infatti, siano $ A_1,\dots,A_{k} \in \mathcal{G}   $, senza perdita di generalità assunti tutti diversi. Se $ A_1,\dots,A_{k} \in \mathcal{F}  $, allora $ A_1\cap\dots\cap A_{k}\neq \emptyset  $ perché $ \mathcal{F} $ è un filtro. Se invece $ A_{k} = A  $, allora \[
         \parentesi{ \in \mathcal{F}}{A_1\cap \dots\cap A_{k-1} }\cap A =  B \cap A
     \]con $B = A_1\cap \dots\cap A_{k-1}$. 
     
@@ -144,7 +154,7 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
 \dimostrazioneprop{doijcsoijoijoijoijoijoijoij}{
     Sia $ X=\{\mathcal{G}: \mathcal{G} \supseteq \mathcal{F}, \mathcal{G}\text{ filtro proprio su }I\} $. 
 
-    Considero $ (X, \subseteq)$: sia $ C \subseteq X $ una catena, cioè se $ \mathcal{G}, \mathcal{G}' \subseteq C $ allora o $ \mathcal{G} \subseteq \mathcal{G}' $ oppure $ \mathcal{G}' \subseteq \mathcal{G} $. 
+    Si consideri $ (X, \subseteq)$: sia $ C \subseteq X $ una catena, cioè se $ \mathcal{G}, \mathcal{G}' \subseteq C $ allora o $ \mathcal{G} \subseteq \mathcal{G}' $ oppure $ \mathcal{G}' \subseteq \mathcal{G} $. 
 
     Sia $ \mathcal{H} $ tale che\[
         \mathcal{H} = \bigcup_{\mathcal{G} \in C} \mathcal{G}
@@ -159,75 +169,76 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
         $\implies$ $ A\cap B \in \mathcal{H} $.
     \end{itemize}
 
-    Per il lemma di Zorn, esiste $ \mathcal{U} $ massimale in $ X $, e necessariamente $ \mathcal{U} \supseteq \mathcal{F} $: per la proposizione precedente, un filtro massimale è un ultrafiltro.\qed
+    Per il lemma di Zorn, esiste $ \mathcal{U} $ massimale in $ X $, e necessariamente $ \mathcal{U} \supseteq \mathcal{F} $: per la proposizione \framref{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}, un filtro massimale è un ultrafiltro.\qed
 }
 \subsection{Ultraprodotto di $ \mathcal{L} $-strutture}
 
 \paragrafo{Relazione di equivalenza}{%
-    Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuota indicizzata da $ I \neq \emptyset $. Dato un filtro $ \mathcal{F} $ su $ I $ definiamo la relazione di equivalenza $ \sim_{\mathcal{F}}  $ su $ \prod_{i \in I} A_{i}   $ ponendo per $ \vec{a},\vec{b} \in \prod_{i \in I} A_{i} $ \[
-        \vec{a}\sim_{\mathcal{F}}\vec{b}\qquad\text{sse}\qquad \{i \in I:\vec{a}(i)=\vec{b}(i) \} \in \mathcal{F}. 
-    \]La classe di equivalenza rispetto a $ \sim_{\mathcal{F}}$ di un elemento $ \vec{a} \in \prod_{i \in I}A_{i}$ verrà indicata con $ [\vec{a}] $.
+    Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuota indicizzata da $ I \neq \emptyset $. Dato un filtro $ \mathcal{F} $ su $ I $ definiamo la relazione di equivalenza $ \sim_{\mathcal{F}}  $ su $ \prod_{i \in I} A_{i}   $ ponendo per $ \sequence{a_i},\sequence{b_i} \in \prod_{i \in I} A_{i} $ \[
+        \sequence{a_i}\sim_{\mathcal{F}}\sequence{b_i}\qquad\text{sse}\qquad \{i \in I:a_i=b_i \} \in \mathcal{F}. 
+    \]La classe di equivalenza rispetto a $ \sim_{\mathcal{F}}$ di un elemento $ \sequence{a_i} \in \prod_{i \in I}A_{i}$ verrà indicata con $ [\sequence{a_i}] $.
 }{}{}
 \osservazione{
     $ \sim_{\mathcal{F}} 
-    $ è una relazione di equivalenza: simmetria e riflessività sono ovvie; per la transitività: siano $ \vec{a}\sim_{\mathcal{F}} \vec{b} $, e $ \vec{b}\sim_{\mathcal{F}}\vec{c} $. Allora \begin{align*}
-            X_{\vec{a},\vec{b}}&=\{i \in I: \vec{a}(i) = \vec{b}(i)\} \in \mathcal{F}\\
-            X_{\vec{b},\vec{c}}&=\{i \in I: \vec{b}(i) = \vec{c}(i)\} \in \mathcal{F}
+    $ è una relazione di equivalenza: simmetria e riflessività sono ovvie; per la transitività: siano $ \sequence{a_i}\sim_{\mathcal{F}} \sequence{b_i} $, e $ \sequence{b_i}\sim_{\mathcal{F}}\sequence{c_i} $. Allora \begin{align*}
+            X_{\sequence{a_i},\sequence{b_i}}&=\{i \in I: a_i = b_i\} \in \mathcal{F}\\
+            X_{\sequence{b_i},\sequence{c_i}}&=\{i \in I: b_i = c_i\} \in \mathcal{F}
         \end{align*}
 
-    Si deve dimostrare che l'insieme $ X_{\vec{a},\vec{c}} =\{i \in I: \vec{a}(i) = \vec{b}(i)\} \in \mathcal{F}$, ma \[
-        X_{\vec{a},\vec{b}} \cap X_{\vec{b},\vec{c}} \subseteq X_{\vec{a},\vec{c}}   
-    \]ma $ X_{\vec{a},\vec{b}} \cap X_{\vec{b},\vec{c}} \in \mathcal{F} $, e dunque $ X_{\vec{a},\vec{c}} \in \mathcal{F} $.
+    Si deve dimostrare che l'insieme $ X_{\sequence{a_i},\sequence{c_i}} =\{i \in I: a_i = b_i\} \in \mathcal{F}$, ma \[
+        X_{\sequence{a_i},\sequence{b_i}} \cap X_{\sequence{b_i},\sequence{c_i}} \subseteq X_{\sequence{a_i},\sequence{c_i}}   
+    \]ma $ X_{\sequence{a_i},\sequence{b_i}} \cap X_{\sequence{b_i},\sequence{c_i}} \in \mathcal{F} $, e dunque $ X_{\sequence{a_i},\sequence{c_i}} \in \mathcal{F} $.
 }
 \paragrafo{Prodotto ridotto di insiemi}{%
     Il \emph{prodotto ridotto} $ \prod_{{\mathcal{F}}} A_{i}$ degli $ A_{i}  $ modulo $ \mathcal{F} $ è il quoziente \[
-        \prod_{i \in I}A_{i}/\sim_{\mathcal{F}} = \left\{[\vec{a}]: \vec{a} \in \prod_{i \in I}A_{i}  \right\}. 
+        \prod_{i \in I}A_{i}/\sim_{\mathcal{F}} = \left\{\left[\sequence{a_{i}}\right]: \sequence{a_{i}} \in \prod_{i \in I}A_{i}  \right\}. 
     \]Se $ \mathcal{F} $ è un ultrafiltro, il prodotto ridotto corrispondente $ \prod_{\mathcal{F}}A_{i}   $ si dice \emph{ultraprodotto}. Quando $ A_{i}=A  $ per ogni $ i \in I $, si parla invece di \emph{potenza ridotta} e scriviamo $ A^{I}/\mathcal{F} $; se $ \mathcal{F} $ è un ultrafiltro, si parla di \emph{ultrapotenza}.
 }{}{}
 \paragrafo{Ultraprodotto di strutture}{%
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata da $ I\neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. L'ultraprodotto $ \prod_{\mathcal{U}}\mathcal{A}_i  $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{\mathcal{U}}A_{i}   $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
-        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n \in \prod_{i \in I}A_{i}  $%
+        \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $ ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} \in \prod_{i \in I}A_{i}  $%
             \begin{gather*}
-                \left([\vec{a}_1],\dots,[\vec{a}_n]\right) \in R^{\mathcal{M}}\\ 
+                \left(\left[\sequence{a_{i}^{1}}\right],\dots,\left[\sequence{a_{i}^{k}}\right]\right) \in R^{\mathcal{M}}\\ 
                 \text{sse}\\ 
-                \left\{i \in I: \left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) \in R^{\mathcal{A}_i}\right\} \in \mathcal{U};
+                \left\{i \in I: \left(a_{i}^{1}, \dots, a_{i}^{k}  \right) \in R^{\mathcal{A}_i}\right\} \in \mathcal{U};
             \end{gather*}
-        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n,\vec{b} \in \prod_{i \in I}A_{i}  $%
+        \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $ ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} ,\sequence{b_{i} } \in \prod_{i \in I}A_{i}  $%
             \begin{gather*}
-                f^{\mathcal{M}}\left([\vec{a}_1],\dots,[\vec{a}_n]\right)=\left[\vec{b}\right]\\ 
+                f^{\mathcal{M}}\left(\left[\sequence{a_{i}^{1}}\right],\dots,\left[\sequence{a_{i}^{k}}\right]\right)=\left[\sequence{b_{i} }\right]\\ 
                 \text{sse}\\ 
-                \left\{i \in I: f^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i) \right\} \in \mathcal{U};
+                \left\{i \in I: f^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} \right\} \in \mathcal{U};
             \end{gather*}
-        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \vec{b} \in \prod_{i \in I}A_{i}   $ \[
-            c^{\mathcal{M}}=\left[\vec{b}\right]\qquad\text{sse}\qquad \{i \in I: c^{\mathcal{A}_i}=\vec{b}(i)\} \in \mathcal{U}.
+        \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \sequence{b_{i} } \in \prod_{i \in I}A_{i}   $ \[
+            c^{\mathcal{M}}=\left[\sequence{b_{i} }\right]\qquad\text{sse}\qquad \{i \in I: c^{\mathcal{A}_i}=b_{i} \} \in \mathcal{U}.
         \]
     \end{itemize}
     Se $ \mathcal{A}_i = \mathcal{A}$ per ogni $  i \in I $, la $ \mathcal{L} $-struttura $ \mathcal{A}^{I}/\mathcal{U} $ si dice \emph{ultrapotenza} di $ \mathcal{A} $.
-}{}{}
+}{dcjkklkmdjjjjultraprodottoinssimo}{}
 \proposizione{doijcoijdijcijijoijoijoijcoaijoijoijoij}{
-    Sia $ \mathcal{M}=\prod_{\mathcal{U}}\mathcal{A}_i  $. Si dimostra che per ogni $ \mathcal{L} $-termine $ t(x_1,\dots,x_{n} ) $ ed ogni $ \vec{a}_1,\dots,\vec{a}_n, \vec{b} \in \prod_{i \in I}A_{i}   $\begin{gather*}
-        t^{\mathcal{M}}\left([\vec{a}_1],\dots,[\vec{a}_n]\right)=\left[\vec{b}\right]\\ 
+    Sia $ \mathcal{M}=\prod_{\mathcal{U}}\mathcal{A}_i  $. Si può dimostrare che per ogni $ \mathcal{L} $-termine $ t(x_1,\dots,x_{n} ) $ ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{n}} ,\sequence{b_{i} } \in \prod_{i \in I}A_{i}   $\begin{gather*}
+        t^{\mathcal{M}}\left(\left[\sequence{a_{i}^{1}}\right],\dots,\left[\sequence{a_{i}^{k}}\right]\right)=\left[\sequence{b_{i} }\right]\\ 
         \text{sse}\\ 
-        \left\{i \in I: t^{\mathcal{A}_i}\left(\vec{a}_1(i),\dots,\vec{a}_k(i)\right) = \vec{b}(i) \right\} \in \mathcal{U};
+        \left\{i \in I: t^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} \right\} \in \mathcal{U};
     \end{gather*}
 }
 \teorema[Teorema di Łoś]{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
-    Sia $ (A_{i} )_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata su $ I \neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. Consideriamo l'ultraprodotto $ \mathcal{M}=\prod_{\mathcal{U}} A_{i}   $. Per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ e per ogni $ \vec{a}_1,\dots,\vec{a}_n \in\prod_{i \in I} A_{i}$, si ha \[
-        \mathcal{M}\vDash \varphi\left[[\vec{a}_1],\dots,[\vec{a}_n]\right]\quad\text{sse}\quad X_{\varphi, \vec{a}_1,\dots,\vec{a}_n} \in \mathcal{U}
-    \]dove $ X_{\varphi, \vec{a}_1,\dots,\vec{a}_n} = \left\{i \in I: A_{i}\vDash \varphi\left[[\vec{a}_1],\dots,[\vec{a}_n]\right] \right\} $
+    Sia $ (A_{i} )_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata su $ I \neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \mathcal{M}\coloneqq\prod_{\mathcal{U}} A_{i}   $. Per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ e per ogni $\sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{n}} \in\prod_{i \in I} A_{i}$, si ha \[
+        \mathcal{M}\vDash \varphi\left[\left[\sequence{a_{i}^{1} }\right],\dots,\left[\sequence{a_{i}^{n} }\right]\right]\quad\text{sse}\quad X_{\varphi, \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{n}}} \in \mathcal{U}
+    \]dove $ X_{\varphi, \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{n}}} = \left\{i \in I: A_{i}\vDash \varphi\left[a_{i}^{1},\dots,a_{i}^{n}  \right] \right\} $
 }
+%TODO sistemare i vettori DA QUI
 \dimostrazione{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
     Per induzione sull'altezza della formula. \begin{itemize}
         \item \emph{$\varphi$ atomica}: $ R \in \operatorname{Rel} $, $ \operatorname{ar}(R)=2 $ e $ t_1 $, $ t_2 $ termini. Sia quindi $ \varphi: R(t_1,t_2) $. \[
-            \mathcal{M}\vDash R(t_1,t_2)\quad\text{sse}\quad [\vec{b}_1] R^{\mathcal{M}} [\vec{b}_2]\quad\text{sse}\quad X_{R} \in \mathcal{U} 
-        \]dove $ [\vec{b}_1] = t_1^{\mathcal{M}} $ e $ [\vec{b}_2] = t_2^{\mathcal{M}} $ e \[
-            X_{R}=\{i \in I: \vec{b}_1 R^{\mathcal{\mathcal{A}_i }} \vec{b}_2\}.
-        \]Ma $ [\vec{b}_1] = t_1^{\mathcal{M}} $ sse \[
-            X_{t_1}=\{i \in I: t_1^{\mathcal{A}_i} = \vec{b}_1(i)\} \in \mathcal{U}
-        \]e $ [\vec{b}_2] = t_2^{\mathcal{M}} $ sse \[
-            X_{t_2}=\{i \in I: t_2^{\mathcal{A}_i} = \vec{b}_2(i)\} \in \mathcal{U}.
+            \mathcal{M}\vDash R(t_1,t_2)\quad\text{sse}\quad \left[\sequence{b^{1}_i}\right] R^{\mathcal{M}} \left[\sequence{b^{2}_i}\right]\quad\text{sse}\quad X_{R} \in \mathcal{U} 
+        \]dove $ \left[\sequence{b^{1}_i}\right] = t_1^{\mathcal{M}} $ e $ \left[\sequence{b^{2}_i}\right] = t_2^{\mathcal{M}} $ e \[
+            X_{R}=\{i \in I: b^{1}_i\, R^{\mathcal{\mathcal{A}}_i}\, b^{2}_i\}.
+        \]Ma $ \left[\sequence{b^{1}_i}\right] = t_1^{\mathcal{M}} $ sse \[
+            X_{t_1}=\{i \in I: t_1^{\mathcal{A}_i} = b_{i}^{1} \} \in \mathcal{U}
+        \]e $ \left[\sequence{b^{2}_i}\right] = t_2^{\mathcal{M}} $ sse \[
+            X_{t_2}=\{i \in I: t_2^{\mathcal{A}_i} = b^{2}_i\} \in \mathcal{U}.
         \]Si ha che $ X_{R} \in \mathcal{U}  $ sse \[
-            X=\{i \in I: \vec{b}_1 R^{\mathcal{\mathcal{A}_i }} \vec{b}_2\,\text{ e }\,t_1^{\mathcal{A}_i} = \vec{b}_1(i)\,\text{ e }\,t_2^{\mathcal{A}_i} = \vec{b}_2(i)\} \in \mathcal{U}
+            X=\{i \in I: b^{1}_i\, R^{\mathcal{\mathcal{A}}_i}\, b^{2}_i\,\text{ e }\,t_1^{\mathcal{A}_i} = \vec{b}_1(i)\,\text{ e }\,t_2^{\mathcal{A}_i} = \vec{b}_2(i)\} \in \mathcal{U}
         \](e questo vale perché $ X_{R}\cap X_{t_1} \cap X_{t_2} \subseteq X$).
 
         Ma $ \displaystyle X = \{i \in I: \mathcal{A}_i\vDash R(t_1,t_2)\} = X_{\varphi} $. 
@@ -245,27 +256,27 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
                 X_{\psi} \in U\,\text{ o }\,X_{\chi} \in \mathcal{U} \quad\text{sse}\quad X_{\psi}\cup X_{\chi} \in \mathcal{U}   \quad\text{sse}\footnote{Poiché $X_{\psi \,\lor\,\chi} = X_{\psi}\cup X_{\chi}$}\quad X_{\psi \,\lor\,\chi} \in \mathcal{U}.
             \]
             \item \emph{Esistenziale:} sia $ \varphi $ la formula $ \exists\, y \, \psi $. \[
-                \mathcal{M}\vDash \exists\, y\,\psi\quad\leadsto\quad \text{esiste }\left[\vec{b}\right] \in \prod_{\mathcal{U}}A:\hspace{0.6em} \mathcal{M}\vDash \psi\left[\vec{b}\right] 
-            \]sse\footnote{Per ipotesi induttiva} $ X_{\psi,\vec{b}} \in \mathcal{U}  $, ma $ X_{\psi,\vec{b}} \subseteq X_{\varphi}  $, poiché \begin{align*}
-                X_{\psi,\vec{b}} &= \{ i \in I: \mathcal{A}_i\vDash \psi\left[\vec{b}(i)\right]\}\\ 
+                \mathcal{M}\vDash \exists\, y\,\psi\quad\leadsto\quad \text{esiste }\left[\sequence{b_i}\right] \in \prod_{\mathcal{U}}A:\hspace{0.6em} \mathcal{M}\vDash \psi\left[\sequence{b_i}\right] 
+            \]sse\footnote{Per ipotesi induttiva} $ X_{\psi,\sequence{b_i}} \in \mathcal{U}  $, ma $ X_{\psi,\sequence{b_i}} \subseteq X_{\varphi}  $, poiché \begin{align*}
+                X_{\psi,\sequence{b_i}} &= \{ i \in I: \mathcal{A}_i\vDash \psi\left[b_{i} \right]\}\\ 
                 X_{\varphi} &= \{i \in I: \mathcal{A}_i\vDash \exists\, y\,\psi\} 
             \end{align*}e quindi $ X_{\varphi} \in \mathcal{U}$.
             
             Viceversa, se $ X_{\varphi} \in \mathcal{U}$, per ogni $ i \in  X_{\varphi}  $ scelgo un $ a_{i} \in A_{i}$ tale che $ \mathcal{A}_i \vDash \psi[a_{i} ]$ (utilizzando l'assioma di scelta). Per ogni $ i \notin X_{\varphi}  $, scelgo $ c_{i} \in A_{i}$ ``a caso''. 
 
-            Sia $ \vec{b} \in \prod_{i \in I}A_{i}$ definito da \[
-                \vec{b}(i) = \begin{cases}
+            Sia $ \sequence{b_{i} } \in \prod_{i \in I}A_{i}$ definito da \[
+                b_{i}  = \begin{cases}
                     a_{i} & i \in X_{\varphi}\\ 
                     c_{i} & i \notin X_{\varphi}     
                 \end{cases} 
             \]e si ha che, necessariamente, \[
-                X_{\psi,\vec{b}} = \left\{i \in I: \mathcal{A}_i\vDash \psi\left[\vec{b}(i)\right]\right\} \supseteq X_{\varphi} \in \mathcal{U}
-            \]e dunque $ X_{\psi,\vec{b}} \in \mathcal{U}  $. Per ipotesi induttiva, $ \mathcal{M}\vDash\psi\left[\left[\vec{b}\right]\right] $, e quindi $ \mathcal{M}\vDash \exists\, y\,\psi $.\qed
+                X_{\psi,\vec{b}} = \left\{i \in I: \mathcal{A}_i\vDash \psi\left[b_{i} \right]\right\} \supseteq X_{\varphi} \in \mathcal{U}
+            \]e dunque $ X_{\psi,\vec{b}} \in \mathcal{U}  $. Per ipotesi induttiva, $ \mathcal{M}\vDash\psi\left[\left[\sequence{b_{i} }\right]\right] $, e quindi $ \mathcal{M}\vDash \exists\, y\,\psi $.\qed
         \end{itemize}
     \end{itemize}
 }
 \paragrafo{Corollario}{%
-    Sia $ \mathcal{A} $ una $ \mathcal{L} $-struttura e $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \pi: \mathcal{A}\longrightarrow \mathcal{A}^{I}/\mathcal{U} $ definita da $ \pi(a)=[\vec{a}] $ dove $ \vec{a}(i)=a $ per ogni $ i \in I $. Allora $ \pi $ è un'immersione elementare e, in particolare, $ \mathcal{A} $ e $ \mathcal{A}^{I}/\mathcal{U} $ sono elementarmente equivalenti.
+    Sia $ \mathcal{A} $ una $ \mathcal{L} $-struttura e $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \pi: \mathcal{A}\longrightarrow \mathcal{A}^{I}/\mathcal{U} $ definita da $ \pi(a)=[\sequence{a_{i} }] $ dove $ a_{i} \equiv a $ per ogni $ i \in I $. Allora $ \pi $ è un'immersione elementare e, in particolare, $ \mathcal{A} $ e $ \mathcal{A}^{I}/\mathcal{U} $ sono elementarmente equivalenti.
 }{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn}{}
 \subsection{$ \starR $ come ultraprodotto}
 
@@ -294,10 +305,13 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
         \mathcal{L}=\{+,-, \cdot ,0,1,\le\}
     \]e la $ \mathcal{L}$-struttura $ \mathcal{R} = (\R,+,-, \cdot ,0,1,\le ) $. 
 
-    Si definisce il campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard $ \starR $ come l'insieme della $ \mathcal{L} $-struttura \[
+    Si definisce il \emph{campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard} $ \starR $ (anche \emph{campo degli iperreali}) come l'insieme della $ \mathcal{L} $-struttura \[
         \null^{*}\mathcal{R} \coloneqq \mathcal{R}^{ \N}/\mathcal{U}
     \]dove $ \mathcal{U} $ è un ultrafiltro libero di $ \N $.
 }{}{}
+\osservazione{
+    Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \{a_{i} \}_{i \in \N} $. Si continuerà ad adottare la scrittura $ \{a_{i} \} $ per le successioni, sottintendendo che l'indice vari su $ \N $.
+}
 \paragrafo{Proprietà}{%
     Segue dal corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
     \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
@@ -305,9 +319,66 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
     \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
         \item $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti;
         \item questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'esempio 3.21 di \cite{andretta_elements_2022}};
-        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \{a\} $.
+        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \{a\} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \null^{*}a $.
     \end{itemize}
 }{}{}
-%TODO finire capitolo, vedere struttura nel quadernetto
+\osservazione{
+    Segue immediatamente dalla costruzione di $ \starR $ che \begin{align*}
+        0^{\null^{*}\mathcal{R}} &= \pi\left(0^{\mathcal{R}}\right);\\ 
+        1^{\null^{*}\mathcal{R}} &= \pi\left(1^{\mathcal{R}}\right)
+    \end{align*}
+}
+\paragrafo{Funzioni e relazioni su $ \starR $}{%
+    Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\left[\{r_{i} \}\right]$, $s=\left[\{s_{i} \}\right]$\begin{align*}
+        r+s &= \left[\{r_{i}+s_{i}  \}\right];\\
+        r \cdot s &= \left[\{r_{i} \cdot s_{i}  \}\right];\\
+        r\le s\quad &\text{sse}\quad \{i \in \N: r_{i}<s_{i}  \} \in \mathcal{U}.
+    \end{align*}
+}{}{}
+\paragrafo{Valore assoluto}{%
+    Si definisce, $ \forall\, r \in \starR $, $ r =\left[\{r_{i} \}\right] $ \[
+        |r| \coloneqq \left[\{|r_{i}| \}\right]
+    \]Notiamo che questo valore assoluto agisce come ci si aspetta. \begin{itemize}
+        \item Se $ r\ge \null^{*}0 $
+        
+        $\implies$ $ \displaystyle A\coloneqq\{i \in \N: r_{i}\ge 0 \} \in \mathcal{U} $, ma \[
+            \mathcal{U}\ni A= \{i \in \N: r_{i} = |r_{i}|  \}
+        \] 
+        
+        $\implies$ $ |r| = r$.
+        \item Se $ r < \null^{*}0 $ 
+        
+        $\implies$ $ \displaystyle B\coloneqq\{i \in \N: r_{i}< 0 \} \in \mathcal{U} $, ma \[
+            \mathcal{U}\ni B= \{i \in \N: -r_{i} = |r_{i}|  \}
+        \] 
+
+        $\implies$ $ |r| = -r = \left[\{-r_{i} \}\right]$.
+    \end{itemize}
+}{}{}
+\proposizione{djkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj}{
+    $ \starR $ è un campo non archimedeo.
+}
+\dimostrazioneprop{djkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj}{
+    Affinché $ \starR $ sia non archimedeo deve esistere $ M \in \starR  $ tale che \[
+        M \ge n1\qquad \forall\, n \in \N
+    \]dove, riprendendo la notazione precedente, \[
+        n1 = \parentesi{n\text{ volte}}{1+1+\dots+1}.
+    \]Dunque si ha che \[
+        n1 = \left[\{n\}\right]
+    \]
+
+    Sia $ \{a_{i} \}_{i \in \N} $ la successione tale che $a_{i} = i$ e sia $ M \coloneqq \left[\{a_{i} \}\right] $. Allora \[
+        M=\left[\{0,1,2,3,\dots\}\right]
+    \]
+
+    Fissato ora $ n \in \N $, mostriamo che $ n1 \le M $ $ \iff $ $ \displaystyle A\coloneqq\{i \in \N: n \le   i\} \in \mathcal{U}$. 
+
+    Sia ora $ B \coloneqq \N\setminus A $ (e quindi $ A = \N\setminus B $): \[
+        B = \{0,1,2,\dots,n-1\}
+    \]ed è un insieme \emph{finito} 
+    
+    $\implies$ $ A \in \mathcal{U}$ poiché si è scelto $ \mathcal{U} $ ultrafiltro libero.\qed
+}
 %TODO sistemare la notazione per i vettori in tutto il capitolo
 %TODO scrivere una mail e LMR.
+\section{Proprietà di $ \starR $}

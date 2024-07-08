@@ -113,6 +113,38 @@
       \field{dateera}{ce}
       \true{nocite}
     \endentry
+    \entry{katz_true_nodate}{book}{}
+      \name{author}{3}{}{%
+        {{hash=c0e48f8b6e69649e4b5a94e871fc415a}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Mikhail\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=71741728f0c03046a1aa8593552f6e6d}{%
+           family={Kanovei},
+           familyi={K\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a2499989f8a83bd9f9cd3479d4b78e18}{%
+           family={Nowik},
+           familyi={N\bibinitperiod},
+           given={Tahl},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \strng{fullhash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \strng{bibnamehash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \strng{authorbibnamehash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \strng{authornamehash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \strng{authorfullhash}{df8aa8ce0bf360845bb8ca17b906bda4}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{True infinitesimal differential geometry}
+      \true{nocite}
+    \endentry
     \entry{loeb_nonstandard_2015}{collection}{}
       \name{editor}{2}{}{%
         {{hash=d37c0ffeb5f51f81aa366ea4946dbc54}{%
@@ -155,6 +187,43 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/10.1007/978-94-017-7327-0
+      \endverb
+    \endentry
+    \entry{nowik_differential_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a2499989f8a83bd9f9cd3479d4b78e18}{%
+           family={Nowik},
+           familyi={N\bibinitperiod},
+           given={Tahl},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c0e48f8b6e69649e4b5a94e871fc415a}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Mikhail\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3431b4184515c56f441ce30147ff75a}
+      \strng{fullhash}{f3431b4184515c56f441ce30147ff75a}
+      \strng{bibnamehash}{f3431b4184515c56f441ce30147ff75a}
+      \strng{authorbibnamehash}{f3431b4184515c56f441ce30147ff75a}
+      \strng{authornamehash}{f3431b4184515c56f441ce30147ff75a}
+      \strng{authorfullhash}{f3431b4184515c56f441ce30147ff75a}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{17599008}
+      \field{journaltitle}{Journal of Logic and Analysis}
+      \field{langid}{english}
+      \field{title}{Differential geometry via infinitesimal displacements}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1405.0984
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1405.0984
       \endverb
     \endentry
   \enddatalist

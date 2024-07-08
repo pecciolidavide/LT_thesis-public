@@ -1,15 +1,15 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'peccioli_tesi.blg'
-[48] biber-darwin:315> INFO - === Tue Apr 23, 2024, 14:45:51
-[76] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
-[192] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[51] biber-darwin:315> INFO - === Mon May 20, 2024, 16:39:46
+[78] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
+[191] Biber.pm:886> INFO - Using all citekeys in bib section 0
 [209] Biber.pm:4093> INFO - Processing section 0
 [223] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
 [225] bibtex.pm:1523> INFO - LaTeX decoding ...
-[233] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliografia.bib'
-[293] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[293] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[293] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[293] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
-[305] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
-[307] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
+[236] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliografia.bib'
+[311] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[311] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[311] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[311] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
+[327] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
+[331] bbl.pm:739> INFO - Output to peccioli_tesi.bbl

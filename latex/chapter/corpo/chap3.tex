@@ -1,0 +1,228 @@
+\chapter{Varietà differenziabili}\stepcounter{capitoloeccolo}
+
+\section{Prevettori}
+
+\definizione{
+    Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
+        \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
+        \item $ r \prec\prec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
+    \end{itemize}
+}
+\osservazione{
+    Questa definizione si estende naturalmente ad elementi di $ \starR^{n} $. In particolare, se $ v \in \starR^{n} $ e $ s \in \starR $, si adotta la seguente notazione: \begin{itemize}
+        \item $ v \prec s $ se $ \nonstandard{\norm{v}} \prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+        \item $ v \prec\prec s $ se $ \nonstandard{\norm{v}} \prec\prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+    \end{itemize}
+
+    Se $ v, w \in \starR^{n} $, si scriverà $ v\approx w $ se $ v-w \prec\prec 1 $.
+
+    In particolare, se $ v = (v_1,\dots,v_{n} ) \in \starR^{n} $, si ha che $ v \prec s $ oppure $ v \prec \prec s $ se e solo se ogni $ v_{i}  $ soddisfa $ v_{i} \prec s  $ oppure $ v_{i} \prec\prec s $. 
+}
+\osservazione{
+    Poiché su $ \R^{n} $ tutte le norme sono equivalenti, la definizione precedente è ben posta.
+}
+\definizione{
+    Sia $ X $ uno spazio topologico e sia $\nonstandard{X} $ la sua estensione non standard.\begin{itemize}
+        \item $ \forall\, p \in X $ si definisce l'\emph{alone} di $ p $: \[
+            \halo(p) = \bigcap_{U \in I(p) } \nonstandard{U} 
+        \]dove $ I(p) $ è l'insieme di tutti gli intorni aperti di $ p $.
+        \item I punti di $ X $ si chiamano \emph{standard}, e un punto che fa parte di $ \halo(p) $ per qualche $ p \in X$ è detto \emph{quadi-standard}.
+        \item Se $ a $ è un punto quasi-standard allora la \emph{parte standard} di $ a $, denotata con $ \st(a)$, è l'unico $ p \in X$ tale che \[
+            a \in \halo(p).
+        \]
+        \item Per un generico $ A \subseteq X $ si definisce l'\emph{alone} di $ A $ come \[
+            \hhalo{A} = \bigcup_{a \in A} \halo(a).
+        \]
+    \end{itemize} 
+}
+\proprieta{
+    Per uno spazio topologico $ X $ (con estensione non standard $ \nonstandard{X} $) valgono le seguenti proprietà. \begin{enumerate}
+        \item $ \hhalo{X} $ è l'insieme dei punti quasi-standard di $ \nonstandard{X}$.
+        \item Se $ A \subseteq X $ è aperto in $ X $, allora $ \hhalo{A} \subseteq \nonstandard{A} $. 
+        \item Se $ A \subseteq X $ è compatto in $ X $, allora $ \nonstandard{A} \subseteq \hhalo{A} $
+        \item Se $ X $ è compatto allora $\hhalo{X} = \nonstandard{X}$
+    \end{enumerate}
+}
+\lemma{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}{
+    Per un aperto $ W \subseteq  \R^{n} $, sia $ f: W \longrightarrow \R $ continua, e sia \[
+        \nonstandard{f}: \nonstandard{W} \longrightarrow \nonstandard{\R}
+    \]la sua estensione non standard. Allora $ \nonstandard{f}(a)$ è finita per ogni $ a \in \hhalo{W} $.
+}
+\dimostrazionelem{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}{
+    Sia $ a \in \null^{\halo}W $, e sia $ U $ un intorno di $ \st(a) $ tale che $ \overline{U} \subseteq W $ e $ \overline{U} $ sia compatto. 
+
+    Dunque $ \exists\, C \in \R $ tale che \[
+        |f(x)| \le C \qquad \forall\, x \in U
+    \]Per il principio di transfer \[
+        |\nonstandard{f}(x)| \le C \qquad \forall\, x \in \nonstandard{U}.
+    \]In particolare, $ a \in \nonstandard{U} $, e dunque \[
+        |\nonstandard{f}(a)| \le C.\qedd
+    \]
+}
+\paragrafo{Derivate parziali}{%
+    Dato un aperto $ U \subseteq \R^{n} $ ed una funzione $ f: U \longrightarrow \R $, le derivate parziali di $ \nonstandard{f} $, quando esistono, sono definite come l'estensione non standard delle derivate parziali di $ f $: \[
+        \nonstandard{\left(\dpd{f}{x_{i} }\right)}: \nonstandard{U} \longrightarrow \nonstandard{\R}.
+    \]\begin{itemize}
+        \item Se $ f \in C^{1}(U) $, allora per ogni $ a \in \nonstandard{U} $ esiste il vettore $ D_{a} $ di derivate parziali nel punto $ a $.
+        \item Se $ f \in C^{2}(U) $, allora per ogni $ a \in \nonstandard{U} $ esiste la matrice Hessiana $ H_{a}$ di derivate seconde nel punto $ a $.
+    \end{itemize}
+}{}{}
+\paragrafo{Proprietà}{%
+    Sia $ U \subseteq \R^{n} $ aperto e sia $ f : U \longrightarrow \R $. Siano $ a,b \in \hhalo{U} $ con $ a \approx b $: allora l'intervallo $ [a,b] \subseteq \hhalo{U} \subseteq \nonstandard{U}. $
+    
+    \begin{enumerate}
+        \item  Se $ f \in C^{1} $, allora per il transfer del teorema del valor medio, esiste $ x \in [a,b] $ tale che \begin{equation}
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{x} (b-a).\label{eq:1}
+    \end{equation}Poiché le derivate parziali sono continue, si ha che\footnote{
+        %TODO argomentare
+    } \[
+            \forall\, y \approx a:\qquad D_{x}-D_{y} \prec\prec 1 
+        \]dunque, manipolando \eqref{eq:1}: \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{y}(b-a) + (D_{x}-D_{y}  ) (b-a) 
+        \] 
+        
+        $\implies$ $ \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec\prec \norm{b-a} $.
+
+        Se inoltre le derivate parziali sono Lipschitziane ed esiste $ \beta \prec\prec 1 $\footnote{cioè $ \beta $ infinitesimo} tale che \[
+            \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
+        \]allora vale la condizione più forte \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec \beta\norm{b-a}.
+        \]
+        \item Se $ f \in C^{2} $, allora per il transfer del teorema di approssimazione di Taylor si ha \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{a} (b-a) + \frac{1}{2} \null^{t}\!(b-a) H_{x} (b-a) 
+        \]per qualche $ x \in [a,b] $.
+        \item La proprietà 1 si può applicare a ciascuna delle componenti di $ \varphi $: \begin{align*}
+            \varphi: U & \longrightarrow \R^{n}\\
+            x &\longmapsto \left(\varphi_{1}(x), \dots, \varphi_{n}(x)  \right)
+        \end{align*}ottenendo così una condizione sulla matrice Jacobiana $ J_{a}  $ (composta dalle $ n $ righe $ D_{a}^{i}  $ corrispondenti alle $ \varphi_{i}  $): \[
+            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a)-J_{y}(b-a)\prec\prec \norm{b-a}\qquad\forall y \approx a 
+        \]
+
+        Se inoltre tutte le derivate parziali delle $ \varphi_{i}  $ sono Lipschitziane ed esiste $ \beta \prec\prec 1 $ tale che \[
+            \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
+        \]allora vale la condizione più forte \[
+            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a) - J_{y}(b-a) \prec \beta\norm{b-a}.
+        \]
+    \end{enumerate}
+}{}{}
+\paragrafo{Notazione}{%
+    Si fissano ora delle convenzioni valide per tutto il capitolo. \begin{itemize}
+        \item Sia $ M $ la varietà differenziabile di dimensione $ n $ di interesse, definita come nella sezione \ref{sec:geodiff}. 
+        \item D'ora in avanti sia $ \lambda \in \starR $ un infinitesimo positivo \emph{fissato}.
+    \end{itemize}
+}{}{}
+
+
+\definizione{
+    Per $ a \in \hhalo{M} $, un \emph{prevettore} in $ a $ è una coppia $ (a,x) $ con $ x \in \hhalo{M} $ tale che per ogni funzione differenziabile $ f: M \longrightarrow \R $, \[
+        \nonstandard{f}(x)-\nonstandard{f}(a)\prec \lambda
+    \]Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $. %TODO capire se "prevettore in a" è il nome che preferisco
+}
+\proposizione{dkjnckjnsckjnsjdjckjnsjcjdkjn}{
+    Sia $ a \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
+        \item $ (a,x) $ è un prevettore in $ a $. 
+        \item Se $ W $ è un intorno coordinato di $ \st(a) $ la cui immagine è $ U \subseteq \R^{n} $, e $ \hat{a}, \hat{x} \in \nonstandard{U} $ sono le coordinate di $ a $ e $ x $ rispettivamente: \[
+            \hat{x}-\hat{a}\prec \lambda.
+        \]
+    \end{enumerate}
+}
+\dimostrazioneprop{dkjnckjnsckjnsjdjckjnsjcjdkjn}{
+    $\boxed{1.\implies 2.}$\hspace{1em} Siano $ x_1,\dots,x_{n} $ le funzioni coordinate di $ W $: poiché ciascuna $ x_{i} $ è differenziabile, per ipotesi \[
+        \nonstandard{x_{i} }(x)-\nonstandard{x_{i} }(a)\prec \lambda  
+    \]e dunque $ \hat{x}-\hat{a}\prec \lambda $.
+
+    $\boxed{2.\implies 1.}$\hspace{1em} Sia $ f: M \longrightarrow \R $ una generica funzione differenziabile. Allora $ \exists\, c \in [\hat{a}, \hat{x}] $ tale che\[
+        f(x)-f(a) = D_{c} (\hat{x}-\hat{a}) 
+    \]dove le componenti di $ D_{c}$ sono finite per il lemma \framref{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}. Si può dunque concludere che  \[f(x)-f(a)\prec\norm{\hat{x}-\hat{a}}\prec \lambda \qedd\]
+}
+\definizione{
+    Si definisce una relazione di equivalenza $ \equiv $ in $ P_{a}M  $ come segue: \[
+        (a,x) \equiv (a,y) \qquad \text{se e solo se}\qquad \nonstandard{f}(y)-\nonstandard{f}(x)\prec \prec \lambda
+    \]per ogni funzione differenziabile $ f: M \longrightarrow \R $.
+
+    L'insieme delle classi di equivalenza $ P_{a}M/\equiv  $ si denoterà con $ T_{a}(M)  $.
+}
+\notazione{
+    Gli elementi di $ T_{a}M  $, ovvero le classi di equivalenza $ [(a,x)] $ si denoteranno con $ \vec{ax} $.
+}
+\proposizione{dinckjndjcjdkckjncskjdkckjnk}{
+    Sia $ a \in \hhalo{M} $, e siano $ x,y \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
+        \item $ (a,x) \equiv (a,y) $;
+        \item Se $ W $ è un intorno coordinato di $ \st(a) $ la cui immagine è $ U \subseteq \R^{n} $, e $ \hat{x}, \hat{y} \in \nonstandard{U} $ sono le coordinate di $ x $ e $ y $ rispettivamente: \[
+            \hat{y}-\hat{x}\prec\prec \lambda.
+        \]
+    \end{enumerate}
+}
+\proposizione{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
+    $ T_{a}M  $ è uno spazio vettoriale \emph{reale} $ n $-dimensionale indipendentemente dalla scelta delle coordinate.
+}
+\dimostrazioneprop{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
+    \lipsum[1]\qed %TODO da dimostrare
+}
+\osservazione{
+    Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
+
+    Di conseguenza, quando $ a \approx b $ è possibile sommare senza ambiguità due vettori $ \vec{ax} \in T_{a}M  $ e $ \vec{by} \in T_{b}M  $.
+}
+\definizione{
+    Sia $ a \in \hhalo{M} $. Un prevettore $ (a,x) \in P_{a}M  $ agisce su una funzione differenziabile $ f: M \longrightarrow \R $ come segue: \[
+        (a,x)\,f \coloneqq \frac{1}{\lambda}\left(\nonstandard{f}(x)-\nonstandard{f}(a)\right) \in \starR
+    \]che è finito per definizione di prevettore.
+}
+\definizione{
+    Sia $ a \in \hhalo{M} $. Un vettore $ \vec{ax} \in T_{a}M  $ agisce come derivazione su una funzione differenziabile $ f: M \longrightarrow \R $ come segue: \[
+        \vec{ax} \,f = \st\left((a,x)\,f\right) \in \R.
+    \] 
+}
+\osservazione{
+    La definizione di derivazione è ben definita per la definizione della classe di equivalenza $ \equiv $ su $ P_{a}M  $.
+}
+\proposizione{dkjncjdjckjnskjnckjdjckjnkjnkjnkjn}{
+    L'azione di un prevettore rispetta la regola di Leibniz fino agli infinitesimi, ovvero, se $ a \in \hhalo{M} $, $ (a,x) \in P_{a}M  $ e $ f,g: M \longrightarrow \R $ sono funzioni differenziabili, allora \begin{equation}
+        (a,x)\,(fg) \approx \nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a).\label{eq:eqdddd}
+    \end{equation}
+
+    Inoltre, se $ a_0 = \st(a) $, si ha \begin{equation}
+        \vec{ax}\,(fg) = f(a_0) \cdot \vec{ax}\,g + \vec{ax}\,f \cdot g(a_0).\label{eq:djcjnnnnnn}
+    \end{equation}
+}
+\dimframmento{dkjncjdjckjnskjnckjdjckjnkjnkjnkjn}{La \eqref{eq:eqdddd} si dimostra come segue:
+    \begin{align*}
+        (a,x)\,(fg) &= \frac{1}{\lambda}\left(\nonstandard{f}(x)\nonstandard{g}(x)-\nonstandard{f}(a)\nonstandard{g}(a)\right)\\ 
+        &= \frac{1}{\lambda}\left(\nonstandard{f}(x)\nonstandard{g}(x)-\nonstandard{f}(x)\nonstandard{g}(a)+\nonstandard{f}(x)\nonstandard{g}(a)-\nonstandard{f}(a)\nonstandard{g}(a)\right)\\  
+        &= \nonstandard{f}(x) \cdot \frac{1}{\lambda}\left(\nonstandard{g}(x)-\nonstandard{g}(a)\right) + \nonstandard{g}(a) \cdot \frac{1}{\lambda} \left(\nonstandard{f}(x) - \nonstandard{f}(a)\right)\\ 
+        &\approx \nonstandard{f}(a) \cdot \frac{1}{\lambda}\left(\nonstandard{g}(x)-\nonstandard{g}(a)\right) + \nonstandard{g}(a) \cdot \frac{1}{\lambda} \left(\nonstandard{f}(x) - \nonstandard{f}(a)\right)\\ 
+        &= \nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a).
+    \end{align*}
+
+    La \eqref{eq:djcjnnnnnn} è invece una applicazione della \eqref{eq:eqdddd}: \begin{align*}
+        \vec{ax}\,(fg) &= \st\left((a,x)\,fg\right)\\ 
+        &= \st\left(\nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a)\right)\\ 
+        &=  \st\left(\nonstandard{f}(a)\right) \cdot \vec{ax}\,g + \st\left(\nonstandard{g}(a)\right) \cdot \vec{ax}\,f\\ 
+        &= f(a_0) \cdot \vec{ax}\,g + g(a_0) \cdot \vec{ax}\,f
+    \end{align*}dove l'ultima uguaglianza è conseguenza della continuità di $ f $ e $ g $.\qed
+}
+%TODO osservare da qualche parte che f(x) = *f(x) per ogni x in X.
+\osservazione{
+    \lipsum[2] %TODO aggiungere identificazione tra T_{a}M  e lo spazio tangente "standard" (Remark 2.12)
+}
+\subsection{Campi di prevettori}
+
+\definizione{%
+    Si definisce un \emph{campo di prevettori} su $ \nonstandard{M} $ una mappa \emph{interna} $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ tale che $ \left(a, F(a)\right) \in P_{a}  $ per ogni $ a \in \hhalo{M} $.
+} 
+\osservazione{
+    La definizione precedente è equivalente a richiedere che \begin{equation*}
+        F(a)-a \prec \lambda\qquad \forall\, a \in \hhalo{M}.
+    \end{equation*}
+}
+\definizione{
+    Se $ F,G: \nonstandard{M} \longrightarrow \nonstandard{M} $ sono due campi di prevettori, $ F $ e $ G $ si dicono \emph{equivalenti} (e si scrive $ F\equiv G $) se \begin{equation*}
+        \left(a,F(a)\right) \equiv \left(a,G(a)\right)\qquad \forall\,a \in \hhalo{M}
+    \end{equation*}
+}
+\definizione{
+    Un campo di prevettori \emph{locale} è una mappa interna \begin{equation*}
+        F: \nonstandard{U} \longrightarrow \nonstandard{V}
+    \end{equation*}che soddisfi la condizione di cui sopra, per $ U \subseteq V \subseteq M $ aperti.
+}

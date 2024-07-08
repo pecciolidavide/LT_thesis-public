@@ -38,6 +38,7 @@
 \usepackage{bm} %bold
 \usepackage[fulladjust]{marginnote} %to use marginnote for date notes
 \usepackage{arrayjobx}%array
+\usepackage{mathtools}
 %%%%%%%%%%%%%
 
 
@@ -114,10 +115,15 @@
 \DeclareMathOperator{\T}{T}
 \DeclareMathOperator{\var}{Var}
 \DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\st}{st}
 \DeclareMathOperator{\mon}{Mon}
+\newcommand{\trasposta}[1]{\prescript{\text{T}}{}{#1}}
+\newcommand{\nonstandard}[1]{\prescript{*}{}{#1}}
+\newcommand{\halo}{\mathfrak{h}}
+\newcommand{\hhalo}[1]{\prescript{\halo}{}{#1}}
 \newcommand{\sequence}[1]{\langle #1\rangle}
 \newcommand{\R}{\mathds{R}}
-\newcommand{\starR}{\null^{*}\R}
+\newcommand{\starR}{\nonstandard{\R}}
 \newcommand{\borel}{\mathscr{B}}
 \newcommand{\lebesgue}[1]{\mathscr{L}\left(#1\right)}
 \newcommand{\media}{\mathds{E}}
@@ -136,6 +142,7 @@
 \newcommand{\cardin}[1]{\left\vert #1\right\vert}
 \newcommand{\parti}[1]{\wp (#1)}
 \newcommand{\diff}[1]{\operatorname{d}_{#1}}
+\renewcommand{\vec}[1]{\overrightarrow{\vphantom{i}#1}}
 
 %tramite i prossimi due comandi posso decidere come scrivere i logaritmi naturali in tutti i documenti: ho infatti eliminato qualsiasi differenza tra "ln" e "log": se si vuole qualcosa di diverso bisogna inserire manualmente il tutto
 \let\ln\relax
@@ -334,11 +341,11 @@
 			\fi
 		\else%
 		% #1 nonempty
-		\paragraph{#1. ({\thechapter.\thetotale})} #3
+		\paragraph{#1 {\thechapter.\thetotale}.} #3
 		\ifx&#2&%
 			% #2 is empty
 			\else%
-			\riferimento{\hyperref[totale#4]{#1. ({\arabic{frammentoA#4}.\arabic{frammentoB#4}})}}{#2}% #2 is nonempty
+			\riferimento{\hyperref[totale#4]{#1 {\arabic{frammentoA#4}.\arabic{frammentoB#4}}.}}{#2}% #2 is nonempty
 		\fi	
 	\fi
 }
@@ -347,8 +354,14 @@
 \setcounter{appendixever}{0}
 \newcommand{\dimframmento}[2]{\stepcounter{numerodidimostrazioni}
 	\ifthenelse{\theappendixever = 0}{%
-	\paragraph{\hyperref[totale#1]{\textit{Dimostrazione di (\arabic{frammentoA#1}.\arabic{frammentoB#1})}}} #2}{%
-	\paragraph{\hyperref[totale#1]{\textit{Dimostrazione di (\Alph{frammentoA#1}.\arabic{frammentoB#1})}}} #2
+		% \paragraph{\hyperref[totale#1]{\textit{Dimostrazione di \arabic{frammentoA#1}.\arabic{frammentoB#1}.}}} #2
+  		\ifthenelse{\thetotale = \arabic{frammentoB#1}}{%
+		  \paragraph{\hyperref[totale#1]{\textit{Dimostrazione.}}} #2
+		}{%
+			\paragraph{\hyperref[totale#1]{\textit{Dimostrazione di \arabic{frammentoA#1}.\arabic{frammentoB#1}.}}} #2
+		}
+	}{%
+	\paragraph{\hyperref[totale#1]{\textit{Dimostrazione di \Alph{frammentoA#1}.\arabic{frammentoB#1}.}}} #2
 	}
 }
 \newcommand{\solframmento}[2]{
@@ -364,7 +377,7 @@
 	\paragrafo{#1}{{\itshape#2}}{#3}{#4}
 }
 \newcommand{\framref}[1]{%
-	\hyperref[totale#1]{(\arabic{frammentoA#1}.\arabic{frammentoB#1})}%
+	\hyperref[totale#1]{\arabic{frammentoA#1}.\arabic{frammentoB#1}}%
 }
 %%%%%%%%%%%%%%%%%%%
 
@@ -452,31 +465,26 @@
 %%%%%%
 
 %%%% TEOREMI E DEFINIZIONI
-
+% text width
 \newcounter{teorema}
 \newcommand{\teorema}[3][]{
-	\rteorema[#1]{#2}{#3}{}
-}
-\newcommand{\rteorema}[4][]{
-	\stepcounter{teorema}
-		\newcounter{thm#2}\addtocounter{thm#2}{\theteorema}
-		\begin{tcolorbox}[parbox=false, colback=white,colframe=white!20!black,title=Teorema \Roman{teorema}. \label{thm:#2}, sharpish corners]
-		%\ifthenelse{\isundefined{#1}}{\subsection*{#1}{\itshape#3}}{{\itshape#3}}
-		\ifx&#1&%
-		#3% #1 is empty
+	\begin{tcolorbox}[parbox=true, colback=white,colframe=white!20!black, sharpish corners, leftrule=1em, bottomrule=0pt, rightrule=0pt, bottom=0mm, oversize]
+	\ifx&#1&%
+  		\paragrafo{Teorema}{%
+			#3
+		}{#2}{}
+		% #1 is empty
 		\else%
-		\subsection*{#1}#3% #1 is nonempty
-		\fi
-		%\subsection*{#1}{\itshape#3}
-		\end{tcolorbox}
-		\ifx&#4&%
-		\else%
-		\riferimento{\hyperref[thm:#2]{Teorema \Roman{thm#2}}}{#4}% #4 is nonempty
-		\fi
-		
+		\paragrafo{#1}{%
+			#3
+		}{#2}{}% #1 is nonempty
+	\fi
+	\end{tcolorbox}
 }
-\newcommand{\dimostrazione}[2]{\stepcounter{numerodidimostrazioni}\paragraph{\textit{\hyperref[thm:#1]{Dimostrazione di \Roman{thm#1}.}}} #2}
-\newcommand{\teoref}[1]{\hyperref[thm:#1]{\Roman{thm#1}}}
+\newcommand{\dimostrazione}[2]{
+	\dimframmento{#1}{#2}
+}
+\newcommand{\teoref}[1]{\framref{#1}}
 \newcommand{\definizione}[1]{
 	% \paragraph{Definizione #1} {\itshape#2}
 	\definizionegenerale{Definizione}{#1}{}{}

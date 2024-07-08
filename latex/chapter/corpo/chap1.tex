@@ -4,44 +4,48 @@ Si parla di modelli non standard dei numeri reali quando si considerano campi re
 
 In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali non standard, e se ne vedranno le principali proprietà.
 
-\section{Esistenza di un campo non archimedeo}
-
 \definizione{
-    Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento $ \parentesi{n\text{-volte}}{1+\dots+1} \eqqcolon n1 $ sia $ x<n1 $
+    Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento \[\parentesi{n\text{-volte}}{1+\dots+1} \eqqcolon n1\]sia $ x<n1 $
 }
-\teorema{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
-    Per ogni campo ordinato archimedeo esiste un campo ordinato non archimedeo elementarmente equivalente al primo.    
-% Ogni campo ordinato è elementarmente equivalente ad un campo ordinato non Archimedeo. 
-}
-\dimostrazione{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
-    Si estenda il linguaggio dei campi: \[
-        \mathcal{L}_{\text{Fld}}=\{+,-, \cdot ,0,1,\le\} \subseteq \mathcal{L}'=\mathcal{L}_{\text{Fld}}\cup\{c\}
-    \]dove $ c $ è una costante, e si consideri una $\mathcal{L}_{\text{Fld}}$-struttura $ \mathcal{K}$. 
 
-    Sia ora $ T $ una $ \mathcal{L}'$-teoria:\[
-        T=\operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{n}: 1\le n \in \N \}
-    \]dove $ \tau_{n}  $ è l'enunciato $ n \cdot 1 \le c $.
+% % \section{Esistenza di un campo non archimedeo}
 
-    $ T $ è finitamente soddisfacibile. Infatti, sia $ 1\le n \in \N $. Allora la $ \mathcal{L}' $-espasione $ \mathcal{K}_{n}  $ tale che $ c^{\mathcal{K}_{n} } = n \cdot 1 $ è tale che \[
-        \mathcal{K}_n \vDash \operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{i}: 1\le i \le n, i \in \N \}.
-    \]
+% \definizione{
+%     Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento \[\parentesi{n\text{-volte}}{1+\dots+1} \eqqcolon n1\]sia $ x<n1 $
+% }
+% \teorema{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
+%     Per ogni campo ordinato archimedeo esiste un campo ordinato non archimedeo elementarmente equivalente al primo.    
+% % Ogni campo ordinato è elementarmente equivalente ad un campo ordinato non Archimedeo. 
+% }
+% \dimostrazione{ijpijoijodijoijoijodijcoijoijoijoijoijoij}{
+%     Si estenda il linguaggio dei campi: \[
+%         \mathcal{L}_{\text{Fld}}=\{+,-, \cdot ,0,1,\le\} \subseteq \mathcal{L}'=\mathcal{L}_{\text{Fld}}\cup\{c\}
+%     \]dove $ c $ è una costante, e si consideri una $\mathcal{L}_{\text{Fld}}$-struttura $ \mathcal{K}$. 
+
+%     Sia ora $ T $ una $ \mathcal{L}'$-teoria:\[
+%         T=\operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{n}: 1\le n \in \N \}
+%     \]dove $ \tau_{n}  $ è l'enunciato $ n \cdot 1 \le c $.
+
+%     $ T $ è finitamente soddisfacibile. Infatti, sia $ 1\le n \in \N $. Allora la $ \mathcal{L}' $-espasione $ \mathcal{K}_{n}  $ tale che $ c^{\mathcal{K}_{n} } = n \cdot 1 $ è tale che \[
+%         \mathcal{K}_n \vDash \operatorname{Th}_{{\text{Fld}}}(\mathcal{K})\cup\{\tau_{i}: 1\le i \le n, i \in \N \}.
+%     \]
     
-    Per il teorema di compattezza esiste $ \mathcal{F}' $, una $ \mathcal{L}' $-struttura tale che \[
-        \mathcal{F}'\vDash T'.
-    \]Se $ \mathcal{F} $ è la $ \mathcal{L}_{\text{Fld}} $-ridotta di $ \mathcal{F}' $, \[
-        \mathcal{F}=\left(A,+,-, \cdot ,0,1,\le\right)
-    \]allora in $ \mathcal{F} $ l'elemento $ c^{\mathcal{F}'} \in A $ è tale che $ n \cdot 1\le  c^{\mathcal{F}'} $ per ogni $ n\ge 1 $. 
+%     Per il teorema di compattezza esiste $ \mathcal{F}' $, una $ \mathcal{L}' $-struttura tale che \[
+%         \mathcal{F}'\vDash T'.
+%     \]Se $ \mathcal{F} $ è la $ \mathcal{L}_{\text{Fld}} $-ridotta di $ \mathcal{F}' $, \[
+%         \mathcal{F}=\left(A,+,-, \cdot ,0,1,\le\right)
+%     \]allora in $ \mathcal{F} $ l'elemento $ c^{\mathcal{F}'} \in A $ è tale che $ n \cdot 1\le  c^{\mathcal{F}'} $ per ogni $ n\ge 1 $. 
     
-    $\implies$ $ \mathcal{F} $ non è Archimedeo e $ \mathcal{F} $ è elementarmente equivalente a $ \mathcal{K} $.\qed
-}
+%     $\implies$ $ \mathcal{F} $ non è Archimedeo e $ \mathcal{F} $ è elementarmente equivalente a $ \mathcal{K} $.\qed
+% }
 
-\osservazione{
-    Il teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
-}
+% \osservazione{
+%     Il teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
+% }
 
 \section{Costruzione di $\starR$}
 
-Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce come ultraprodotto di $ \mathcal{L}$-strutture.
+L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \mathcal{L}$-strutture.
 
 \subsection{Moltiplicazione di $ \mathcal{L} $-strutture}
 
@@ -307,19 +311,21 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
 
     Si definisce il \emph{campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard} $ \starR $ (anche \emph{campo degli iperreali}) come l'insieme della $ \mathcal{L} $-struttura \[
         \null^{*}\mathcal{R} \coloneqq \mathcal{R}^{ \N}/\mathcal{U}
-    \]dove $ \mathcal{U} $ è un ultrafiltro libero di $ \N $.
+    \]dove $ \mathcal{U} $ è un ultrafiltro libero di $ \N $, ovvero \[
+        \starR \coloneqq \R^{\N}/ \mathcal{U}.
+    \]
 }{}{}
 \osservazione{
-    Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \{a_{i} \}_{i \in \N} $. Si continuerà ad adottare la scrittura $ \{a_{i} \} $ per le successioni, sottintendendo che l'indice vari su $ \N $.
+    Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \sequence{a_{i}}_{i \in \N} $. Si continuerà ad adottare la scrittura $ \sequence{a_{i}} $ per le successioni, sottintendendo che l'indice vari su $ \N $.
 }
 \paragrafo{Proprietà}{%
     Segue dal corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
     \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
-    a &\longmapsto \left[\{a\}\right]
+    a &\longmapsto \left[\sequence{a}\right]
     \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
         \item $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti;
         \item questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'esempio 3.21 di \cite{andretta_elements_2022}};
-        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \{a\} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \null^{*}a $.
+        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \null^{*}a $.
     \end{itemize}
 }{}{}
 \osservazione{
@@ -329,15 +335,15 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
     \end{align*}
 }
 \paragrafo{Funzioni e relazioni su $ \starR $}{%
-    Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\left[\{r_{i} \}\right]$, $s=\left[\{s_{i} \}\right]$\begin{align*}
-        r+s &= \left[\{r_{i}+s_{i}  \}\right];\\
-        r \cdot s &= \left[\{r_{i} \cdot s_{i}  \}\right];\\
+    Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\left[\sequence{r_{i}}\right]$, $s=\left[\sequence{s_{i}}\right]$\begin{align*}
+        r+s &= \left[\sequence{r_{i}+s_{i}}\right];\\
+        r \cdot s &= \left[\sequence{r_{i} \cdot s_{i}}\right];\\
         r\le s\quad &\text{sse}\quad \{i \in \N: r_{i}<s_{i}  \} \in \mathcal{U}.
     \end{align*}
 }{}{}
 \paragrafo{Valore assoluto}{%
-    Si definisce, $ \forall\, r \in \starR $, $ r =\left[\{r_{i} \}\right] $ \[
-        |r| \coloneqq \left[\{|r_{i}| \}\right]
+    Si definisce, $ \forall\, r \in \starR $, $ r =\left[\sequence{r_{i}}\right] $ \[
+        |r| \coloneqq \left[\sequence{|r_{i}|}\right]
     \]Notiamo che questo valore assoluto agisce come ci si aspetta. \begin{itemize}
         \item Se $ r\ge \null^{*}0 $
         
@@ -352,7 +358,7 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
             \mathcal{U}\ni B= \{i \in \N: -r_{i} = |r_{i}|  \}
         \] 
 
-        $\implies$ $ |r| = -r = \left[\{-r_{i} \}\right]$.
+        $\implies$ $ |r| = -r = \left[\sequence{-r_{i}}\right]$.
     \end{itemize}
 }{}{}
 \proposizione{djkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj}{
@@ -364,11 +370,11 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
     \]dove, riprendendo la notazione precedente, \[
         n1 = \parentesi{n\text{ volte}}{1+1+\dots+1}.
     \]Dunque si ha che \[
-        n1 = \left[\{n\}\right]
+        n1 = \left[\sequence{n}\right]
     \]
 
-    Sia $ \{a_{i} \}_{i \in \N} $ la successione tale che $a_{i} = i$ e sia $ M \coloneqq \left[\{a_{i} \}\right] $. Allora \[
-        M=\left[\{0,1,2,3,\dots\}\right]
+    Sia $ \sequence{a_{i}}_{i \in \N} $ la successione tale che $a_{i} = i$ e sia $ M \coloneqq \left[\sequence{a_{i}}\right] $. Allora \[
+        M=\left[\sequence{0,1,2,3,\dots}\right]
     \]
 
     Fissato ora $ n \in \N $, mostriamo che $ n1 \le M $ $ \iff $ $ \displaystyle A\coloneqq\{i \in \N: n \le   i\} \in \mathcal{U}$. 
@@ -379,6 +385,3 @@ Dopo aver dimostrato l'esistenza di un tale campo $ \starR $, lo si costruisce c
     
     $\implies$ $ A \in \mathcal{U}$ poiché si è scelto $ \mathcal{U} $ ultrafiltro libero.\qed
 }
-%TODO sistemare la notazione per i vettori in tutto il capitolo
-%TODO scrivere una mail e LMR.
-\section{Proprietà di $ \starR $}

@@ -644,8 +644,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap1.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap1.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/reali_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/reali_nonstandard.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
@@ -720,10 +720,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap2.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap2.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap3.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/chap3.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/manifolds.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Triennale Matematica/4. tesi triennale/latex/chapter/corpo/manifolds.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm

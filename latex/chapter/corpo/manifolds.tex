@@ -1,0 +1,532 @@
+\chapter{Varietà differenziabili}\stepcounter{capitoloeccolo}
+
+\section{Prevettori}
+
+\definizione{
+    Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
+        \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
+        \item $ r \prec\prec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
+    \end{itemize}
+}
+\osservazione{
+    Questa definizione si estende naturalmente ad elementi di $ \starR^{n} $. In particolare, se $ v \in \starR^{n} $ e $ s \in \starR $, si adotta la seguente notazione: \begin{itemize}
+        \item $ v \prec s $ se $ \nonstandard{\norm{v}} \prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+        \item $ v \prec\prec s $ se $ \nonstandard{\norm{v}} \prec\prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+    \end{itemize}
+
+    Se $ v, w \in \starR^{n} $, si scriverà $ v\approx w $ se $ v-w \prec\prec 1 $.
+
+    In particolare, se $ v = (v_1,\dots,v_{n} ) \in \starR^{n} $, si ha che $ v \prec s $ oppure $ v \prec \prec s $ se e solo se ogni $ v_{i}  $ soddisfa $ v_{i} \prec s  $ oppure $ v_{i} \prec\prec s $. 
+}
+\osservazione{
+    Poiché su $ \R^{n} $ tutte le norme sono equivalenti, la definizione precedente è ben posta.
+} %% Osservazione: in uno spazio vettoriale finito-dimensionale tutte le norme sono equivalenti
+\definizione{
+    Sia $ X $ uno spazio topologico e sia $\nonstandard{X} $ la sua estensione non standard.\begin{itemize}
+        \item $ \forall\, p \in X $ si definisce l'\emph{alone} di $ p $: \[
+            \halo(p) = \bigcap_{U \in I(p) }\hspace{-.5em}\nonstandard{U} 
+        \]dove $ I(p) $ è l'insieme di tutti gli intorni aperti di $ p $.
+        \item I punti di $ X $ si chiamano \emph{standard}, e un punto che fa parte di $ \halo(p) $ per qualche $ p \in X$ è detto \emph{quasi-standard}: \begin{equation*}
+            \hhalo{X} \coloneqq \{a \in \halo(p),\text{ per qualche }p \in X\}.
+        \end{equation*}
+        \item Se $ a $ è un punto quasi-standard allora la \emph{parte standard} di $ a $, denotata con $ \st(a)$, è l'unico $ p \in X$ tale che \[
+            a \in \halo(p).
+        \]
+        \item Per un generico $ A \subseteq X $ si definisce l'\emph{alone} di $ A $ come \[
+            \hhalo{A} = \bigcup_{a \in A} \halo(a).
+        \]
+    \end{itemize} 
+}
+\proprieta{
+    Per uno spazio topologico $ X $ (con estensione non standard $ \nonstandard{X} $) valgono le seguenti proprietà. \begin{enumerate}
+        \item Se $ A \subseteq X $ è aperto in $ X $, allora $ \hhalo{A} \subseteq \nonstandard{A} $. 
+        \item Se $ A \subseteq X $ è compatto in $ X $, allora $ \nonstandard{A} \subseteq \hhalo{A} $
+        \item Se $ X $ è compatto allora $\hhalo{X} = \nonstandard{X}$
+    \end{enumerate}
+}
+\lemma{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}{
+    Per un aperto $ W \subseteq  \R^{n} $, sia $ f: W \longrightarrow \R $ continua, e sia \[
+        \nonstandard{f}: \nonstandard{W} \longrightarrow \nonstandard{\R}
+    \]la sua estensione non standard. Allora $ \nonstandard{f}(a)$ è finita per ogni $ a \in \hhalo{W} $.
+}
+\dimostrazionelem{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}{
+    Sia $ a \in \null^{\halo}W $, e sia $ U $ un intorno di $ \st(a) $ tale che $ \overline{U} \subseteq W $ e $ \overline{U} $ sia compatto. 
+
+    Dunque $ \exists\, C \in \R $ tale che $ \forall\, x \in U $: $ |f(x)| \le C $.
+        
+    Per il principio di transfer, $\forall\, x \in \nonstandard{U}$: $ |\nonstandard{f}(x)| \le C$. In particolare, $ a \in \nonstandard{U} $, e dunque \[
+        |\nonstandard{f}(a)| \le C.\qedd
+    \]
+}
+\paragrafo{Osservazione}{%
+    Dato un aperto $ U \subseteq \R^{n} $ ed una funzione $ f: U \longrightarrow \R $, le derivate parziali di $ \nonstandard{f} $, quando esistono, sono definite come l'estensione non standard delle derivate parziali di $ f $: \[
+        \nonstandard{\left(\dpd{f}{x_{i} }\right)}: \nonstandard{U} \longrightarrow \nonstandard{\R}.
+    \]\begin{itemize}
+        \item Se $ f \in C^{1}(U) $, allora per ogni $ a \in \nonstandard{U} $ esiste il vettore $ D_{a} $ di derivate parziali nel punto $ a $.
+        \item Se $ f \in C^{2}(U) $, allora per ogni $ a \in \nonstandard{U} $ esiste la matrice Hessiana $ H_{a}$ di derivate seconde nel punto $ a $.
+    \end{itemize}
+}{}{}
+\paragrafo{Proprietà}{%
+    Sia $ U \subseteq \R^{n} $ aperto e sia $ f : U \longrightarrow \R $. Siano $ a,b \in \hhalo{U} $ con $ a \approx b $: allora l'intervallo $ [a,b] \subseteq \hhalo{U} \subseteq \nonstandard{U}. $
+    
+    \begin{enumerate}
+        \item  Se $ f \in C^{1} $, allora per il transfer del teorema del valor medio, esiste $ x \in [a,b] $ tale che \begin{equation}
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{x} (b-a).\label{eq:1}
+    \end{equation}Poiché le derivate parziali sono continue, si ha che\footnote{
+        %TODO argomentare
+    } \[
+            \forall\, y \approx a:\qquad D_{x}-D_{y} \prec\prec 1 
+        \]dunque, manipolando \eqref{eq:1}: \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{y}(b-a) + (D_{x}-D_{y}  ) (b-a) 
+        \] 
+        
+        $\implies$ $ \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec\prec \norm{b-a} $.
+
+        Se inoltre le derivate parziali sono Lipschitziane ed esiste $ \beta \prec\prec 1 $\footnote{cioè $ \beta $ infinitesimo} tale che \[
+            \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
+        \]allora vale la condizione più forte \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec \beta\norm{b-a}.
+        \]
+        \item Se $ f \in C^{2} $, allora per il transfer del teorema di approssimazione di Taylor si ha \[
+            \nonstandard{f}(b)-\nonstandard{f}(a) = D_{a} (b-a) + \frac{1}{2} \null^{t}\!(b-a) H_{x} (b-a) 
+        \]per qualche $ x \in [a,b] $.
+        \item La proprietà 1 si può applicare a ciascuna delle componenti di $ \varphi $: \begin{align*}
+            \varphi: U & \longrightarrow \R^{n}\\
+            x &\longmapsto \left(\varphi_{1}(x), \dots, \varphi_{n}(x)  \right)
+        \end{align*}ottenendo così una condizione sulla matrice Jacobiana $ J_{a}  $ (composta dalle $ n $ righe $ D_{a}^{i}  $ corrispondenti alle $ \varphi_{i}  $): \[
+            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a)-J_{y}(b-a)\prec\prec \norm{b-a}\qquad\forall y \approx a 
+        \]
+
+        Se inoltre tutte le derivate parziali delle $ \varphi_{i}  $ sono Lipschitziane ed esiste $ \beta \prec\prec 1 $ tale che \[
+            \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
+        \]allora vale la condizione più forte \[
+            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a) - J_{y}(b-a) \prec \beta\norm{b-a}.
+        \]
+    \end{enumerate}
+}{dckjndjjjjjjdjscacchina}{}
+\paragrafo{Notazione}{%
+    Si fissano ora delle convenzioni valide per tutto il capitolo. \begin{itemize}
+        \item Sia $ M $ la varietà differenziabile di dimensione $ n $ di interesse, definita come nella sezione \ref{sec:geodiff}. 
+        \item D'ora in avanti sia $ \lambda \in \starR $ un infinitesimo positivo \emph{fissato}.
+    \end{itemize}
+}{}{}
+
+
+\definizione{
+    Per $ a \in \hhalo{M} $, un \emph{prevettore} in $ a $ è una coppia $ (a,x) $ con $ x \in \hhalo{M} $ tale che per ogni funzione differenziabile $ f: M \longrightarrow \R $, \[
+        \nonstandard{f}(x)-\nonstandard{f}(a)\prec \lambda
+    \]Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $. %TODO capire se "prevettore in a" è il nome che preferisco
+}
+\proposizione{dkjnckjnsckjnsjdjckjnsjcjdkjn}{
+    Sia $ a \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
+        \item $ (a,x) $ è un prevettore in $ a $. 
+        \item Se $ W $ è un intorno coordinato di $ \st(a) $ la cui immagine è $ U \subseteq \R^{n} $, e $ \hat{a}, \hat{x} \in \nonstandard{U} $ sono le coordinate di $ a $ e $ x $ rispettivamente: \[
+            \hat{x}-\hat{a}\prec \lambda.
+        \]
+    \end{enumerate}
+}
+\dimostrazioneprop{dkjnckjnsckjnsjdjckjnsjcjdkjn}{
+    $\boxed{1.\implies 2.}$\hspace{1em} Siano $ x_1,\dots,x_{n} $ le funzioni coordinate di $ W $: poiché ciascuna $ x_{i} $ è differenziabile, per ipotesi \[
+        \nonstandard{x_{i} }(x)-\nonstandard{x_{i} }(a)\prec \lambda  
+    \]e dunque $ \hat{x}-\hat{a}\prec \lambda $.
+
+    $\boxed{2.\implies 1.}$\hspace{1em} Sia $ f: M \longrightarrow \R $ una generica funzione differenziabile. Allora esiste $ c \in [\hat{a}, \hat{x}] $ tale che\[
+        f(x)-f(a) = D_{c} (\hat{x}-\hat{a}) 
+    \]dove le componenti di $ D_{c}$ sono finite per il lemma \framref{kjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj}. Si può dunque concludere che  \[f(x)-f(a)\prec\norm{\hat{x}-\hat{a}}\prec \lambda \qedd\]
+}
+\definizione{
+    Si definisce una relazione di equivalenza $ \equiv $ in $ P_{a}M  $ come segue: \[
+        (a,x) \equiv (a,y) \qquad \text{se e solo se}\qquad \nonstandard{f}(y)-\nonstandard{f}(x)\prec \prec \lambda
+    \]per ogni funzione differenziabile $ f: M \longrightarrow \R $.
+
+    L'insieme delle classi di equivalenza $ P_{a}M/\equiv  $ si denoterà con $ T_{a}(M)  $.
+}
+\notazione{
+    Gli elementi di $ T_{a}M  $, ovvero le classi di equivalenza $ [(a,x)] $ si denoteranno con $ \vec{ax} $.
+}
+\proposizione{dinckjndjcjdkckjncskjdkckjnk}{
+    Sia $ a \in \hhalo{M} $, e siano $ x,y \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
+        \item $ (a,x) \equiv (a,y) $;
+        \item Se $ W $ è un intorno coordinato di $ \st(a) $ la cui immagine è $ U \subseteq \R^{n} $, e $ \hat{x}, \hat{y} \in \nonstandard{U} $ sono le coordinate di $ x $ e $ y $ rispettivamente: \[
+            \hat{y}-\hat{x}\prec\prec \lambda.
+        \]
+    \end{enumerate}
+}
+\proposizione{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
+    $ T_{a}M  $ è uno spazio vettoriale \emph{reale} $ n $-dimensionale indipendentemente dalla scelta delle coordinate.
+}
+\dimostrazioneprop{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
+    \lipsum[1]\qed %TODO da dimostrare
+}
+\osservazione{
+    Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
+
+    Di conseguenza, quando $ a \approx b $ è possibile sommare senza ambiguità due vettori $ \vec{ax} \in T_{a}M  $ e $ \vec{by} \in T_{b}M  $.
+}
+\definizione{
+    Sia $ a \in \hhalo{M} $. Un prevettore $ (a,x) \in P_{a}M  $ agisce su una funzione differenziabile $ f: M \longrightarrow \R $ come segue: \[
+        (a,x)\,f \coloneqq \frac{1}{\lambda}\left(\nonstandard{f}(x)-\nonstandard{f}(a)\right) \in \starR
+    \]che è finito per definizione di prevettore.
+}
+\definizione{
+    Sia $ a \in \hhalo{M} $. Un vettore $ \vec{ax} \in T_{a}M  $ agisce come derivazione su una funzione differenziabile $ f: M \longrightarrow \R $ come segue: \[
+        \vec{ax} \,f = \st\left((a,x)\,f\right) \in \R.
+    \] 
+}
+\osservazione{
+    La definizione di derivazione è ben definita per la definizione della classe di equivalenza $ \equiv $ su $ P_{a}M  $.
+}
+\proposizione{dkjncjdjckjnskjnckjdjckjnkjnkjnkjn}{
+    L'azione di un prevettore rispetta la regola di Leibniz fino agli infinitesimi, ovvero, se $ a \in \hhalo{M} $, $ (a,x) \in P_{a}M  $ e $ f,g: M \longrightarrow \R $ sono funzioni differenziabili, allora \begin{equation}
+        (a,x)\,(fg) \approx \nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a).\label{eq:eqdddd}
+    \end{equation}
+
+    Inoltre, se $ a_0 = \st(a) $, si ha \begin{equation}
+        \vec{ax}\,(fg) = f(a_0) \cdot \vec{ax}\,g + \vec{ax}\,f \cdot g(a_0).\label{eq:djcjnnnnnn}
+    \end{equation}
+}
+\dimframmento{dkjncjdjckjnskjnckjdjckjnkjnkjnkjn}{La \eqref{eq:eqdddd} si dimostra come segue:
+    \begin{align*}
+        (a,x)\,(fg) &= \frac{1}{\lambda}\left(\nonstandard{f}(x)\nonstandard{g}(x)-\nonstandard{f}(a)\nonstandard{g}(a)\right)\\ 
+        &= \frac{1}{\lambda}\left(\nonstandard{f}(x)\nonstandard{g}(x)-\nonstandard{f}(x)\nonstandard{g}(a)+\nonstandard{f}(x)\nonstandard{g}(a)-\nonstandard{f}(a)\nonstandard{g}(a)\right)\\  
+        &= \nonstandard{f}(x) \cdot \frac{1}{\lambda}\left(\nonstandard{g}(x)-\nonstandard{g}(a)\right) + \nonstandard{g}(a) \cdot \frac{1}{\lambda} \left(\nonstandard{f}(x) - \nonstandard{f}(a)\right)\\ 
+        &\approx \nonstandard{f}(a) \cdot \frac{1}{\lambda}\left(\nonstandard{g}(x)-\nonstandard{g}(a)\right) + \nonstandard{g}(a) \cdot \frac{1}{\lambda} \left(\nonstandard{f}(x) - \nonstandard{f}(a)\right)\\ 
+        &= \nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a).
+    \end{align*}
+
+    La \eqref{eq:djcjnnnnnn} è invece una applicazione della \eqref{eq:eqdddd}: \begin{align*}
+        \vec{ax}\,(fg) &= \st\left((a,x)\,fg\right)\\ 
+        &= \st\left(\nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a)\right)\\ 
+        &=  \st\left(\nonstandard{f}(a)\right) \cdot \vec{ax}\,g + \st\left(\nonstandard{g}(a)\right) \cdot \vec{ax}\,f\\ 
+        &= f(a_0) \cdot \vec{ax}\,g + g(a_0) \cdot \vec{ax}\,f
+    \end{align*}dove l'ultima uguaglianza è conseguenza della continuità di $ f $ e $ g $.\qed
+}
+%TODO osservare da qualche parte che f(x) = *f(x) per ogni x in X.
+\osservazione{
+    \lipsum[2] %TODO aggiungere identificazione tra T_{a}M  e lo spazio tangente "standard" (Remark 2.12)
+}
+\section{Campi di prevettori}
+
+\definizione{%
+    Si definisce un \emph{campo di prevettori} su $ \nonstandard{M} $ una mappa \emph{interna} $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ tale che $ \left(a, F(a)\right) \in P_{a}M  $ per ogni $ a \in \hhalo{M} $.
+} 
+\osservazione{
+    La definizione precedente è equivalente a richiedere che \begin{equation*}
+        F(a)-a \prec \lambda\qquad \forall\, a \in \hhalo{M}.
+    \end{equation*}
+}
+\definizione{
+    Se $ F,G: \nonstandard{M} \longrightarrow \nonstandard{M} $ sono due campi di prevettori, $ F $ e $ G $ si dicono \emph{equivalenti} (e si scrive $ F\equiv G $) se \begin{equation*}
+        \left(a,F(a)\right) \equiv \left(a,G(a)\right)\qquad \forall\,a \in \hhalo{M}
+    \end{equation*}
+}
+\definizione{
+    Un campo di prevettori \emph{locale} è una mappa interna \begin{equation*}
+        F: \nonstandard{U} \longrightarrow \nonstandard{V}
+    \end{equation*}che soddisfi la condizione di cui sopra, per $ U \subseteq V \subseteq M $ aperti.
+}
+\osservazione{
+    Segue naturalmente che un campo di prevettori definito su tutto $ \nonstandard{M} $ viene detto \emph{campo di prevettori globale}. 
+}
+\definizionegenerale{Definizione}{
+    Un campo locale di prevettori $F: \nonstandard{U} \longrightarrow \nonstandard{V}$ \emph{realizza} un campo vettoriale classico $ X $ se per ogni funzione differenziabile \begin{equation*}
+        h : U \longrightarrow \R
+    \end{equation*}si ha che \begin{equation*}
+        X\,h(a) = \vec{a\, F(a)}\,h,\qquad \forall\, a \in U.
+    \end{equation*} 
+}{kcjndkjndjdjjdjjjjjjjjjjj}{}%Un vettore tangente, come abbiamo visto, associa a ciascuna funzione f : M to R un numero: il valore della corrispondente derivata direzionale di f in quel punto. Un campo vettoriale X,  pertanto, associa alla funzione f una nuova funzione su M, che denotiamo con X(f).
+\paragrafo{Proposizione}{%
+    Sia $ p \in M $, $ V $ un intorno coordinato di $ p $. Per ogni campo vettoriale \begin{equation*}
+        X: V \longrightarrow \R^{n}
+    \end{equation*}esiste un campo locale di prevettori che \emph{realizza} $ X $, definito in un intorno di $ p $.
+}{dkjnckjdjdjdjjjjjdjjjdicoij}{}
+\dimframmento{dkjnckjdjdjdjjjjjdjjjdicoij}{
+    Sia $ V' \subseteq \R^{n}$ l'immagine attraverso le coordinate di $ V $, e sia \begin{equation*}
+        X':V' \longrightarrow \R^{n}
+    \end{equation*}la rappresentazione in coordinate di $ X $. 
+    
+    Sia $ U' \subseteq V' $ un intorno dell'immagine di $ p $ tale che: \begin{itemize}
+        \item $ \overline{U'} $ è compatto;
+        \item $ \overline{U'} \subseteq V'$.
+    \end{itemize}Se con $ X' $ si denota anche l'estensione non standard del campo vettoriale, si ha che per ogni $ a \in \nonstandard{U'} $, $ a + \lambda \cdot X'(a) \in V'$. Infatti, $ \nonstandard{\left(\overline{U'}\right)} = \hhalo{\left(\overline{U'}\right)}$ poiché $ \overline{U'} $ è compatto per ipotesi, e dunque per ogni $ b \in \nonstandard{\left(\overline{U'}\right)} $, $ X'(b) $ è finito. 
+    
+    Quindi, per ogni $ a \in \nonstandard{U} \subseteq \nonstandard{\left(\overline{U'}\right)} $, $ X'(a) $ è finito, e dunque \begin{equation*}
+        a + \lambda \cdot X'(a) \in \halo(a) \subseteq \hhalo{\left(\overline{U'}\right)} =\nonstandard{\left(\overline{U'}\right)} \subseteq \nonstandard{V'}.
+    \end{equation*}È possibile ora definire la mappa \begin{align*}
+    F':\nonstandard{U'} &\longrightarrow \nonstandard{V'}  \\
+    a &\longmapsto a + \lambda \cdot X'(a)
+    \end{align*}che induce un campo di prevettori locale $ F:\nonstandard{U} \longrightarrow \nonstandard{V} $ che realizza $ X $ in $ U $.\qed
+}
+\osservazione{
+    La definizione \framref{kcjndkjndjdjjdjjjjjjjjjjj} prende in considerazione solo i punti standard.
+}
+\proposizione{kjndjcjdkjncjdjckjnskdkjckskjn}{
+    Sia $ U \subseteq \R^{n} $ aperto, e sia $ X: U \longrightarrow \R^{n} $ un campo vettoriale classico; sia $ \varphi: U \longrightarrow W \subseteq \R^{n} $ un cambio di coordinate\footnote{%TODO specificare quali condizioni devono esserci su $ \varphi $
+    }; sia $ Y: W \longrightarrow \R^{n} $ il campo vettoriale corrispondente, ovvero tale per cui \begin{equation*}
+        Y\left(\varphi(a)\right) = J_{\varphi}(a) \cdot X(a) 
+    \end{equation*}dove $ J_{\varphi}(a)  $ è la matrice jacobiana di $ \varphi $ calcolata in $ a $. Siano $ F,G $ le mappe: \begin{equation*}
+        F(a) = a + \lambda\,X(a),\quad G(b) = b+ \lambda\,Y(b),\qquad \forall\, a \in \nonstandard{U}, b \in \nonstandard{W}.
+    \end{equation*}Allora $ F\equiv \varphi^{-1} \circ G \circ \varphi $, o equivalentemente, \begin{equation*}
+        \varphi \circ F(a) - G\circ\varphi(a)\prec\prec \lambda,\qquad \forall\, a \in \hhalo{U}.
+    \end{equation*}
+}
+\osservazione{
+    Questa proposizione assicura che il campo locale di prevettori che realizza $ X $ come costruito nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij} è indipendente dalla scelta di coordinate sull'intorno coordinato di $ p $.
+}
+\dimostrazioneprop{kjndjcjdkjncjdjckjnskdkjckskjn}{
+    Sia $ a \in \hhalo{U} $ fissato. Siano $ \varphi^{i}, Y^{i} $ e $ G^{i} $, rispettivamente, l'$i$-esima coordinata di $ \varphi $, $ Y $ e $ G $. Sia $ D^{i} $ l'$i$-esima riga di $ J_{\varphi}(a) $. Allora si ha \begin{align*}
+        \varphi^{i}\circ F(a) - G^{i}\circ \varphi(a) &= \varphi^{i} \left(a+\lambda\,X(a)\right) - \varphi^{i}(a)-\lambda\, Y^{i}\left(\varphi(a)\right)\\  
+        &= \left[\varphi^{i} \left(a+\lambda\,X(a)\right) - \varphi^{i}(a)\right] - \lambda\, D^{i} \cdot X(a).
+    \end{align*}Per la proprietà \framref{dckjndjjjjjjdjscacchina}, esiste $ c \in \left[a,a+\lambda\,X(a)\right] $ tale che, se $ D^{i}_c $ è l'$i$-esima riga di $ J_{\varphi}(c)  $, \begin{equation*}
+        \varphi^{i} \left(a+\lambda\,X(a)\right) - \varphi^{i}(a) = \lambda\,D^{i}_c \,X(a)
+    \end{equation*}Dunque si ha che \begin{equation*}
+        \varphi^{i}\circ F(a) - G^{i}\circ \varphi(a) = \lambda\, \left(D^{i}_c-D^{i}\right) X(a) \prec\prec \lambda.
+    \end{equation*}Poichè questo è vero per ogni componente $ i $, si ha \begin{equation*}
+        \varphi \circ F(a) - G\circ\varphi(a)\prec\prec \lambda,\qquad \forall\, a \in \hhalo{U}.\qedd
+    \end{equation*}
+}
+\definizione{
+    Si definisce $ I $ come il campo di prevettori identità, su $ \nonstandard{M} $ o su $ \nonstandard{U} $ per ogni $ U \subseteq M $, per ogni $ a $: $ I(a)=a $.
+}
+\osservazione{
+    Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico zero, tramite la procedura della dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}.
+}
+\subsection{Condizioni di regolarità}
+\definizione{
+    Un campo di prevettori su una varietà differenziabile $ M $ è di classe $ D^{1} $ se per ogni $ a,b \in \hhalo{M} $ e $ (a,b) \subseteq P_{a}M $, allora in coordinate \begin{equation*}
+        F(a)-a-F(b)+b \prec \lambda\norma{a-b}.
+    \end{equation*}
+}
+\osservazione{
+    Questa definizione è motivata dal modo in cui la condizione di Lipschitzianità su un campo vettoriale si trasmette sul campo di prevettori che lo realizza.
+
+    Infatti, un campo vettoriale $ X: U \longrightarrow \R^{n} $ si dice Lipschitziano se esiste $ K \in \R $ tale per cui, per ogni $ a,b \in U $ \begin{equation}
+        \norma{X(a)-X(b)}\le K\,\norma{a-b}\label{eq:unino}
+    \end{equation}Sia ora $ F $ il campo di prevettori che realizza $ X $, come nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, dove $ F(a)-a= \lambda\,X(a) $. La \eqref{eq:unino} diventa: \begin{equation*}
+        \norma{\left(F(a)-a\right)-\left(F(b)-b\right)}\le K\lambda\,\norma{a-b}
+    \end{equation*}ovvero esattamente $ F $ di classe $ D^{1} $.
+}
+\paragrafo{Notazione}{%
+    Si utilizzerà la notazione di Eulero per le differenze finite. Siano $ V,W $ spazi vettoriali (di campo $ \R $ o $ \starR $); siano $ A \subseteq V $, $ a \in A $ e $ v_1,\dots,v_{k} \in V $ tali che \begin{equation*}
+        a+e_1\,v_1+\dots+e_{k}\,v_{k} \in A  
+    \end{equation*}per ogni $ (e_1,\dots,e_{n} ) \in \{0,1\}^{k} $.
+
+    Se $ F:A \longrightarrow W $, si definisce la $ k$-esima differenza divisa $ \Delta_{v_1,\dots,v_{k}}^{k} F(a) $ come segue: \begin{equation*}
+        \Delta_{v_1,\dots,v_{k}}^{k} F(a) = \sum_{(e_1,\dots,e_{n} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j} } F(a+e_1\,v_1+\dots+e_{k}\,v_{k})
+    \end{equation*}
+}{}{}
+\osservazione{
+    Utilizzando la notazione delle differenze finite, la condizione $ D^{1} $ diventa \begin{equation*}
+        \Delta_{b-a}^{1}(F-I)(a)\prec \lambda\norma{a-b} 
+    \end{equation*}per ogni $ a,b \in \hhalo{M}$, con $ a-b\prec \lambda $. 
+    
+    Equivalentemente, se $ v=b-a $, la condizione diventa: $ \displaystyle\Delta_{v}^{1}(F-I)(a)\prec \lambda\norma{v}  $.
+}
+\osservazione{
+    Tramite facili passaggi algebrici, è evidente che per ogni $ k\ge 2 $: \begin{equation*}
+        \Delta_{v_1,\dots,v_{k}}^{k} I(a) = 0 
+    \end{equation*}per ogni $ v_1,\dots,v_{k}  $ e per ogni $ a $. Questo consente di dare la seguente definizione. 
+}
+\definizione{
+    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{k} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n} $, con $ v_{i} \prec \lambda  $, si ha, in coordinate, \begin{equation*}
+        \Delta_{v_1,\dots,v_{k} }^{k} F(a) \prec \lambda\,\norma{v_1} \cdots\norma{v_{k} }. 
+    \end{equation*}}
+
+Per semplicità, si dà anche la seguente definizione, rindondante, per i campi di prevettori di classe $ D^{2} $. 
+\definizione{
+    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{2} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v,w \in \starR^{n} $, con $ v,w \prec \lambda  $, si ha, in coordinate, \begin{equation*}
+        \Delta_{v,w}^{2} F(a) = F(a)-F(a+v)-F(a+w)+F(a+v+w) \prec \lambda\,\norma{v}\norma{w }. 
+    \end{equation*}
+}
+\osservazione{
+    Anche se non esplicitamente mostrato in questo lavoro, le definizioni dei campi di prevettori di classe $ D^{1} $ e $ D^{2} $ sono indipendenti dalle coordinate. Per una trattazione più approfondita, si rimanda alle proposizioni 3.10 e 3.14 di \cite{nowik_differential_2015}.
+}
+
+Nella proposizione successiva si mostrerà che il campo di prevettori costruito secondo la dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, indotto da un campo vettoriale di classe $ C^k $, è un campo di prevettori di classe $ D^{k} $. 
+
+\proposizione{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj}{
+    Sia $ W \subseteq \R^{n} $ un aperto, e sia $ X: W \longrightarrow \R^{n} $ un campo vettoriale classico di classe $ C^{k} $. Allora, per ogni $ a \in \hhalo{W} $ e ogni $ v_1,\dots,v_{k} \in \starR^{n}  $, con $ v_{i} \prec \prec 1  $, si ha \begin{equation*}
+        \Delta_{v_1,\dots,v_{k} }^{k} X(a) \prec \norma{v_1}\norma{v_2} \cdots\norma{v_{k} }. 
+    \end{equation*}
+}
+\dimostrazioneprop{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj}{
+    Sia $ a \in \hhalo{W} $ fissato, e sia $ U \subseteq W $ un intorno di $ \st(a) $ più piccolo di $ W $, tale che su $ U $ tutte le $ k $-esime derivate parziali di $ X $ siano limitate. Siano $ X^{1},\dots,X^{n}  $ le componenti di $ X $. Sia $ p \in U$, e siano $ v_1,\dots,v_{k} \in \R^{n}  $ tale che \begin{equation*}
+        p + s_1v_1+\dots+s_{k}v_{k} \in U  
+    \end{equation*}per ogni $ 0\le s_1,\dots,s_{k} \le 1 $. Si definisce quindi, per ogni $  i = 1,\dots,n $ \begin{equation*}
+        \varphi^{i}(s_1,\dots,s_{k} ) = X^{i}(p + s_1v_1+\dots+s_{k}v_{k}).
+    \end{equation*}Iterando $ k $ volte il teorema del valor medio\footnote{\lipsum[1]%TODO spiegare il perché, non l'ho capito
+    } si ottiene che esiste $ (t_1,\dots,t_{k} ) \in  [0,1]^{k} $ tale per cui \begin{equation*}
+        \sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  } \varphi^{i} (e_1,\dots,e_{k} ) = \frac{\partial\null^{\hspace{0.6pt}k}}{\partial s_1\ \partial s_2 \dots \partial s_{k} } \varphi^{i}(t_1,\dots,t_{k} )\,(-1)^{k}.
+    \end{equation*}Dunque si ha che \begin{align*}
+        \abs{\Delta_{v_1,\dots,v_{k} }^{k}X^{i}(p) } &= \abs{\sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  }X^{i}(p + e_1v_1+\dots+e_{k}v_{k})}\\ 
+        &= \abs{\sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  } \varphi^{i} (e_1,\dots,e_{k} )}\\ 
+        &= \abs{\frac{\partial\null^{\hspace{0.6pt}k}}{\partial s_1\ \partial s_2 \dots \partial s_{k} } \varphi^{i}(t_1,\dots,t_{k} )} \le C_{i}\norma{v_1}\cdots\norma{v_{k} } 
+    \end{align*}dove $ C_{i} \in \R $ è determinato dalla limitatezza della $ k $-esima derivata parziale di $ X^{i} $ in $U$.
+
+    Poiché questo è vero per ogni $ X^{i} $, $ i=1,\dots,n $, si ha che esiste $ K \in \R $ tale per cui \begin{equation*}
+        \norma{\Delta_{v_1,\dots,v_{k} }^{k}X(p)}\le K \norma{v_1}\norma{v_2} \cdots\norma{v_{k} }
+    \end{equation*}per ogni $ p \in U $ e per ogni $ v_1,\dots,v_{k} \in \R^{n} $ tale per cui $ p + s_1v_1+\dots+s_{k}v_{k} \in U   $ per ogni $ 0\le s_1,\dots,s_{k} \le 1  $.
+
+    Per il principio di transfer questo è vero, con lo stesso $ K $, per ogni $ p \in \nonstandard{U} $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n}  $ tali per cui $ a+s_1v_1+\dots+s_{k}v_{k} \in \nonstandard{U} $ per ogni $ 0\le s_1,\dots,s_{k} \le 1  $, $ s_{i} \in \starR  $. In particolare, questo è vero per $ a $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n}$ con $ v_{i} \prec\prec 1 $. \qed
+}
+\proposizione{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}{
+    Sia $ F $ un campo di prevettori di classe $ D^{1} $, e siano $ a, b \in \hhalo{M} $, con $ a-b \prec \lambda $, allora, in coordinate, \begin{equation*}
+        \norma{a-b} \prec \norma{F(a)-F(b)}\prec \norma{a-b}.
+    \end{equation*}Più in dettaglio, dato $ K \prec 1 $ tale che, in coordinate, $ \norma{F(a)-F(b)-a+b} \le K \lambda \norma{a-b} $, si ha \begin{equation*}
+        (1-K\lambda)\,\norma{a-b}\le \norma{F(a)-F(b)}\le (1+K \lambda)\,\norma{a-b}
+    \end{equation*}
+}
+\dimostrazioneprop{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}{
+    Segue dalla disuguaglianza triangolare: \begin{equation*}
+        \big|\norma{F(a)-F(b)}-\norma{a-b}\big| \le \norma{F(a)-F(b)-a+b}
+    \end{equation*}e per ipotesi $ \norma{F(a)-F(b)-a+b}\le K \lambda \norma{a-b} $, da cui segue la tesi.\qed
+}
+
+Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrare che un campo di prevettori di classe $ D^{2} $ è anche di classe $ D^{1} $.
+\paragrafo{Lemma}{%
+    Sia $ B \subseteq \R^{n} $ una palla aperta centrata nell'origine, e sia $ a \in \halo(0) $, e sia $ 0\neq v \in \starR^{n} $ con $ v\prec\prec 1 $. Se $ G: \nonstandard{B} \longrightarrow \starR^{n} $ è una funzione \emph{interna} tale per cui \begin{equation*}
+        \Delta_{v,v}^{2}G(x) \prec \norma{v}\,\norma{G(a)-G(a+v)} 
+    \end{equation*}per ogni $ x \in \hhalo{B} $, allora esiste $ m \in \nonstandard{ \N} $ tale per cui $ a+mv \in \hhalo{B} $ e \begin{equation*}
+        G(a)-G(a+v) \prec \norma{v}\,\norma{G(a)-G(a+mv)}.
+    \end{equation*}
+}{djjjjjjjjjframmentinoframmentucciovieniqui}{}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}\dimframmento{djjjjjjjjjframmentinoframmentucciovieniqui}{
+    Sia $ 0<r \in \R $ un raggio più piccolo di quello di $ B $, e per $ x \in \starR $ si denoti con $ \floor{x} \in \nonstandard{ \N} $ la parte intera di $ x $. Sia dunque $ N = \floor{r/\norma{v}} $. 
+
+    Dunque ogni $ m\le N $ soddisfa la condizione $ a + mv \in \hhalo{B} $. 
+    
+    Per semplicità di notazione, siano $ A \coloneqq G(a)-G(a+v) $, $ x_{j} \coloneqq a+jv $, per ogni $ 0\le j \le N $. Si ha allora che \begin{equation*}
+        G(x_{j} )-2G(x_{j+1} )+G(x_{j+2} ) = \Delta_{v,v}^{2}G(x_{j} ) = C_{j}\norma{v}\,\norma{A}  
+    \end{equation*}con $ C_{j} \prec 1 $.
+
+    Sia $ C $ il massimo dei $ C_0,\dots,C_{N}  $: $ C\prec 1 $, e, per ogni $ 0 \le j\le N $ \begin{equation*}
+        G(x_{j} )-2G(x_{j+1} )+G(x_{j+2} ) \le C \norma{v}\,\norma{A}. 
+    \end{equation*}
+
+    Per $ k \le N $, si ha \begin{multline*}
+        \norma{A-\left(G(x_{k} )-G(x_{k+1} )\right)} = \norma{\left(G(x_{0} )-G(x_{1} )\right)-\left(G(x_{k} )-G(x_{k+1} )\right)}\le\\ 
+        \le \sum_{j=0}^{k-1} \norma{\left(G(x_{j} )-G(x_{j+1} )\right)-\left(G(x_{j+1} )-G(x_{j+2} )\right)} \le Ck\norma{v}\norma{A}
+    \end{multline*}e quindi, per ogni $ m\le N $ \begin{equation*}
+        \norma{mA - \left(G(x_0)-G(x_{m} )\right)} = \norma{\sum_{k=0}^{m-1}\left(A-\left(G(x_{k} ) - G(x_{k+1} ) \right)\right) } \le Cm^{2}\norma{v}\norma{A}.
+    \end{equation*}Si può quindi dire che \begin{equation*}
+        \norma{mA - \left(G(x_0)-G(x_{m} )\right)} =  Km^{2}\norma{v}\norma{A}.
+    \end{equation*}per qualche $ K\prec 1 $, e, per la disuguaglianza triangolare, \begin{equation*}
+        m\norma{A} - Km^{2}\norma{v}\norma{A}\le \norma{G(x_0)-G(x_{m} )}
+    \end{equation*}e, moltiplicando per $ \norma{v} $, $ m\norma{v}\norma{A}(1-Km\norma{v})\le \norma{v}\norma{G(x_0)-G(x_{m} )} $.
+
+    Sia ora $ m=\min\left\{N, \floor{1/(2K\norma{v})}\right\}\le N $; allora $ (1-Km\norma{v})\ge 1/2 $, e dunque \begin{equation*}
+        m\norma{v}\norma{A}/2\le \norma{v}\norma{G(x_0)-G(x_{m} )}.
+    \end{equation*}Poiché $ m\norma{v}/2 $ non è infinitesimo\footnote{%TODO capire bene, p17 di nowik
+    \lipsum[2]} $ A\prec \norma{v}\norma{G(x_0)-G(x_{m} )} $.\qed
+}
+\proposizione{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}{
+    Se $ F $ è un campo di prevettori di classe $ D^{2} $ su $ W $, allora $ F $ è di classe $ D^{1} $.
+}
+\dimostrazioneprop{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}{
+    Sia $ a \in \hhalo{W} $, e sia $ B \subseteq \R^{n} $ una palla aperta centrata, nelle date coordinate, in $ \st({a}) $. Per mostrare che $ F $ è di classe $ D^{1} $, si deve mostrare che, in coordinate, per ogni $ b $ tale che $ b-a \prec \lambda $ vale $ F(a)-a-F(b)+b \prec \lambda\norma{a-b} $. 
+
+    Se $ v \coloneqq b-a $ e $ G=F-I $ (i.e. $ G(x)=F(x)-x $) la condizione è equivalente a richiedere che \begin{equation*}
+        G(a)-G(a+v)\prec \lambda \norma{v}.
+    \end{equation*}I casi sono due\footnote{%TODO capire il perché, p 17 nowik
+    \lipsum[3]}. \begin{itemize}
+        \item Se $ G(a)-G(a+v)\prec\prec \lambda\norma{v} $ la tesi è banalmente verificata.
+        \item Altrimenti si ha $ \lambda v \prec \norma{G(a)-G(a+v)} $, e dunque $ \lambda\norma{v}^{2}\prec \norma{v}\norma{G(a)-G(a+v)} $; inoltre, per ipotesi, poiché $ F $ è di classe $ D^{1}$: per ogni $ x $: \begin{equation*}
+            \Delta_{v,v}^{2}G(x) = \Delta_{v,v}^{2}  F(x) \prec \lambda\norma{v}^{2}.
+        \end{equation*}Quindi $ \Delta_{v,v}^{2}G(x)\prec \norma{G(a)-G(a+v)} $, e per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui} esiste $ m \in \nonstandard{ \N}$ tale che $ a+mv \in \hhalo{B} $ e \begin{equation*}
+            G(a)-G(a+v)\prec \norma{v}\norma{G(a)-G(a+mv)} \le \norma{v}\left(\norma{G(a)}+\norma{G(a+mv)}\right)\prec \norma{v}\lambda
+        \end{equation*}poiché $ F $ è un campo di prevettori, e dunque $ G(x)=F(x)-x\prec \lambda $ per ogni $ x $.\qed
+    \end{itemize}
+
+
+}
+\osservazione{
+    Si enunciano di seguito due risultati, che non saranno dimostrati, in merito alla composizione di campi di prevettori. Si veda le proposizioni 3.16 e 3.17 di \cite{nowik_differential_2015}.\begin{itemize}
+        \item Se $ F,G $ sono campi di prevettori di classe $ D^{1} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{1} $. 
+        \item Se $ F,G $ sono campi di prevettori di classe $ D^{2} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{2} $.
+    \end{itemize}
+}
+
+\section{Proprietà globali dei campi di prevettori}
+
+\proposizione{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}{
+    Sia $ F $ un campo di prevettori.\begin{enumerate}
+        \item Se $ W $ è un intorno coordinato con immagine $ U \subseteq \R^{n} $, e $ B \subseteq U $ è una palla chiusa, allora esiste un $ C $ \emph{finito} tale per cui \begin{equation*}
+            \norma{F(a)-a}\le C \lambda
+        \end{equation*}per ogni $ a \in \nonstandard{B} $. (Si noti che $ F $ denota sia il campo di prevettori che la sua azione in coordinate).
+        \item Se $ G $ è un altro campo di prevettori, allora esiste un $ \beta $ finito tale per cui \begin{equation*}
+            \norma{F(a)-G(a)}\le \beta\lambda
+        \end{equation*}per ogni $ a \in \nonstandard{B} $.
+        \item Se inoltre $ F\equiv G $, allora esiste un tale $ \beta $ \emph{infinitesimale}.
+    \end{enumerate}
+}
+\dimostrazioneprop{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}{
+    \begin{enumerate}
+        \item È conseguenza di 2, considerando $ G(a)=a $ per ogni $ a $. 
+        \item Sia \begin{equation*}
+            A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le n\lambda\text{ per ogni }a \in \nonstandard{B}\right\}. 
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill}\footnote{\lipsum[4]%TODO underspill (nome e definizione)
+        }esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
+        \item Sia ora invece \begin{equation*}
+            A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le \frac{\lambda}{n}\lambda\text{ per ogni }a \in \nonstandard{B}\right\}.
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill}\footnote{\lipsum[5]%TODO overspill, p 23 nowik
+        }esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \prec\prec 1 $.\qed
+    \end{enumerate}
+}
+\proposizione{dlikjckjdlkmnckslkmdkcoslkdlkj}{
+    Sia $ F $ un campo di prevettori di classe $ D^{1} $. Se $ W $ è un intorno coordinato con immagine $ U \subseteq \R^{n} $ e $ B \subseteq U $ è una palla chiusa, allora esiste $ K \in \R $ tale per cui \begin{equation}
+        \norma{F(a)-a-F(b)+b}\le K\lambda\norma{a-b}.\label{eq:chissa}
+    \end{equation}per ogni $ a,b \in \nonstandard{B} $.
+    
+    Segue che \begin{equation*}
+        (1-K\lambda)\norma{a-b}\le \norma{F(a)-F(b)}\le (1+K\lambda)\norma{a-b}.
+    \end{equation*}
+}
+\dimostrazioneprop{dlikjckjdlkmnckslkmdkcoslkdlkj}{
+    Sia $ N=\floor{1/\lambda} $. Dati $ a,b \in \nonstandard{B} $, per $ k=0,\dots,N $, sia \begin{equation*}
+        a_{k} = a + \frac{k}{N} (b-a),
+    \end{equation*}allora $ a_{k}-a_{k+1} \prec \lambda  $. 
+
+    Sia dunque $ C_{ab}  $ il massimo della seguente espressione, al variare di $ k=0,\dots,N-1 $: \begin{equation*}
+        \frac{\norma{F(a_{k} )-a_{k}-F(a_{k+1} )+a_{k+1}  }}{\lambda \norma{a_{k}-a_{k+1}  }}
+    \end{equation*}che è finito, poiché $ F $ è di classe $ D^{1} $. Dunque, per ogni $ 0\le k \le N-1 $, si ha \begin{equation*}
+        \norma{F(a_{k} )-a_{k}-F(a_{k+1} )+a_{k}  }\le C_{ab}\lambda\norma{a_{k}-a_{k+1}  } = C_{ab}\lambda\frac{\norma{a-b}}{N}.  
+    \end{equation*}Segue che \begin{equation*}
+        \norma{F(a)-a-F(b)+b}\le \sum_{k=0}^{N-1}\norma{F(a_{k})-a_{k}-F(a_{k+1}  )+a_{k+1}  } \le C_{ab}\lambda\norma{a-b}. 
+    \end{equation*}Se ora si definisce $ A $ come \begin{equation*}
+        A= \set{n \in \nonstandard{ \N}:  \norma{F(a)-a-F(b)+b}\le  n\lambda\norma{a-b}\text{ per ogni }a,b \in \nonstandard{B} },
+    \end{equation*}poiché tutti gli $ C_{ab} $ sono finiti, si ha che $ A $ contiene ogni $ n \in \nonstandard{ \N} $ infinito, e pertanto, per \straniero{underspill}, esiste $ K \in A $ finito, e quindi \eqref{eq:chissa} vale.\qed
+}
+\proposizione{dkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj}{
+    Sia $ F $ un campo di prevettori di classe $ D^{2} $. Se $ W $ è un intorno coordinato con immagine $ U \subseteq \R^{n} $ e $ B \subseteq U $ è una palla chiusa, allora esiste $ K \in \R $ tale per cui \begin{equation*}
+        \norma{\Delta_{v,w}^{2} F(a) } \le K\lambda\norma{w}\norma{v}
+    \end{equation*}per ogni $ a \in \nonstandard{B} $ e per ogni $ v,w \in \starR^{n}$ tali per cui \begin{equation*}
+        a+v,a+w,a+v+w \in \nonstandard{B}.
+    \end{equation*}
+}
+\dimostrazioneprop{dkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj}{
+    Sia $ N = \floor{1/\lambda} $. Dato $ a \in \nonstandard{B} $ e $ v,w \in \starR$ tali per cui valgano le ipotesi, sia \begin{equation*}
+        a_{k,l} = a+ \frac{k}{N} v + \frac{l}{N} w 
+    \end{equation*}per $ 0 \le k,l\le N $. Sia $ C_{avw} $ il massimo della seguente espressione al variare di $ k,l $, $ 0\le k,l\le N-1 $: \begin{equation*}
+        \frac{
+            \norma{\Delta_{v/N, w/N }^{2} F(a_{k,l} ) }
+        }{\lambda\norma{v/N}\norma{w/N}}.
+    \end{equation*}Poiché $ F $ è di classe $ D^{2} $, $ C_{avw}$ è finito. Dunque, per ogni $ 0\le k,l\le N-1 $: \begin{align*}
+        \norma{F(a_{k,l} )-F(a_{k+1,l} ) - F(a_{k,l+1} ) + F(a_{k+1,l+1} ) }&= \\ = \norma{\Delta_{v/N, w/N }^{2} F(a_{k,l} )} &\le C_{avw} \lambda\norma{v/N}\norma{w/N}
+    \end{align*}Con un argomentazione simile a quelle delle dimostrazioni precedenti, si ha che \begin{equation*}
+        \norma{F(a)-F(a+v)-F(a+w)+F(a+v+w)} \le C_{avw}\lambda\norma{v}\norma{w},
+    \end{equation*}e, utilizzando il principio dell'\straniero{underspill}, esiste un $ K $ finito tale per cui vale la tesi.\qed
+}
+\proposizione{djknckjndjckjnxkjn kjnckjndskjnckjnkjn}{
+    Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora è iniettivo su $ \hhalo{M} $.
+}
+\dimostrazioneprop{djknckjndjckjnxkjn kjnckjndskjnckjnkjn}{
+    Siano $ a\neq b \in \hhalo{M} $.
+}
+% \section{Flusso di un campo di prevettori}
+% \subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}
+% \subsection{Il campo di prevettori rappresentativo canonico}
+
+% \section{Parentesi di Lie}
+% \subsection{Proprietà fondamentali}
+% \subsection{Relazione con le parentesi di Lie classiche}
+

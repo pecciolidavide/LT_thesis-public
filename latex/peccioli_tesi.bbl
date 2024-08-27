@@ -89,9 +89,6 @@
            given={Peter\bibnamedelima A.},
            giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Orlando San Diego New York [etc.]}%
-      }
       \list{publisher}{1}{%
         {Academic press}%
       }

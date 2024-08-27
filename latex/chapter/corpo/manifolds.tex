@@ -477,9 +477,9 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \norma{F(a)-a-F(b)+b}\le K\lambda\norma{a-b}.\label{eq:chissa}
     \end{equation}per ogni $ a,b \in \nonstandard{B} $.
     
-    Segue che \begin{equation*}
-        (1-K\lambda)\norma{a-b}\le \norma{F(a)-F(b)}\le (1+K\lambda)\norma{a-b}.
-    \end{equation*}
+    Segue che \begin{equation}
+        (1-K\lambda)\norma{a-b}\le \norma{F(a)-F(b)}\le (1+K\lambda)\norma{a-b}.\label{eq:minbound}
+    \end{equation}
 }
 \dimostrazioneprop{dlikjckjdlkmnckslkmdkcoslkdlkj}{
     Sia $ N=\floor{1/\lambda} $. Dati $ a,b \in \nonstandard{B} $, per $ k=0,\dots,N $, sia \begin{equation*}
@@ -520,7 +520,11 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora è iniettivo su $ \hhalo{M} $.
 }
 \dimostrazioneprop{djknckjndjckjnxkjn kjnckjndskjnckjnkjn}{
-    Siano $ a\neq b \in \hhalo{M} $.
+    Siano $ a\neq b \in \hhalo{M} $.\begin{itemize}
+        \item Se $ \st(a)\neq \st(b) $, allora chiaramente\footnote{Spiegare bene%TODO spiegare bene
+        }si avrà $ F(a) \neq F(b) $;
+        \item se invece $ \st(a) = \st(b) $, allora esiste una palla chiusa che soddisfi le ipotesi della proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}; pertanto, vale l'equazione \eqref{eq:minbound}.\qed
+    \end{itemize}
 }
 % \section{Flusso di un campo di prevettori}
 % \subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}

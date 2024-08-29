@@ -526,11 +526,234 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \item se invece $ \st(a) = \st(b) $, allora esiste una palla chiusa che soddisfi le ipotesi della proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}; pertanto, vale l'equazione \eqref{eq:minbound}.\qed
     \end{itemize}
 }
-% \section{Flusso di un campo di prevettori}
-% \subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}
-% \subsection{Il campo di prevettori rappresentativo canonico}
+\proposizione{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}{
+    Siano $ B_1 \subseteq B_2 \subseteq B_3 \subseteq \R^{n} $ delle palle chiuse centrate nell'origine, di raggi $ r_1<r_2<r_3 $. Se $ F: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $ è un campo di prevettori locale di classe $ D^{1} $, allora $ F(\nonstandard{B_2}) \supseteq \nonstandard{B_1} $.
+}
+\dimostrazioneprop{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}{
+    \lipsum[1]
+}
+\teorema{lddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs}{
+   Se $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ è un campo di prevettori di classe $ D^{1} $, allora \begin{equation*}
+       \restriction{F}{\hhalo{M}}:\hhalo{M} \longrightarrow \hhalo{M}.
+   \end{equation*}è biiettiva.
+}
+\paragrafo{Osservazione}{%
+    \textit{Remark 4.8}
+}{remarkfourpointeight}{}
+\proposizione{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd}{
+    Se $ F $ è di classe $ D^{1} $, allora $ F^{-1} $ è di classe $ D^{1} $. 
 
-% \section{Parentesi di Lie}
-% \subsection{Proprietà fondamentali}
-% \subsection{Relazione con le parentesi di Lie classiche}
+    Nello specifico, se per $ x = F^{-1}(a) $, $ y= F^{-1}(b) $ esiste un $ K\prec 1 $ tale per cui \begin{equation*}
+        \norma{F(x)-F(y)-x+y}\le K \lambda\norma{x-y}
+    \end{equation*}allora, per $ K'=K/(1-K\lambda) $, \begin{equation*}
+        \norma{F^{-1}(a)-F^{-1}(b)-a+b}\le K'\lambda\norma{a-b}.
+    \end{equation*}
+}
+\dimostrazioneprop{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd}{
+    \lipsum[1]
+}
+\lemma{kjndkjncjdkjnckskdkjnjcsnkjn}{
+    Siano $ F,G $ dei campi di prevettori di classe $ D^{1} $. Se $ F(a)\equiv G(a) $ per ogni $ a $ standard, allora $ F(b)\equiv G(b) $ per ogni $ b $ quasi-standard: ovvero $ F\equiv G $.
+}
+\dimostrazionelem{kjndkjncjdkjnckskdkjnjcsnkjn}{
+    \lipsum[1]
+}
+\section{Flusso di un campo di prevettori}
+\definizione{\lipsum[1]}
+\subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}
+\teorema{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
+    Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Dato $ p \in U $ e un intorno coordinato di $ p $ di immagine $ W \subseteq \R^{n} $, siano $ B' \subseteq B \subseteq W$ palle chiuse di raggi $ r/2 $ ed $ r $ centrate nell'immagine di $ p $.
 
+    Sia $ K $ una costante finita\footnote{Tale costante esite per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}.} tale per cui \begin{equation*}
+        \norma{F(a)-a-F(b)+b}\le K \lambda\norma{a-b}
+    \end{equation*}per ogni $ a,b \in \nonstandard{B}$: allora esiste $ 0<T \in R $ tale per cui $ F_{t}(a) \in \nonstandard{B}$ per ogni $ a \in \nonstandard{B'} $ e $ -T\le t\le T $.
+
+    Inoltre, per ogni $ a,b \in \nonstandard{B'} $ e ogni $ 0\le t\le T $: $ \norma{F_{t}(a) -F_{t}(b) }\le e^{Kt}\norma{a-b} $.
+
+    Prendendo $ K' = K/(1-K\lambda)^{2} $, allora per ogni $ a,b \in \nonstandard{B'}$ e $ -T\le t\le T $: \begin{equation*}
+        e^{-K'\abs{t}}\norma{a-b}\le \norma{F_{t}(a)-F_{t}(b)} \le e^{K'\abs{t}}\norma{a-b}.
+    \end{equation*}
+}
+\dimostrazione{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
+    \lipsum[1]
+}
+\teorema{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
+    Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $, di classe $ D^{1} $, e sia $ G $ un qualsiasi campo di prevettori su $ \nonstandard{U} $. Dato un intorno coordinato compreso in $ U $ con immagine $ W \subseteq \R^{n} $, siano $ A' \subseteq A \subseteq \nonstandard{W} $ insiemi interni. Si supponga: \begin{enumerate}
+        \item $ \norma{F(a)-G(a)}\le \beta\lambda $ per ogni $ a \in A $, per qualche costante $ \beta $. (Se $ F\equiv G $ allora $ \beta $ infinitesimale esiste, come assicurato dalla proposizione \framref{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}).
+        \item $ \norma{F(a)-a-F(b)+b}\le K\lambda\norma{a-b} $ per ogni $ a,b \in A $, con $ K $ costante finita. (Tale costante esiste per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}).
+        \item $ 0<T \in \R $ è tale per cui $ F_{t}(a)  $ e $ G_{t}(a)$ sono contenuti in $ A $ per ogni $ a \in A' $ e ogni $ 0\le t< T $. 
+    \end{enumerate}
+
+    Allora per ogni $ a \in A' $ e $ 0\le t\le T $, \begin{equation*}
+        \norma{F_{t}(a)-G_{t}(a)  }\le \frac{\beta}{K}\left(e^{Kt}-1\right)\le \beta t e^{Kt}.
+    \end{equation*}
+}
+
+\paragrafo{Corollario}{%
+    Se $ F \equiv G $, allora $ F_{t}(a)\approx G_{t}(a) $ per ogni $ 0\le t\le T $.
+}{djdkjncjdjndimostrazioncinainainainaianinaiai}{}
+\dimostrazione{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
+    \lipsum[2]
+}
+\definizione{
+    Sia $ F $ un campo di prevettori locale di classe $ D^{1} $. In un intorno $ B' \subseteq \R^{n}$ e in un intervallo $ [-T,T] $, come per il teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}, si definisce il \emph{flusso standard indotto da $ F $}: \begin{align*}
+    h_{t}^{F}:B' &\longrightarrow M \\
+    x &\longmapsto \st\left(F_{t}(x) \right).
+    \end{align*}
+}
+\teorema{kjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj}{
+    Sia $ F $ un campo di prevettori di classe $ D^{1}$. Allora:\begin{enumerate}
+        \item $ h_{t}^{F} $ è continua e Lipschitziana, con costante $ e^{K\abs{t}} $;
+        \item $ h_{t}^{F} $ è iniettiva;
+        \item se $ G $ è un altro campo di prevettori di classe $ D^{1} $ e $ F\equiv G $, allora $ h_{t}^{F} = h_{t}^{G}$.
+    \end{enumerate}
+}
+\dimostrazione{kjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj}{
+    Il teorema segue banalmente dal teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk} e dal corollario \framref{djdkjncjdjndimostrazioncinainainainaianinaiai}.
+}
+\osservazione{
+    È possibile dimostrare che se $ F $ è un campo di prevettori ottenuto a partire da un campo vettoriale classico $ X $ tramite la procedura illustrata nella dimostrazione della proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, allora $ h_{t}^{F} $ è esattamente il flusso di $ X $ nel senso classico. Si rimanda al \straniero{Remark} 5.8 di \cite{nowik_differential_2015} e al Teorema 14.1 di \cite{keisler_foundation_2007}.
+}
+\subsection{Il campo di prevettori rappresentativo canonico}
+
+\definizione{
+    Sia $ F $ un campo di prevettori. Si definisce il campo di prevettori \begin{equation*}
+        \tilde{F} = h_{\lambda}^{F} 
+    \end{equation*}l'estensione ad un dominio non standard della funzione $ h_{\lambda}^{F}$.
+}
+\osservazione{
+    $\tilde{F}$ è effettivamente un campo di prevettori, ovvero \begin{equation*}
+        \tilde{F}(a)-a\prec \lambda
+    \end{equation*}per ogni $ a $. Infatti \lipsum[1]
+}
+\lemma{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
+    Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Se \begin{equation*}
+        \norma{F(a)-F(b)-a+b}\le K \lambda\norma{a-b}
+    \end{equation*}per ogni $ a,b \in \nonstandard{U}$, allora il flusso di $ F $ soddisfa: \begin{equation*}
+        \norma{F^{n}(a)-F^{n}(b)-a+b}\le K \lambda ne^{K\lambda n}\norma{a-b}.
+    \end{equation*}
+}
+\dimostrazionelem{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
+    \lipsum[1]\qed
+}
+\proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
+    Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora $ \tilde{F} $ è di classe $ D^{1} $.}
+\dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
+    \lipsum[2]\qed
+}
+\proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
+    Se $ F $ è un campo di prevettori di classe $ D^{2} $, allora $ \tilde{F} $ è di classe $ D^{2} $.}
+\dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
+    \lipsum[2]\qed
+}
+\lemma{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
+    Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $. Se $ \norma{F(a)-a} \le C\lambda$ e $ \norma{F(a)-a-F(b)+b}\le K \lambda\norma{a-b} $ per qualche $ C $ e $ K $ e per ogni $ a,b \in \nonstandard{U} $, allora il flusso di $ F $ soddisfa: \begin{equation*}
+        \norma{F^{n}(a)-a-n\left(F(a)-a\right)} \le KCn^{2}\lambda^{2}.
+    \end{equation*}
+}
+\dimostrazionelem{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
+    \lipsum[3]\qed
+}
+\lemma{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
+    Sia $ v \in \starR^{n} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
+        g(t) = \st\left(\floor{t/\lambda}\,v\right)
+    \end{equation*}e sia $ V= \st(v/\lambda). $
+
+    Allora $ g(t)=tV $ e l'estensione di $ g $ al dominio non standard soddisfa $ g(\lambda)\equiv v $.
+}
+\dimostrazionelem{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
+    \lipsum[4]\qed
+}
+\teorema{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
+    Se $ F $ è un campo di prevettori locale di classe $ D^{1} $, allora $ \tilde{F}\equiv F $.
+}
+\dimostrazione{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
+    \lipsum[5]\qed
+}
+\section{Parentesi di Lie}
+\definizione{
+    Siano $ F,G $ campi di prevettori di classe $ D^{1} $. Si definiscono le \emph{parentesi di Lie} come segue: \begin{equation*}
+        [F,G] = \left(G^{-1}\circ F^{-1}\circ G \circ F\right)^{\floor{1/\lambda}}.
+    \end{equation*}
+}
+\osservazione{
+    In merito alla definizione precedente, $ F^{-1} $ e $ G^{-1} $ esistono per l'osservazione \framref{remarkfourpointeight}.
+}
+\subsection{Proprietà fondamentali}
+\teorema{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
+    Se $ F,G $ sono campi di prevettori locali di classe $ D^{1} $, allora $ [F,G] $ è un campo di prevettori, i.e. $ [F,G](a)-a\prec \lambda $ per ogni $ a $.
+}
+\dimostrazione{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
+    \lipsum[1]\qed
+}
+\lemma{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
+    Siano $ F,G $ campi di prevettori locali, $ F $ di classe $ D^{2} $ e $ G $ di classe $ D^{1} $. Allora per ogni $ a,b $ con $ a-b\prec \lambda $ vale: \begin{equation*}
+        F(a)-F(b)-F\circ G(a)+F\circ G(b) - a +b+G(a)-G(b)\prec \lambda^{2}\norma{a-b}.
+    \end{equation*}
+}
+\dimostrazionelem{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
+    \lipsum[2]\qed
+}
+\teorema{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
+    Se $ F,G $ sono campi di prevettori locali di classe $ D^{2} $, allora $ [F,G] $ è un campo di prevettori di classe $ D^{1} $.
+}
+\dimostrazione{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
+    \lipsum[3]\qed
+}
+\proposizione{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
+    Siano $ F,G $ campi di prevettori di classe $ D^{2}$. Allora, per ogni $ a $, \begin{equation*}
+        [F,G](a)\equiv a+ \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(a)-a\right)
+    \end{equation*}
+}
+\dimostrazioneprop{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
+    \lipsum[4]\qed
+}
+\lemma{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
+    Se $ G,H $ sono campi di prevettori di classe $ D^{2} $ e $ G\equiv H $, allora \begin{equation*}
+        \left(G(a)-H(a)\right)-\left(G(b)-H(b)\right)\prec\prec \lambda\norma{a-b}
+    \end{equation*}per ogni $ a,b $ con $ a-b\prec \lambda $.
+}
+\dimostrazionelem{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
+    \lipsum[5]\qed
+}
+\lemma{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
+    Se $ G,H $ sono campi di prevettori con $ G\equiv H $, e $ G $ è di classe $ D^{1} $, e $ H^{-1} $ esiste, allora $ G^{-1}\equiv H^{-1} $.
+}
+\dimostrazionelem{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
+    \lipsum[6]\qed
+}
+\teorema{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
+    Se $ F,E,G,H $ sono campi di prevettori di classe $ D^{2} $ e $ F\equiv E $, $ G\equiv H $, allora $ [F,G]\equiv [E,H] $.
+}
+\dimostrazione{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
+    \lipsum[1]\qed
+}
+\subsection{Relazione con le parentesi di Lie classiche}
+
+\teorema{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
+    Siano $ X,Y $ due campi vettoriali di classe $ C^{2} $, e sia $ [X,Y]_{\text{cl}} $ le loro parentesi di Lie classiche. 
+
+    Siano $ F,G $ due campi di prevettori che realizzino $ X,Y $ rispettivamente. Allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
+}
+\dimostrazione{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
+    \lipsum[2]\qed
+}
+\teorema{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
+    Siano $ F,G $ due campi di prevettori di classe $ D^{2} $. 
+
+    Allora $ [F,G]\equiv I $ se e solo se $ h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}$ per ogni $ 0\le t,s\le T $ per qualche $ 0<T \in \R$.
+}
+\dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
+    \lipsum[3]\qed
+}
+
+\section{Conclusione}
+Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario classico, dimostrato con gli strumenti dell'analisi non standard.
+\teorema[Corollario]{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
+    Siano $ X,Y $ dei campi vettoriali classici di classe $ C^{2} $. 
+    
+    Allora i flussi di $ X $ e di $ Y $ commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.
+}
+\dimostrazione{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
+    \lipsum[1]\qed
+}

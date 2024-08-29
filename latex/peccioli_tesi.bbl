@@ -47,6 +47,37 @@
       \verb Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/9A8SI799/Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:application/pdf
       \endverb
     \endentry
+    \entry{chang_model_2012}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c33564af19e0cefd25ed4905e79722f6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Chen\bibnamedelima Chung},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8462e0856cc893e2bf292cfd4b5e5ab2}{%
+           family={Keisler},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi Jerome},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fcf330f2157d98cbade37b4021d0863}
+      \strng{fullhash}{9fcf330f2157d98cbade37b4021d0863}
+      \strng{bibnamehash}{9fcf330f2157d98cbade37b4021d0863}
+      \strng{authorbibnamehash}{9fcf330f2157d98cbade37b4021d0863}
+      \strng{authornamehash}{9fcf330f2157d98cbade37b4021d0863}
+      \strng{authorfullhash}{9fcf330f2157d98cbade37b4021d0863}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-486-48821-9}
+      \field{pagetotal}{650}
+      \field{series}{Dover books on mathematics}
+      \field{title}{Model theory}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
     \entry{di_nasso_direzioni_nodate}{report}{}
       \name{author}{2}{}{%
         {{hash=1d929f2d4aa393ab3e3be66af954e964}{%
@@ -141,6 +172,36 @@
       \field{langid}{english}
       \field{title}{True infinitesimal differential geometry}
       \true{nocite}
+    \endentry
+    \entry{keisler_foundation_2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8462e0856cc893e2bf292cfd4b5e5ab2}{%
+           family={Keisler},
+           familyi={K\bibinitperiod},
+           given={H\bibnamedelima Jerome},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \strng{fullhash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \strng{bibnamehash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \strng{authorbibnamehash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \strng{authornamehash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \strng{authorfullhash}{8462e0856cc893e2bf292cfd4b5e5ab2}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Foundation of Infinitesimal Calculus.}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://people.math.wisc.edu/~hkeisler/foundations.html
+      \endverb
+      \verb{url}
+      \verb https://people.math.wisc.edu/~hkeisler/foundations.html
+      \endverb
     \endentry
     \entry{loeb_nonstandard_2015}{collection}{}
       \name{editor}{2}{}{%

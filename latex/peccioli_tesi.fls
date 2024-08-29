@@ -1,17 +1,17 @@
-PWD /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex
+PWD /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.tex
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.log
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.tex
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.log
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/header_tesi.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/header_tesi.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/header_tesi.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/header_tesi.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
@@ -303,7 +303,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.pdf
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/rotating.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/rotating.sty
@@ -510,7 +510,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/libraries/t
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/atveryend.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.auxlock
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.auxlock
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -529,16 +529,16 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.aux
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.aux
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.aux
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.aux
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.aux
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.bcf
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.bbl
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.bbl
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.bbl
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.bcf
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.bbl
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.bbl
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.bbl
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -553,13 +553,13 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -616,8 +616,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.toc
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.toc
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
@@ -634,18 +634,20 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.toc
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/introduzione.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/introduzione.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/prerequisiti.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/prerequisiti.tex
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/prerequisiti.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/prerequisiti.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/reali_nonstandard.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/reali_nonstandard.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
@@ -683,8 +685,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
@@ -717,13 +717,14 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/universo_nonstandard.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/universo_nonstandard.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/manifolds.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/chapter/corpo/manifolds.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
@@ -737,11 +738,11 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.aux
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.run.xml
-OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/4. tesi triennale/latex/peccioli_tesi.run.xml
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.aux
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.run.xml
+OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.run.xml
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
@@ -752,6 +753,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
@@ -768,6 +770,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb

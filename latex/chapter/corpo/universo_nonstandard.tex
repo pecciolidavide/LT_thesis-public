@@ -91,16 +91,16 @@ In particolare, ogni formula sarà espressa nel linguaggio \begin{equation*}
 \section{Costruzione dell'universo non standard come ultraprodotto}
 
 \definizione{
-    Una estensione non standard di $ V(X) $ consiste in un insieme base $ Y $, con $ X \subsetneqq Y $, un sotto universo $ \nonstandard{V(X)} \subseteq V(Y) $, e una funzione \begin{equation*}
-        *: V(X) \longrightarrow V(Y)
+    Una estensione non standard di $ V(X) $ consiste in un insieme base $ \nonstandard{X} $, con $ X \subsetneqq \nonstandard{X} $, un sotto universo $ \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $, e una funzione \begin{equation*}
+        *: V(X) \longrightarrow V(\nonstandard{X})
     \end{equation*}che soddisfi le seguenti condizioni. \begin{enumerate}
-        \item[(I)] $ Y \subseteq \nonstandard{V(X)} $, e $ * $ è una mappa iniettiva tale per cui, se $ x \in X $, allora $ \nonstandard{x} \in Y $. 
+        \item[(I)] $ \nonstandard{X} \subseteq \nonstandard{V(X)} $, e $ * $ è una mappa iniettiva tale per cui, se $ x \in X $, allora $ \nonstandard{x} \in \nonstandard{X} $. 
         \item[(II)] Per ogni formula limitata $ \phi(x_1,\dots,x_{k} ) $ e ogni $ k $-upla di costanti $ a_1,\dots,a_{k} \in V(X)  $, la formula $ \phi[a_1,\dots,a_{k} ] $ è vera in $ V(X) $ se e solo se $ \phi[\nonstandard{a_1},\dots,\nonstandard{a_{k} }] $ è vera in $ \nonstandard{V(X)} $.
     \end{enumerate}
 }
-\osservazione{
-    Si ha che $ Y = \nonstandard{X} $\footnote{Non riesco a convincermi di questa cosa, però non avrebbe senso il contrario}. %TODO capire se è vero
-}
+% \osservazione{
+%     Si ha che $ Y = \nonstandard{X} $\footnote{Non riesco a convincermi di questa cosa, però non avrebbe senso il contrario}. %TODO capire se è vero
+% }
 
 Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non standard di $ V(X) $, tramite la costruzione dell'ultraprodotto ridotto.
 
@@ -212,10 +212,26 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 }
 \teorema[Teorema di Łoś]{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
     Se $ \varphi(x^{1},\dots,x^{n}) $ è una qualsiasi $ \in $-formula limitata e $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\text{bd}}$, allora \begin{equation*}
-        \left(V(X)^{\N}_{\text{bd}}, \nonstandard{\in}\right)\vDash \varphi\left[\sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }\right]\text{ se e solo se }T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }} \in \mathcal{F}.
+        \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \varphi\left[\sequence{a_{n}^{1} }_{\mathcal{F}}, \dots, \sequence{a_{n}^{k} }_{\mathcal{F}}\right]\text{ se e solo se }T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }} \in \mathcal{F}.
     \end{equation*}
 }
 \dimostrazione{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
     \lipsum[1]\qed
 }
-\section{title}
+\paragrafo{Corollario}{%
+    La mappa $ x\longmapsto \sequence{x}_{\mathcal{F}} $ è una immersione elementare della struttura $ \left(V(X), \in\right) $ in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $. 
+
+    In altre parole, se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $ se e solo se $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $.
+}{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio}{}
+\dimframmento{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio}{
+    Poiché le $ \sequence{a^{i}} $ sono successioni costanti, l'insieme $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  $ è necessariamente uno tra $ \N $ e $ \emptyset $. 
+
+    Dunque, per il teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  \in\mathcal{F} $. 
+
+    Per le proprietà di ultrafiltro di $ \mathcal{F} $, $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} \in \mathcal{F} $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} = \N $. Quest'ultimo è valido se e solo se $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $.\qed
+}
+\osservazione{
+    È possibile ora definire l'insieme $ \nonstandard{X} $ necessario per costruire l'estensione non-standard di $ V(X) $. In particolare, si pone \begin{equation*}
+        \nonstandard{X} \coloneqq \set{\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} } \in X^{\N}}.
+    \end{equation*}$\nonstandard{X}$ così definito è un insieme base\footnote{La dimostrazione di questo fatto può essere trovata nella sezione 17.2 di \cite{katz_true_nodate}.}.
+}

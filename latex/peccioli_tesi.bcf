@@ -1998,10 +1998,11 @@
     <bcf:citekey order="1">andretta_elements_2022</bcf:citekey>
     <bcf:citekey order="2">chang_model_2012</bcf:citekey>
     <bcf:citekey order="3">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="4">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="4">katz_true_nodate</bcf:citekey>
     <bcf:citekey order="5">nowik_differential_2015</bcf:citekey>
     <bcf:citekey order="6">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="7">keisler_foundation_2007</bcf:citekey>
+    <bcf:citekey order="7">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="8">keisler_foundation_2007</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

@@ -58,6 +58,15 @@ Il corollario precedente è il 4.4.1 di \cite{chang_model_2012}.
 \osservazione{
     L'insieme dei numeri reali $ \R $ è un insieme base. Questo sarà estremamente importante ai fini di questa tesi, ma la dimostrazione prescinde dallo scopo del lavoro. Pertanto, si rimanda alla sezione 16.2 di \cite{katz_true_nodate}.
 }
+\osservazione{
+    Possiamo notare che all'interno di $ V(X) $ sono contenuti molti oggetti di interesse matematico:\begin{itemize}
+        \item una topologia su $ X $ è un elemento di $ V_{3}(X)  $;
+        \item le coppie ordinate di $ X\times X $, codificate come insieme come usuale, ovvero \begin{equation*}
+            (a,b) = \{\{a\},\{a,b\}\}
+        \end{equation*}sono elementi di $ V_1(X) $; dunque $ X\times X $ è un elemento di $ V_3(X) $;
+        \item una funzione $ f:X \longrightarrow X $ può essere vista come sottoinsieme di $ X\times X $, e pertanto è un elemento di $ V_3(X) $.
+    \end{itemize}
+}
 \section{Linguaggio del prim'ordine}
 
 La costruzione di un universo matematico consente di quantificare sugli insiemi, pur mantentendosi nell'ambito della logica del prim'ordine. 
@@ -100,3 +109,43 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
 }{}{}
 
 \subsection{Ultraprodotto ridotto.}
+
+\definizione{
+    Sia $ X $ un insieme base. Si definisce \begin{equation*}
+        V(X)^{\N}_{\text{bd}} = \bigcup_{m \in \N}\left(V_{m}(X)^{\N} \right) \subsetneqq V(X)^{\N}.
+    \end{equation*}ed è l'insieme di partenza per la costruzione della ultrapotenza ridotta.
+}
+\definizione{
+    Sia $ X $ un insieme base. Si definisce la funzione\begin{equation*}
+        \rank_{X}: V(X) \longrightarrow \N 
+    \end{equation*}come segue:\begin{itemize}
+        \item $ \rank_{X}(\emptyset)=0  $;
+        \item se $ b \in X $, allora $ \rank_{X}(b) =0  $;
+        \item se $ b \in V(X)\setminus X $ e $ b\neq \emptyset $, allora $ \rank_{X}(b) $ è il minor numero naturale strettamente più grande dei $ \rank_{X}(y)$ per ogni $ y \in b $.\footnote{Potrei scrivere che:
+        
+        se $ b \in V(X)\setminus X $ e $ b\neq \emptyset $, allora \begin{equation*}
+            \rank_{X}(b) = \max_{y \in b} \{\rank_{X}(y) \} +1.
+        \end{equation*}}
+    \end{itemize}
+}
+\osservazione{
+    Sia $ m $ un numero naturale maggiore di zero. $ b \in V_{m}(X)\setminus V_{m-1}(X)   $ se e solo se $ \rank_{X}(b) = m  $.
+}
+\definizione{
+    Una successione $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ è \emph{di tipo $ m $} se l'insieme \begin{equation*}
+        D_{m} = \set{n \in \N: \rank_{X}(x_{n} ) = m } 
+    \end{equation*}appartiene ad $ \mathcal{F} $. $ \sequence{x_{n} } $ si dice \emph{totalmente di tipo $ m $} se $ D_{m} = \N$.
+}
+\lemma{djnckjnskjndjckjnsdkjnckjnskjn}{
+    Per ogni successione $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ esiste un unico $ m \in \N $ tale per cui $ \sequence{x_{n} } $ è di tipo $ m $.
+}
+\dimostrazionelem{djnckjnskjndjckjnsdkjnckjnskjn}{
+    Per costruzione esiste $ M \in \N  $ tale per cui \begin{equation*}
+        \sequence{x_{n} } \in V_{M}(X). 
+    \end{equation*}Pertanto si ha una unione disgiunta $ \N = \bigsqcup_{m\le M} D_{m} $; la tesi segue dalla definizione di ultrafiltro.\qed % Si noti che la partizione di N viene dal fatto che a ciascun elemento della sequenza posso associare un rank
+}
+\definizione{
+    Si definisce una relazione di equivalenza $ \sim_{\mathcal{F}}  $ tra gli elementi di $ V(X)^{\N}_{\text{bd}} $: \begin{equation*}
+        \sequence{x_{n}}\sim_{\mathcal{F}} \sequence{y_{n} }\text{ se e solo se }\set{n \in \N: x_{n}=y_{n}  } \in \mathcal{F}.
+    \end{equation*}
+}

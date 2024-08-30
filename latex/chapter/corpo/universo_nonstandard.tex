@@ -41,7 +41,7 @@ Questa è la ragione della apparente rindondanza del capitolo precedente: è pi�
 }{}{}
 \paragrafo{Corollario}{%
     Sia $ X $ è un insieme base. Se $ a \in V(X) $, $ a \in b \in V_{m}(X)  $, allora $ m\ge 1 $ e $ a \in V_{m-1}(X) $.
-}{}{}
+}{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}{}
 
 Il corollario precedente è il 4.4.1 di \cite{chang_model_2012}.
 
@@ -188,5 +188,34 @@ Si possono ora definire delle classi di equivalenza: \begin{equation*}
     Se $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F} $ e $ \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}} $, allora esiste un insieme $ K\in\mathcal{F} $ e un indice $ 1\le m \in\N $ tale per cui $ x_{n} \in V_{m-1}(X)   $, $ y_{n} \in V_{m}(X)$ e $ x_{n} \in y_{n}$ per ogni $ n\in K $.
 }
 \dimostrazionelem{dkjnckjdkckjndjckjndjckkjnckjs}{
-    
+    Sia $ L=\set{n \in \N: x_{n} \in y_{n}} $. Per definizione, $ L \in \mathcal{F} $, e inoltre esiste $ M \in \N $ tale per cui $ x_n, y_{n} \in V_{M}(X)$ per ogni $ n \in \N$. 
+
+    Siano quindi\begin{equation*}
+        K_{m} = \set{n \in L: x_{n} \in V_{m-1}(X) \text{ e }y_{n} \in V_{m}(X)   } ,\quad 1\le m\le M.
+    \end{equation*}Il corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj} assicura che per ciascuna coppia $ x_{n} \in y_{n}$ esista un $ m $ tale per cui $ x_{n} \in V_{m-1}(X) $ e $ y_{n} \in V_{m}(X)$, e pertanto \begin{equation*}
+        L = \bigcup_{1\le m\le M} K_{m} . 
+    \end{equation*}Poiché $ \mathcal{F} $ è un ultrafiltro, almeno uno dei $ K_{m} \in \mathcal{F}$. Si pone dunque $ K=K_{m}  $.\qed
 }
+\paragrafo{Notazione}{%
+    Sia $ x \in V(X) $. Per indicare la successione $ \sequence{x_{n} } $ dove per ogni $ n \in \N $ si ha $ x_{n} = x  $, si scriverà $ \sequence{x} $. 
+    
+    Similmente, si indicherà con $ \sequence{x}_{\mathcal{F}} $ la classe di equivalenza della successione di cui sopra.
+}{}{}
+
+\section{Teorema di Łoś}
+
+In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}
+\definizione{
+    Sia $ \varphi $ una $ \in $-formula, e siano $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\text{bd}}$. Si definisce \emph{insieme di verità} $ T \subseteq \N $: \begin{equation*}
+        T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }}  = \set{n \in \N: V(X) \vDash \varphi[a_{n}^{1},\dots, a_{n}^{k}  ]}.
+    \end{equation*}
+}
+\teorema[Teorema di Łoś]{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
+    Se $ \varphi(x^{1},\dots,x^{n}) $ è una qualsiasi $ \in $-formula limitata e $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\text{bd}}$, allora \begin{equation*}
+        \left(V(X)^{\N}_{\text{bd}}, \nonstandard{\in}\right)\vDash \varphi\left[\sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }\right]\text{ se e solo se }T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }} \in \mathcal{F}.
+    \end{equation*}
+}
+\dimostrazione{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
+    \lipsum[1]\qed
+}
+\section{title}

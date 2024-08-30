@@ -156,7 +156,7 @@
     $ T_{a}M  $ è uno spazio vettoriale \emph{reale} $ n $-dimensionale indipendentemente dalla scelta delle coordinate.
 }
 \dimostrazioneprop{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
-    \lipsum[1]\qed %TODO da dimostrare
+    \commento{\lipsum[1]}\qed %TODO da dimostrare
 }
 \osservazione{
     Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
@@ -203,7 +203,7 @@
 }
 %TODO osservare da qualche parte che f(x) = *f(x) per ogni x in X.
 \osservazione{
-    \lipsum[2] %TODO aggiungere identificazione tra T_{a}M  e lo spazio tangente "standard" (Remark 2.12)
+    \commento{Devo aggiungere l'identificazione tra $ T_{a}M  $ e lo spazio tangente standard} %TODO aggiungere identificazione tra T_{a}M  e lo spazio tangente "standard" (Remark 2.12)
 }
 \section{Campi di prevettori}
 
@@ -354,7 +354,7 @@ Nella proposizione successiva si mostrerà che il campo di prevettori costruito 
         p + s_1v_1+\dots+s_{k}v_{k} \in U  
     \end{equation*}per ogni $ 0\le s_1,\dots,s_{k} \le 1 $. Si definisce quindi, per ogni $  i = 1,\dots,n $ \begin{equation*}
         \varphi^{i}(s_1,\dots,s_{k} ) = X^{i}(p + s_1v_1+\dots+s_{k}v_{k}).
-    \end{equation*}Iterando $ k $ volte il teorema del valor medio\footnote{\lipsum[1]%TODO spiegare il perché, non l'ho capito
+    \end{equation*}Iterando $ k $ volte il teorema del valor medio\footnote{\commento{Aggiungere una spiegazione completa}%TODO spiegare il perché, non l'ho capito
     } si ottiene che esiste $ (t_1,\dots,t_{k} ) \in  [0,1]^{k} $ tale per cui \begin{equation*}
         \sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  } \varphi^{i} (e_1,\dots,e_{k} ) = \frac{\partial\null^{\hspace{0.6pt}k}}{\partial s_1\ \partial s_2 \dots \partial s_{k} } \varphi^{i}(t_1,\dots,t_{k} )\,(-1)^{k}.
     \end{equation*}Dunque si ha che \begin{align*}
@@ -416,8 +416,8 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
 
     Sia ora $ m=\min\left\{N, \floor{1/(2K\norma{v})}\right\}\le N $; allora $ (1-Km\norma{v})\ge 1/2 $, e dunque \begin{equation*}
         m\norma{v}\norma{A}/2\le \norma{v}\norma{G(x_0)-G(x_{m} )}.
-    \end{equation*}Poiché $ m\norma{v}/2 $ non è infinitesimo\footnote{%TODO capire bene, p17 di nowik
-    \lipsum[2]} $ A\prec \norma{v}\norma{G(x_0)-G(x_{m} )} $.\qed
+    \end{equation*}Poiché $ m\norma{v}/2 $ non è infinitesimo\footnote{\commento{Da spiegare bene il perché}%TODO capire bene, p17 di nowik
+    } $ A\prec \norma{v}\norma{G(x_0)-G(x_{m} )} $.\qed
 }
 \proposizione{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $ su $ W $, allora $ F $ è di classe $ D^{1} $.

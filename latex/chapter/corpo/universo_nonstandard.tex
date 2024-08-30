@@ -216,8 +216,9 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
     \end{equation*}
 }
 \dimostrazione{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
-    \lipsum[1]\qed
+    \commento{\lipsum[1]}\qed
 }
+\section{Immersione elementare}
 \paragrafo{Corollario}{%
     La mappa $ x\longmapsto \sequence{x}_{\mathcal{F}} $ è una immersione elementare della struttura $ \left(V(X), \in\right) $ in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $. 
 
@@ -235,3 +236,92 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
         \nonstandard{X} \coloneqq \set{\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} } \in X^{\N}}.
     \end{equation*}$\nonstandard{X}$ così definito è un insieme base\footnote{La dimostrazione di questo fatto può essere trovata nella sezione 17.2 di \cite{katz_true_nodate}.}.
 }
+\definizione{
+    Sia $ h:V(X)^{\N}_{\text{bd}}/\mathcal{F} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
+    
+    $ h $ è definita per induzione:
+    \begin{enumerate}
+        \item se $ m=0 $, allora $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \sequence{a_{n} }_{\mathcal{F}}$;
+        \item se $ m\ge 1 $, allora si pone \begin{equation*}
+            h\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \set{
+                h\left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} } \in V_{m-1}(X)^{\N} \text{ e }\sequence{b_{n}}_{\mathcal{F}} \nonstandard{\in} \sequence{a_{n} }_{\mathcal{F}}
+            }.
+        \end{equation*}
+    \end{enumerate}
+}
+\commento{Devo consultare un libro (Model Theory di Chang e Keisler, 1990) che non trovo in digitale ma ho prenotato in biblioteca in merito al "Mostowski collapse".}
+
+\osservazione{
+    Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ h\left(\sequence{a_{n} }\right) \in V_{m}(\nonstandard{X}) $.
+}
+\lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
+    La funzione $ h $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\text{bd}} $ \begin{equation*}
+        \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{b_{n} }_{\mathcal{F}}\text{ se e solo se }h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right).
+    \end{equation*}
+}
+\dimostrazionelem{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
+    \commento{\lipsum[1]}\qed
+}
+\definizione{
+    Si definiscono i seguenti insiemi, per $ m \in \N $: \begin{align*}
+        \nonstandard{V(X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}} = h\left(V(X)^{\N}_{\text{bd}}/\mathcal{F}\right)\\ 
+        \nonstandard{V_{m} (X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V_{m} (X)^{\N}/\mathcal{F}} = h\left(V_{m}(X)^{\N}/\mathcal{F} \right).
+    \end{align*}
+}
+\proposizione{dcsdscsdcsdcsdcsdcsdcsdcs}{
+    Gli insiemi definiti sopra soddisfano le seguenti proprietà:\begin{itemize}
+        \item $ \nonstandard{V_{m}(X)} = \nonstandard{V(X)}\cap V_{m}(\nonstandard{X})  $;
+        \item $ \nonstandard{V_{m+1}(X)} \subseteq \parti{\nonstandard{V_{m}(X) }} $;
+        \item $ \displaystyle \nonstandard{V(X)} = \bigcup_{m \in \N} \nonstandard{V_{m}(X) } \subseteq V(\nonstandard{X}) $.
+    \end{itemize}
+    Questo garantisce che $ \nonstandard{V(X)} $ è un sottouniverso.
+}
+\dimostrazioneprop{dcsdscsdcsdcsdcsdcsdcsdcs}{
+    \commento{\lipsum[1]}
+}
+\osservazione{
+    Si ha che $ \nonstandard{X}= \nonstandard{V_0(X)} $.
+}
+
+Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatamente il corollario.
+\paragrafo{Corollario}{%
+    Se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ \xi^{1},\dots,\xi^{k} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}$, allora \begin{equation*}
+        \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[h(\xi^{1}),\dots,h(\xi^{k})\right].
+    \end{equation*}
+}{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}{}
+
+\section{Teorema esistenziale}
+\teorema{dkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn}{
+    Sia $ X $ un insieme base, e $ V(X) $ l'universo matematico costruito su $ X $. Esiste una estensione non standard $ \nonstandard{V(X)} $ di $ V(X) $.
+}
+\dimostrazione{dkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn}{
+    Si nota innanzitutto che per la proposizione \framref{dcsdscsdcsdcsdcsdcsdcsdcs}, $ \nonstandard{V(X)} $ è un sotto universo di $ V(\nonstandard{X}) $, ed inoltre, per costruzione, $ \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $.
+
+    Si definisce la mappa $ *:V(X) \longrightarrow \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $ come \begin{align*}
+    *:V(X) &\longrightarrow V(\nonstandard{X}) \\
+    x &\longmapsto h\left(\sequence{x}_{\mathcal{F}}\right)
+    \end{align*}
+    Valgono i seguenti fatti:\begin{itemize}
+        \item $ *(X) = \nonstandard{X} $;
+        \item $ \nonstandard{X} \subseteq \nonstandard{V(X)} $ per la proposizione \framref{dcsdscsdcsdcsdcsdcsdcsdcs}: \begin{equation*}
+            \nonstandard{X} = \nonstandard{V_{0}(X)} = \nonstandard{V(X)}\cap V_0(\nonstandard{X});
+        \end{equation*}
+        \item per il lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}, $ * $ è iniettiva, e sempre per lo stesso lemma se $ x \in X $ allora $ \nonstandard{x} \in \nonstandard{X} $.
+    \end{itemize}
+
+    Si è quindi dimostrata la validità del punto (I) della definizione. 
+
+    Per quanto riguarda il punto (II), se $ \phi(x^1,\dots,x^{k} ) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora \begin{itemize}
+        \item $ \left(V(X),\in\right)\vDash\phi[a^{1},\dots,a^{k}] $ se e solo se $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ per il corollario \framref{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio};
+        \item $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ se e solo se $ \left(\nonstandard{V(X)}, \in\right)\vDash \phi[\nonstandard{a^{1}},\dots, \nonstandard{a^{k}}] $, per il corollario \framref{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}.
+    \end{itemize}
+
+    Resta da dimostrare che $ X \subsetneqq \nonstandard{X} $, ovvero che esista $ y \in \nonstandard{X} $ tale per cui $ y\neq \nonstandard{x} $ per ogni $ x \in X $. 
+
+    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \nonstandard{X} $. \commento{}
+
+    Si dimostra ora che se $ x \in X $, allora $ \xi\neq \nonstandard{x} $: per definizione significa dimostrare che $ \sequence{a_{n} }\not\sim \sequence{x} $, ovvero che $ N={n \in \N: a_{n}\neq x } \in \mathcal{F} $. 
+
+    È evidente però che $ N $ contiene tutti i numeri naturali tranne al più l'unico indice $ n_0 $ tale per cui $ a_{n_0}= x  $ (poiché gli $ a_i $ sono tutti distinti). Dunque $ N \in  \mathcal{F} $.\qed
+}
+\section{Equivalenza elementare con $ \starR $}

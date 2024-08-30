@@ -149,3 +149,44 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
         \sequence{x_{n}}\sim_{\mathcal{F}} \sequence{y_{n} }\text{ se e solo se }\set{n \in \N: x_{n}=y_{n}  } \in \mathcal{F}.
     \end{equation*}
 }
+
+Per semplicità si scriverà $ \sim $ in luogo di $ \sim_{\mathcal{F}}  $.
+\lemma{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
+    Sia $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ una sequenza di tipo $ m $. Allora esiste una sequenza $ \sequence{y_{n} } \in V(X)^{\N}_{\text{bd}} $ totalmente di tipo $ m $ tale per cui $ \sequence{x_{n} }\sim \sequence{y_{n} } $.
+}
+\dimostrazionelem{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
+    Sia \begin{equation*}
+        D_{m} = \set{n \in \N: \rank_{X}(x_{n} ) = m } 
+    \end{equation*}con $ D_{m} \in \mathcal{F} $ per ipotesi. 
+
+    Fissato $ a \in V_{m}(X)\setminus V_{m-1}(X) $ (se $ m=0 $, allora si prende $ a \in X $), si definisce per ogni $ n \in \N $.\begin{equation*}
+        y_{n} = \begin{cases}
+            x_{n} & n \in D_{m}\\ 
+            a & n\notin D_{m}   
+        \end{cases} \qedd
+    \end{equation*}
+}
+
+Si possono ora definire delle classi di equivalenza: \begin{equation*}
+    \sequence{x_{n}}_{\mathcal{F}} = \set{\sequence{y_{n} } \in V(X)^{\N}_{\text{bd}}: \sequence{y_{n} }\sim \sequence{x_{n} }},
+\end{equation*}e quindi il quoziente\begin{equation*}
+    V_{m}(X)^{\N}/ \mathcal{F} = \set{\sequence{x_{n}}_{\mathcal{F}}: \sequence{x_{n}} \in V_{m}(X)^{\N} }.
+\end{equation*}Questo porta a definire il quoziente di tutto $ V(X)^{\N}_{\text{bd}} $ come \begin{equation*}
+    V(X)^{\N}_{\text{bd}}/\mathcal{F} = \bigcup_{m \in \N}  V_{m}(X)^{\N}/ \mathcal{F} = \set{\sequence{x_{n}}_{\mathcal{F}}: \sequence{x_{n}} \in V(X)^{\N}_{\text{bd}}}
+\end{equation*}
+
+È quindi evidente il seguente corollario. 
+\paragrafo{Corollario}{%
+    Ogni elemento di $ V(X)^{\N}_{\text{bd}}/\mathcal{F} $ è nella forma $ \sequence{x_{n} }_{\mathcal{F}} $, dove $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui $ x_{n} \in V_{m}(X)\setminus V_{m-1}(X)$ per ogni $ n \in \N $.
+}{}{}
+\definizione{
+    Per $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F} $ si definisce una relazione binaria: \begin{equation*}
+        \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}}\text{ se e solo se }\set{n \in \N: x_{n} \in y_{n}} \in \mathcal{F}.
+    \end{equation*}
+}
+\lemma{dkjnckjdkckjndjckjndjckkjnckjs}{
+    Se $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F} $ e $ \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}} $, allora esiste un insieme $ K\in\mathcal{F} $ e un indice $ 1\le m \in\N $ tale per cui $ x_{n} \in V_{m-1}(X)   $, $ y_{n} \in V_{m}(X)$ e $ x_{n} \in y_{n}$ per ogni $ n\in K $.
+}
+\dimostrazionelem{dkjnckjdkckjndjckjndjckkjnckjs}{
+    
+}

@@ -280,14 +280,14 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
     \end{equation*}$\nonstandard{X}$ così definito è un insieme base\footnote{La dimostrazione di questo fatto può essere trovata nella sezione 17.2 di \cite{katz_true_nodate}.}.
 }
 \definizione{
-    Sia $ h:V(X)^{\N}_{\bounded}/\mathcal{F} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
+    Sia $ \hslash:V(X)^{\N}_{\bounded}/\mathcal{F} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
     
-    $ h $ è definita per induzione:
+    $ \hslash $ è definita per induzione:
     \begin{enumerate}
-        \item se $ m=0 $, allora $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \sequence{a_{n} }_{\mathcal{F}}$;
+        \item se $ m=0 $, allora $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \sequence{a_{n} }_{\mathcal{F}}$;
         \item se $ m\ge 1 $, allora si pone \begin{equation*}
-            h\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \set{
-                h\left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} } \in V_{m-1}(X)^{\N} \text{ e }\sequence{b_{n}}_{\mathcal{F}} \nonstandard{\in} \sequence{a_{n} }_{\mathcal{F}}
+            \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) = \set{
+                \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} } \in V_{m-1}(X)^{\N} \text{ e }\sequence{b_{n}}_{\mathcal{F}} \nonstandard{\in} \sequence{a_{n} }_{\mathcal{F}}
             }.
         \end{equation*}
     \end{enumerate}
@@ -295,21 +295,25 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 \commento{Devo consultare un libro (Model Theory di Chang e Keisler, 1990) che non trovo in digitale ma ho prenotato in biblioteca in merito al "Mostowski collapse".}
 
 \osservazione{
-    Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ h\left(\sequence{a_{n} }\right) \in V_{m}(\nonstandard{X}) $.
+    Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ \hslash\left(\sequence{a_{n} }\right) \in V_{m}(\nonstandard{X}) $.
 }
 \lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
-    La funzione $ h $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
-        \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{b_{n} }_{\mathcal{F}}\text{ se e solo se }h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right).
+    La funzione $ \hslash $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
+        \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{b_{n} }_{\mathcal{F}}\text{ se e solo se }\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right).
     \end{equation*}
 }
 \dimostrazionelem{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
     Si dimostra l'\emph{iniettività}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ tali per cui $ \sequence{a_{n} }_{\mathcal{F}}\neq \sequence{b_{n} }_{\mathcal{F}} $. Per il teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, l'insieme $ T \in \mathcal{F} $, con \begin{equation*}
         T=\set{n \in \N: a_{n}\neq b_{n}}.
     \end{equation*}Senza perdita di generalità, per il corollario \framref{dkjncjskjncjskjndjcdjjjjjdjdjj}, si può assumere che $ \sequence{a_n} $ sia totalmente di tipo $ m $ e che $ \sequence{b_n} $ sia totalmente di tipo $ m' $.\begin{itemize}
-        \item Se $ m=m'=0 $
-        \item Se $ m'=0 $ e $ m\ge 1 $
-        \item Se $ m=m'\ge 1 $
-        \item Se $ m,m'\ge 1 $ e $ m\neq m' $
+        \item Se $ m=m'=0 $, allora $ a_{n}, b_{n} \in X   $ per ogni $ n $. Allora per costruzione \begin{equation*}
+            \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) =\sequence{a_{n} }_{\mathcal{F}}, \qquad \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) =\sequence{b_{n} }_{\mathcal{F}} 
+        \end{equation*}che sono diversi per ipotesi.
+        \item Se $ m'=0 $ e $ m\ge 1 $, allora $ b_{n} \in X  $ mentre $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ per ogni $ n \in \N $. Allora $ \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) = \sequence{b_{n} }_{\mathcal{F}} \in \nonstandard{X}$, mentre $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq V(\nonstandard{X})$ per costruzione. Per definizione di insieme base, \begin{equation*}
+            \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) \cap V(\nonstandard{X}) = \emptyset
+        \end{equation*}dunque, se per assurdo $ \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) = \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intesezione conterrebbe $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \neq \emptyset $. \commento{Sono sicuro che questo insieme sia non vuoto poiché sarebbe esattamente uguale ad un elemento di $ \nonstandard{X} $?}
+        \item Se $ m=m'\ge 1 $ \commento{\lipsum[1]} %TODO
+        \item Se $ m,m'\ge 1 $ e $ m\neq m' $ \commento{\lipsum[2]} %TODO
     \end{itemize}
 
     Si dimostra che sia un \emph{isomorfismo}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ ed $ m' $. \begin{itemize}
@@ -317,16 +321,16 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
             N=\set{n \in \N: a_{n} \in b_{n}} \in \mathcal{F}
         \end{equation*}e quindi, per ogni $ n \in N $, si ha che $ a_{n} \in V_{m'-1}(X) $, per il corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}. 
 
-        Segue che, per la definizione di $ h $, $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right)$. 
-        \item Viceversa, se $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right) $, allora automaticamente \begin{equation*}
+        Segue che, per la definizione di $ \hslash $, $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right)$. 
+        \item Viceversa, se $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) $, allora automaticamente \begin{equation*}
             \sequence{a_{n} }_{\mathcal{F}} \mathcal{\nonstandard{\in}} \sequence{b_{n} }_{\mathcal{F}}\qedd
         \end{equation*}
     \end{itemize}
-}
+} 
 \definizione{
     Si definiscono i seguenti insiemi, per $ m \in \N $: \begin{align*}
-        \nonstandard{V(X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}} = h\left(V(X)^{\N}_{\bounded}/\mathcal{F}\right)\\ 
-        \nonstandard{V_{m} (X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V_{m} (X)^{\N}/\mathcal{F}} = h\left(V_{m}(X)^{\N}/\mathcal{F} \right).
+        \nonstandard{V(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}} = \hslash\left(V(X)^{\N}_{\bounded}/\mathcal{F}\right)\\ 
+        \nonstandard{V_{m} (X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V_{m} (X)^{\N}/\mathcal{F}} = \hslash\left(V_{m}(X)^{\N}/\mathcal{F} \right).
     \end{align*}
 }
 \proposizione{dcsdscsdcsdcsdcsdcsdcsdcs}{
@@ -347,7 +351,7 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatamente il corollario.
 \paragrafo{Corollario}{%
     Se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ \xi^{1},\dots,\xi^{k} \in V(X)^{\N}_{\bounded}/\mathcal{F}$, allora \begin{equation*}
-        \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[h(\xi^{1}),\dots,h(\xi^{k})\right].
+        \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[\hslash(\xi^{1}),\dots,\hslash(\xi^{k})\right].
     \end{equation*}
 }{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}{}
 
@@ -360,7 +364,7 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
     Si definisce la mappa: \begin{align*}
     *:V(X) &\longrightarrow \nonstandard{V(X)} \\
-    x &\longmapsto h\left(\sequence{x}_{\mathcal{F}}\right)
+    x &\longmapsto \hslash\left(\sequence{x}_{\mathcal{F}}\right)
     \end{align*}
     Valgono i seguenti fatti:\begin{itemize}
         \item $ *(X) = \nonstandard{X} $;
@@ -379,7 +383,7 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
     Resta da dimostrare che $ X \subsetneqq \nonstandard{X} $, ovvero che esista $ y \in \nonstandard{X} $ tale per cui $ y\neq \nonstandard{x} $ per ogni $ x \in X $. 
 
-    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \nonstandard{X} $. \commento{Questo non necessità l'ipotesi che $ X $ sia un insieme infinito? Questa ipotesi deriva dal fatto che $ X $ sia un insieme base?}%TODO risolvere
+    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \nonstandard{X} $. \commento{Questo non necessità l'ipotesi che $ X $ sia un insieme infinito? Questa ipotesi deriva dal fatto che $ X $ sia un insieme base?}%TODO risolvere
 
     Si dimostra ora che se $ x \in X $, allora $ \xi\neq \nonstandard{x} $: per definizione significa dimostrare che $ \sequence{a_{n} }\not\sim \sequence{x} $, ovvero che $ N={n \in \N: a_{n}\neq x } \in \mathcal{F} $. 
 

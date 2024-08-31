@@ -182,19 +182,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Proposizione {3.32}.}{22}{section*.76}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledcsdscsdcsdcsdcsdcsdcsdcs]{\textit {Dimostrazione.}}}{22}{section*.77}% 
+\contentsline {paragraph}{\hyperref [totaledcsdscsdcsdcsdcsdcsdcsdcs]{\textit {Dimostrazione.}}}{23}{section*.77}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione {3.33}.}{22}{section*.78}% 
+\contentsline {paragraph}{Osservazione {3.33}.}{23}{section*.78}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario {3.34}.}{22}{section*.79}% 
+\contentsline {paragraph}{Corollario {3.34}.}{23}{section*.79}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Teorema esistenziale}{22}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Teorema esistenziale}{23}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {3.35}.}{22}{section*.80}% 
+\contentsline {paragraph}{Teorema {3.35}.}{23}{section*.80}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\hyperref [totaledkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn]{\textit {Dimostrazione.}}}{23}{section*.81}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Equivalenza elementare con $ \prescript {*}{}{\mathds {R}}$}{23}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}Equivalenza elementare con $ \prescript {*}{}{\mathds {R}}$}{24}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Osservazione {3.36}.}{24}{section*.82}% 
 \defcounter {refsection}{0}\relax 

@@ -58,15 +58,15 @@ Il corollario precedente è il 4.4.1 di \cite{chang_model_2012}.
 \osservazione{
     L'insieme dei numeri reali $ \R $ è un insieme base. Questo sarà estremamente importante ai fini di questa tesi, ma la dimostrazione prescinde dallo scopo del lavoro. Pertanto, si rimanda alla sezione 16.2 di \cite{katz_true_nodate}.
 }
-\osservazione{
-    Possiamo notare che all'interno di $ V(X) $ sono contenuti molti oggetti di interesse matematico:\begin{itemize}
-        \item una topologia su $ X $ è un elemento di $ V_{3}(X)  $;
-        \item le coppie ordinate di $ X\times X $, codificate come insieme come usuale, ovvero \begin{equation*}
-            (a,b) = \{\{a\},\{a,b\}\}
-        \end{equation*}sono elementi di $ V_1(X) $; dunque $ X\times X $ è un elemento di $ V_3(X) $;
-        \item una funzione $ f:X \longrightarrow X $ può essere vista come sottoinsieme di $ X\times X $, e pertanto è un elemento di $ V_3(X) $.
-    \end{itemize}
-}
+\paragrafo{Osservazione}{%
+Possiamo notare che all'interno di $ V(X) $ sono contenuti molti oggetti di interesse matematico:\begin{itemize}
+    \item una topologia su $ X $ è un elemento di $ V_{3}(X)  $;
+    \item le coppie ordinate di $ X\times X $, codificate come insieme come usuale, ovvero \begin{equation*}
+        (a,b) = \{\{a\},\{a,b\}\}
+    \end{equation*}sono elementi di $ V_1(X) $; dunque $ X\times X $ è un elemento di $ V_3(X) $;
+    \item una funzione $ f:X \longrightarrow X $ può essere vista come sottoinsieme di $ X\times X $, e pertanto è un elemento di $ V_3(X) $.
+\end{itemize}
+}{dkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn}{}
 \section{Linguaggio del prim'ordine}
 
 La costruzione di un universo matematico consente di quantificare sugli insiemi, pur mantentendosi nell'ambito della logica del prim'ordine. 
@@ -85,7 +85,7 @@ In particolare, ogni formula sarà espressa nel linguaggio \begin{equation*}
 \osservazione{
     Le forme di prima saranno abbreviate come segue: \begin{align*}
         \forall\,x\, (x \in a \,\implies\, \cdots)\quad &\leadsto\quad\forall\, x \in a\, (\cdots)\\ 
-        \exists\,x\, (x \in a \,\land\, \cdots) \quad &\leadsto \quad \exists\, x \in a\, (\cdots).
+        \exists\,x\, (x \in a \,\land\, \cdots) \quad &\leadsto \quad \exists\, x \in a: (\cdots).
     \end{align*}
 }
 \section{Costruzione dell'universo non standard come ultraprodotto}
@@ -112,7 +112,7 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
 
 \definizione{
     Sia $ X $ un insieme base. Si definisce \begin{equation*}
-        V(X)^{\N}_{\text{bd}} = \bigcup_{m \in \N}\left(V_{m}(X)^{\N} \right) \subsetneqq V(X)^{\N}.
+        V(X)^{\N}_{\bounded} = \bigcup_{m \in \N}\left(V_{m}(X)^{\N} \right) \subsetneqq V(X)^{\N}.
     \end{equation*}ed è l'insieme di partenza per la costruzione della ultrapotenza ridotta.
 }
 \definizione{
@@ -132,12 +132,12 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
     Sia $ m $ un numero naturale maggiore di zero. $ b \in V_{m}(X)\setminus V_{m-1}(X)   $ se e solo se $ \rank_{X}(b) = m  $.
 }
 \definizione{
-    Una successione $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ è \emph{di tipo $ m $} se l'insieme \begin{equation*}
+    Una successione $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ è \emph{di tipo $ m $} se l'insieme \begin{equation*}
         D_{m} = \set{n \in \N: \rank_{X}(x_{n} ) = m } 
     \end{equation*}appartiene ad $ \mathcal{F} $. $ \sequence{x_{n} } $ si dice \emph{totalmente di tipo $ m $} se $ D_{m} = \N$.
 }
 \lemma{djnckjnskjndjckjnsdkjnckjnskjn}{
-    Per ogni successione $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ esiste un unico $ m \in \N $ tale per cui $ \sequence{x_{n} } $ è di tipo $ m $.
+    Per ogni successione $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ esiste un unico $ m \in \N $ tale per cui $ \sequence{x_{n} } $ è di tipo $ m $.
 }
 \dimostrazionelem{djnckjnskjndjckjnsdkjnckjnskjn}{
     Per costruzione esiste $ M \in \N  $ tale per cui \begin{equation*}
@@ -145,14 +145,14 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
     \end{equation*}Pertanto si ha una unione disgiunta $ \N = \bigsqcup_{m\le M} D_{m} $; la tesi segue dalla definizione di ultrafiltro.\qed % Si noti che la partizione di N viene dal fatto che a ciascun elemento della sequenza posso associare un rank
 }
 \definizione{
-    Si definisce una relazione di equivalenza $ \sim_{\mathcal{F}}  $ tra gli elementi di $ V(X)^{\N}_{\text{bd}} $: \begin{equation*}
+    Si definisce una relazione di equivalenza $ \sim_{\mathcal{F}}  $ tra gli elementi di $ V(X)^{\N}_{\bounded} $: \begin{equation*}
         \sequence{x_{n}}\sim_{\mathcal{F}} \sequence{y_{n} }\text{ se e solo se }\set{n \in \N: x_{n}=y_{n}  } \in \mathcal{F}.
     \end{equation*}
 }
 
 Per semplicità si scriverà $ \sim $ in luogo di $ \sim_{\mathcal{F}}  $.
 \lemma{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
-    Sia $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ una sequenza di tipo $ m $. Allora esiste una sequenza $ \sequence{y_{n} } \in V(X)^{\N}_{\text{bd}} $ totalmente di tipo $ m $ tale per cui $ \sequence{x_{n} }\sim \sequence{y_{n} } $.
+    Sia $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ una sequenza di tipo $ m $. Allora esiste una sequenza $ \sequence{y_{n} } \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ tale per cui $ \sequence{x_{n} }\sim \sequence{y_{n} } $.
 }
 \dimostrazionelem{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
     Sia \begin{equation*}
@@ -168,24 +168,24 @@ Per semplicità si scriverà $ \sim $ in luogo di $ \sim_{\mathcal{F}}  $.
 }
 
 Si possono ora definire delle classi di equivalenza: \begin{equation*}
-    \sequence{x_{n}}_{\mathcal{F}} = \set{\sequence{y_{n} } \in V(X)^{\N}_{\text{bd}}: \sequence{y_{n} }\sim \sequence{x_{n} }},
+    \sequence{x_{n}}_{\mathcal{F}} = \set{\sequence{y_{n} } \in V(X)^{\N}_{\bounded}: \sequence{y_{n} }\sim \sequence{x_{n} }},
 \end{equation*}e quindi il quoziente\begin{equation*}
     V_{m}(X)^{\N}/ \mathcal{F} = \set{\sequence{x_{n}}_{\mathcal{F}}: \sequence{x_{n}} \in V_{m}(X)^{\N} }.
-\end{equation*}Questo porta a definire il quoziente di tutto $ V(X)^{\N}_{\text{bd}} $ come \begin{equation*}
-    V(X)^{\N}_{\text{bd}}/\mathcal{F} = \bigcup_{m \in \N}  V_{m}(X)^{\N}/ \mathcal{F} = \set{\sequence{x_{n}}_{\mathcal{F}}: \sequence{x_{n}} \in V(X)^{\N}_{\text{bd}}}
+\end{equation*}Questo porta a definire il quoziente di tutto $ V(X)^{\N}_{\bounded} $ come \begin{equation*}
+    V(X)^{\N}_{\bounded}/\mathcal{F} = \bigcup_{m \in \N}  V_{m}(X)^{\N}/ \mathcal{F} = \set{\sequence{x_{n}}_{\mathcal{F}}: \sequence{x_{n}} \in V(X)^{\N}_{\bounded}}
 \end{equation*}
 
 È quindi evidente il seguente corollario. 
 \paragrafo{Corollario}{%
-    Ogni elemento di $ V(X)^{\N}_{\text{bd}}/\mathcal{F} $ è nella forma $ \sequence{x_{n} }_{\mathcal{F}} $, dove $ \sequence{x_{n} } \in V(X)^{\N}_{\text{bd}} $ è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui $ x_{n} \in V_{m}(X)\setminus V_{m-1}(X)$ per ogni $ n \in \N $.
-}{}{}
+    Ogni elemento di $ V(X)^{\N}_{\bounded}/\mathcal{F} $ è nella forma $ \sequence{x_{n} }_{\mathcal{F}} $, dove $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui $ x_{n} \in V_{m}(X)\setminus V_{m-1}(X)$ per ogni $ n \in \N $.
+}{dkjncjskjncjskjndjcdjjjjjdjdjj}{}
 \definizione{
-    Per $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F} $ si definisce una relazione binaria: \begin{equation*}
+    Per $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F} $ si definisce una relazione binaria: \begin{equation*}
         \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}}\text{ se e solo se }\set{n \in \N: x_{n} \in y_{n}} \in \mathcal{F}.
     \end{equation*}
 }
 \lemma{dkjnckjdkckjndjckjndjckkjnckjs}{
-    Se $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F} $ e $ \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}} $, allora esiste un insieme $ K\in\mathcal{F} $ e un indice $ 1\le m \in\N $ tale per cui $ x_{n} \in V_{m-1}(X)   $, $ y_{n} \in V_{m}(X)$ e $ x_{n} \in y_{n}$ per ogni $ n\in K $.
+    Se $ \sequence{x_{n} }_{\mathcal{F}}, \sequence{y_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F} $ e $ \sequence{x_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{y_{n} }_{\mathcal{F}} $, allora esiste un insieme $ K\in\mathcal{F} $ e un indice $ 1\le m \in\N $ tale per cui $ x_{n} \in V_{m-1}(X)   $, $ y_{n} \in V_{m}(X)$ e $ x_{n} \in y_{n}$ per ogni $ n\in K $.
 }
 \dimostrazionelem{dkjnckjdkckjndjckjndjckkjnckjs}{
     Sia $ L=\set{n \in \N: x_{n} \in y_{n}} $. Per definizione, $ L \in \mathcal{F} $, e inoltre esiste $ M \in \N $ tale per cui $ x_n, y_{n} \in V_{M}(X)$ per ogni $ n \in \N$. 
@@ -206,38 +206,81 @@ Si possono ora definire delle classi di equivalenza: \begin{equation*}
 
 In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}
 \definizione{
-    Sia $ \varphi $ una $ \in $-formula, e siano $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\text{bd}}$. Si definisce \emph{insieme di verità} $ T \subseteq \N $: \begin{equation*}
+    Sia $ \varphi $ una $ \in $-formula, e siano $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\bounded}$. Si definisce \emph{insieme di verità} $ T \subseteq \N $: \begin{equation*}
         T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }}  = \set{n \in \N: V(X) \vDash \varphi[a_{n}^{1},\dots, a_{n}^{k}  ]}.
     \end{equation*}
 }
 \teorema[Teorema di Łoś]{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
-    Se $ \varphi(x^{1},\dots,x^{n}) $ è una qualsiasi $ \in $-formula limitata e $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\text{bd}}$, allora \begin{equation*}
-        \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \varphi\left[\sequence{a_{n}^{1} }_{\mathcal{F}}, \dots, \sequence{a_{n}^{k} }_{\mathcal{F}}\right]\text{ se e solo se }T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }} \in \mathcal{F}.
+    Se $ \varphi(x^{1},\dots,x^{n}) $ è una qualsiasi $ \in $-formula limitata e $ \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} } \in V(X)^{\N}_{\bounded}$, allora \begin{equation*}
+        \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \varphi\left[\sequence{a_{n}^{1} }_{\mathcal{F}}, \dots, \sequence{a_{n}^{k} }_{\mathcal{F}}\right]\text{ se e solo se }T_{\varphi, \sequence{a_{n}^{1} }, \dots, \sequence{a_{n}^{k} }} \in \mathcal{F}.
     \end{equation*}
 }
 \dimostrazione{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}{
-    \commento{\lipsum[1]}\qed
+    La dimostrazione procede per induzione sull'altezza della formula. Per brevità in ciascun passo la lista arbitrariamente lunga di variabili libere della formula sarà ridotta al minimo.
+
+    Si verifica poi l'ipotesi induttiva solamente per i connettori e quantificatori logici $ \lnot, \lor, \exists $, in quanto tutti i rimanenti sono esprimibili come combinazione di questi.
+
+    \begin{itemize}
+        \item \textit{Passo base.} Sia $ \phi(x,y): x \in y $. Siano $ \sequence{a_{n} } ,\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $. 
+        
+        $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash\phi[\sequence{a_{n} }_{\mathcal{F}}, \sequence{b_{n} }_{\mathcal{F}}] $ se e solo se $ \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{b_{n} }_{\mathcal{F}} $. 
+
+        Per definizione, questo è vero se e solo se \begin{equation*}
+            \set{n \in \N: a_{n} \in b_{n}  } \in \mathcal{F}
+        \end{equation*}ma l'insieme in questione è esattamente $ T_{\phi, \sequence{a_{n} },\sequence{b_{n} }}  $.
+        \item \textit{Passo $ \lnot $.} Sia $ \phi(x) $ una $ \in $-formula limitata. Si supponga che il teorema valga per $ \phi(x) $. Si vuole dimostrare che valga per $ \lnot\,\phi(x) $.
+        
+        Sia $ \sequence{a_{n} } \in V(X)^{\N}_{\bounded} $. La formula $ \lnot\,\phi\left[\sequence{a_{n} }_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right) $ se e solo se $ \phi\left[\sequence{a_{n} }_{\mathcal{F}}\right] $ è falsa, ovvero, per ipotesi induttiva, se e solo se $ T_{\phi, \sequence{a_{n} }} \notin \mathcal{F} $. Poiché $ T_{\phi, \sequence{a_{n} }} = \N\setminus T_{\lnot\,\phi,\sequence{a_{n} }} $, e poiché $ \mathcal{F} $ è un ultrafiltro, segue la tesi.
+        \item \textit{Passo $ \lor $.} Siano $ \phi(x), \psi(x) $ due $ \in $-formula limitate. Si supponga che il teorema valga per $ \phi(x) $ e per $ \psi(x) $. Si vuole dimostrare che valga per $ \phi(x) \lor \psi(x) $.
+        
+        Sia $ \sequence{a_{n} } \in V(X)^{\N}_{\bounded} $. $ \phi\lor\psi\left[\sequence{a_{n} }_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right) $ se e solo se almeno una tra $ \phi\left[\sequence{a_{n} }_{\mathcal{F}}\right] $ e $ \psi\left[\sequence{a_{n} }_{\mathcal{F}}\right] $ sono vere, ovvero, per ipotesi induttiva, se e solo se almeno uno tra $ T_{\phi, \sequence{a_{n} }}  $ e $ T_{\psi, \sequence{a_{n} }}  $ è contenuto in $ \mathcal{F} $.
+
+        Poiché $ \mathcal{F} $ è un ultrafiltro allora è primo, e quindi la condizione di cui sopra è equivalente a $ T_{\phi, \sequence{a_{n} }}  \cup T_{\psi, \sequence{a_{n} }}  \in \mathcal{F} $. La tesi segue dal fatto che \begin{equation*}
+            T_{\phi, \sequence{a_{n} }}  \cup T_{\psi, \sequence{a_{n} }} = T_{\phi\lor\psi, \sequence{a_{n} }}. 
+        \end{equation*}
+        \item \textit{Passo $ \exists $.} Sia $ \phi(x,y,z) $ una $ \in $-formula limitata. Si supponga che il teorema valga per $ \phi(x,y,z) $. Si vuole dimostrare che valga per $ \exists\,z \in x: \phi(x,y,z) $.
+        
+        Sia dunque \begin{equation*}
+            \psi(x,y): \quad \exists\,z \in x: \phi(x,y,z)
+        \end{equation*}e siano $ \sequence{a_{n} }, \sequence{b_{n} } \in V(X)^{\N}_{\bounded}$. 
+
+        $\left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash\psi\left[\sequence{a_{n} }_{\mathcal{F}},\sequence{b_{n} }_{\mathcal{F}}\right]  $ se e solo se esiste una successione $ \sequence{c_{n}} $ in $ V(X)^{\N}_{\bounded} $ tale per cui le seguenti affermazioni sono vere \begin{align*}
+            &\sequence{c_{n}}_{\mathcal{F}} \mathcal{\nonstandard{\in}} \sequence{a_{n} }_{\mathcal{F}}\\
+            &\phi\left[\sequence{a_{n} }_{\mathcal{F}},\sequence{b_{n} }_{\mathcal{F}},\sequence{c_{n} }_{\mathcal{F}}\right]
+        \end{align*}Per ipotesi induttiva e per ipotesi base, questo è equivalente a richiedere che esista $ \sequence{c_{n} } \in V(X)^{\N}_{\bounded} $ tale per cui gli insiemi $ U_{\sequence{c_{n} }}'  $ e $ U_{\sequence{c_{n} }}'' $ appartengano ad $ \mathcal{F}  $, dove \begin{align*}
+            U_{\sequence{c_{n} }}' &= \set{n \in \N: c_{n} \in a_{n}  }\\ 
+            U_{\sequence{c_{n} }}'' &= T_{\phi, \sequence{a_{n} }, \sequence{b_{n} }, \sequence{c_{n} }} = \set{n \in \N: V(X)\vDash \phi[a_{n}, b_{n}, c_{n}   ]}. 
+        \end{align*}Sia dunque $ U_{\sequence{c_{n} }} =  U_{\sequence{c_{n} }}'\cap U_{\sequence{c_{n} }}'' $
+
+        Dunque $\left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash\psi\left[\sequence{a_{n} }_{\mathcal{F}},\sequence{b_{n} }_{\mathcal{F}}\right]  $ se e solo se esiste $ \sequence{c_{n} } \in V(X)^{\N}_{\bounded} $ tale che $ U_{\sequence{c_{n}}} \in \mathcal{F}$.
+
+        Se tale $ \sequence{c_{n} } $ esiste, allora \begin{equation*}
+            U_{\sequence{c_{n} }} \subseteq T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} = \set{n \in \N: \exists\, z \in a_{n}: \phi(a_{n}, b_{n}, xz  ) \text{ è vero in }V(X)},   
+        \end{equation*}e pertanto (poiché $ U_{\sequence{c_{n} }} \in \mathcal{F} $) allora $ T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \in \mathcal{F} $ (poiché $ \mathcal{F} $ è un ultrafiltro). 
+
+        Per dimostrare l'implicazione inversa, \commento{\lipsum[1]}%TODO 
+    \qed\end{itemize}
 }
 \section{Immersione elementare}
 \paragrafo{Corollario}{%
-    La mappa $ x\longmapsto \sequence{x}_{\mathcal{F}} $ è una immersione elementare della struttura $ \left(V(X), \in\right) $ in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $. 
+    La mappa $ x\longmapsto \sequence{x}_{\mathcal{F}} $ è una immersione elementare della struttura $ \left(V(X), \in\right) $ in $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right) $. 
 
-    In altre parole, se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $ se e solo se $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $.
+    In altre parole, se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $ se e solo se $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right) $.
 }{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio}{}
 \dimframmento{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio}{
     Poiché le $ \sequence{a^{i}} $ sono successioni costanti, l'insieme $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  $ è necessariamente uno tra $ \N $ e $ \emptyset $. 
 
-    Dunque, per il teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right) $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  \in\mathcal{F} $. 
+    Dunque, per il teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, $ \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right) $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  \in\mathcal{F} $. 
 
     Per le proprietà di ultrafiltro di $ \mathcal{F} $, $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} \in \mathcal{F} $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} = \N $. Quest'ultimo è valido se e solo se $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $.\qed
 }
 \osservazione{
-    È possibile ora definire l'insieme $ \nonstandard{X} $ necessario per costruire l'estensione non-standard di $ V(X) $. In particolare, si pone \begin{equation*}
+    È possibile ora definire l'insieme $ \nonstandard{X} $ necessario per costruire l'estensione non standard di $ V(X) $. In particolare, si pone \begin{equation*}
         \nonstandard{X} \coloneqq \set{\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} } \in X^{\N}}.
     \end{equation*}$\nonstandard{X}$ così definito è un insieme base\footnote{La dimostrazione di questo fatto può essere trovata nella sezione 17.2 di \cite{katz_true_nodate}.}.
 }
 \definizione{
-    Sia $ h:V(X)^{\N}_{\text{bd}}/\mathcal{F} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
+    Sia $ h:V(X)^{\N}_{\bounded}/\mathcal{F} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
     
     $ h $ è definita per induzione:
     \begin{enumerate}
@@ -255,16 +298,34 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
     Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ h\left(\sequence{a_{n} }\right) \in V_{m}(\nonstandard{X}) $.
 }
 \lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
-    La funzione $ h $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\text{bd}} $ \begin{equation*}
+    La funzione $ h $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
         \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{b_{n} }_{\mathcal{F}}\text{ se e solo se }h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right).
     \end{equation*}
 }
 \dimostrazionelem{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
-    \commento{\lipsum[1]}\qed
+    Si dimostra l'\emph{iniettività}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ tali per cui $ \sequence{a_{n} }_{\mathcal{F}}\neq \sequence{b_{n} }_{\mathcal{F}} $. Per il teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, l'insieme $ T \in \mathcal{F} $, con \begin{equation*}
+        T=\set{n \in \N: a_{n}\neq b_{n}}.
+    \end{equation*}Senza perdita di generalità, per il corollario \framref{dkjncjskjncjskjndjcdjjjjjdjdjj}, si può assumere che $ \sequence{a_n} $ sia totalmente di tipo $ m $ e che $ \sequence{b_n} $ sia totalmente di tipo $ m' $.\begin{itemize}
+        \item Se $ m=m'=0 $
+        \item Se $ m'=0 $ e $ m\ge 1 $
+        \item Se $ m=m'\ge 1 $
+        \item Se $ m,m'\ge 1 $ e $ m\neq m' $
+    \end{itemize}
+
+    Si dimostra che sia un \emph{isomorfismo}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ ed $ m' $. \begin{itemize}
+        \item Se $ \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{b_{n} }_{\mathcal{F}} $, allora \begin{equation*}
+            N=\set{n \in \N: a_{n} \in b_{n}} \in \mathcal{F}
+        \end{equation*}e quindi, per ogni $ n \in N $, si ha che $ a_{n} \in V_{m'-1}(X) $, per il corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}. 
+
+        Segue che, per la definizione di $ h $, $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right)$. 
+        \item Viceversa, se $ h\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in h\left(\sequence{b_{n} }_{\mathcal{F}}\right) $, allora automaticamente \begin{equation*}
+            \sequence{a_{n} }_{\mathcal{F}} \mathcal{\nonstandard{\in}} \sequence{b_{n} }_{\mathcal{F}}\qedd
+        \end{equation*}
+    \end{itemize}
 }
 \definizione{
     Si definiscono i seguenti insiemi, per $ m \in \N $: \begin{align*}
-        \nonstandard{V(X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}} = h\left(V(X)^{\N}_{\text{bd}}/\mathcal{F}\right)\\ 
+        \nonstandard{V(X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}} = h\left(V(X)^{\N}_{\bounded}/\mathcal{F}\right)\\ 
         \nonstandard{V_{m} (X)} &= \set{h\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in V_{m} (X)^{\N}/\mathcal{F}} = h\left(V_{m}(X)^{\N}/\mathcal{F} \right).
     \end{align*}
 }
@@ -285,8 +346,8 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 
 Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatamente il corollario.
 \paragrafo{Corollario}{%
-    Se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ \xi^{1},\dots,\xi^{k} \in V(X)^{\N}_{\text{bd}}/\mathcal{F}$, allora \begin{equation*}
-        \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[h(\xi^{1}),\dots,h(\xi^{k})\right].
+    Se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ \xi^{1},\dots,\xi^{k} \in V(X)^{\N}_{\bounded}/\mathcal{F}$, allora \begin{equation*}
+        \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[h(\xi^{1}),\dots,h(\xi^{k})\right].
     \end{equation*}
 }{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}{}
 
@@ -297,8 +358,8 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 \dimostrazione{dkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn}{
     Si nota innanzitutto che per la proposizione \framref{dcsdscsdcsdcsdcsdcsdcsdcs}, $ \nonstandard{V(X)} $ è un sotto universo di $ V(\nonstandard{X}) $, ed inoltre, per costruzione, $ \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $.
 
-    Si definisce la mappa $ *:V(X) \longrightarrow \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $ come \begin{align*}
-    *:V(X) &\longrightarrow V(\nonstandard{X}) \\
+    Si definisce la mappa: \begin{align*}
+    *:V(X) &\longrightarrow \nonstandard{V(X)} \\
     x &\longmapsto h\left(\sequence{x}_{\mathcal{F}}\right)
     \end{align*}
     Valgono i seguenti fatti:\begin{itemize}
@@ -312,8 +373,8 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
     Si è quindi dimostrata la validità del punto (I) della definizione. 
 
     Per quanto riguarda il punto (II), se $ \phi(x^1,\dots,x^{k} ) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora \begin{itemize}
-        \item $ \left(V(X),\in\right)\vDash\phi[a^{1},\dots,a^{k}] $ se e solo se $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ per il corollario \framref{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio};
-        \item $ \left(V(X)^{\N}_{\text{bd}}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ se e solo se $ \left(\nonstandard{V(X)}, \in\right)\vDash \phi[\nonstandard{a^{1}},\dots, \nonstandard{a^{k}}] $, per il corollario \framref{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}.
+        \item $ \left(V(X),\in\right)\vDash\phi[a^{1},\dots,a^{k}] $ se e solo se $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ per il corollario \framref{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio};
+        \item $ \left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{F}},\dots,\sequence{a^{k}}_{\mathcal{F}}\right] $ se e solo se $ \left(\nonstandard{V(X)}, \in\right)\vDash \phi[\nonstandard{a^{1}},\dots, \nonstandard{a^{k}}] $, per il corollario \framref{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}.
     \end{itemize}
 
     Resta da dimostrare che $ X \subsetneqq \nonstandard{X} $, ovvero che esista $ y \in \nonstandard{X} $ tale per cui $ y\neq \nonstandard{x} $ per ogni $ x \in X $. 
@@ -325,3 +386,13 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
     È evidente però che $ N $ contiene tutti i numeri naturali tranne al più l'unico indice $ n_0 $ tale per cui $ a_{n_0}= x  $ (poiché gli $ a_i $ sono tutti distinti). Dunque $ N \in  \mathcal{F} $.\qed
 }
 \section{Equivalenza elementare con $ \starR $}
+
+\commento{In questa parte devo aggiungere l'equivalenza tra la struttura definita nel capitolo precedente e la copira di $ \starR $ contenuta in $ \nonstandard{V(\R)} $.}
+
+\osservazione{
+    Dopo aver mostrato che all'interno di $ \nonstandard{V(\R)} $ valgano tutti i teoremi di base dimostrati nel capitolo precedente, per procedere alla trattazione delle varietà differenziabili è necessario capire se e come definire l'estensione non standard di una varietà. 
+
+    Per farlo, si consideri una varietà $ M $, e si indichi con $ \abs{M} $ l'insieme dei suoi punti. Si identifica poi $ \abs{M} $ con un insieme all'interno di $ V_1(\R)\setminus V_0(\R) $. Questo assicura che l'intersezione tra $ \abs{M} $ ed $ \R $ sia vuota. 
+
+    In questo modo, come indicato nell'osservazione \framref{dkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn}, ogni oggetto di interesse nello studio di una varietà differenziabile $ M $ è contenuto all'interno di $ V(\R) $. Risulta quindi elementare, utilizzando la funzione $ *:V(\R) \longrightarrow \nonstandard{V(\R)} $, estendere tutto alla propria versione non standard.
+}

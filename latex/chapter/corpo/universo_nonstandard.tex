@@ -294,9 +294,9 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 }
 \commento{Devo consultare un libro (Model Theory di Chang e Keisler, 1990) che non trovo in digitale ma ho prenotato in biblioteca in merito al "Mostowski collapse".}
 
-\osservazione{
-    Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ \hslash\left(\sequence{a_{n} }\right) \in V_{m}(\nonstandard{X}) $.
-}
+\paragrafo{osservazione}{%
+Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in V_{m}(\nonstandard{X}) $.
+}{dkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad}{}
 \lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
     La funzione $ \hslash $ definita sopra è iniettiva; inoltre è un isomorfismo: se $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
         \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{b_{n} }_{\mathcal{F}}\text{ se e solo se }\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right).
@@ -334,15 +334,37 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
     \end{align*}
 }
 \proposizione{dcsdscsdcsdcsdcsdcsdcsdcs}{
-    Gli insiemi definiti sopra soddisfano le seguenti proprietà:\begin{itemize}
+    Gli insiemi definiti sopra soddisfano le seguenti proprietà:\begin{enumerate}
         \item $ \nonstandard{V_{m}(X)} = \nonstandard{V(X)}\cap V_{m}(\nonstandard{X})  $;
         \item $ \nonstandard{V_{m+1}(X)} \subseteq \parti{\nonstandard{V_{m}(X) }} $;
         \item $ \displaystyle \nonstandard{V(X)} = \bigcup_{m \in \N} \nonstandard{V_{m}(X) } \subseteq V(\nonstandard{X}) $.
-    \end{itemize}
+    \end{enumerate}
     Questo garantisce che $ \nonstandard{V(X)} $ è un sottouniverso.
 }
 \dimostrazioneprop{dcsdscsdcsdcsdcsdcsdcsdcs}{
     \commento{\lipsum[1]}
+    %TODO questa dimostrazione non va bene perché ho fatto confusione Vedere note
+    % \begin{enumerate}
+    %     \item Si dimostra per induzione su $ m \in \N $. 
+        
+    %     Si consideri il caso $ m=0 $: per costruzione $ V_0(\nonstandard{X}) = \nonstandard{X} $ e, per definizione di $ \hslash $ e di $ \nonstandard{V(X)} $ si ha che $ \nonstandard{X} \subseteq \nonstandard{V(X)} $. Pertanto \begin{equation*}
+    %         \nonstandard{V(X)}\cap V_0(\nonstandard{X}) = \nonstandard{X}.
+    %     \end{equation*}Allo stesso modo $ \nonstandard{V_0(X)} $ è definito come \begin{align*}
+    %         \nonstandard{V_0(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} }_{\mathcal{F}} \in V_0(X)^{\N}/\mathcal{F}\right)}\\ 
+    %         &= \set{\sequence{a_{n}}_{\mathcal{F}}:\sequence{a_{n} }_{\mathcal{F}} \in X^{\N}/\mathcal{F}} = \nonstandard{X}.
+    %     \end{align*}Si è quindi dimostrato il caso base. 
+
+    %     \item Si ricorda che \begin{equation*}
+    %         \nonstandard{V_{m+1}(X) } = \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) : \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} }
+    %     \end{equation*}dunque la tesi è equivalente a mostrare che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $ per $ \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} $.\begin{align*}
+    %         \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) &= \set{\hslash \left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{a_{n} }_{\mathcal{F}} \,\land\, \sequence{b_{n} } \in V_{m}(X)^{\N} }\\ 
+    %         \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right): \sequence{c_{n} } \in V_{m}(X)^{\N} }.
+    %     \end{align*}È evidente che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $.
+    %     \item Scrivendo esplicitamente gli elementi dei due insiemi: \begin{align*}
+    %         \nonstandard{V(X)} &= \set{\hslash\left(\sequence{a_{n} }\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}}\\[2ex]
+    %         \bigcup_{m \in \N} \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right):} 
+    %     \end{align*}
+    % \qed\end{enumerate}
 }
 \osservazione{
     Si ha che $ \nonstandard{X}= \nonstandard{V_0(X)} $.

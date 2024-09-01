@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  31 AUG 2024 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  2 SEP 2024 00:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2946,540 +2946,542 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--276
  []
 
 [20]
-\c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count622
-\c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count623
+\c@frammentoAdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count622
+\c@frammentoBdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count623
+\c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count624
+\c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count625
  [21]
-\c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count624
-\c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count625
+\c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count626
+\c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count627
  [22]
-\c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count626
-\c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count627
-\c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count628
-\c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count629
+\c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count628
+\c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count629
+\c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count630
+\c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count631
  [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchoice' on input line 392.
+(hyperref)                removing `\mathchoice' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 392.
+(hyperref)                removing `\scriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 392.
+(hyperref)                removing `\scriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 392.
+(hyperref)                removing `\wd' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hfil' on input line 392.
+(hyperref)                removing `\hfil' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\unhbox' on input line 392.
+(hyperref)                removing `\unhbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 392.
+(hyperref)                removing `\mathop' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathopen' on input line 392.
+(hyperref)                removing `\mathopen' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 392.
+(hyperref)                removing `superscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 392.
+(hyperref)                removing `subscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 392.
+(hyperref)                removing `\scriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 392.
+(hyperref)                removing `\scriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 392.
+(hyperref)                removing `\wd' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hfil' on input line 392.
+(hyperref)                removing `\hfil' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\unhbox' on input line 392.
+(hyperref)                removing `\unhbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 392.
+(hyperref)                removing `\mathop' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathopen' on input line 392.
+(hyperref)                removing `\mathopen' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 392.
+(hyperref)                removing `superscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 392.
+(hyperref)                removing `subscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 392.
+(hyperref)                removing `\scriptscriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 392.
+(hyperref)                removing `\scriptscriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 392.
+(hyperref)                removing `\wd' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hfil' on input line 392.
+(hyperref)                removing `\hfil' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\unhbox' on input line 392.
+(hyperref)                removing `\unhbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 392.
+(hyperref)                removing `\mathop' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathopen' on input line 392.
+(hyperref)                removing `\mathopen' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 392.
+(hyperref)                removing `superscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 392.
+(hyperref)                removing `subscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 392.
+(hyperref)                removing `\scriptscriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 392.
+(hyperref)                removing `\mathsurround' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 392.
+(hyperref)                removing `\scriptscriptstyle' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 392.
+(hyperref)                removing `\setbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 392.
+(hyperref)                removing `\hbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\wd' on input line 392.
+(hyperref)                removing `\wd' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hfil' on input line 392.
+(hyperref)                removing `\hfil' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\unhbox' on input line 392.
+(hyperref)                removing `\unhbox' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathop' on input line 392.
+(hyperref)                removing `\mathop' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathopen' on input line 392.
+(hyperref)                removing `\mathopen' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 392.
+(hyperref)                removing `superscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 392.
+(hyperref)                removing `\z@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 392.
+(hyperref)                removing `subscript' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\box' on input line 392.
+(hyperref)                removing `\box' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 392.
+(hyperref)                removing `\tw@' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 392.
+(hyperref)                removing `math shift' on input line 414.
 
 ) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex [24]
 Capitolo 4.
@@ -3491,40 +3493,40 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 ) [25
 
 ]
-\c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count630
-\c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count631
-\c@frammentoAdckjndjjjjjjdjscacchina=\count632
-\c@frammentoBdckjndjjjjjjdjscacchina=\count633
+\c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count632
+\c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count633
+\c@frammentoAdckjndjjjjjjdjscacchina=\count634
+\c@frammentoBdckjndjjjjjjdjscacchina=\count635
  [26] [27]
-\c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count634
-\c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count635
-\c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count636
-\c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count637
+\c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count636
+\c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count637
+\c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count638
+\c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count639
  [28]
-\c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count638
-\c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count639
+\c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count640
+\c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count641
  [29]
-\c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count640
-\c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count641
+\c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count642
+\c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count643
  [30]
-\c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count642
-\c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count643
-\c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count644
-\c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count645
+\c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count644
+\c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count645
+\c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count646
+\c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count647
  [31]
-\c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count646
-\c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count647
+\c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count648
+\c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count649
  [32] [33] [34]
-\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count648
-\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count649
+\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count650
+\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count651
  [35]
-\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count650
-\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count651
-\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count652
-\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count653
+\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count652
+\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count653
+\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count654
+\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count655
  [36]
-\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count654
-\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count655
+\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count656
+\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count657
  [37]
 Overfull \hbox (3.09418pt too wide) in paragraph at lines 441--441
 []\T1/lmr/m/n/10.95 (-20) Altrimenti si ha $\OML/lmm/m/it/10.95 ^^Uv \OMS/lmsy/m/n/10.95 ^^^ []$\T1/lmr/m/n/10.95 (-20) , e dun-que $\OML/lmm/m/it/10.95 ^^U [][] \OMS/lmsy/m/n/10.95 ^^^ [] []$\T1/lmr/m/n/10.95 (-20) ;
@@ -3536,92 +3538,92 @@ Overfull \hbox (2.49014pt too wide) detected at line 441
  []
 
 [38]
-\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count656
-\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count657
+\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count658
+\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count659
 
 Overfull \hbox (5.76376pt too wide) in paragraph at lines 474--474
 \T1/lmr/m/n/10.95 (-20) Ogni $\OML/lmm/m/it/10.95 n \OMS/lmsy/m/n/10.95 2 [][][]\U/dsrom/m/n/10.95 N$ \T1/lmr/m/n/10.95 (-20) in-fi-ni-to è con-te-nu-to in $\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 (-20) , e per-tan-to, per il prin-ci-pio dell'\T1/lmr/m/it/10.95 (-20) underspill[][][][][][]\T1/lmr/m/n/10.95 (-20) esiste
  []
 
 [39]
-\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count658
-\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count659
-\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count660
-\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count661
+\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count660
+\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count661
+\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count662
+\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count663
  [40]
-\c@frammentoAdjknckjndjckjnxkjn kjnckjndskjnckjnkjn=\count662
-\c@frammentoBdjknckjndjckjnxkjn kjnckjndskjnckjnkjn=\count663
-\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count664
-\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count665
-\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count666
-\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count667
+\c@frammentoAdjknckjndjckjnxkjn kjnckjndskjnckjnkjn=\count664
+\c@frammentoBdjknckjndjckjnxkjn kjnckjndskjnckjnkjn=\count665
+\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count666
+\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count667
+\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count668
+\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count669
  [41]
-\c@frammentoAremarkfourpointeight=\count668
-\c@frammentoBremarkfourpointeight=\count669
-\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count670
-\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count671
-\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count672
-\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count673
+\c@frammentoAremarkfourpointeight=\count670
+\c@frammentoBremarkfourpointeight=\count671
+\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count672
+\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count673
+\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count674
+\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count675
  [42]
-\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count674
-\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count675
+\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count676
+\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count677
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
-\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count676
-\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count677
-\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count678
-\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count679
+\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count678
+\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count679
+\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count680
+\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count681
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count680
-\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count681
+\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count682
+\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count683
 
 Underfull \hbox (badness 10000) in paragraph at lines 613--616
 
  []
 
 [45]
-\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count682
-\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count683
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count684
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count685
+\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count684
+\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count685
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count686
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count687
  [46]
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count686
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count687
-\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count688
-\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count689
-\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count690
-\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count691
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count688
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count689
+\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count690
+\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count691
+\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count692
+\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count693
  [47]
-\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count692
-\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count693
-\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count694
-\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count695
+\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count694
+\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count695
+\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count696
+\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count697
  [48]
-\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count696
-\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count697
-\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count698
-\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count699
-\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count700
-\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count701
+\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count698
+\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count699
+\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count700
+\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count701
+\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count702
+\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count703
  [49]
-\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count702
-\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count703
-\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count704
-\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count705
-\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count706
-\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count707
+\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count704
+\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count705
+\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count706
+\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count707
+\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count708
+\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count709
  [50]
-\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count708
-\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count709
-\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count710
-\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count711
-\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count712
-\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count713
+\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count710
+\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count711
+\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count712
+\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count713
+\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count714
+\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count715
  [51]) [52]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
@@ -3650,18 +3652,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70566 strings out of 492616
- 1664814 string characters out of 6129481
- 2335437 words of memory out of 5000000
- 72839 multiletter control sequences out of 15000+600000
+ 70580 strings out of 492616
+ 1665455 string characters out of 6129481
+ 2335476 words of memory out of 5000000
+ 72850 multiletter control sequences out of 15000+600000
  688393 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,20n,119p,1712b,1505s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (57 pages, 624148 bytes).
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (57 pages, 624144 bytes).
 PDF statistics:
- 1058 PDF objects out of 1200 (max. 8388607)
- 933 compressed objects within 10 object streams
- 354 named destinations out of 1000 (max. 500000)
+ 1062 PDF objects out of 1200 (max. 8388607)
+ 937 compressed objects within 10 object streams
+ 357 named destinations out of 1000 (max. 500000)
  34709 words of extra memory for PDF output out of 35830 (max. 10000000)
 

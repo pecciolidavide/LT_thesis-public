@@ -172,7 +172,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione {3.28}.}{21}{section*.70}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione {3.29}.}{21}{section*.71}% 
+\contentsline {paragraph}{osservazione {3.29}.}{21}{section*.71}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Lemma {3.30}.}{21}{section*.72}% 
 \defcounter {refsection}{0}\relax 

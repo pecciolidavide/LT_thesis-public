@@ -255,10 +255,18 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
         Dunque $\left(V(X)^{\N}_{\bounded}/\mathcal{F}, \nonstandard{\in}\right)\vDash\psi\left[\sequence{a_{n} }_{\mathcal{F}},\sequence{b_{n} }_{\mathcal{F}}\right]  $ se e solo se esiste $ \sequence{c_{n} } \in V(X)^{\N}_{\bounded} $ tale che $ U_{\sequence{c_{n}}} \in \mathcal{F}$.
 
         Se tale $ \sequence{c_{n} } $ esiste, allora \begin{equation*}
-            U_{\sequence{c_{n} }} \subseteq T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} = \set{n \in \N: \exists\, z \in a_{n}: \phi(a_{n}, b_{n}, xz  ) \text{ è vero in }V(X)},   
+            U_{\sequence{c_{n} }} \subseteq T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} = \set{n \in \N: \exists\, z \in a_{n}: \phi(a_{n}, b_{n}, z  ) \text{ è vero in }V(X)},   
         \end{equation*}e pertanto (poiché $ U_{\sequence{c_{n} }} \in \mathcal{F} $) allora $ T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \in \mathcal{F} $ (poiché $ \mathcal{F} $ è un ultrafiltro). 
 
-        Per dimostrare l'implicazione inversa, \commento{\lipsum[1]}%TODO 
+        Per dimostrare l'implicazione inversa, si supponga che $ T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \in \mathcal{F} $. Per costruzione, la successione $ \sequence{a_{n} } \in V_{m}(X)^{\N}  $ per qualche $ m $. 
+        
+        Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $, allora vi è qualche $ z \in a_{n}  $ tale per cui $ \phi(a_{n}, b_{n}, z) $ è vera in $ V(X) $. Si pone $ c_{n} \coloneqq z  $. Segue che $ m>0 $ e che $ c_{n} \in V_{m-1}(X)  $, per il corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}. 
+
+        Se $ n \notin T_{\psi, \sequence{a_{n}},\sequence{b_{n}}}$, si scelga $ c_{n} \in V_{m-1}(X) $ in maniera arbitraria. 
+
+        Si è quindi costruita (utilizzando l'assioma della scalta) una successione $ \sequence{c_{n} } \in V_{m-1}(X)^{\N} \subseteq V(X)^{\N}_{\bounded}  $. Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $ allora $ n \in U_{\sequence{c_{n}}}  $, dunque \begin{equation*}
+            T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \subseteq U_{\sequence{c_{n}} } 
+        \end{equation*}e pertanto $ U_{\sequence{c_{n} }} \in \mathcal{F} $.
     \qed\end{itemize}
 }
 \section{Immersione elementare}
@@ -312,8 +320,31 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
         \item Se $ m'=0 $ e $ m\ge 1 $, allora $ b_{n} \in X  $ mentre $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ per ogni $ n \in \N $. Allora $ \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) = \sequence{b_{n} }_{\mathcal{F}} \in \nonstandard{X}$, mentre $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq V(\nonstandard{X})$ per costruzione. Per definizione di insieme base, \begin{equation*}
             \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) \cap V(\nonstandard{X}) = \emptyset
         \end{equation*}dunque, se per assurdo $ \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) = \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intesezione conterrebbe $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \neq \emptyset $. \commento{Sono sicuro che questo insieme sia non vuoto poiché sarebbe esattamente uguale ad un elemento di $ \nonstandard{X} $?}
-        \item Se $ m=m'\ge 1 $ \commento{\lipsum[1]} %TODO
-        \item Se $ m,m'\ge 1 $ e $ m\neq m' $ \commento{\lipsum[2]} %TODO
+        \item Se $ m=m'\ge 1 $, allora per ogni $ n $: $ a_{n}, b_{n}  \in V_{m}(X)\setminus V_{m-1}(X)$ e quindi, per costruzione \begin{equation*}
+            a_{n} \subseteq V_{m-1}(X),\quad b_{n} \subseteq V_{m-1}(X).    
+        \end{equation*}Inoltre, se $ n \in T $, allora $ a_{n}\neq b_{n}   $, e dunque esiste $ z \in V_{m-1}(X) $ tale per cui $ z \in a_{n}\setminus b_{n} $ oppure $ z \in b_{n}\setminus a_{n}$. Sia $ c_{n}\coloneqq z $. 
+
+        Se $ n \notin T $, sia allora $ c_{n} \in V_{m-1}(X)$ arbitrario. Si è costruita una successione $ \sequence{c_{n} }  $. 
+
+        Considerando adesso i due sottoinsiemi di $ T $, $ T' $ e $ T'' $: \begin{equation*}
+            T' = \set{n \in T: c_{n} \in a_{n}\setminus b_{n}   }, \quad T'' = \set{n \in T: c_{n} \in b_{n}\setminus a_{n}}
+        \end{equation*}si ha che $ T'\cup T'' = T \in \mathcal{F}$ per costruzione, e quindi, per le proprietà di ultrafiltro di $ \mathcal{F} $, uno tra $ T' $ e $ T'' $ appartiene ad $ \mathcal{F} $. Senza perdita di generalità si supponga che sia $ T' $ (questo implica che $ T'' \notin \mathcal{F}$). 
+
+        Dunque si ha che \begin{equation*}
+            \sequence{c_{n}}_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{a_{n}}_{\mathcal{F}},\quad \lnot\,\left(\sequence{c_{n}}_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{b_{n}}_{\mathcal{F}}\right)
+        \end{equation*}e pertanto per la definizione di $ \hslash $, \begin{equation*}
+            \hslash\left(\sequence{c_{n}}_{\mathcal{F}}\right) \in \hslash\left(\sequence{a_{n}}_{\mathcal{F}}\right),\qquad 
+            \lnot\,\left(\hslash\left(\sequence{c_{n}}_{\mathcal{F}}\right) \in \hslash\left(\sequence{b_{n}}_{\mathcal{F}}\right)\right),
+        \end{equation*}e quindi, ovviamente, $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \neq \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) $.
+        \item Se $ m,m'\ge 1 $ e $ m\neq m' $, si supponga senza perdita di generalità che $ m'<m $. Per ogni $ n \in \N $ si ha che $ a_{n} \in V_{m}(X)\setminus V_{m-1}(X)$, ovvero $ a_{n} \subseteq V_{m-1}(X)$. Inoltre, necessariamente, $ a_{n} \not\subset V_{k}(X)$ per ogni $ k<m-1 $, poiché altrimenti \begin{equation*}
+            a_{n} \in V_{k+1}(X)  \subseteq V_{m-1}(X) 
+        \end{equation*}e, dal momento che $ a_{n} \notin V_{m-1}(X)   $ questo crea contraddizione. Dunque vi è un elemento $ c_{n} \in a_{n} $, $ c_{n} \in V_{m-1}(X)\setminus V_{m-2}(X)$ e quindi, in particolare, \begin{equation*}
+            c_{n} \in V_{m-1}(X) \setminus V_{m'-1}(X)   
+        \end{equation*}Dunque, per il corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}, $ c_{n} \notin b_{n} $ e pertanto $ \lnot\,\left(\sequence{c_{n} }_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{b_{n}}_{\mathcal{F}}\right) $. questo implica $ \hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right)\notin \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right) $. 
+
+        D'altra parte, $ \sequence{c_{n}}_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{a_{n} }_{\mathcal{F}} $, e quindi $ \hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right)\in \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) $, e quindi \begin{equation*}
+            \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \neq \hslash\left(\sequence{b_{n} }_{\mathcal{F}}\right).
+        \end{equation*}
     \end{itemize}
 
     Si dimostra che sia un \emph{isomorfismo}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ ed $ m' $. \begin{itemize}

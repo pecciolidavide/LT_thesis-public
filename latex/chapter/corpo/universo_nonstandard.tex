@@ -2,7 +2,6 @@
 
 % Dopo aver mostrato la costruzione di $ \starR $ come ultraprodotto, si utilizza una costruzione simile, generalizzandola ad un \emph{universo matematico}. Questo consentirà di superare parzialmente la limitazione della scelta del linguaggio $ \mathcal{L} $, e quindi di parlare degli oggetti matematici ``comuni'' e della loro controparte non standard, pur senza uscire dal formalismo logico. 
 
-%TODO: Mostrare il perché voglio fare quest costruzione:
 % Noto che, poiché l'obiettivo di studio di questa tesi sono i manifolds, allora non è sufficiente studiare semplicemente R*, bensì c'è bisogno di una struttura più grande. Si introdurrà quindi il concetto di sovrastruttura di un insieme X, e se ne costruirà *V(X). 
 % Si riconoscerà poi un'immersione elementare tra R* (come definita nel chap precedente) e R* all'interno di *V(R). Vedi retro tesi
 % All'interno di V(RR), poi, si identificherà il manifold M.
@@ -98,9 +97,6 @@ In particolare, ogni formula sarà espressa nel linguaggio \begin{equation*}
         \item[(II)] Per ogni formula limitata $ \phi(x_1,\dots,x_{k} ) $ e ogni $ k $-upla di costanti $ a_1,\dots,a_{k} \in V(X)  $, la formula $ \phi[a_1,\dots,a_{k} ] $ è vera in $ V(X) $ se e solo se $ \phi[\nonstandard{a_1},\dots,\nonstandard{a_{k} }] $ è vera in $ \nonstandard{V(X)} $.
     \end{enumerate}
 }
-% \osservazione{
-%     Si ha che $ Y = \nonstandard{X} $\footnote{Non riesco a convincermi di questa cosa, però non avrebbe senso il contrario}. %TODO capire se è vero
-% }
 
 Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non standard di $ V(X) $, tramite la costruzione dell'ultraprodotto ridotto.
 
@@ -373,29 +369,30 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
     Questo garantisce che $ \nonstandard{V(X)} $ è un sottouniverso.
 }
 \dimostrazioneprop{dcsdscsdcsdcsdcsdcsdcsdcs}{
-    \commento{\lipsum[1]}
-    %TODO questa dimostrazione non va bene perché ho fatto confusione Vedere note
-    % \begin{enumerate}
-    %     \item Si dimostra per induzione su $ m \in \N $. 
+    \begin{enumerate}
+        \item \commento{Non sono riuscito a trovare una dimostrazione per questo fatto.}% Si dimostra per induzione su $ m \in \N $. 
         
-    %     Si consideri il caso $ m=0 $: per costruzione $ V_0(\nonstandard{X}) = \nonstandard{X} $ e, per definizione di $ \hslash $ e di $ \nonstandard{V(X)} $ si ha che $ \nonstandard{X} \subseteq \nonstandard{V(X)} $. Pertanto \begin{equation*}
-    %         \nonstandard{V(X)}\cap V_0(\nonstandard{X}) = \nonstandard{X}.
-    %     \end{equation*}Allo stesso modo $ \nonstandard{V_0(X)} $ è definito come \begin{align*}
-    %         \nonstandard{V_0(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} }_{\mathcal{F}} \in V_0(X)^{\N}/\mathcal{F}\right)}\\ 
-    %         &= \set{\sequence{a_{n}}_{\mathcal{F}}:\sequence{a_{n} }_{\mathcal{F}} \in X^{\N}/\mathcal{F}} = \nonstandard{X}.
-    %     \end{align*}Si è quindi dimostrato il caso base. 
+        % Si consideri il caso $ m=0 $: per costruzione $ V_0(\nonstandard{X}) = \nonstandard{X} $ e, per definizione di $ \hslash $ e di $ \nonstandard{V(X)} $ si ha che $ \nonstandard{X} \subseteq \nonstandard{V(X)} $. Pertanto \begin{equation*}
+        %     \nonstandard{V(X)}\cap V_0(\nonstandard{X}) = \nonstandard{X}.
+        % \end{equation*}Allo stesso modo $ \nonstandard{V_0(X)} $ è definito come \begin{align*}
+        %     \nonstandard{V_0(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}: \sequence{a_{n} }_{\mathcal{F}} \in V_0(X)^{\N}/\mathcal{F}\right)}\\ 
+        %     &= \set{\sequence{a_{n}}_{\mathcal{F}}:\sequence{a_{n} }_{\mathcal{F}} \in X^{\N}/\mathcal{F}} = \nonstandard{X}.
+        % \end{align*}Si è quindi dimostrato il caso base. 
 
-    %     \item Si ricorda che \begin{equation*}
-    %         \nonstandard{V_{m+1}(X) } = \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) : \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} }
-    %     \end{equation*}dunque la tesi è equivalente a mostrare che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $ per $ \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} $.\begin{align*}
-    %         \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) &= \set{\hslash \left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{a_{n} }_{\mathcal{F}} \,\land\, \sequence{b_{n} } \in V_{m}(X)^{\N} }\\ 
-    %         \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right): \sequence{c_{n} } \in V_{m}(X)^{\N} }.
-    %     \end{align*}È evidente che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $.
-    %     \item Scrivendo esplicitamente gli elementi dei due insiemi: \begin{align*}
-    %         \nonstandard{V(X)} &= \set{\hslash\left(\sequence{a_{n} }\right): \sequence{a_{n} }_{\mathcal{F}} \in V(X)^{\N}_{\bounded}/\mathcal{F}}\\[2ex]
-    %         \bigcup_{m \in \N} \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right):} 
-    %     \end{align*}
-    % \qed\end{enumerate}
+        \item Si ricorda che \begin{equation*}
+            \nonstandard{V_{m+1}(X) } = \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) : \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} }
+        \end{equation*}dunque la tesi è equivalente a mostrare che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $ per $ \sequence{a_{n} }_{\mathcal{F}} \in V_{m+1}(X)^{\N}/\mathcal{F} $.\begin{align*}
+            \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) &= \set{\hslash \left(\sequence{b_{n} }_{\mathcal{F}}\right): \sequence{b_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}}\sequence{a_{n} }_{\mathcal{F}} \,\land\, \sequence{b_{n} } \in V_{m}(X)^{\N} }\\ 
+            \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right): \sequence{c_{n} }_{\mathcal{F}} \in V_{m}(X)^{\N}/\mathcal{F} }\\ 
+            &=\set{\hslash\left(\sequence{c_{n} }_{\mathcal{F}}\right): \sequence{c_{n} } \in V_{m}(X)^{\N} }
+        \end{align*}È evidente che $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \subseteq \nonstandard{V_{m}(X) } $.
+        \item Si ha che \begin{align*}
+            \bigcup_{m \in \N} \nonstandard{V_{m}(X) } &= \bigcup_{m \in \N} \set{\hslash\left(\sequence{a_{n}}_{\mathcal{F}}\right): \sequence{a_{n}}_{\mathcal{F}} \in V_{m}(X)^{\N}/\mathcal{F} }\\ 
+            &=\bigcup_{m \in \N} \set{\hslash\left(\sequence{a_{n}}_{\mathcal{F}}\right): \sequence{a_{n}}\in V_{m}(X)^{\N} }\\ 
+            &= \set{\hslash\left(\sequence{a_{n}}_{\mathcal{F}}\right): \sequence{a_{n}}\in \bigcup_{m \in \N} V_{m}(X)^{\N} }\\ 
+            &=\set{\hslash\left(\sequence{a_{n}}_{\mathcal{F}}\right): \sequence{a_{n}}\in V(X)^{\N}_{\bounded} } = \nonstandard{V(X)}.\qedd
+        \end{align*}
+    \end{enumerate}
 }
 \osservazione{
     Si ha che $ \nonstandard{X}= \nonstandard{V_0(X)} $.

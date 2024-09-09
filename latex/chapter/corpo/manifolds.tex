@@ -462,7 +462,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \item È conseguenza di 2, considerando $ G(a)=a $ per ogni $ a $. 
         \item Sia \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le n\lambda\text{ per ogni }a \in \nonstandard{B}\right\}. 
-        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill}\footnote{Da spiegare l'underspill%TODO underspill (nome e definizione)
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill}\footnote{\commento{Da spiegare l'underspill}%TODO underspill (nome e definizione)
         }esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
         \item Sia ora invece \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le \frac{\lambda}{n}\lambda\text{ per ogni }a \in \nonstandard{B}\right\}.
@@ -514,12 +514,12 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \norma{F(a)-F(a+v)-F(a+w)+F(a+v+w)} \le C_{avw}\lambda\norma{v}\norma{w},
     \end{equation*}e, utilizzando il principio dell'\straniero{underspill}, esiste un $ K $ finito tale per cui vale la tesi.\qed
 }
-\proposizione{djknckjndjckjnxkjn kjnckjndskjnckjnkjn}{
+\proposizione{djknckjndjckjnxkjnkjnckjndskjnckjnkjn}{
     Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora è iniettivo su $ \hhalo{M} $.
 }
-\dimostrazioneprop{djknckjndjckjnxkjn kjnckjndskjnckjnkjn}{
+\dimostrazioneprop{djknckjndjckjnxkjnkjnckjndskjnckjnkjn}{
     Siano $ a\neq b \in \hhalo{M} $.\begin{itemize}
-        \item Se $ \st(a)\neq \st(b) $, allora chiaramente\footnote{Spiegare bene%TODO spiegare bene
+        \item Se $ \st(a)\neq \st(b) $, allora chiaramente\footnote{\commento{Spiegare bene}%TODO spiegare bene
         }si avrà $ F(a) \neq F(b) $;
         \item se invece $ \st(a) = \st(b) $, allora esiste una palla chiusa che soddisfi le ipotesi della proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}; pertanto, vale l'equazione \eqref{eq:minbound}.\qed
     \end{itemize}
@@ -528,17 +528,30 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Siano $ B_1 \subseteq B_2 \subseteq B_3 \subseteq \R^{n} $ delle palle chiuse centrate nell'origine, di raggi $ r_1<r_2<r_3 $. Se $ F: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $ è un campo di prevettori locale di classe $ D^{1} $, allora $ F(\nonstandard{B_2}) \supseteq \nonstandard{B_1} $.
 }
 \dimostrazioneprop{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}{
-    \commento{\lipsum[1]}
-    
-    Sia $ 0<s \in \R $ fissato, $ s<r_2-r_1 $ e $ s<r_3-r_2 $
+    Sia $ 0<s \in \R $ fissato, $ s<r_2-r_1 $ e $ s<r_3-r_2 $. Si applicherà il principio di transfer al seguente enunciato\footnote{%
+        La condizione su $ f $ implica che questa si continua. Inoltre questo, unito alla definizione di $ s $, garantisce che per ogni $ x \in \partial B_2 $ il segmento $ [x,f(x)] $ sia contenuto in $ B_3\setminus B_1 $. 
+
+        Segue che $ \restriction{f}{\partial B_2}: \partial B_2  \longrightarrow B_3\setminus B_1$ sia omotopa alla inclusione di $ \partial B_2 $ all'interno di $ B_3\setminus B_1 $, con omotopia \begin{align*}
+        H:\partial B_2\times [0,1] &\longrightarrow B_3\setminus B_1 \\
+        (x,t) &\longmapsto tx+(1-t)f(x).
+        \end{align*}Dunque, se per assurdo esistesse $ p \in B_1 $ non compreso in $ f(B_2) $, allora $ \restriction{f}{\partial B_2} $ sarebbe omotopicamente equivalente alla funzione costante, e pertanto questo sarebbe vero anche per l'inclusione di $ \partial B_2 $. Contraddizione. %TODO capire il perché
+    }: per ogni funzione $ f: B_2 \longrightarrow B_3 $, se $ \norma{f(x)-f(y)}\le 2\norma{x-y} $ per ogni $ x,y \in B_2 $ e $ \norma{f(x)-x}<s $ per ogni $ x \in B_2 $, allora $ f(B_2) \supseteq B_1 $.
+
+    Si ottiene dunque che per ogni funzione interna $ f: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $, se $ \norma{f(x)-f(y)}\le  2\norma{x-y} $ per ogni $ x,y \in \nonstandard{B_2} $ e $ \norma{f(x)-x}<s $ per ogni $ x \in \nonstandard{B_2} $, allora $ f(\nonstandard{B_2})\supseteq \nonstandard{B_1} $. Per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} un campo di prevettori $ D^{1} $ rispetta le ipotesi; pertanto la proposizione è dimostrata.\qed
 }
 \teorema{lddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs}{
    Se $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ è un campo di prevettori di classe $ D^{1} $, allora \begin{equation*}
        \restriction{F}{\hhalo{M}}:\hhalo{M} \longrightarrow \hhalo{M}.
    \end{equation*}è biiettiva.
 }
+
+Il teorema segue dalle proposizioni \framref{djknckjndjckjnxkjnkjnckjndskjnckjnkjn} e \framref{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}.
 \paragrafo{Osservazione}{%
-    \textit{Remark 4.8}
+   Se $ M $ non è compatta, allora per un campo di prevettori $ F $ di classe $ D^{1} $ la mappa $ \restriction{f}{\hhalo{M}}:\hhalo{M} \longrightarrow \hhalo{M} $ e la sua inversa $ (\restriction{F}{\hhalo{M}})^{-1} $ non sono interne, poiché il loro dominio non è interno. 
+
+   D'altra parte, però, per ogni $ A \subseteq M $, $ \restriction{F}{\nonstandard{A}} $ è interna. Inoltre, su $ \nonstandard{B_1} $ della proposizione \framref{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}, $ F $ ha una inversa $ F^{-1}:\nonstandard{B_1} \longrightarrow \nonstandard{B_2} $ (ovvero $ F \circ F^{-1} (a) = a $ per ogni $ a \in \nonstandard{B_1} $) e $ F^{-1} $ è interna. 
+
+   Dunque, a meno di ridimensionare il dominio, è sempre possibile assumere che un campo di prevettori locale $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ di classe $ D_1 $ ammetta un inverso $ F^{-1}:\nonstandard{U} \longrightarrow \nonstandard{V} $.
 }{remarkfourpointeight}{}
 \proposizione{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd}{
     Se $ F $ è di classe $ D^{1} $, allora $ F^{-1} $ è di classe $ D^{1} $. 
@@ -550,16 +563,43 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazioneprop{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd}{
-    \commento{\lipsum[1]}
+    Siano $x = F^{-1}(a) $, $ y = F^{-1}(b) $. Allora \begin{gather*}
+        \norma{F^{-1}(a)-F^{-1}(b)-a+b} = \\
+        = \norma{x-y-F(x)+F(y)} \le K \lambda\norma{x-y} \le K' \lambda\norma{F(x)-F(y)} = K'\lambda\norma{a-b}
+    \end{gather*}per la proposizione \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}.\qed
 }
 \lemma{kjndkjncjdkjnckskdkjnjcsnkjn}{
     Siano $ F,G $ dei campi di prevettori di classe $ D^{1} $. Se $ F(a)\equiv G(a) $ per ogni $ a $ standard, allora $ F(b)\equiv G(b) $ per ogni $ b $ quasi-standard: ovvero $ F\equiv G $.
 }
 \dimostrazionelem{kjndkjncjdkjnckskdkjnjcsnkjn}{
-    \commento{\lipsum[1]}
+    Fissato $ b $, sia $ K $ dato dalla proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} applicata sia ad $ F $ che a $ G $ in una palla di centro $ a=\st(b) $. Allora \begin{align*}
+        \norma{F(b)-G(b)} &= \norma{F(b)-F(a)-b+a+F(a)-G(a)+G(a)-G(b)-a+b}\\ 
+        &\le \norma{F(b)-F(a)-b+a} + \norma{F(a)-G(a)} + \norma{G(a)-G(b)-a+b}\\ 
+        &\le K \lambda \norma{a-b}+\norma{F(a)-G(a)} + K\lambda\norma{a-b} \prec \prec \lambda.\qedd
+    \end{align*}
+}
+\osservazione{
+    Questo lemma garantisce che la definizione di un campo di prevettori utilizzando unicamente i punti standard determina univocamente il campo di prevettori di classe $ D^1 $ a meno di equivalenze.
 }
 \section{Flusso di un campo di prevettori}
-\definizione{\commento{\lipsum[1]}}
+\definizione{%
+Si considerano due casi.
+\begin{itemize}
+    \item Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ un campo di prevettori globali, e, per $ 0\le t \in \nonstandard{R} $, sia $ n = n(t) = \floor{t/\lambda} $. Per ogni $ a \in \nonstandard{M} $ si definisce il \emph{flusso di $ F $ al tempo $ t $}, $ F_{t}(a) = F^{n}(a) $. 
+
+    Per definire $ F^{n}(a) $, sia $ \Phi $ la mappa \begin{align*}
+    \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
+    (f,n) &\longmapsto \underset{n\text{ volte}}{\underbrace{f\circ \dots\circ f}}
+    \end{align*}e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $: $ F^{n} = \nonstandard{\Phi}(F,n) $.
+    \item Sia $ F:\nonstandard{U} \longrightarrow \nonstandard{V} $ un campo di prevettori locale. Si estenda $ F $ ad $ F': \nonstandard{V} \longrightarrow \nonstandard{V} $ definendo $ F'(a) = a $ per ogni $ a \in \nonstandard{V} \setminus \nonstandard{U}$. $ F' $ può ora essere considerato un campo di prevettori globale su $ \nonstandard{V} $.
+    
+    Sia $ Y_{n} \coloneqq \set{a \in \nonstandard{U}: (F')^{n}(a) \in \nonstandard{U}}$. Si definisce dunque il \emph{flusso di $ F $ al tempo $ t $} la funzione \begin{align*}
+    F_{t} : Y_{n(t)}  &\longrightarrow \nonstandard{U} \\
+    a &\longmapsto F_{t}'(a). 
+    \end{align*}
+\end{itemize}
+}
+
 \subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}
 \teorema{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Dato $ p \in U $ e un intorno coordinato di $ p $ di immagine $ W \subseteq \R^{n} $, siano $ B' \subseteq B \subseteq W$ palle chiuse di raggi $ r/2 $ ed $ r $ centrate nell'immagine di $ p $.
@@ -575,7 +615,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazione{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
-    \commento{\lipsum[1]}
+    -19: \commento{\lipsum[1]}
 }
 \teorema{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $, di classe $ D^{1} $, e sia $ G $ un qualsiasi campo di prevettori su $ \nonstandard{U} $. Dato un intorno coordinato compreso in $ U $ con immagine $ W \subseteq \R^{n} $, siano $ A' \subseteq A \subseteq \nonstandard{W} $ insiemi interni. Si supponga: \begin{enumerate}
@@ -593,7 +633,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Se $ F \equiv G $, allora $ F_{t}(a)\approx G_{t}(a) $ per ogni $ 0\le t\le T $.
 }{djdkjncjdjndimostrazioncinainainainaianinaiai}{}
 \dimostrazione{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
-    \commento{\lipsum[1]}
+    -18: \commento{\lipsum[1]}
 }
 \definizione{
     Sia $ F $ un campo di prevettori locale di classe $ D^{1} $. In un intorno $ B' \subseteq \R^{n}$ e in un intervallo $ [-T,T] $, come per il teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}, si definisce il \emph{flusso standard indotto da $ F $}: \begin{align*}
@@ -624,7 +664,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
 \osservazione{
     $\tilde{F}$ è effettivamente un campo di prevettori, ovvero \begin{equation*}
         \tilde{F}(a)-a\prec \lambda
-    \end{equation*}per ogni $ a $. Infatti \commento{\lipsum[1]}
+    \end{equation*}per ogni $ a $. Infatti -17: \commento{\lipsum[1]}
 }
 \lemma{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Se \begin{equation*}
@@ -634,17 +674,17 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazionelem{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
-    \commento{\lipsum[1]}\qed
+    -16: \commento{\lipsum[1]}\qed
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
     Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora $ \tilde{F} $ è di classe $ D^{1} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
-    \commento{\lipsum[1]}\qed
+    -15: \commento{\lipsum[1]}\qed
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $, allora $ \tilde{F} $ è di classe $ D^{2} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
-    \commento{\lipsum[1]}\qed
+    -14: \commento{\lipsum[1]}\qed
 }
 \lemma{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $. Se $ \norma{F(a)-a} \le C\lambda$ e $ \norma{F(a)-a-F(b)+b}\le K \lambda\norma{a-b} $ per qualche $ C $ e $ K $ e per ogni $ a,b \in \nonstandard{U} $, allora il flusso di $ F $ soddisfa: \begin{equation*}
@@ -652,7 +692,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazionelem{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
-    \commento{\lipsum[1]}\qed
+    -13: \commento{\lipsum[1]}\qed
 }
 \lemma{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
     Sia $ v \in \starR^{n} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
@@ -662,13 +702,13 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Allora $ g(t)=tV $ e l'estensione di $ g $ al dominio non standard soddisfa $ g(\lambda)\equiv v $.
 }
 \dimostrazionelem{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
-    \commento{\lipsum[1]}\qed
+    -12: \commento{\lipsum[1]}\qed
 }
 \teorema{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
     Se $ F $ è un campo di prevettori locale di classe $ D^{1} $, allora $ \tilde{F}\equiv F $.
 }
 \dimostrazione{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
-    \commento{\lipsum[1]}\qed
+    -11: \commento{\lipsum[1]}\qed
 }
 \section{Parentesi di Lie}
 \definizione{
@@ -684,7 +724,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{1} $, allora $ [F,G] $ è un campo di prevettori, i.e. $ [F,G](a)-a\prec \lambda $ per ogni $ a $.
 }
 \dimostrazione{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
-    \commento{\lipsum[1]}\qed
+    -10: \commento{\lipsum[1]}\qed
 }
 \lemma{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
     Siano $ F,G $ campi di prevettori locali, $ F $ di classe $ D^{2} $ e $ G $ di classe $ D^{1} $. Allora per ogni $ a,b $ con $ a-b\prec \lambda $ vale: \begin{equation*}
@@ -692,13 +732,13 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazionelem{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
-    \commento{\lipsum[1]}\qed
+    -9: \commento{\lipsum[1]}\qed
 }
 \teorema{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{2} $, allora $ [F,G] $ è un campo di prevettori di classe $ D^{1} $.
 }
 \dimostrazione{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
-    \commento{\lipsum[1]}\qed
+    -8: \commento{\lipsum[1]}\qed
 }
 \proposizione{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
     Siano $ F,G $ campi di prevettori di classe $ D^{2}$. Allora, per ogni $ a $, \begin{equation*}
@@ -706,7 +746,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}
 }
 \dimostrazioneprop{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
-    \commento{\lipsum[1]}\qed
+    -7: \commento{\lipsum[1]}\qed
 }
 \lemma{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
     Se $ G,H $ sono campi di prevettori di classe $ D^{2} $ e $ G\equiv H $, allora \begin{equation*}
@@ -714,19 +754,19 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{equation*}per ogni $ a,b $ con $ a-b\prec \lambda $.
 }
 \dimostrazionelem{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
-    \commento{\lipsum[1]}\qed
+    -6: \commento{\lipsum[1]}\qed
 }
 \lemma{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
     Se $ G,H $ sono campi di prevettori con $ G\equiv H $, e $ G $ è di classe $ D^{1} $, e $ H^{-1} $ esiste, allora $ G^{-1}\equiv H^{-1} $.
 }
 \dimostrazionelem{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
-    \commento{\lipsum[1]}\qed
+    -5: \commento{\lipsum[1]}\qed
 }
 \teorema{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
     Se $ F,E,G,H $ sono campi di prevettori di classe $ D^{2} $ e $ F\equiv E $, $ G\equiv H $, allora $ [F,G]\equiv [E,H] $.
 }
 \dimostrazione{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
-    \commento{\lipsum[1]}\qed
+    -4: \commento{\lipsum[1]}\qed
 }
 \subsection{Relazione con le parentesi di Lie classiche}
 
@@ -736,7 +776,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Siano $ F,G $ due campi di prevettori che realizzino $ X,Y $ rispettivamente. Allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 }
 \dimostrazione{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
-    \commento{\lipsum[1]}\qed
+    -3: \commento{\lipsum[1]}\qed
 }
 \teorema{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Siano $ F,G $ due campi di prevettori di classe $ D^{2} $. 
@@ -744,7 +784,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Allora $ [F,G]\equiv I $ se e solo se $ h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}$ per ogni $ 0\le t,s\le T $ per qualche $ 0<T \in \R$.
 }
 \dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
-    \commento{\lipsum[1]}\qed
+    -2: \commento{\lipsum[1]}\qed
 }
 
 \section{Conclusione}
@@ -755,5 +795,5 @@ Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario c
     Allora i flussi di $ X $ e di $ Y $ commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.
 }
 \dimostrazione{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
-    \commento{\lipsum[1]}\qed
+    -1: \commento{\lipsum[1]}\qed
 }

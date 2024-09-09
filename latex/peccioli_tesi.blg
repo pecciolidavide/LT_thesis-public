@@ -1,15 +1,15 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'peccioli_tesi.blg'
-[47] biber-darwin:315> INFO - === Mon Sep  2, 2024, 18:42:04
-[76] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
-[189] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[206] Biber.pm:4093> INFO - Processing section 0
-[220] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
-[222] bibtex.pm:1523> INFO - LaTeX decoding ...
-[235] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliografia.bib'
-[319] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[320] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[320] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[320] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
-[335] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
-[339] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
+[34] biber-darwin:315> INFO - === Sun Sep  8, 2024, 18:33:56
+[55] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
+[142] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[154] Biber.pm:4093> INFO - Processing section 0
+[164] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[165] bibtex.pm:1523> INFO - LaTeX decoding ...
+[175] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliografia.bib'
+[233] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[233] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[233] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[233] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
+[243] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
+[245] bbl.pm:739> INFO - Output to peccioli_tesi.bbl

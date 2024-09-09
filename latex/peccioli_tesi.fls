@@ -629,11 +629,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
 INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
 INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
@@ -644,6 +639,11 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex
@@ -654,39 +654,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmbx7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
@@ -750,7 +717,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb

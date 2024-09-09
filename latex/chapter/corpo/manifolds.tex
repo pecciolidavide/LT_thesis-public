@@ -73,8 +73,7 @@
         \item  Se $ f \in C^{1} $, allora per il transfer del teorema del valor medio, esiste $ x \in [a,b] $ tale che \begin{equation}
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{x} (b-a).\label{eq:1}
     \end{equation}Poiché le derivate parziali sono continue, si ha che\footnote{
-        %TODO argomentare
-    } \[
+        \commento{Da argomentare}}\[
             \forall\, y \approx a:\qquad D_{x}-D_{y} \prec\prec 1 
         \]dunque, manipolando \eqref{eq:1}: \[
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{y}(b-a) + (D_{x}-D_{y}  ) (b-a) 
@@ -115,7 +114,7 @@
 \definizione{
     Per $ a \in \hhalo{M} $, un \emph{prevettore} in $ a $ è una coppia $ (a,x) $ con $ x \in \hhalo{M} $ tale che per ogni funzione differenziabile $ f: M \longrightarrow \R $, \[
         \nonstandard{f}(x)-\nonstandard{f}(a)\prec \lambda
-    \]Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $. %TODO capire se "prevettore in a" è il nome che preferisco
+    \]Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $.
 }
 \proposizione{dkjnckjnsckjnsjdjckjnsjcjdkjn}{
     Sia $ a \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
@@ -156,7 +155,7 @@
     $ T_{a}M  $ è uno spazio vettoriale \emph{reale} $ n $-dimensionale indipendentemente dalla scelta delle coordinate.
 }
 \dimostrazioneprop{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
-    \commento{\lipsum[1]}\qed %TODO da dimostrare
+    \commento{\lipsum[1]}\qed
 }
 \osservazione{
     Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
@@ -201,9 +200,9 @@
         &= f(a_0) \cdot \vec{ax}\,g + g(a_0) \cdot \vec{ax}\,f
     \end{align*}dove l'ultima uguaglianza è conseguenza della continuità di $ f $ e $ g $.\qed
 }
-%TODO osservare da qualche parte che f(x) = *f(x) per ogni x in X.
+
 \osservazione{
-    \commento{Devo aggiungere l'identificazione tra $ T_{a}M  $ e lo spazio tangente standard} %TODO aggiungere identificazione tra T_{a}M  e lo spazio tangente "standard" (Remark 2.12)
+    \commento{Devo aggiungere l'identificazione tra $ T_{a}M  $ e lo spazio tangente standard}
 }
 \section{Campi di prevettori}
 
@@ -261,8 +260,7 @@
     La definizione \framref{kcjndkjndjdjjdjjjjjjjjjjj} prende in considerazione solo i punti standard.
 }
 \proposizione{kjndjcjdkjncjdjckjnskdkjckskjn}{
-    Sia $ U \subseteq \R^{n} $ aperto, e sia $ X: U \longrightarrow \R^{n} $ un campo vettoriale classico; sia $ \varphi: U \longrightarrow W \subseteq \R^{n} $ un cambio di coordinate\footnote{%TODO specificare quali condizioni devono esserci su $ \varphi $
-    }; sia $ Y: W \longrightarrow \R^{n} $ il campo vettoriale corrispondente, ovvero tale per cui \begin{equation*}
+    Sia $ U \subseteq \R^{n} $ aperto, e sia $ X: U \longrightarrow \R^{n} $ un campo vettoriale classico; sia $ \varphi: U \longrightarrow W \subseteq \R^{n} $ un cambio di coordinate\footnote{Ovvero almeno di classe $ C^{1} $.}; sia $ Y: W \longrightarrow \R^{n} $ il campo vettoriale corrispondente, ovvero tale per cui \begin{equation*}
         Y\left(\varphi(a)\right) = J_{\varphi}(a) \cdot X(a) 
     \end{equation*}dove $ J_{\varphi}(a)  $ è la matrice jacobiana di $ \varphi $ calcolata in $ a $. Siano $ F,G $ le mappe: \begin{equation*}
         F(a) = a + \lambda\,X(a),\quad G(b) = b+ \lambda\,Y(b),\qquad \forall\, a \in \nonstandard{U}, b \in \nonstandard{W}.
@@ -354,8 +352,7 @@ Nella proposizione successiva si mostrerà che il campo di prevettori costruito 
         p + s_1v_1+\dots+s_{k}v_{k} \in U  
     \end{equation*}per ogni $ 0\le s_1,\dots,s_{k} \le 1 $. Si definisce quindi, per ogni $  i = 1,\dots,n $ \begin{equation*}
         \varphi^{i}(s_1,\dots,s_{k} ) = X^{i}(p + s_1v_1+\dots+s_{k}v_{k}).
-    \end{equation*}Iterando $ k $ volte il teorema del valor medio\footnote{\commento{Aggiungere una spiegazione completa}%TODO spiegare il perché, non l'ho capito
-    } si ottiene che esiste $ (t_1,\dots,t_{k} ) \in  [0,1]^{k} $ tale per cui \begin{equation*}
+    \end{equation*}Iterando $ k $ volte il teorema del valor medio\footnote{\commento{Aggiungere una spiegazione completa}} si ottiene che esiste $ (t_1,\dots,t_{k} ) \in  [0,1]^{k} $ tale per cui \begin{equation*}
         \sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  } \varphi^{i} (e_1,\dots,e_{k} ) = \frac{\partial\null^{\hspace{0.6pt}k}}{\partial s_1\ \partial s_2 \dots \partial s_{k} } \varphi^{i}(t_1,\dots,t_{k} )\,(-1)^{k}.
     \end{equation*}Dunque si ha che \begin{align*}
         \abs{\Delta_{v_1,\dots,v_{k} }^{k}X^{i}(p) } &= \abs{\sum_{(e_1,\dots,e_{k} ) \in \{0,1\}^{k}} (-1)^{\sum e_{j}  }X^{i}(p + e_1v_1+\dots+e_{k}v_{k})}\\ 
@@ -416,8 +413,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
 
     Sia ora $ m=\min\left\{N, \floor{1/(2K\norma{v})}\right\}\le N $; allora $ (1-Km\norma{v})\ge 1/2 $, e dunque \begin{equation*}
         m\norma{v}\norma{A}/2\le \norma{v}\norma{G(x_0)-G(x_{m} )}.
-    \end{equation*}Poiché $ m\norma{v}/2 $ non è infinitesimo\footnote{\commento{Da spiegare il perché}%TODO capire bene, p17 di nowik
-    } $ A\prec \norma{v}\norma{G(x_0)-G(x_{m} )} $.\qed
+    \end{equation*}Poiché $ m\norma{v}/2 $ non è infinitesimo\footnote{\commento{Da spiegare il perché}} $ A\prec \norma{v}\norma{G(x_0)-G(x_{m} )} $.\qed
 }
 \proposizione{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $ su $ W $, allora $ F $ è di classe $ D^{1} $.
@@ -427,8 +423,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
 
     Se $ v \coloneqq b-a $ e $ G=F-I $ (i.e. $ G(x)=F(x)-x $) la condizione è equivalente a richiedere che \begin{equation*}
         G(a)-G(a+v)\prec \lambda \norma{v}.
-    \end{equation*}I casi sono due\footnote{%TODO capire il perché, p 17 nowik
-    \commento{Da spiegare perché}} \begin{itemize}
+    \end{equation*}I casi sono due\footnote{\commento{Da spiegare perché}} \begin{itemize}
         \item Se $ G(a)-G(a+v)\prec\prec \lambda\norma{v} $ la tesi è banalmente verificata.
         \item Altrimenti si ha $ \lambda v \prec \norma{G(a)-G(a+v)} $, e dunque $ \lambda\norma{v}^{2}\prec \norma{v}\norma{G(a)-G(a+v)} $; inoltre, per ipotesi, poiché $ F $ è di classe $ D^{1}$: per ogni $ x $: \begin{equation*}
             \Delta_{v,v}^{2}G(x) = \Delta_{v,v}^{2}  F(x) \prec \lambda\norma{v}^{2}.
@@ -462,12 +457,10 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \item È conseguenza di 2, considerando $ G(a)=a $ per ogni $ a $. 
         \item Sia \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le n\lambda\text{ per ogni }a \in \nonstandard{B}\right\}. 
-        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill}\footnote{\commento{Da spiegare l'underspill}%TODO underspill (nome e definizione)
-        }esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill} esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
         \item Sia ora invece \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le \frac{\lambda}{n}\lambda\text{ per ogni }a \in \nonstandard{B}\right\}.
-        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill}\footnote{\commento{Da spiegare l'overspill}%TODO overspill, p 23 nowik
-        }esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \prec\prec 1 $.\qed
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill} esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \prec\prec 1 $.\qed
     \end{enumerate}
 }
 \proposizione{dlikjckjdlkmnckslkmdkcoslkdlkj}{
@@ -519,8 +512,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
 }
 \dimostrazioneprop{djknckjndjckjnxkjnkjnckjndskjnckjnkjn}{
     Siano $ a\neq b \in \hhalo{M} $.\begin{itemize}
-        \item Se $ \st(a)\neq \st(b) $, allora chiaramente\footnote{\commento{Spiegare bene}%TODO spiegare bene
-        }si avrà $ F(a) \neq F(b) $;
+        \item Se $ \st(a)\neq \st(b) $, allora chiaramente\footnote{\commento{Spiegare bene}}si avrà $ F(a) \neq F(b) $;
         \item se invece $ \st(a) = \st(b) $, allora esiste una palla chiusa che soddisfi le ipotesi della proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}; pertanto, vale l'equazione \eqref{eq:minbound}.\qed
     \end{itemize}
 }
@@ -534,10 +526,10 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         Segue che $ \restriction{f}{\partial B_2}: \partial B_2  \longrightarrow B_3\setminus B_1$ sia omotopa alla inclusione di $ \partial B_2 $ all'interno di $ B_3\setminus B_1 $, con omotopia \begin{align*}
         H:\partial B_2\times [0,1] &\longrightarrow B_3\setminus B_1 \\
         (x,t) &\longmapsto tx+(1-t)f(x).
-        \end{align*}Dunque, se per assurdo esistesse $ p \in B_1 $ non compreso in $ f(B_2) $, allora $ \restriction{f}{\partial B_2} $ sarebbe omotopicamente equivalente alla funzione costante, e pertanto questo sarebbe vero anche per l'inclusione di $ \partial B_2 $. Contraddizione. %TODO capire il perché
+        \end{align*}Dunque, se per assurdo esistesse $ p \in B_1 $ non compreso in $ f(B_2) $, allora $ \restriction{f}{\partial B_2} $ sarebbe omotopicamente equivalente alla funzione costante, e pertanto questo sarebbe vero anche per l'inclusione di $ \partial B_2 $. Contraddizione. %ATOD capire il perché
     }: per ogni funzione $ f: B_2 \longrightarrow B_3 $, se $ \norma{f(x)-f(y)}\le 2\norma{x-y} $ per ogni $ x,y \in B_2 $ e $ \norma{f(x)-x}<s $ per ogni $ x \in B_2 $, allora $ f(B_2) \supseteq B_1 $.
 
-    Si ottiene dunque che per ogni funzione interna $ f: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $, se $ \norma{f(x)-f(y)}\le  2\norma{x-y} $ per ogni $ x,y \in \nonstandard{B_2} $ e $ \norma{f(x)-x}<s $ per ogni $ x \in \nonstandard{B_2} $, allora $ f(\nonstandard{B_2})\supseteq \nonstandard{B_1} $. Per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} un campo di prevettori $ D^{1} $ rispetta le ipotesi; pertanto la proposizione è dimostrata.\qed
+    Si ottiene dunque che per ogni funzione interna $ f: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $, se $ \norma{f(x)-f(y)}\le  2\norma{x-y} $ per ogni $ x,y \in \nonstandard{B_2} $ e $ \norma{f(x)-x}<s $ per ogni $ x \in \nonstandard{B_2} $, allora $ f(\nonstandard{B_2})\supseteq \nonstandard{B_1} $. Per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} un campo di prevettori $ D^{1} $ rispetta le ipotesi; pertanto la proposizione è dimostrata.\qed %ATOD capire
 }
 \teorema{lddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs}{
    Se $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ è un campo di prevettori di classe $ D^{1} $, allora \begin{equation*}
@@ -615,7 +607,7 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazione{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
-    -19: \commento{\lipsum[1]}
+    \commento{\lipsum[1]}
 }
 \teorema{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $, di classe $ D^{1} $, e sia $ G $ un qualsiasi campo di prevettori su $ \nonstandard{U} $. Dato un intorno coordinato compreso in $ U $ con immagine $ W \subseteq \R^{n} $, siano $ A' \subseteq A \subseteq \nonstandard{W} $ insiemi interni. Si supponga: \begin{enumerate}
@@ -633,7 +625,7 @@ Si considerano due casi.
     Se $ F \equiv G $, allora $ F_{t}(a)\approx G_{t}(a) $ per ogni $ 0\le t\le T $.
 }{djdkjncjdjndimostrazioncinainainainaianinaiai}{}
 \dimostrazione{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
-    -18: \commento{\lipsum[1]}
+    \commento{\lipsum[1]}
 }
 \definizione{
     Sia $ F $ un campo di prevettori locale di classe $ D^{1} $. In un intorno $ B' \subseteq \R^{n}$ e in un intervallo $ [-T,T] $, come per il teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}, si definisce il \emph{flusso standard indotto da $ F $}: \begin{align*}
@@ -664,7 +656,7 @@ Si considerano due casi.
 \osservazione{
     $\tilde{F}$ è effettivamente un campo di prevettori, ovvero \begin{equation*}
         \tilde{F}(a)-a\prec \lambda
-    \end{equation*}per ogni $ a $. Infatti -17: \commento{\lipsum[1]}
+    \end{equation*}per ogni $ a $. Infatti \commento{\lipsum[1]}
 }
 \lemma{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Se \begin{equation*}
@@ -674,17 +666,17 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
-    -16: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
     Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora $ \tilde{F} $ è di classe $ D^{1} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
-    -15: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $, allora $ \tilde{F} $ è di classe $ D^{2} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
-    -14: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \lemma{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $. Se $ \norma{F(a)-a} \le C\lambda$ e $ \norma{F(a)-a-F(b)+b}\le K \lambda\norma{a-b} $ per qualche $ C $ e $ K $ e per ogni $ a,b \in \nonstandard{U} $, allora il flusso di $ F $ soddisfa: \begin{equation*}
@@ -692,7 +684,7 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
-    -13: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \lemma{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
     Sia $ v \in \starR^{n} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
@@ -702,13 +694,13 @@ Si considerano due casi.
     Allora $ g(t)=tV $ e l'estensione di $ g $ al dominio non standard soddisfa $ g(\lambda)\equiv v $.
 }
 \dimostrazionelem{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
-    -12: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \teorema{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
     Se $ F $ è un campo di prevettori locale di classe $ D^{1} $, allora $ \tilde{F}\equiv F $.
 }
 \dimostrazione{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
-    -11: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \section{Parentesi di Lie}
 \definizione{
@@ -724,7 +716,7 @@ Si considerano due casi.
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{1} $, allora $ [F,G] $ è un campo di prevettori, i.e. $ [F,G](a)-a\prec \lambda $ per ogni $ a $.
 }
 \dimostrazione{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
-    -10: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \lemma{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
     Siano $ F,G $ campi di prevettori locali, $ F $ di classe $ D^{2} $ e $ G $ di classe $ D^{1} $. Allora per ogni $ a,b $ con $ a-b\prec \lambda $ vale: \begin{equation*}
@@ -732,13 +724,13 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
-    -9: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \teorema{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{2} $, allora $ [F,G] $ è un campo di prevettori di classe $ D^{1} $.
 }
 \dimostrazione{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
-    -8: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \proposizione{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
     Siano $ F,G $ campi di prevettori di classe $ D^{2}$. Allora, per ogni $ a $, \begin{equation*}
@@ -746,7 +738,7 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazioneprop{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
-    -7: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \lemma{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
     Se $ G,H $ sono campi di prevettori di classe $ D^{2} $ e $ G\equiv H $, allora \begin{equation*}
@@ -754,19 +746,19 @@ Si considerano due casi.
     \end{equation*}per ogni $ a,b $ con $ a-b\prec \lambda $.
 }
 \dimostrazionelem{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
-    -6: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \lemma{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
     Se $ G,H $ sono campi di prevettori con $ G\equiv H $, e $ G $ è di classe $ D^{1} $, e $ H^{-1} $ esiste, allora $ G^{-1}\equiv H^{-1} $.
 }
 \dimostrazionelem{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
-    -5: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \teorema{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
     Se $ F,E,G,H $ sono campi di prevettori di classe $ D^{2} $ e $ F\equiv E $, $ G\equiv H $, allora $ [F,G]\equiv [E,H] $.
 }
 \dimostrazione{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
-    -4: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \subsection{Relazione con le parentesi di Lie classiche}
 
@@ -776,7 +768,7 @@ Si considerano due casi.
     Siano $ F,G $ due campi di prevettori che realizzino $ X,Y $ rispettivamente. Allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 }
 \dimostrazione{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
-    -3: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 \teorema{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Siano $ F,G $ due campi di prevettori di classe $ D^{2} $. 
@@ -784,7 +776,7 @@ Si considerano due casi.
     Allora $ [F,G]\equiv I $ se e solo se $ h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}$ per ogni $ 0\le t,s\le T $ per qualche $ 0<T \in \R$.
 }
 \dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
-    -2: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }
 
 \section{Conclusione}
@@ -795,5 +787,5 @@ Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario c
     Allora i flussi di $ X $ e di $ Y $ commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.
 }
 \dimostrazione{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
-    -1: \commento{\lipsum[1]}\qed
+    \commento{\lipsum[1]}\qed
 }

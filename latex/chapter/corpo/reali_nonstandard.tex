@@ -43,7 +43,7 @@ In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali
 %     Il teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
 % }
 
-\section{Costruzione di $\starR$}
+\section{Costruzione degli iperreali}
 
 L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \mathcal{L}$-strutture.
 
@@ -243,22 +243,26 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         
         Sia dunque $ t(x_1,\dots,x_{n}) $ il termine \begin{equation*}
             f\left(t_1(x_1,\dots,x_{n} ), \dots, t_{k}(x_1,\dots,x_{n} ) \right).
-        \end{equation*}Fissati $ \sequence{a^{1}_i},\dots,\sequence{a^{n}_i}, \sequence{b_{i} } \in \prod_{i \in I} A_{i}  $, per ogni $ j =1,\dots,k $ si avrà \begin{equation*}
-            t_{j}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{c^{j}_i}\right]
-        \end{equation*}per qualche $ \sequence{c^{j}_i} \in \prod_{i \in I} A_{i}   $.
+        \end{equation*} \commento{Non sono riuscito a terminare questa dimostrazione}
+        % Fissati $ \sequence{a^{1}_i},\dots,\sequence{a^{n}_i}, \sequence{b_{i} } \in \prod_{i \in I} A_{i}  $, si dimostrerà che \begin{equation*}
+        %     t^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{t^{\mathcal{A}_i}\left(a^{1}_i,\dots,a^{n}_i\right)}\right].
+        % \end{equation*}Questo corrisponde alla tesi.
+        % % \begin{equation*}
+        % %     t_{j}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{c^{j}_i}\right]
+        % % \end{equation*}per qualche $ \sequence{c^{j}_i} \in \prod_{i \in I} A_{i}   $.
 
-        Dunque $ t^{\mathcal{M}} \left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{b_i}\right]$ se e solo se \begin{equation*}
-            f^{\mathcal{M}}\left(t_{1}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right),\dots,t_{k}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right)\right) = \left[\sequence{b_{i} }\right]
-        \end{equation*}e a sua volta questo è equivalente ad \begin{equation}
-            f^{\mathcal{M}}\left(\left[\sequence{c^{1}_i}\right],\dots,\left[\sequence{c^{k}_i}\right]\right) = \left[\sequence{b_{i} }\right].\label{eq:ciaonen}
-        \end{equation}Per la definizione di funzioni in un ultraprodotto, \eqref{eq:ciaonen} se e solo se \begin{equation*}
-            B \coloneqq \set{i \in I: f^{\mathcal{A}_i}\left(c^{1}_i,\dots,c^{k}_i\right)=b_{i} } \in \mathcal{U}.
-        \end{equation*}Si considerino ora gli insiemi \begin{align*}
-            B' &\coloneqq\set{i \in I: t^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = b_{i} },\\ 
-            B''&\coloneqq B\cap \set{i \in I: t_{1}^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = c^{1}_i }\cap \dots \cap \set{i \in I: t_{k}^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = c^{k}_i }
-        \end{align*}L'inclusione $ B'' \subseteq B' $ è banale, e pertanto se $ B \in \mathcal{U} $ allora $ B' \in \mathcal{U}$, poiché $ \mathcal{U} $ è un filtro.
+        % Dunque $ t^{\mathcal{M}} \left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{b_i}\right]$ se e solo se \begin{equation*}
+        %     f^{\mathcal{M}}\left(t_{1}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right),\dots,t_{k}^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right)\right) = \left[\sequence{b_{i} }\right]
+        % \end{equation*}e a sua volta questo è equivalente ad \begin{equation}
+        %     f^{\mathcal{M}}\left(\left[\sequence{c^{1}_i}\right],\dots,\left[\sequence{c^{k}_i}\right]\right) = \left[\sequence{b_{i} }\right].\label{eq:ciaonen}
+        % \end{equation}Per la definizione di funzioni in un ultraprodotto, \eqref{eq:ciaonen} se e solo se \begin{equation*}
+        %     B \coloneqq \set{i \in I: f^{\mathcal{A}_i}\left(c^{1}_i,\dots,c^{k}_i\right)=b_{i} } \in \mathcal{U}.
+        % \end{equation*}Si considerino ora gli insiemi \begin{align*}
+        %     B' &\coloneqq\set{i \in I: t^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = b_{i} },\\ 
+        %     B''&\coloneqq B\cap \set{i \in I: t_{1}^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = c^{1}_i }\cap \dots \cap \set{i \in I: t_{k}^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = c^{k}_i }
+        % \end{align*}L'inclusione $ B'' \subseteq B' $ è banale, e pertanto se $ B \in \mathcal{U} $ allora $ B' \in \mathcal{U}$, poiché $ \mathcal{U} $ è un filtro.
 
-        Viceversa, se $ B' \in \mathcal{U}$,
+        % Viceversa, se $ B' \in \mathcal{U}$,
     \end{itemize}
 }
 \teorema[Teorema di Łoś]{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
@@ -268,7 +272,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 }
 \dimostrazione{dsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij}{
     Si dimostra il teorema per induzione sull'altezza della formula. \begin{itemize}
-        \item \emph{Caso base:} per dimostrare il caso di una $ \mathcal{L}$-formula atomica, per semplicità, si considererà un simbolo di relazione binaria $ R $ e la formula $ \varphi: R(t_1,t_2) $.
+        \item \emph{Caso base:} per dimostrare il caso di una $ \mathcal{L}$-formula atomica, per semplicità, si considererà un simbolo di relazione binaria $ R $ e la formula $ \varphi: R(t_1,t_2) $. 
         
         Siano dunque $ \left[\sequence{b^{1}_i}\right] = t_1^{\mathcal{M}},\quad \left[\sequence{b^{2}_i}\right] = t_2^{\mathcal{M}} $. Necessariamente, per definizione di termine in un ultraprodotto, \begin{align*}
             X_{t_1}&=\{i \in I: t_1^{\mathcal{A}_i} = b_{i}^{1} \} \in \mathcal{U},\\
@@ -348,7 +352,10 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \mathcal{A}^{I}/\mathcal{U}\vDash \phi\left[\pi(a^{0}),\pi(a^{1}), \dots, \pi(a^{n})\right].\qedd
     \end{equation*}
 }
-\subsection{$ \starR $ come ultraprodotto}
+\osservazione{
+    Il corollario di cui sopra definisce proprio il principio di transfer, ovvero l'immersione elementare di $ \R $ in $ \starR $.
+}
+\subsection{Iperreali come ultraprodotto}
 
 \proposizione{dkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd}{
     Esiste un ultrafiltro non principale $ \mathcal{U} $ su $ \N $.
@@ -372,10 +379,10 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 }
 \definizione{
     Si consideri il linguaggio dei campi ordinati: \[
-        \mathcal{L}_{\text{fld}}=\{+,-, \cdot ,0,1,\le\}
-    \]e la $ \mathcal{L}$-struttura $ \mathcal{R} = (\R,+,-, \cdot ,0,1,\le ) $. 
+        \mathcal{L}_{\text{ord}}=\{+,-, \cdot ,0,1,\le\}
+    \]e la $ \mathcal{L}_{\text{ord}}$-struttura $ \mathcal{R} = (\R,+,-, \cdot ,0,1,\le ) $. 
 
-    Si definisce il \emph{campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard} $ \starR $ (anche \emph{campo degli iperreali}) come il dominio della $ \mathcal{L}_{\text{fld}} $-struttura \[
+    Si definisce il \emph{campo\footnote{Sarà chiaro tra qualche riga il perché lo si definisca un campo.} dei numeri reali non standard} $ \starR $ (anche \emph{campo degli iperreali}) come il dominio della $ \mathcal{L}_{\text{ord}} $-struttura \[
         \null^{*}\mathcal{R} \coloneqq \mathcal{R}^{ \N}/\mathcal{U}
     \]dove $ \mathcal{U} $ è un ultrafiltro non principale su $ \N $, ovvero \[
         \starR \coloneqq \R^{\N}/ \mathcal{U}.
@@ -391,7 +398,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
         \item $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti;
         \item questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'esempio 3.21 di \cite{andretta_elements_2022}};
-        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \null^{*}a $.
+        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \nonstandard{a} $.
     \end{itemize}
 }{}{}
 \osservazione{
@@ -400,6 +407,13 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         1^{\null^{*}\mathcal{R}} &= \pi\left(1^{\mathcal{R}}\right) \eqqcolon \nonstandard{1}.
     \end{align*}
 }
+
+
+
+\section{Gli iperreali}
+
+In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcune definizioni.
+
 \paragrafo{Osservazione}{%
     Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\left[\sequence{r_{i}}\right]$, $s=\left[\sequence{s_{i}}\right]$\begin{align*}
         r+s &= \left[\sequence{r_{i}+s_{i}}\right];\\
@@ -407,6 +421,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         r\le s\quad &\text{se e solo se}\quad \{i \in \N: r_{i}\le s_{i}  \} \in \mathcal{U}.
     \end{align*}
 }{}{}
+
 \paragrafo{Osservazione}{%
     Per ogni $ r \in \starR $, $ r =\left[\sequence{r_{i}}\right] $, si definisce il valore assoluto come: \[
         |r| \coloneqq \left[\sequence{|r_{i}|}\right]
@@ -416,9 +431,16 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \end{equation*}ma $ A = \set{i \in \N: r_{i} = |r_{i}|  } $, e pertanto $ \abs{r}=r $;
         \item Se $ r < \nonstandard{0} $ allora 
         \begin{equation*}
-            B\coloneqq\{i \in \N: r_{i}< 0 \} \in \mathcal{U}
-        \end{equation*}, ma $ B= \{i \in \N: -r_{i} = |r_{i}|  \} $ e pertanto $ |r| = -r = \left[\sequence{-r_{i}}\right]$.
+            B\coloneqq\{i \in \N: r_{i}< 0 \} \in \mathcal{U},
+        \end{equation*}ma $ B= \{i \in \N: -r_{i} = |r_{i}|  \} $ e pertanto $ |r| = -r = \left[\sequence{-r_{i}}\right]$.
     \end{itemize}
+}{}{}
+\paragrafo{Notazione}{%
+    Poiché è presente una inclusione naturale $ \R \hookrightarrow \starR $, non è necessario indicare con simboli diversi $ r \in R $ e $ \nonstandard{r} = \pi(r) \in \starR $. 
+
+    Pertanto, per tutti gli elementi di $ r \in \R $, quando questo non creerà ambiguità si indicherà con $ r $ anche $ \nonstandard{r} $. 
+
+    La stessa cosa si applica a relazioni e operazioni: quando ciò non crea ambiguità, si eviterà di indicare ``$ \nonstandard{\null} $''.
 }{}{}
 \proposizione{djkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj}{
     $ \starR $ è un campo non archimedeo.
@@ -443,3 +465,67 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     
     Pertanto $ M $ è un elemento di $ \starR $, ma per ciascun $ n \in \N $ si ha che $ M\ge n1 $: $ \starR $ non è un campo archimedeo.\qed
 }
+
+\definizione{
+    Un numero iperreale $ x \in \starR $ si dice \begin{itemize}
+        \item \emph{finito} se esiste un numero reale $ r \in \R $ tale per cui $ |x|<r $;
+        \item \emph{infinito} se per ogni numero reale $ r \in \R$, $ r<|x| $;
+        \item \emph{infinitesimo} se per ogni numero reale positivo $ r \in \R $, $ r>0 $, vale \begin{equation*}
+            0 < |x| < r.
+        \end{equation*}
+    \end{itemize}
+}
+
+\definizione{
+    Sia $ X \subseteq \R $. Il sottoinsieme $ \nonstandard{X} \subseteq \starR $ si definisce come \begin{equation*}
+        \nonstandard{X} \coloneqq \set{\left[\sequence{a_{n}}\right]: a_{n} \in X, \forall\, n \in \N}.
+    \end{equation*}
+}
+\definizione{
+    Sia $ X \subseteq \R $ e sia $ f: X \longrightarrow \R $. Si definisce l'estensione non standard di $ f $ come \begin{align*}
+    \nonstandard{f}:\nonstandard{X} &\longrightarrow \starR \\
+    \left[\sequence{a_{n}}\right] &\longmapsto \left[\sequence{f(u_{n} )}\right].
+    \end{align*}
+}
+
+\paragrafo{Osservazione}{%
+    Date le definizioni di cui sopra, è possibile ampliare il principio di transfer. 
+
+    In particolare se $ \phi(x_1,\dots,x_{n} ) $ è una formula che contiene unicamente elementi di $ \mathcal{L}_{ord} $ oppure espressioni come $ f(x) $ e $ x \in D $, dove $ f:\R \longrightarrow \R $ è una funzione e $ D \subseteq \R $ è un sottoinsieme specifico di $ \R $, allora $ \phi[a_1,\dots,a_{n} ] $ è verificata su $ \R $ se e solo se $ \tilde{\phi}[\nonstandard{a_1},\dots,\nonstandard{a_{n} }] $ è verificata su $ \nonstandard{\R} $, dove $ \tilde{\phi} $ è la formula ottenuta sostituendo a ciascun simbolo di funzione $ f $ la sua estensione non standard $ \nonstandard{f} $, e sostituendo a ciascun simbolo di sottoinsieme $ D $ la sua estensione non standard. 
+
+    La dimostrazione di ciò sarà l'argomento del capitolo successivo.
+}{tantebellecoseinoijknkjnkjnsd}{}
+
+\subsection{Elementi interni}
+
+\definizione{
+    Un elemento $\xi \in \starR$ si dice interno se appartiene a qualche iper-estensione $ \nonstandard{\Upsilon } $ per $ \Upsilon  \subseteq \starR $. Un elemento dell’universo non standard che non è interno si dice esterno.
+}
+
+Si riporta una versione più debole del teorema 2.8.12 di \cite{loeb_nonstandard_2015}, la cui dimostrazione prescinde dall'obiettivo di questa tesi. 
+
+\teorema{teoriemidkjnkjnc}{
+    Sia $ A $ un sottoinsieme interno di $ \nonstandard{R} $. \begin{enumerate}
+        \item Se $ \N \subseteq A $, allora contiene almeno un elemento di $ \nonstandard{\N} $ infinito. (Principio dell'\straniero{overspill}).
+        \item Se $ A $ contiene tutti gli elementi infiniti di $ \nonstandard{\N} $, allora contiene almeno un elemento finito di $ \N $. (Principio dell'\straniero{underspill}).
+    \end{enumerate}
+}
+
+\subsection{Numeri naturali e loro estensione}
+
+\teorema{dkjncjskjnskjncjdjckjnsjdkjnckjnskjnd}{
+    Ogni numero in $ \nonstandard{\N} $ finito è un numero naturale
+}
+\dimostrazione{dkjncjskjnskjncjdjckjnsjdkjnckjnskjnd}{
+    Sia $ N \in \N $ fissato. I numeri naturali soddisfano la seguente formula: \begin{equation*}
+        ( \forall\,n \in\N)\left[n<N \,\implies\,n = 0 \,\lor\,n=1\,\lor\, \dots \,\lor\, n = N\right]
+    \end{equation*}Applicando il principio di transfer, si ottiene che \begin{equation*}
+        ( \forall\,n \in\nonstandard{\N})\left[n<N \,\implies\,n = 0 \,\lor\,n=1\,\lor\, \dots \,\lor\, n = N\right]
+    \end{equation*}Per l'arbitrarietà di $ N $, questo implica che se un numero ipernaturale $ \xi $ è finito, allora è necessariamente un numero naturale.\qed
+}
+
+
+È immediato dunque questo corollario:
+\paragrafo{Corollario}{%
+    Ogni elemento di $ \nonstandard{\N} $ è un numero naturale oppure un numero infinito.
+}{}{}

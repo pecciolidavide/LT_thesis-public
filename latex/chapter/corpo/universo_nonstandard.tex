@@ -1,6 +1,6 @@
 \chapter{Universo matematico e controparte non standard}\stepcounter{capitoloeccolo}
 
-\commento{In questo capitolo ho utilizzato $ \mathcal{F} $ invece di $ \mathcal{U} $ per indicare l'ultrafiltro non principale utilizzato per la costruzione dell'ultra prodotto. Nella versione definitiva renderò il tutto coerente.} %TODO
+\commento{In questo capitolo ho utilizzato $ \mathcal{F} $ invece di $ \mathcal{U} $ per indicare l'ultrafiltro non principale utilizzato per la costruzione dell'ultra prodotto. Inoltre anche le classi di equivalenza delle successioni sono indicate in maniera diversa. Nella versione definitiva renderò il tutto coerente.}
 
 % Dopo aver mostrato la costruzione di $ \starR $ come ultraprodotto, si utilizza una costruzione simile, generalizzandola ad un \emph{universo matematico}. Questo consentirà di superare parzialmente la limitazione della scelta del linguaggio $ \mathcal{L} $, e quindi di parlare degli oggetti matematici ``comuni'' e della loro controparte non standard, pur senza uscire dal formalismo logico. 
 
@@ -12,9 +12,7 @@ Nel capitolo precedente, a seguito della costruzione di $ \starR $, è stato nec
 
 Dunque la complessità nel definire tutti gli oggetti e le strutture necessarie per studiare le varietà differenziabili, ovvero l'obiettivo di questo lavoro, rende necessaria una generalizzazione della costruzione precedente tale per cui, preso un qualsiasi\footnote{Nella definizione formale si indicherà con più precisione cosa significhi questo ``qualsiasi''} oggetto matematico, sia chiaro e naturale quale sia la sua controparte non standard.
 
-In particolare si costruirà una struttura $ V(\R) $ contentente tutti gli oggetti di interesse, e contenente $ \R $, e se ne definirà la controparte non standard $ \nonstandard{V(\R)} $. Si mostrerà che $ \starR $, come definito nel capitolo precedente, e con tutte le sue proprietà come campo ordinato, si immerge elementarmente in un elemento di $ \nonstandard{V(\R)} $. 
-
-Questa è la ragione della apparente rindondanza del capitolo precedente: è più intuitivo svolgere le dimostrazioni in un contesto meno astratto, e solo infine dimostrare che i risultati continuano a valere cambiando leggermente le premesse iniziali.
+In particolare si costruirà una struttura $ V(\R) $ contentente tutti gli oggetti di interesse, e contenente $ \R $, e se ne definirà la controparte non standard $ \nonstandard{V(\R)} $. Si mostrerà che le definizioni di funzioni e sottoinsiemi in $ \starR $ date nel capitolo precedente, sono coerenti con il principio di transfer più generale dato in questo capitolo. 
 
 \section{Universo matematico}
 
@@ -73,8 +71,8 @@ Possiamo notare che all'interno di $ V(X) $ sono contenuti molti oggetti di inte
 La costruzione di un universo matematico consente di quantificare sugli insiemi, pur mantentendosi nell'ambito della logica del prim'ordine. 
 
 In particolare, ogni formula sarà espressa nel linguaggio \begin{equation*}
-    \mathcal{L} = \{\in\}
-\end{equation*}Per chiarezza, le $ \mathcal{L} $-formule verranno chiamate $ \in $-formule.
+    \mathcal{L}_{\in} = \{\in\}
+\end{equation*}Per semplicità, le $ \mathcal{L}_{\in} $-formule verranno chiamate $ \in $-formule.
 
 \definizione{
     Una $ \in $-formula $ \phi $ è detta \emph{limitata} se e solo se i quantificatori $ \forall\, x $ e $ \exists\, x $ appaiono in $ \phi $ \emph{solo} nelle forme seguenti: \begin{equation*}
@@ -300,7 +298,7 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 }
 \commento{Devo consultare un libro (Model Theory di Chang e Keisler, 1990) che non trovo in digitale ma ho prenotato in biblioteca in merito al "Mostowski collapse".}
 
-\paragrafo{osservazione}{%
+\paragrafo{Osservazione}{%
 Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in V_{m}(\nonstandard{X}) $.
 }{dkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad}{}
 \lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
@@ -435,13 +433,22 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
     Resta da dimostrare che $ X \subsetneqq \nonstandard{X} $, ovvero che esista $ y \in \nonstandard{X} $ tale per cui $ y\neq \nonstandard{x} $ per ogni $ x \in X $. 
 
-    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \nonstandard{X} $. \commento{Questo non necessità l'ipotesi che $ X $ sia un insieme infinito? Questa ipotesi deriva dal fatto che $ X $ sia un insieme base?}%TODO risolvere
+    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = \hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right) \in \nonstandard{X} $. \commento{Questo non necessità l'ipotesi che $ X $ sia un insieme infinito? Questa ipotesi deriva dal fatto che $ X $ sia un insieme base?}
 
     Si dimostra ora che se $ x \in X $, allora $ \xi\neq \nonstandard{x} $: per definizione significa dimostrare che $ \sequence{a_{n} }\not\sim \sequence{x} $, ovvero che $ N={n \in \N: a_{n}\neq x } \in \mathcal{F} $. 
 
     È evidente però che $ N $ contiene tutti i numeri naturali tranne al più l'unico indice $ n_0 $ tale per cui $ a_{n_0}= x  $ (poiché gli $ a_i $ sono tutti distinti). Dunque $ N \in  \mathcal{F} $.\qed
 }
-\section{Equivalenza elementare con $ \starR $}
+
+\osservazione{
+    È possibile estendere la definizione di elementi interni come segue.
+}
+
+\definizione{
+    Un elemento $\xi \in \nonstandard{V(X)}$ si dice interno se appartiene a qualche iper-estensione $ \nonstandard{\Upsilon } $ per $ \Upsilon  \in V(X) $. Un elemento dell’universo non standard che non è interno si dice esterno.
+}
+
+\section{Correlazione con gli iperreali}
 
 % \notazione{
 %     Si considerino i due linguaggi \[
@@ -451,10 +458,72 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 %     \]
 % }
 
-\commento{In questa parte devo aggiungere l'equivalenza tra la struttura definita nel capitolo precedente e la copira di $ \starR $ contenuta in $ \nonstandard{V(\R)} $.}
+Nel capitolo precedente, al paragrafo \framref{tantebellecoseinoijknkjnkjnsd} è stato esteso il principio di transfer senza darne una reale dimostrazione. A seguito della costruzione di $ \nonstandard{V(\R)} $ appare chiaro che questo funzioni a patto che la definizione di estensione non standard di funzioni e sottoinsiemi data nello scorso capitolo sia coerente con la estensione definita dalla funzione \begin{equation*}
+    *: V(\R) \longrightarrow \nonstandard{V(\R)}.
+\end{equation*}
+
+In particolare, si dimostra la seguente proposizione. 
+\proposizione{dkjncjskjdjdjdjdjdjdjdjdckjn}{
+    Sia $ A \subseteq \R $ e sia $ f: A \longrightarrow \R $. Allora \begin{enumerate}
+        \item $ \nonstandard{A} = \set{\sequence{u_{n} }_{\mathcal{F}}: u_{n} \in A, \forall\, n \in \N } $;
+        \item $ \nonstandard{f} $ è una funzione \begin{equation*}
+            \nonstandard{f}: \nonstandard{A} \longrightarrow \starR
+        \end{equation*}tale per cui $ \nonstandard{f}\left(\sequence{u_{n} }_{\mathcal{F}}\right) = \sequence{f(u_{n} )}_{\mathcal{F}} $.
+    \end{enumerate}
+}
+\dimostrazioneprop{dkjncjskjdjdjdjdjdjdjdjdckjn}{
+    \begin{enumerate}
+        \item Per definizione, $ \nonstandard{A} = \hslash\left(\sequence{A}_{\mathcal{F}}\right) $: \begin{align*}
+            \nonstandard{A} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{F}}\right): \sequence{a_{n} }_{\mathcal{F}} \in \R^{n}, \sequence{a_{n} }_{\mathcal{F}} \mathrel{\nonstandard{\in}} \sequence{A}_{\mathcal{F}} } \\ 
+            &= \set{\sequence{a_{n}}_{\mathcal{F}}: \hspace{1em}\parbox{10em}{\begin{align*}
+                \set{n \in \N: a_{n} \in \R } & \in \mathcal{F}\\ 
+                \set{n \in \N: a_{n} \in A } & \in \mathcal{F}
+            \end{align*}}}
+        \end{align*}Poiché si ha che $ \set{n \in \N: a_{n} \in A \subseteq \R } \subseteq  \set{n \in \N: a_{n} \in \R }$, \begin{equation*}
+            \nonstandard{A} = \set{\sequence{a_{n}}_{\mathcal{F}}: \set{n \in \N: a_{n} \in A }  \in \mathcal{F}}
+        \end{equation*}Si dimostra con il principio della doppia inclusione che \[ \nonstandard{A} = \set{\sequence{u_{n} }_{\mathcal{F}}: u_{n} \in A, \forall\, n \in \N } .\]In particolare, è banale l'inclusione ``$\supseteq$'', mentre se $ \sequence{a_{n} }_{\mathcal{F}} \in \nonstandard{A} $, sia \begin{equation*}
+            C' \coloneqq \set{n \in \N: a_{n} \in A } \in \mathcal{F}.
+        \end{equation*}Fissato $ a \in A $ qualunque, si definisce la successione \begin{equation*}
+            b_{n}\coloneqq \begin{cases}
+                a_{n} & n \in C'\\ 
+                a & n \notin C' 
+            \end{cases}\qquad b_{n} \in A, \forall\, n \in \N
+        \end{equation*}Poiché $ C' \in \mathcal{F}$, $ \sequence{a_{n} }_{\mathcal{F}} = \sequence{b_{n} }_{\mathcal{F}} $, e dunque $ \sequence{a_{n} }_{\mathcal{F}} \in \set{\sequence{u_{n} }_{\mathcal{F}}: u_{n} \in A, \forall\, n \in \N }  $.
+        \item Per costruzione, le funzioni vengono considerate come sottoinsiemi del prodotto cartesiano; pertanto, $ f \subseteq A \times \R $, mentre $ \nonstandard{f} \subseteq \nonstandard{A}\times \starR $. 
+        
+        La tesi equivale a richiedere che \begin{equation*}
+            \nonstandard{f} = \set{
+                \set{\set{\sequence{u_{n} }_{\mathcal{F}}}, \set{\sequence{u_{n} }_{\mathcal{F}}, \sequence{f(u_{n} ) }_{\mathcal{F}}}}: \sequence{u_{n} } \in A^{\N}
+            }.
+        \end{equation*}Per il lemma 4.4.3 di \cite{chang_model_2012}, $ f \in V_3(\R) $. 
+        
+        Si scriva dunque in modo esplicito $ \nonstandard{f} $\begin{align*}\footnotesize
+            \nonstandard{f} &= \hslash \left(\sequence{f}_{\mathcal{F}}\right)\\ 
+            &= \set{\hslash\left(\sequence{g^{1}_n}_{\mathcal{F}}\right): \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{F}} }\\ 
+            &= \set{\set{\hslash\left(\sequence{g^{2}_n}_{\mathcal{F}}\right): \sequence{g^{2}_n} \in V_{1}(\R)^{\N}, \sequence{g^{2}_n}_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}_{\mathcal{F}}}: \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{F}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{F}} }\\ 
+            &=%
+            \set{%
+                \set{
+                    \set{
+                        \sequence{g^{3}_n}_{\mathcal{F}}: 
+                            \begin{aligned}
+                                \sequence{g^{3}_n} &\in \R^{\N},\\ \sequence{g^{3}_n}_{\mathcal{F}}&\mathrel{\nonstandard{\in}}\sequence{g^2_n}_{\mathcal{F}}
+                            \end{aligned}
+                    }: 
+                    \begin{aligned}
+                        \sequence{g^{2}_n} &\in V_{1}(\R)^{\N},\\ \sequence{g^{2}_n}_{\mathcal{F}}&\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}_{\mathcal{F}}
+                    \end{aligned}
+                }: 
+                \begin{aligned}
+                    \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \sequence{g^{1}_n}_{\mathcal{F}}&\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{F}} 
+                \end{aligned}
+            }
+        \end{align*}\commento{Mi sembra un modo molto macchinoso e che non conduce da nessuna parte.}
+    \end{enumerate}
+}
 
 \osservazione{
-    Dopo aver mostrato che all'interno di $ \nonstandard{V(\R)} $ valgano tutti i teoremi di base dimostrati nel capitolo precedente, per procedere alla trattazione delle varietà differenziabili è necessario capire se e come definire l'estensione non standard di una varietà. 
+    Dopo aver mostrato che i teoremi di base dimostrati nel capitolo precedente abbiano una solida base formale, per procedere alla trattazione delle varietà differenziabili è necessario capire se e come definire l'estensione non standard di una varietà. 
 
     Per farlo, si consideri una varietà $ M $, e si indichi con $ \abs{M} $ l'insieme dei suoi punti. Si identifica poi $ \abs{M} $ con un insieme all'interno di $ V_1(\R)\setminus V_0(\R) $. Questo assicura che l'intersezione tra $ \abs{M} $ ed $ \R $ sia vuota. 
 

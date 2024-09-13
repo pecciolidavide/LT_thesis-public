@@ -577,7 +577,7 @@ Il teorema segue dalle proposizioni \framref{djknckjndjckjnxkjnkjnckjndskjnckjnk
 \definizione{%
 Si considerano due casi.
 \begin{itemize}
-    \item Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ un campo di prevettori globali, e, per $ 0\le t \in \nonstandard{R} $, sia $ n = n(t) = \floor{t/\lambda} $. Per ogni $ a \in \nonstandard{M} $ si definisce il \emph{flusso di $ F $ al tempo $ t $}, $ F_{t}(a) = F^{n}(a) $. 
+    \item Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ un campo di prevettori globale, e, per $ 0\le t \in \nonstandard{R} $, sia $ n = n(t) = \floor{t/\lambda} $. Per ogni $ a \in \nonstandard{M} $ si definisce il \emph{flusso di $ F $ al tempo $ t $}, $ F_{t}(a) = F^{n}(a) $. 
 
     Per definire $ F^{n}(a) $, sia $ \Phi $ la mappa \begin{align*}
     \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
@@ -590,6 +590,13 @@ Si considerano due casi.
     a &\longmapsto F_{t}'(a). 
     \end{align*}
 \end{itemize}
+}
+\osservazione{
+    È possibile estendere la definizione di $ F_{t} $ (di cui sopra) per $ t\le 0 $. In particolare: \begin{itemize}
+        \item per campi di prevettori globali che sono biettivi su $ \nonstandard{M} $,
+        \item per campi di prevettori locali biiettivi nel senso dell'osservazione \framref{remarkfourpointeight}
+    \end{itemize}
+    si definisce $ F_{t}  $ per $ t\le  0 $ come $ \left(F^{-1}\right)_{-t} $.
 }
 
 \subsection{Dipendenza dalle condizioni iniziali e dal campo di prevettori}
@@ -607,6 +614,7 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazione{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
+    Si dimostra inizialmente il teorema per $ t\ge 0 $. Sia $ C $ come per la proposizione \framref{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}(1). Preso $ T=\frac{r}{2C} $, allora $ 0<T \in \R $ e, per induzione interna\footnote{Si ha che se $ A $ è un sottoinsieme interno di $ \nonstandard{N} $ chiuso rispetto alla funzione successore $ n \mapsto n+1$, allora $ \nonstandard{N} = A $.}
     \commento{\lipsum[1]}
 }
 \teorema{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{

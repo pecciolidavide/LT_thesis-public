@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  13 SEP 2024 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  26 SEP 2024 23:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2018,35 +2018,33 @@ Overfull \hbox (2.49014pt too wide) detected at line 434
  [50]
 \c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count686
 \c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count687
- [51]
+ [51] [52]
 \c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count688
 \c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count689
 \c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count690
 \c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count691
- [52]
+ [53]
 \c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count692
 \c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count693
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--656
-
- []
-
-[53]
+ [54]
 \c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count694
 \c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count695
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count696
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count697
- [54]
+ [55]
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count698
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count699
 \c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count700
 \c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count701
+
+Underfull \vbox (badness 2671) has occurred while \output is active []
+
+ [56]
 \c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count702
 \c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count703
- [55]
 \c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count704
 \c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count705
- [56]
+ [57]
 \c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count706
 \c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count707
 \c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count708
@@ -2055,22 +2053,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 653--656
 \c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count711
 \c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count712
 \c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count713
- [57]
+ [58]
 \c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count714
 \c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count715
 \c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count716
 \c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count717
 \c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count718
 \c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count719
- [58]
+ [59]
 \c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count720
 \c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count721
 \c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count722
 \c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count723
- [59]
+ [60]
 \c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count724
 \c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count725
-) [60]
+) [61] [62
+
+]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2082,8 +2082,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [61
-
+ [63
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
@@ -2098,18 +2097,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70615 strings out of 492616
- 1666780 string characters out of 6129481
- 2328001 words of memory out of 5000000
- 72837 multiletter control sequences out of 15000+600000
- 663922 words of font info for 235 fonts, out of 8000000 for 9000
+ 70620 strings out of 492616
+ 1666841 string characters out of 6129481
+ 2328242 words of memory out of 5000000
+ 72840 multiletter control sequences out of 15000+600000
+ 663643 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,27n,119p,1712b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (65 pages, 662055 bytes).
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (67 pages, 670246 bytes).
 PDF statistics:
- 1169 PDF objects out of 1200 (max. 8388607)
- 1035 compressed objects within 11 object streams
- 402 named destinations out of 1000 (max. 500000)
+ 1200 PDF objects out of 1200 (max. 8388607)
+ 1064 compressed objects within 11 object streams
+ 410 named destinations out of 1000 (max. 500000)
  30125 words of extra memory for PDF output out of 35830 (max. 10000000)
 

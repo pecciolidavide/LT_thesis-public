@@ -614,8 +614,39 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazione{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}{
-    Si dimostra inizialmente il teorema per $ t\ge 0 $. Sia $ C $ come per la proposizione \framref{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}(1). Preso $ T=\frac{r}{2C} $, allora $ 0<T \in \R $ e, per induzione interna\footnote{Si ha che se $ A $ è un sottoinsieme interno di $ \nonstandard{N} $ chiuso rispetto alla funzione successore $ n \mapsto n+1$, allora $ \nonstandard{N} = A $.}
-    \commento{\lipsum[1]}
+    Si dimostra inizialmente il teorema per $ t\ge 0 $. Sia $ C $ come per la proposizione \framref{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}(1). Per induzione interna\footnote{Si ha che se $ A $ è un sottoinsieme interno di $ \nonstandard{\N} $ chiuso rispetto alla funzione successore $ n \mapsto n+1$, allora $ \nonstandard{N} = A $.} su $ n $ si dimostra che per ogni $ n \in \nonstandard{\N} $: \begin{itemize}
+        \item per ogni $ a \in \nonstandard{B'} $ \begin{equation}
+            \norma{F^{n}(a)-a}\le \sum_{m=1}^{n} \norma{F^{m}(a)-F^{m-1}(a)} \le nC\lambda\le \frac{r}{2}\label{eq:cosa1}
+        \end{equation}e dunque $ F^{n}(a) \in \nonstandard{B} $;
+        \item per ogni $ a,b \in \nonstandard{B} $, per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}, si ha che \begin{equation*}
+            (1-K\lambda)\norma{a-b} \le \norma{F(a)-F(b)}\le (1+K\lambda)\norma{a-b},
+        \end{equation*}e quindi \begin{equation}
+            (1-K\lambda)^{n}\norma{a-b}\le \norma{F^{n}(a)-F^{n}(b)}\le(1+K\lambda)^{n}\norma{a-b}.\label{eq:cosa2}
+        \end{equation}
+    \end{itemize}
+    
+    Sia dunque $ T=\frac{r}{2C} $, allora $ 0<T \in \R $. In particolare, \eqref{eq:cosa1} e \eqref{eq:cosa2} valgono per $ n=\floor{t/\lambda} $ per $ 0\le t\le T $, ed è equindi possibile scrivere \begin{align*}
+        F_{t}(a) \in \nonstandard{B}\qquad&\text{per ogni }a \in \nonstandard{B'};\\
+        \norma{F_{t}(a)-F_{t}(b)} \le (1+K\lambda)^{n}\norma{a-b}\qquad&\text{per ogni }a, b \in \nonstandard{B}.
+    \end{align*}
+
+    Segue da banali passaggi algebrici\footnote{%
+        Infatti si ha che $ 1+K\lambda \le e^{K \lambda} $, e pertanto $ (1+K\lambda)^{n}\le e^{Kt} $.
+    } che per ogni $ a, b \in \nonstandard{B'} \subseteq \nonstandard{B} $ e ogni  $ 0\le t\le T $\begin{equation*}
+        \norma{F_{t}(a) -F_{t}(b) }\le e^{Kt}\norma{a-b}\le e^{K'\abs{t}}\norma{a-b}.
+    \end{equation*}in quanto se $ K'>K $ allora la $ e^{K'\abs{t}}> e^{K\abs{t}}$. 
+
+    Inoltre, se $ h \coloneqq \frac{1}{1-K\lambda} $, allora\footnote{Scrivendo l'esponenziale come serie di Taylor, risulta chiaro che \begin{equation*}
+        e^{-hK\lambda}\le 1-hK\lambda+\frac{h^{2}K^{2}\lambda^{2}}{2} \le 1-hK\lambda+hK^{2}\lambda^{2} = 1-K\lambda.
+    \end{equation*}} $ e^{-hKt} \le (1-K\lambda)^{n}$, e pertanto, siccome $ K' = h^{2}K > hK $ si ha che $ e^{-K'\abs{t}} \le e^{-hKt}$ per ogni $ 0\le t\le T $, e dunque \begin{equation*}
+        e^{-K'\abs{t}}\norma{a-b}\le \norma{F_{t}(a)-F_{t}(b)  }
+    \end{equation*}per ogni $ a,b \in \nonstandard{B'} $. Si è dimostrato il teorema per $ t\ge 0 $.
+
+    Si dimostra ora il teorema per $ t\le 0 $. Si ricorda che per tempi negativi, $ F_{t} \coloneqq (F^{-1})_{\abs{t}} $. 
+
+    A meno di modificare la costante $ C $ precedente (rendendola maggiore) si può supporre che \begin{equation*}
+        \norma{F^{-1}(a)-a} \le C\lambda
+    \end{equation*}Per la proposizione \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} lo stesso argomento usato per $ F $ si può usare per $ F^{-1} $, a patto di sostituire $ K $ con $ hK $. Pertanto il teorema è dimostrato.\qed
 }
 \teorema{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $, di classe $ D^{1} $, e sia $ G $ un qualsiasi campo di prevettori su $ \nonstandard{U} $. Dato un intorno coordinato compreso in $ U $ con immagine $ W \subseteq \R^{n} $, siano $ A' \subseteq A \subseteq \nonstandard{W} $ insiemi interni. Si supponga: \begin{enumerate}
@@ -633,7 +664,12 @@ Si considerano due casi.
     Se $ F \equiv G $, allora $ F_{t}(a)\approx G_{t}(a) $ per ogni $ 0\le t\le T $.
 }{djdkjncjdjndimostrazioncinainainainaianinaiai}{}
 \dimostrazione{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}{
-    \commento{\lipsum[1]}
+    Si dimostra per induzione interna che \begin{equation*}
+        \norma{F^{n}(a)-G^{n}(a)}\le \frac{\beta}{K}\left((1+K\lambda)^{n}-1\right)
+    \end{equation*}per ogni $ n \in\nonstandard{\N} $. Questo, per l'argomento utilizzato nella dimostrazione del \teoref{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk}, dimostra la tesi. Il passo base è vero per ipotesi, e il passo induttivo è dimostrato dalla seguente disuguaglianza: \begin{align*}
+        \norma{F^{n+1}(a)-G^{n+1}(a)}&\le \norma{F\left(F^{n}(a)\right)-F\left(G^{n}(a)\right)} + \norma{F\left(G^{n}(a)\right)-G\left(G^{n}(a)\right)}\\ 
+        &\le (1+K\lambda)\norma{F^{n}(a)-G^{n}(a)} + \beta \lambda
+    \end{align*}dove l'ultimo passaggio è giustificato dalla proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}. \qed
 }
 \definizione{
     Sia $ F $ un campo di prevettori locale di classe $ D^{1} $. In un intorno $ B' \subseteq \R^{n}$ e in un intervallo $ [-T,T] $, come per il teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk}, si definisce il \emph{flusso standard indotto da $ F $}: \begin{align*}
@@ -649,7 +685,7 @@ Si considerano due casi.
     \end{enumerate}
 }
 \dimostrazione{kjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj}{
-    Il teorema segue banalmente dal teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk} e dal corollario \framref{djdkjncjdjndimostrazioncinainainainaianinaiai}.
+    Il teorema segue banalmente dal teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk} e dal corollario \framref{djdkjncjdjndimostrazioncinainainainaianinaiai}.\qed
 }
 \osservazione{
     È possibile dimostrare che se $ F $ è un campo di prevettori ottenuto a partire da un campo vettoriale classico $ X $ tramite la procedura illustrata nella dimostrazione della proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, allora $ h_{t}^{F} $ è esattamente il flusso di $ X $ nel senso classico. Si rimanda al \straniero{Remark} 5.8 di \cite{nowik_differential_2015} e al Teorema 14.1 di \cite{keisler_foundation_2007}.
@@ -664,7 +700,11 @@ Si considerano due casi.
 \osservazione{
     $\tilde{F}$ è effettivamente un campo di prevettori, ovvero \begin{equation*}
         \tilde{F}(a)-a\prec \lambda
-    \end{equation*}per ogni $ a $. Infatti \commento{\lipsum[1]}
+    \end{equation*}per ogni $ a $. Infatti, preso $ C $ come per la proposizione \framref{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}(1), si ha che \begin{equation*}
+        \norma{F^{n}(a)-a} \le n C \lambda
+    \end{equation*}da cui segue che $ \norma{h^{F}_t(a)-a} \le Ct $. Per il principio di transfer \begin{equation*}
+        \norma{\tilde{F}(a)-a} \le C\lambda
+    \end{equation*}
 }
 \lemma{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $ di classe $ D^{1} $. Se \begin{equation*}
@@ -674,12 +714,24 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}{
-    \commento{\lipsum[1]}\qed
+    Si ha che \begin{align*}
+        \norma{F^{n}(a)-F^{n}(b)-a+b} &\le \sum_{i=1}^{n}\norma{F^{i}(a)-F^{i}(b)-F^{i-1}(a)+F^{i-1}(b)} \\ 
+        &\le \sum_{i=1}^{n} K\lambda\norma{F^{i-1}(a)-F^{i-1}(b)}\\ 
+        &\le \sum_{i=1}^{n} K \lambda(1+K\lambda)^{i-1}\norma{a-b} 
+    \end{align*}dove l'ultima disuguaglianza è valida per \eqref{eq:cosa2}. Si ha inoltre che \begin{align*}
+        \sum_{i=1}^{n}(1+K\lambda)^{i-1} &\le n(1+K\lambda)^{n-1}\le n e^{K \lambda n} 
+    \end{align*}e questo dimostra la tesi.\qed
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
     Se $ F $ è un campo di prevettori di classe $ D^{1} $, allora $ \tilde{F} $ è di classe $ D^{1} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}{
-    \commento{\lipsum[1]}\qed
+    Consideriamo una palla $ B $ racchiusa nel dominio di $ F $. Allora per ogni $ a,b \in \nonstandard{B}$ esiste $ K $ finito tale che \begin{equation*}
+        \norma{F(a)-F(b)-a+b}\le K\lambda\norma{a-b}
+    \end{equation*}per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj}. Per $ n = \floor{t/\lambda} $ si ha, per il lemma \framref{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}, che \begin{equation*}
+        \norma{F^{n}(a)-F^{n}(b)-a+b}\le K \lambda n e^{K\lambda n}\norma{a-b}\le K t e^{Kt}\norma{a-b}
+    \end{equation*}Dunque si ha che $ \norma{h_{t}^{F} (a)-h_{t}^{F}(b)-a+b}\le K t e^{Kt}\norma{a-b} $ per ogni $ t $ reale e per ogni $ a,b $ standard, e, per il principio di transfer per $ t=\lambda $, \begin{equation*}
+        \norma{\tilde{F}(a)-\tilde{F}(b)-a+b} \le  K \lambda e^{K\lambda}\norma{a-b}.\qedd
+    \end{equation*}
 }
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $, allora $ \tilde{F} $ è di classe $ D^{2} $.}
@@ -692,7 +744,12 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
-    \commento{\lipsum[1]}\qed
+    Si ha che \begin{align*}
+        \norma{F^{n}(a)-a-n\left(F(a)-a\right)} &= \norma{\sum_{i=1}^{n} \left(F^{i}(a)-F^{i-1}(a)-\left(F(a)-a\right)\right) }\\ 
+        &\le \sum_{i=1}^{n} \norma{F^{i}(a)-F^{i-1}(a)-\left(F(a)-a\right)} \\ 
+        &= \sum_{i=1}^{n} \norma{F\left(F^{i-1}(a)\right)-F^{i-1}(a)-\left(F(a)-a\right)} \\&\le \sum_{i=1}^{n} K \lambda\norma{F^{i-1}(a)-a}\\ 
+        &\le  \sum_{1\le j<i\le n}\norma{F^{j}(a)-F^{j-1}(a)} \le n^{2} K \lambda C\lambda\qedd 
+    \end{align*}
 }
 \lemma{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
     Sia $ v \in \starR^{n} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
@@ -702,13 +759,18 @@ Si considerano due casi.
     Allora $ g(t)=tV $ e l'estensione di $ g $ al dominio non standard soddisfa $ g(\lambda)\equiv v $.
 }
 \dimostrazionelem{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
-    \commento{\lipsum[1]}\qed
+    Sia $ n=\floor{t/\lambda} $. Allora $ g(t) = \st(nv) $, e \begin{align*}
+        \norma{tV-nv} &\le \norma{tV-t\left(\frac{v}{\lambda}\right)} + \norma{t\left(\frac{v}{\lambda}\right) - n\lambda\left(\frac{v}{\lambda}\right)}\\ 
+        &= t\norma{V-v/\lambda} + \abs{t-n\lambda}\norma{v/\lambda} \prec\prec 1.
+    \end{align*}Dunque $ g(t) = tV $, e quindi $ g(\lambda) = \lambda V $, e si ha che $ \norma{\lambda V-v} = \lambda\norma{V-v/\lambda}\prec\prec \lambda $.\qed
 }
 \teorema{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
     Se $ F $ è un campo di prevettori locale di classe $ D^{1} $, allora $ \tilde{F}\equiv F $.
 }
 \dimostrazione{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
-    \commento{\lipsum[1]}\qed
+    Se $ F $ è di classe $ D^1 $, allora $ \tilde{F} $ è di classe $ D^{1} $ per la proposizione \framref{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}, e dunque è sufficiente mostrare che $ \tilde{F}(a)\equiv F(a) $ per ogni $ a $ standard, per il lemma \framref{kjndkjncjdkjnckskdkjnjcsnkjn}.
+    
+    \qed
 }
 \section{Parentesi di Lie}
 \definizione{

@@ -414,11 +414,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Corollario {4.61}.}{53}{section*.188}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledlkmckdkclkmskdkclkmskdkcdkkkkkkkk]{\textit {Dimostrazione di 4.60.}}}{53}{section*.189}% 
+\contentsline {paragraph}{\hyperref [totaledlkmckdkclkmskdkclkmskdkcdkkkkkkkk]{\textit {Dimostrazione di 4.60.}}}{54}{section*.189}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione {4.62}.}{53}{section*.190}% 
+\contentsline {paragraph}{Definizione {4.62}.}{54}{section*.190}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.63}.}{53}{section*.191}% 
+\contentsline {paragraph}{Teorema {4.63}.}{54}{section*.191}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\hyperref [totalekjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj]{\textit {Dimostrazione.}}}{54}{section*.192}% 
 \defcounter {refsection}{0}\relax 
@@ -428,80 +428,80 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione {4.65}.}{54}{section*.194}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione {4.66}.}{54}{section*.195}% 
+\contentsline {paragraph}{Osservazione {4.66}.}{55}{section*.195}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.67}.}{54}{section*.196}% 
+\contentsline {paragraph}{Lemma {4.67}.}{55}{section*.196}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn]{\textit {Dimostrazione.}}}{54}{section*.197}% 
+\contentsline {paragraph}{\hyperref [totaledjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn]{\textit {Dimostrazione.}}}{55}{section*.197}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Proposizione {4.68}.}{55}{section*.198}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalekdjnsckjndkjncskjndkjnckjnskjnckjnkjn]{\textit {Dimostrazione.}}}{55}{section*.199}% 
+\contentsline {paragraph}{\hyperref [totalekdjnsckjndkjncskjndkjnckjnskjnckjnkjn]{\textit {Dimostrazione.}}}{56}{section*.199}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Proposizione {4.69}.}{55}{section*.200}% 
+\contentsline {paragraph}{Proposizione {4.69}.}{56}{section*.201}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalekdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue]{\textit {Dimostrazione.}}}{55}{section*.201}% 
+\contentsline {paragraph}{\hyperref [totalekdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue]{\textit {Dimostrazione.}}}{56}{section*.202}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.70}.}{55}{section*.202}% 
+\contentsline {paragraph}{Lemma {4.70}.}{56}{section*.203}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalekdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn]{\textit {Dimostrazione.}}}{55}{section*.203}% 
+\contentsline {paragraph}{\hyperref [totalekdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn]{\textit {Dimostrazione.}}}{57}{section*.204}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.71}.}{56}{section*.204}% 
+\contentsline {paragraph}{Lemma {4.71}.}{57}{section*.207}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj]{\textit {Dimostrazione.}}}{56}{section*.205}% 
+\contentsline {paragraph}{\hyperref [totaledkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj]{\textit {Dimostrazione.}}}{57}{section*.208}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.72}.}{56}{section*.206}% 
+\contentsline {paragraph}{Teorema {4.72}.}{57}{section*.209}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjncjdjdkjnckjnskjndkjnckskjnckjndkjn]{\textit {Dimostrazione.}}}{56}{section*.207}% 
+\contentsline {paragraph}{\hyperref [totaledkjncjdjdkjnckjnskjndkjnckskjnckjndkjn]{\textit {Dimostrazione.}}}{57}{section*.210}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Parentesi di Lie}{56}{section.4.5}% 
+\contentsline {section}{\numberline {4.5}Parentesi di Lie}{57}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definizione {4.73}.}{56}{section*.208}% 
+\contentsline {paragraph}{Definizione {4.73}.}{57}{section*.211}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione {4.74}.}{57}{section*.209}% 
+\contentsline {paragraph}{Osservazione {4.74}.}{58}{section*.212}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Propriet\IeC {\`a} fondamentali}{57}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.1}Propriet\IeC {\`a} fondamentali}{58}{subsection.4.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.75}.}{57}{section*.210}% 
+\contentsline {paragraph}{Teorema {4.75}.}{58}{section*.213}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk]{\textit {Dimostrazione.}}}{57}{section*.211}% 
+\contentsline {paragraph}{\hyperref [totaledkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk]{\textit {Dimostrazione.}}}{58}{section*.214}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.76}.}{57}{section*.212}% 
+\contentsline {paragraph}{Lemma {4.76}.}{58}{section*.215}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalekjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj]{\textit {Dimostrazione.}}}{57}{section*.213}% 
+\contentsline {paragraph}{\hyperref [totalekjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj]{\textit {Dimostrazione.}}}{58}{section*.216}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.77}.}{57}{section*.214}% 
+\contentsline {paragraph}{Teorema {4.77}.}{58}{section*.217}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalejkndkckdkjncjdjckjndjcjdkjncdkjncjdcj]{\textit {Dimostrazione.}}}{57}{section*.215}% 
+\contentsline {paragraph}{\hyperref [totalejkndkckdkjncjdjckjndjcjdkjncdkjncjdcj]{\textit {Dimostrazione.}}}{58}{section*.218}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Proposizione {4.78}.}{58}{section*.216}% 
+\contentsline {paragraph}{Proposizione {4.78}.}{59}{section*.219}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totalekjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns]{\textit {Dimostrazione.}}}{58}{section*.217}% 
+\contentsline {paragraph}{\hyperref [totalekjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns]{\textit {Dimostrazione.}}}{59}{section*.220}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.79}.}{58}{section*.218}% 
+\contentsline {paragraph}{Lemma {4.79}.}{59}{section*.221}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi]{\textit {Dimostrazione.}}}{58}{section*.219}% 
+\contentsline {paragraph}{\hyperref [totaledkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi]{\textit {Dimostrazione.}}}{59}{section*.222}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lemma {4.80}.}{58}{section*.220}% 
+\contentsline {paragraph}{Lemma {4.80}.}{59}{section*.223}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn]{\textit {Dimostrazione.}}}{58}{section*.221}% 
+\contentsline {paragraph}{\hyperref [totaledlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn]{\textit {Dimostrazione.}}}{59}{section*.224}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.81}.}{59}{section*.222}% 
+\contentsline {paragraph}{Teorema {4.81}.}{60}{section*.225}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk]{\textit {Dimostrazione.}}}{59}{section*.223}% 
+\contentsline {paragraph}{\hyperref [totaledkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk]{\textit {Dimostrazione.}}}{60}{section*.226}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Relazione con le parentesi di Lie classiche}{59}{subsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.5.2}Relazione con le parentesi di Lie classiche}{60}{subsection.4.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.82}.}{59}{section*.224}% 
+\contentsline {paragraph}{Teorema {4.82}.}{60}{section*.227}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj]{\textit {Dimostrazione.}}}{59}{section*.225}% 
+\contentsline {paragraph}{\hyperref [totaledkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj]{\textit {Dimostrazione.}}}{60}{section*.228}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Teorema {4.83}.}{59}{section*.226}% 
+\contentsline {paragraph}{Teorema {4.83}.}{60}{section*.229}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaleSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn]{\textit {Dimostrazione.}}}{60}{section*.227}% 
+\contentsline {paragraph}{\hyperref [totaleSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn]{\textit {Dimostrazione.}}}{61}{section*.230}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Conclusione}{60}{section.4.6}% 
+\contentsline {section}{\numberline {4.6}Conclusione}{61}{section.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Corollario {4.84}.}{60}{section*.228}% 
+\contentsline {paragraph}{Corollario {4.84}.}{61}{section*.231}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\hyperref [totaledjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc]{\textit {Dimostrazione.}}}{60}{section*.229}% 
+\contentsline {paragraph}{\hyperref [totaledjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc]{\textit {Dimostrazione.}}}{61}{section*.232}% 

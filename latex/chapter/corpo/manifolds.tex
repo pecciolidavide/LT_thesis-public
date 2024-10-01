@@ -286,9 +286,9 @@
 \definizione{
     Si definisce $ I $ come il campo di prevettori identità, su $ \nonstandard{M} $ o su $ \nonstandard{U} $ per ogni $ U \subseteq M $, per ogni $ a $: $ I(a)=a $.
 }
-\osservazione{
-    Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico zero, tramite la procedura della dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}.
-}
+\paragrafo{Osservazione}{%
+Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico zero, tramite la procedura della dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}.
+}{kjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs}{}
 \subsection{Condizioni di regolarità}
 \definizione{
     Un campo di prevettori su una varietà differenziabile $ M $ è di classe $ D^{1} $ se per ogni $ a,b \in \hhalo{M} $ e $ (a,b) \subseteq P_{a}M $, allora in coordinate \begin{equation*}
@@ -432,12 +432,12 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         \end{equation*}poiché $ F $ è un campo di prevettori, e dunque $ G(x)=F(x)-x\prec \lambda $ per ogni $ x $.\qed
     \end{itemize}
 }
-\osservazione{
-    Si enunciano di seguito due risultati, che non saranno dimostrati, in merito alla composizione di campi di prevettori. Si veda le proposizioni 3.16 e 3.17 di \cite{nowik_differential_2015}.\begin{itemize}
-        \item Se $ F,G $ sono campi di prevettori di classe $ D^{1} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{1} $. 
-        \item Se $ F,G $ sono campi di prevettori di classe $ D^{2} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{2} $.
-    \end{itemize}
-}
+\paragrafo{Osservazione}{%
+Si enunciano di seguito due risultati, che non saranno dimostrati, in merito alla composizione di campi di prevettori. Si veda le proposizioni 3.16 e 3.17 di \cite{nowik_differential_2015}.\begin{itemize}
+    \item Se $ F,G $ sono campi di prevettori di classe $ D^{1} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{1} $. 
+    \item Se $ F,G $ sono campi di prevettori di classe $ D^{2} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{2} $.
+\end{itemize}
+}{dkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc}{}
 
 \section{Proprietà globali dei campi di prevettori}
 
@@ -687,15 +687,15 @@ Si considerano due casi.
 \dimostrazione{kjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj}{
     Il teorema segue banalmente dal teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk} e dal corollario \framref{djdkjncjdjndimostrazioncinainainainaianinaiai}.\qed
 }
-\osservazione{
+\paragrafo{Osservazione}{%
     È possibile dimostrare che se $ F $ è un campo di prevettori ottenuto a partire da un campo vettoriale classico $ X $ tramite la procedura illustrata nella dimostrazione della proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, allora $ h_{t}^{F} $ è esattamente il flusso di $ X $ nel senso classico. Si rimanda al \straniero{Remark} 5.8 di \cite{nowik_differential_2015} e al Teorema 14.1 di \cite{keisler_foundation_2007}.
-}
+}{osservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh}{}
 \subsection{Il campo di prevettori rappresentativo canonico}
 
 \definizione{
     Sia $ F $ un campo di prevettori. Si definisce il campo di prevettori \begin{equation*}
         \tilde{F} = h_{\lambda}^{F} 
-    \end{equation*}l'estensione ad un dominio non standard della funzione $ h_{\lambda}^{F}$.
+    \end{equation*}l'estensione ad un dominio non standard della funzione $ h_{t}^{F}$.
 }
 \osservazione{
     $\tilde{F}$ è effettivamente un campo di prevettori, ovvero \begin{equation*}
@@ -736,7 +736,44 @@ Si considerano due casi.
 \proposizione{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
     Se $ F $ è un campo di prevettori di classe $ D^{2} $, allora $ \tilde{F} $ è di classe $ D^{2} $.}
 \dimostrazioneprop{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}{
-    \commento{\lipsum[1]}\qed
+    Per mezzo della proposizione \framref{dkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj} si assume che \begin{equation*}
+        \norma{\Delta^{2}_{v,w}F(a)} \le K \lambda\norma{v}\norma{w}
+    \end{equation*}per ogni $ a,v,w $ in qualche $ \nonstandard{B} $. Si dimostra ora per induzione interna che\footnote{Si ricorda che \begin{equation*}
+        \norma{\Delta_{v,w}^{2}F^{n}(a) } = \norma{F^{n}(a)-F^{n}(a+v)-F^{n}(a+w)+F^{n}(a+v+w)}.
+    \end{equation*}}\begin{equation*}
+        \norma{\Delta_{v,w}^{2}F^{n}(a) } \le K \lambda\sum_{i=n-1}^{2n-2} (1+K\lambda)^{i}\norma{v}\norma{w}
+    \end{equation*}per ogni $ n \in\nonstandard{\N} $.
+    \begin{itemize}
+        \item \emph{Passo base.} Il passo base per $ n=1 $ è l'ipotesi \begin{equation*}
+            \norma{\Delta^{2}_{v,w}F(a)} \le K \lambda\norma{v}\norma{w}
+        \end{equation*}
+        \item \emph{Passo induttivo.} Si ipotizzi l'affermazione valga per $ n $. Sia $ p=F^{n}(a) $, $ x=F^{n}(a+v)-F^{n}(a) $, $ y=F^{n}(a+v)-F^{n}(a) $. Allora per la \eqref{eq:cosa2}:\begin{equation*}
+            \norma{x}\le (1+K\lambda)^{n}\norma{v},\quad \norma{y}\le (1+K\lambda)^{n}\norma{w}
+        \end{equation*}e, sfruttando l'ipotesi induttiva, \begin{align*}
+            &\norma{F(p+x+y)- F^{n+1}(a+v+w)} \\
+            &\hspace{4em} \le (1+K \lambda) \norma{p+x+y-F^n(a+v+w)}\\
+            &\hspace{4em} =(1+K \lambda)\norma{-F^n(a)+F^n(a+v)+F^n(a+w)-F^n(a+v+w)}\\
+            &\hspace{4em} \le (1+K \lambda) K \lambda \sum_{i=n-1}^{2 n-2}(1+K \lambda)^i\norma{v}\norma{w}\\
+            &\hspace{4em}=K \lambda \sum_{i=n}^{2 n-1}(1+K \lambda)^i\norma{v}\norma{w},
+            \end{align*}dove la prima disuguaglianza è per la \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}, mentre la seconda è per ipotesi induttiva. 
+
+            Ora si ha che \begin{align*}
+                &\hspace{-3em}\norma{F^{n+1}(a)-F^{n+1}(a+v)-F^{n+1}(a+w)+F^{n+1}(a+v+w)}\\ 
+                \le  &\norma{F(p)-F(p+x)-F(p+y)+F(p+x+y)}\\&+\norma{F(p+x+y)-F^{n+1}(a+v+w)}\\ 
+                \le &K \lambda\norma{x}\norma{y} + K \lambda\sum_{i=n}^{2n-1}(1+K\lambda)^{i}\norma{v}\norma{w} \\ 
+                \le &K \lambda(1+K\lambda)^{2n}\norma{v}\norma{w} + K \lambda\sum_{i=n}^{2n-1}(1+K\lambda)^{i}\norma{v}\norma{w} \\ 
+                = & K \lambda\sum_{i=n}^{2n}(1+K\lambda)^{i}\norma{v}\norma{w}. 
+            \end{align*}
+    \end{itemize}
+
+    Dunque per $ n=\floor{t/\lambda} $ si ha che \begin{multline*}
+        \norma{F^{n}(a)-F^{n}(a+v)-F^{n}(a+w)+F^{n}(a+v+w)} \\
+        \le K \lambda\sum_{i=n-1}^{2n-2}(1+K\lambda)^{i}\norma{v}\norma{w} \le K \lambda n e^{2Kt}\norma{v}\norma{w} \le K t e^{2Kt}\norma{v}\norma{w}.
+    \end{multline*}Dunque, per standard $ a,v,w $ si ha che \begin{equation*}
+        \norma{h_{t}^F(a)-h_{t}^F(a+v)-h_{t}^F(a+w)+h_{t}^F(a+v+w)}\le K t e^{2Kt}\norma{v}\norma{w},
+    \end{equation*}e pertanto, estendendo al dominio non standard e valutando in $ t= \lambda $ si ottiene \begin{equation*}
+        \norma{\tilde{F}(a)-\tilde{F}(a+v)-\tilde{F}(a+w)+\tilde{F}(a+v+w)}\le K t e^{2Kt}\norma{v}\norma{w}\qedd
+    \end{equation*}
 }
 \lemma{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}{
     Sia $ F $ un campo di prevettori locale su $ \nonstandard{U} $. Se $ \norma{F(a)-a} \le C\lambda$ e $ \norma{F(a)-a-F(b)+b}\le K \lambda\norma{a-b} $ per qualche $ C $ e $ K $ e per ogni $ a,b \in \nonstandard{U} $, allora il flusso di $ F $ soddisfa: \begin{equation*}
@@ -769,8 +806,19 @@ Si considerano due casi.
 }
 \dimostrazione{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
     Se $ F $ è di classe $ D^1 $, allora $ \tilde{F} $ è di classe $ D^{1} $ per la proposizione \framref{kdjnsckjndkjncskjndkjnckjnskjnckjnkjn}, e dunque è sufficiente mostrare che $ \tilde{F}(a)\equiv F(a) $ per ogni $ a $ standard, per il lemma \framref{kjndkjncjdkjnckskdkjnjcsnkjn}.
+
+    Dunque, per $ a $ standard e $ t $ standard, sia \begin{equation*}
+        g_{t}(a) = \st\left(a+\floor{t/\lambda}\left(F(a)-a\right)\right) 
+    \end{equation*}Denotando con $ n = \floor{t/\lambda} $ si ha \begin{align*}
+        \norma{h_{t}^{F}-g_{t}(a)  } &= \norma{\st\left(F^n(a)\right)-\st\left(a+\floor{t/\lambda}\left(F(a)-a\right)\right)}\\ 
+        &= \st\norma{F^{n}(a)-a-n\left(F(a)-a\right)}\le At^{2}
+    \end{align*} per qualche $ A \in \R $, per il lemma \framref{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}. 
     
-    \qed
+    Per il principio di transfer, valutando questo in $ t=\lambda $, si ottiene che \begin{equation*}
+        \norma{\tilde{F}(a)-g_{\lambda}(a)} \le A\lambda^{2}\prec\prec \lambda
+    \end{equation*}e dunque $ \tilde{F}(a)\equiv g_{\lambda}(a) $.
+
+    Si ha che $ g_{t}(a)-a = \st\left(\floor{t/\lambda} \left(F(a)-a\right)\right) $ e dunque, per il lemma \framref{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj} $ g_{\lambda}(a)\equiv F(a)  $. Dal fatto che $ \equiv $ è una relazione di equivalenza segue la tesi.\qed
 }
 \section{Parentesi di Lie}
 \definizione{
@@ -781,12 +829,35 @@ Si considerano due casi.
 \osservazione{
     In merito alla definizione precedente, $ F^{-1} $ e $ G^{-1} $ esistono per l'osservazione \framref{remarkfourpointeight}.
 }
+% TODO de commentare questa osservazione, mi sballava la numerazione
+% \osservazione{
+%     Dal momento che fin dall'inizio $ \lambda $ è fissato e arbitrario, si può supporre che \begin{equation*}
+%         \lambda = \frac{1}{N},\quad N \in \nonstandard{\N}\setminus \N
+%     \end{equation*}e pertanto che $ 1/\lambda = N $ iperintero: in tal caso $ \floor{1/\lambda} = 1/\lambda $. D'ora in avanti, quindi, si scriverà $ 1/\lambda $ in luogo di $ \floor{1/\lambda} $, sulla base di questo assunto. 
+% }
 \subsection{Proprietà fondamentali}
 \teorema{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{1} $, allora $ [F,G] $ è un campo di prevettori, i.e. $ [F,G](a)-a\prec \lambda $ per ogni $ a $.
 }
 \dimostrazione{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk}{
-    \commento{\lipsum[1]}\qed
+    Poiché $ F $ è localmente di classe $ D^{1} $, vale che \begin{equation*}
+        F(x)-x-F(y)+y \prec \lambda\norma{x-y}.
+    \end{equation*}Sostituendo $ x=a $ e $ y=F^{-1}\circ G \circ F(a) $ si ottiene \begin{equation*}
+        F(a)-a- G \circ F(a)+ F^{-1}\circ G\circ F(a) \prec \lambda\norma{a-F^{-1}\circ G\circ F(a)}\prec \lambda^{2}.
+    \end{equation*}
+
+    Poiché $ G $ è localmente di classe $ D^{1} $, vale che \begin{equation*}
+        G(x)-x-G(y)+y \prec \lambda\norma{x-y}.
+    \end{equation*}Sostituendo $ x=F(a) $ e $ y=G^{-1}\circ F^{-1}\circ G \circ F(a) $ si ottiene \begin{multline*}
+        G\circ F(a)-F(a)- F^{-1}\circ G\circ F(a)+ G^{-1}\circ F^{-1}\circ G\circ F(a)\\ \prec \lambda\norma{F(a)-G^{-1}\circ F^{-1}\circ G\circ F(a)} \prec \lambda^{2}.
+    \end{multline*}
+
+    La somma delle due espressioni di cui sopra fornisce la seguente: \begin{equation*}
+        G^{-1}\circ F^{-1}\circ G\circ F(a) -a \prec \lambda^{2}
+    \end{equation*}Dunque, per \straniero{underspill}\footnote{\commento{Elaborare meglio}} in un appropriato $ \nonstandard{U}$, esiste $ C\prec 1 $ tale che $ \norma{G^{-1}\circ F^{-1}\circ G\circ F(a)-a}\le C\lambda^{2} $ per ogni $ a \in \nonstandard{U} $. Pertanto: \begin{multline*}
+        \norma{\left(G^{-1}\circ F^{-1}\circ G\circ F\right)^{1/\lambda}(a)-a}\\ 
+        \le \sum_{k=1}^{1/\lambda} \norma{\left(G^{-1}\circ F^{-1}\circ G\circ F\right)^{k}(a)-\left(G^{-1}\circ F^{-1}\circ G\circ F\right)^{k-1}(a)}\le C\lambda.\qedd
+    \end{multline*}
 }
 \lemma{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
     Siano $ F,G $ campi di prevettori locali, $ F $ di classe $ D^{2} $ e $ G $ di classe $ D^{1} $. Allora per ogni $ a,b $ con $ a-b\prec \lambda $ vale: \begin{equation*}
@@ -794,13 +865,49 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazionelem{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}{
-    \commento{\lipsum[1]}\qed
+    Siano $ a,b $ fissati con $ a-b\prec \lambda $.
+
+    Per la proposizione \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} $ F $ è di classe $ D^{1} $, e pertanto per definizione \begin{equation*}
+        F(\alpha)-\alpha-F(\beta) +\beta \prec \norma{\alpha-\beta}
+    \end{equation*}con $ \alpha-\beta\prec \lambda $. Ponendo $ v=b-a $, $ w = G(a)-a $, $ \alpha = a+v+w $ e $ \beta = G(b) $, si ottiene \begin{equation*}
+        F(a+v+w) - F\left(G(b)\right) - (a+v+w) + G(b)\prec \norma{a+v+w-G(b)}.
+    \end{equation*}È banale verificare che $ \alpha,\beta $ così definiti soddisfino $ \alpha-\beta\prec\lambda $. 
+
+    Inoltre, dal momento che $ a+v+w = b+G(a)-a $ si ha che \begin{equation*}
+        F(a+v+w) - F\left(G(b)\right) - G(a)+a+G(b) \prec \norma{b+G(a)-a-G(b)}\prec \lambda^{2}\norma{a-b}
+    \end{equation*}poiché $ G $ è di classe $ D^{1} $. Pertanto {\footnotesize\begin{align*}
+        &\norma{F(a)-F(b)-F\circ G(a)+F\circ G(b) - a +b+G(a)-G(b)}\\ 
+        &= \norma{F(a)-F(a+v)-F(a+w)+F(a+v+w)-F(a+v+w)+F\left(G(b)\right)-a+b+G(a)-G(b)}\\ 
+        &\le  \norma{F(a)-F(a+v)-F(a+w)+F(a+v+w)}\\
+        &\quad+\norma{-F(a+v+w)+F\left(G(b)\right)-a+b+G(a)-G(b)} \prec \lambda \norma{v}\norma{w} + \lambda^{2}\norma{a-b} \prec \lambda^{2}\norma{a-b}.\qedd
+    \end{align*}}
 }
 \teorema{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
     Se $ F,G $ sono campi di prevettori locali di classe $ D^{2} $, allora $ [F,G] $ è un campo di prevettori di classe $ D^{1} $.
 }
 \dimostrazione{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj}{
-    \commento{\lipsum[1]}\qed
+    Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}, \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} e per l'osservazione \framref{dkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc} si ha che entrambe \begin{equation*}
+        F^{-1}\circ G\circ F,\qquad G^{-1}\circ F^{-1}\circ G
+    \end{equation*}sono di classe $ D^{1} $.
+
+    Si prenda ora in considerazione il lemma \framref{kjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj}: \begin{itemize}
+        \item sostituendo nell'enunciato $ G $ con $ F^{-1}\circ G\circ F $ si ottiene, per $ a-b\prec \lambda $ \begin{equation*}
+            F(a)-F(b)-G\circ F(a)+G\circ F(b)-a+b+F^{-1}\circ G\circ F(a)-F^{-1}\circ G\circ F(b)\prec \lambda^{2}\norma{a-b}
+        \end{equation*}
+        \item sostituendo nell'enunciato, rispettivamente, $ a,b,F,G $ con $ F(a),F(b), G, G^{-1}\circ F^{-1} $ si ottiene \begin{align*}
+            &G\circ F(a)- G\circ F(b) - F^{-1}\circ G\circ F(a) + F^{-1}\circ G\circ F(b)\\ 
+            &\quad - F(a)+F(b)+G^{-1}\circ F^{-1}\circ G\circ F(a) - G^{-1}\circ F^{-1}\circ G^{-1}\circ F(b)\\ 
+            &\quad \prec \lambda^{2}\norma{F(a)-F(b)} \prec \lambda^{2}\norma{a-b}
+        \end{align*}dove l'ultima relazione è dettata dalla proposizione \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}. 
+    \end{itemize}
+    
+    Sommando queste due disugualianze, si ottiene \begin{equation*}
+        G^{-1}\circ F^{-1}\circ G\circ F(a)-G^{-1}\circ F^{-1}\circ G\circ F(b)-a+b \prec \lambda^2 \norma{a-b}.
+    \end{equation*}Sia ora $ H\coloneqq G^{-1} \circ F^{-1}\circ G\circ F$: la relazione precedente si riscrive come \[H(a) - H(b) -a+b \prec \lambda^{2}\norma{a-b};\]inoltre si ha che $ [F, G] = H^{1/\lambda} $. Per \straniero{underspill}\footnote{\commento{Elaborare meglio}} su un appropriato $ \nonstandard{U} $, esiste $ C\prec 1 $ tale per cui \begin{equation*}
+        \norma{H(a)-H(b)-a+b}\le C\lambda^{2}\norma{a-b}
+    \end{equation*}per ogni $ a,b \in \nonstandard{U} $. Allora, per il lemma \framref{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}, posto $ K=C\lambda $ e $ n=1/\lambda $, si ottiene \begin{equation*}
+        \norma{H^{1/\lambda}(a)-H^{1/\lambda}(b)-a+b}\le C\lambda e^{C\lambda}\norma{a-b}.\qedd
+    \end{equation*}
 }
 \proposizione{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
     Siano $ F,G $ campi di prevettori di classe $ D^{2}$. Allora, per ogni $ a $, \begin{equation*}
@@ -808,7 +915,13 @@ Si considerano due casi.
     \end{equation*}
 }
 \dimostrazioneprop{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}{
-    \commento{\lipsum[1]}\qed
+    Sia $ H\coloneqq G^{-1} \circ F^{-1}\circ G\circ F$. La dimostrazione del teorema \teoref{dkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk} garantisce che esista $ C'\prec 1 $ tale per cui $ \norma{H(a)-a}\le C' \lambda^{2} $ per ogni $ a $.
+
+    La dimostrazione del teorema \teoref{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj} garantisce che esista $ C''\prec 1 $ tale per cui \[\norma{H(a)-H(b)-a+b}\le C''\lambda^{2}\norma{a-b}\]per ogni $ a,b $.
+    
+    Dunque, considerando il lemma \framref{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}, e ponendo $ C = C'\lambda $ e $ K = C'' \lambda $ e $ n=1/\lambda $, si ottiene che \begin{equation*}
+        \norma{H^{1/\lambda}(a)-a - \frac{1}{\lambda} \left(H(a)-a\right)} \le C'' \lambda \cdot C' \lambda \cdot \frac{1}{\lambda^{2}} \lambda^{2} = C'' C'' \lambda^{2}\prec\prec \lambda\qedd 
+    \end{equation*}
 }
 \lemma{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
     Se $ G,H $ sono campi di prevettori di classe $ D^{2} $ e $ G\equiv H $, allora \begin{equation*}
@@ -816,19 +929,57 @@ Si considerano due casi.
     \end{equation*}per ogni $ a,b $ con $ a-b\prec \lambda $.
 }
 \dimostrazionelem{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
-    \commento{\lipsum[1]}\qed
+    Sia $ F(x) = G(x)-H(x) $: si ha che $ F(x) \prec\prec \lambda $ per ogni $ x $ (questo è garantito dall'ipotesi $ G\equiv H $). 
+
+    Se per assurdo $ F(a)-F(b)$ non è $ \prec\prec \lambda\norma{a-b} $ per qualche $ a,b $, con $ a-b\prec \lambda $, allora \begin{equation*}
+        \lambda\norma{a-b}\prec \norma{F(a)-F(b)}.
+    \end{equation*}Sia $ v = b-a $, allora \begin{equation*}
+        \lambda\norma{v}^{2}\prec \norma{v}\norma{F(a)-F(a+v)},
+    \end{equation*}e, poiché $ G $ e $ H $ sono $ D^{2} $, $ \Delta^{2}_{v,v} F(x) \prec \lambda\norma{v}^{2} $ per ogni $ x $. Dunque per ogni $ x $\begin{equation*}
+        \Delta_{v,v}^{2}F(x) \prec \norma{v}\,\norma{F(a)-F(a+v)} .
+    \end{equation*}Per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui}, prendendo una palla aperta attorno ad $ \st(a) $, esiste $ m \in \nonstandard{N} $ tale per cui \begin{align*}
+        F(a)-F(a+v)&\prec \norma{v}\norma{F(a) - F(a+mv)}\\ 
+        & \le \norma{v}\left(\norma{F(a)}+\norma{F(a+mv)}\right)\prec\prec \norma{v}\lambda.\qedd
+    \end{align*}
 }
 \lemma{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
     Se $ G,H $ sono campi di prevettori con $ G\equiv H $, e $ G $ è di classe $ D^{1} $, e $ H^{-1} $ esiste, allora $ G^{-1}\equiv H^{-1} $.
 }
 \dimostrazionelem{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
-    \commento{\lipsum[1]}\qed
+    Fissato $ a $, siano \begin{equation*}
+        x= G^{-1}(a),\quad y = H^{-1}(a);
+    \end{equation*}si deve mostrare che $ x-y\prec\prec \lambda $. 
+
+    Poichè $ G(x) = a = H(y) $, vale che \begin{equation*}
+        \norma{G(x) - G(y)} = \norma{H(y)-G(y)} = \beta\lambda
+    \end{equation*}per qualche $ \beta \prec \prec 1 $ (poiché $ G\equiv H $). Poiché $ G $ è di classe $ D^{1} $: $ \norma{G(x)-G(y)-x+y} = K \lambda\norma{x-y} $ per qualche $ K \prec 1 $, e pertanto \begin{equation*}
+        \norma{x-y} \le \norma{G(x)-G(y)-x+y} + \norma{G(x)-G(y)} = K\lambda\norma{x-y}+\beta\lambda
+    \end{equation*}e, nello specifico $ (1-K\lambda)\norma{x-y} \le \beta\lambda $. Questo dimostra la tesi, in quanto \begin{equation*}
+        \norma{x-y}\le \frac{\beta}{1-K\lambda}\lambda\prec\prec \lambda.\qedd
+    \end{equation*}
 }
 \teorema{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
     Se $ F,E,G,H $ sono campi di prevettori di classe $ D^{2} $ e $ F\equiv E $, $ G\equiv H $, allora $ [F,G]\equiv [E,H] $.
 }
 \dimostrazione{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
-    \commento{\lipsum[1]}\qed
+    In primo luogo, mostriamo che è sufficiente mostrare il caso per $ F=E $. Dalla definizione è chiaro che $ [G,F]=[F,G]^{-1} $, e dunque, se $ [F,G]\equiv [F,H] $ e $ [H,F]\equiv [H,E] $, allora \begin{equation*}
+        [F,G]\equiv [F,H] = [H,F]^{-1} \equiv [H, E]^{-1} = [E,H]
+    \end{equation*}per il teorema \teoref{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj} e il lemma \framref{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}. 
+
+    Si procede dunque a dimostrare che $ [F,G]\equiv [F,H] $. 
+
+    Fissato $ x $, siano \begin{equation*}
+        a= G\left(F(x)\right), \quad b = H\left(F(x)\right);
+    \end{equation*}per ipotesi, $ a-b\prec\prec \lambda $. Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} e \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} \begin{equation*}
+        F^{-1}(a)-F^{-1}(b)-a+b\prec \lambda\norma{a-b}\prec\prec \lambda^{2}.
+    \end{equation*}Sia ora $ c \coloneqq G^{-1}\circ F^{-1}\circ G\circ F(x) $. Per il lemma \framref{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi} \begin{equation*}
+        F^{-1}(a)-H(c) - a +b = \left(G(c)-H(c)\right) - \left(G\left(F(x)\right)-H\left(F(x)\right)\right) \prec\prec \lambda \norma{c-F(x)}\prec\prec \lambda^{2}
+    \end{equation*}Sommando le ultime due espressioni si ottiene che $ H(c) - F^{-1}(b)\prec\prec \lambda^{2} $ e pertanto \begin{multline*}
+        G^{-1}\circ F^{-1}\circ G\circ F(x) - H^{-1}\circ F^{-1}\circ H\circ F(x) =\\ 
+        = H^{-1}\left(H(c)\right) - H^{1}\left(F^{-1}(b)\right)\prec \norma{H(c)-F^{-1}(b)}\prec\prec \lambda^{3}
+    \end{multline*}per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}, \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} e \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}. Dunque vale \begin{equation*}
+        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(x)\right) - \frac{1}{\lambda}\left(H^{-1}\circ F^{-1}\circ H\circ F(x)\right) \prec\prec \lambda
+    \end{equation*}e dunque, per la proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns} $ [F,G](x)\equiv [F,H](x) $.\qed
 }
 \subsection{Relazione con le parentesi di Lie classiche}
 
@@ -838,24 +989,69 @@ Si considerano due casi.
     Siano $ F,G $ due campi di prevettori che realizzino $ X,Y $ rispettivamente. Allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 }
 \dimostrazione{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
-    \commento{\lipsum[1]}\qed
+    Per l'osservazione \framref{osservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh}, i flussi $ h^{F}_t, h^{G}_t $ coincidono con i flussi di $ X,Y $ nel senso classico\footnote{È possibile sfruttare l'osservazione citata grazie al teorema \teoref{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}.}. È ben noto che, in relazione al flusso classico, \begin{equation*}
+        [X,Y]_{\text{cl}} (p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(h_{t}^{G} \right)^{-1} \circ \left(h_{t}^{F} \right)^{-1}\circ h_{t}^{G}\circ h_{t}^{F} - p \right).
+    \end{equation*}Per la caratterizzazione dei limiti attraverso gli infinitesimi, si ha \begin{equation*}
+        [X,Y]_{\text{cl}} (p) \approx \frac{1}{\lambda^{2}}\left(\tilde{G}^{-1}\circ\tilde{F}^{-1}\circ \tilde{G}\circ \tilde{F}(p)-p\right).
+    \end{equation*}Se $ v\approx w $, allora $ \lambda v\equiv \lambda w $ e pertanto, per la procedura introdotta nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, $ [X,Y]_{\text{cl}} $ è realizzato dal campo di prevettori \begin{equation*}
+        A(a) = a + \frac{1}{\lambda}\left(\tilde{G}^{-1}\circ\tilde{F}^{-1}\circ \tilde{G}\circ \tilde{F}(p)-p\right).
+    \end{equation*}
+
+    Resta da dimostrare che $ [F,G]\equiv A $. Per la proposizione \framref{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue}, $ \tilde{F},\tilde{G} $ sono di classe $ D^{2} $, e pertanto per la proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns}, $ [\tilde{F},\tilde{G}]\equiv A $. Per il teorema \teoref{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn} (tramite la proposizione \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}), $ F\equiv \tilde{F} $, $ G\equiv \tilde{G} $, e pertanto, per il teorema \teoref{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}, $ [F,G]\equiv A $.\qed
 }
+
+\section{Conclusione}
+Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario classico, dimostrato con gli strumenti dell'analisi non standard.
+
+Si dimostra prima la versione per le parentesi di Lie non standard, e poi, come corollario, tramite il teorema \teoref{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}, si dimostra per le parentesi di Lie standard. 
+
 \teorema{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Siano $ F,G $ due campi di prevettori di classe $ D^{2} $. 
 
     Allora $ [F,G]\equiv I $ se e solo se $ h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}$ per ogni $ 0\le t,s\le T $ per qualche $ 0<T \in \R$.
 }
 \dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
-    \commento{\lipsum[1]}\qed
+    Si assuma che $ [F,G]\equiv I $, i.e. \begin{equation*}
+        [F,G](a)-a\prec\prec \lambda
+    \end{equation*}per ogni $ a $. Per la proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns} 
+    \begin{equation*}
+        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\prec\prec \lambda
+    \end{equation*}e dunque $ \left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\prec\prec \lambda^{2} $ per ogni $ a $. Questo implica, per la proposizione \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc} che \begin{equation*}
+        G\circ F(a)-F\circ G(a)\prec\prec \lambda^{2}\qquad \forall\, a.
+    \end{equation*}
+
+    Siano quindi $ n = \floor{t/\lambda}, m =\floor{s/\lambda} $: è necessario mostrare che $ F^{n}\circ G^{m}(a)\approx G^{m}\circ F^{n}(a) $ per ogni $ a $. Questo processo comporta $ nm $ scambi di $ F $ e $ G $; ciascuno scambio è nella forma \begin{equation*}
+        F^{k}\circ G^{r}\circ F \circ G^{m-r}\circ F^{n-k-1} \quad \longrightarrow \quad F^{k}\circ G^{r+1}\circ F\circ G^{m-r-1} \circ F^{n-k-1}
+    \end{equation*}Applicando $ G\circ F(p)-F\circ G(p)\prec\prec \lambda^{2} $ a $ p = G^{m-r-1}\circ F^{n-k-1}(a) $ si ottiene \begin{equation*}
+        F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)\prec\prec \lambda^{2}
+    \end{equation*}
+
+    Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} e \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} esiste $ K \in \R $ tale per cui \begin{align*}
+        \norma{F(a)-a-F(b)+b} &\le K \lambda\norma{a-b}\\ 
+        \norma{G(a)-a-G(b)+b} &\le K \lambda\norma{a-b}
+    \end{align*}per ogni $ a,b $ in un dominio appropriato. 
+    Allora, per il teorema \teoref{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk} applicato a $ G^{r} $ e poi a $ F^{k} $ si ottiene che \begin{multline*}
+        \norma{F^{k}\circ G^{r} \circ F\circ G^{m-r} \circ F^{n-k-1}(a)- F^{k}\circ G^{r+1} \circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)}\\ 
+        \le e^{K(t+s)}\norma{F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)}\prec\prec \lambda^{2}
+    \end{multline*}Dunque, sommando gli $ nm$ contributi passando da $ F^{n}\circ G^{m}(a) $ a $ G^{m}\circ F^{n}(a)$ si ottiene che \begin{equation*}
+        F^{n}\circ G^{m}(a)-G^{m}\circ F^{n}(a)\prec\prec 1.
+    \end{equation*}Questo perché tra le $ nm $ differenze che si sommano, ce ne sarà una massimale (sia ad esempio $ \beta \lambda^{2} $), e pertanto la somma di tutti gli $ nm $ contributi sarà $ \le nm\beta \lambda^{2}\le ts\beta \prec\prec 1 $. Si è dimostrata la prima implicazione.
+
+    Viceversa, se $ h_{t}^{F}\circ h_{t}^{G} = h_{t}^{G}\circ h_{t}^{F}  $. Allora per il principio di transfer, $ \tilde{F}\circ \tilde{G} = \tilde{G} \circ \tilde{F} $. e pertanto \begin{equation*}
+        \tilde{G}^{-1}\circ \tilde{F}^{-1} \circ \tilde{G}\circ\tilde{F} = I
+    \end{equation*}e dunque $ [\tilde{F},\tilde{G}]=I $. Per la proposizione \framref{kdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue} e i teoremi \teoref{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}, \teoref{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}  si ottiene \[[F,G]\equiv I .\qedd\]
 }
 
-\section{Conclusione}
-Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario classico, dimostrato con gli strumenti dell'analisi non standard.
 \teorema[Corollario]{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
     Siano $ X,Y $ dei campi vettoriali classici di classe $ C^{2} $. 
     
     Allora i flussi di $ X $ e di $ Y $ commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.
 }
 \dimostrazione{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
-    \commento{\lipsum[1]}\qed
+    Siano $ F,G $ campi di prevettori definiti come nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, ovvero \begin{align*}
+        F(a) &= a + \lambda X(a)\\ 
+        G(a) &= a+ \lambda Y(a).
+    \end{align*}Applicando la proposizione \framref{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj} si ottiene che $ F,G $ sono di classe $ D^{2} $, e per l'osservazione \framref{osservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh} $ h_{t}^{F}  $ e $ h_{t}^{G}  $ rappresentano i flussi di, rispettivamente, $ X $ e $ Y $ nel senso classico. 
+
+    La tesi è ora banale applicazione dei teoremi \teoref{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj} e \teoref{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}, tenendo a mente l'osservazione \framref{kjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs}.\qed
 }

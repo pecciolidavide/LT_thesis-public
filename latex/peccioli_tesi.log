@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  26 SEP 2024 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  1 OCT 2024 23:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1681,7 +1681,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: twoside showframe 
 * h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
 * v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
@@ -1972,17 +1972,20 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
  [39]
 \c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count658
 \c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count659
- [40] [41] [42]
-\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count660
-\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count661
+ [40]
+\c@frammentoAkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count660
+\c@frammentoBkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count661
+ [41] [42]
+\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count662
+\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count663
  [43]
-\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count662
-\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count663
-\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count664
-\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count665
+\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count664
+\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count665
+\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count666
+\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count667
  [44]
-\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count666
-\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count667
+\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count668
+\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count669
  [45]
 Overfull \hbox (3.09418pt too wide) in paragraph at lines 434--434
 []\T1/lmr/m/n/10.95 (-20) Altrimenti si ha $\OML/lmm/m/it/10.95 ^^Uv \OMS/lmsy/m/n/10.95 ^^^ []$\T1/lmr/m/n/10.95 (-20) , e dun-que $\OML/lmm/m/it/10.95 ^^U [][] \OMS/lmsy/m/n/10.95 ^^^ [] []$\T1/lmr/m/n/10.95 (-20) ;
@@ -1993,84 +1996,92 @@ Overfull \hbox (2.49014pt too wide) detected at line 434
 \OML/lmm/m/it/10.95 G\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 G\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 v\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^^ [] [] ^^T [] [] ^^^ [] \OML/lmm/m/it/10.95 ^^U
  []
 
-\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count668
-\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count669
+\c@frammentoAdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count670
+\c@frammentoBdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count671
+\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count672
+\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count673
 [46]
-\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count670
-\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count671
+\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count674
+\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count675
  [47]
-\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count672
-\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count673
+\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count676
+\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count677
  [48]
-\c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count674
-\c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count675
-\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count676
-\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count677
-\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count678
-\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count679
+\c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count678
+\c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count679
+\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count680
+\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count681
+\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count682
+\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count683
  [49]
-\c@frammentoAremarkfourpointeight=\count680
-\c@frammentoBremarkfourpointeight=\count681
-\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count682
-\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count683
-\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count684
-\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count685
+\c@frammentoAremarkfourpointeight=\count684
+\c@frammentoBremarkfourpointeight=\count685
+\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count686
+\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count687
+\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count688
+\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count689
  [50]
-\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count686
-\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count687
+\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count690
+\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count691
  [51] [52]
-\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count688
-\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count689
-\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count690
-\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count691
+\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count692
+\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count693
+\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count694
+\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count695
  [53]
-\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count692
-\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count693
+\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count696
+\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count697
+\c@frammentoAosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count698
+\c@frammentoBosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count699
  [54]
-\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count694
-\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count695
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count696
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count697
+\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count700
+\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count701
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count702
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count703
  [55]
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count698
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count699
-\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count700
-\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count701
-
-Underfull \vbox (badness 2671) has occurred while \output is active []
-
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count704
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count705
  [56]
-\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count702
-\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count703
-\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count704
-\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count705
+\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count706
+\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count707
  [57]
-\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count706
-\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count707
-\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count708
-\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count709
-\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count710
-\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count711
-\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count712
-\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count713
+\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count708
+\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count709
+\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count710
+\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count711
  [58]
-\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count714
-\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count715
-\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count716
-\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count717
-\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count718
-\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count719
+\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count712
+\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count713
  [59]
-\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count720
-\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count721
-\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count722
-\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count723
- [60]
-\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count724
-\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count725
-) [61] [62
+Overfull \hbox (37.72968pt too wide) in paragraph at lines 861--861
+\T1/lmr/m/n/10.95 (-20) Dunque, per \T1/lmr/m/it/10.95 (-20) un-der-spill[][][][][][] \T1/lmr/m/n/10.95 (-20) in un ap-pro-pria-to $[][][]\OML/lmm/m/it/10.95 U$\T1/lmr/m/n/10.95 (-20) , esi-ste $\OML/lmm/m/it/10.95 C \OMS/lmsy/m/n/10.95 ^^^ \OT1/lmr/m/n/10.95 (-20) 1$ \T1/lmr/m/n/10.95 (-20) ta-le che $[] \OMS/lmsy/m/n/10.95 ^^T
+ []
 
-]
+\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count714
+\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count715
+[60]
+\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count716
+\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count717
+ [61]
+\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count718
+\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count719
+\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count720
+\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count721
+ [62]
+\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count722
+\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count723
+\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count724
+\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count725
+ [63]
+\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count726
+\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count727
+ [64]
+\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count728
+\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count729
+ [65]
+\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count730
+\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count731
+) [66]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2082,7 +2093,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [63
+ [67
+
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
@@ -2097,18 +2109,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70620 strings out of 492616
- 1666841 string characters out of 6129481
- 2328242 words of memory out of 5000000
- 72840 multiletter control sequences out of 15000+600000
- 663643 words of font info for 232 fonts, out of 8000000 for 9000
+ 70675 strings out of 492616
+ 1668874 string characters out of 6129481
+ 2316057 words of memory out of 5000000
+ 72877 multiletter control sequences out of 15000+600000
+ 663726 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,27n,119p,1712b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,27n,119p,1712b,1556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (67 pages, 670246 bytes).
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (71 pages, 699052 bytes).
 PDF statistics:
- 1200 PDF objects out of 1200 (max. 8388607)
- 1064 compressed objects within 11 object streams
- 410 named destinations out of 1000 (max. 500000)
+ 1283 PDF objects out of 1440 (max. 8388607)
+ 1142 compressed objects within 12 object streams
+ 426 named destinations out of 1000 (max. 500000)
  30125 words of extra memory for PDF output out of 35830 (max. 10000000)
 

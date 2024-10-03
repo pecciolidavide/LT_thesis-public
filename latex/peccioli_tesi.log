@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  1 OCT 2024 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  3 OCT 2024 15:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1902,7 +1902,7 @@ Overfull \hbox (21.4457pt too wide) in paragraph at lines 213--213
 \c@frammentoAdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count628
 \c@frammentoBdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count629
 
-Overfull \hbox (5.59303pt too wide) in paragraph at lines 273--280
+Overfull \hbox (3.04724pt too wide) in paragraph at lines 273--280
 \OML/lmm/m/it/10.95 ^^^\OT1/lmr/m/n/10.95 (-20) [\OML/lmm/m/it/10.95 a[]; [] ; a[]\OT1/lmr/m/n/10.95 (-20) ]$ \T1/lmr/m/n/10.95 (-20) è ve-ra in $[]$ se e so-lo se $\OML/lmm/m/it/10.95 ^^^ []$ \T1/lmr/m/n/10.95 (-20) è ve-ra in $[]$.
  []
 
@@ -1935,7 +1935,7 @@ LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 523
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 523.
 
 
-Overfull \hbox (14.64136pt too wide) detected at line 523
+Overfull \hbox (10.82048pt too wide) detected at line 523
 []
  []
 
@@ -1987,12 +1987,12 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 \c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count668
 \c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count669
  [45]
-Overfull \hbox (3.09418pt too wide) in paragraph at lines 434--434
+Overfull \hbox (3.09418pt too wide) in paragraph at lines 435--435
 []\T1/lmr/m/n/10.95 (-20) Altrimenti si ha $\OML/lmm/m/it/10.95 ^^Uv \OMS/lmsy/m/n/10.95 ^^^ []$\T1/lmr/m/n/10.95 (-20) , e dun-que $\OML/lmm/m/it/10.95 ^^U [][] \OMS/lmsy/m/n/10.95 ^^^ [] []$\T1/lmr/m/n/10.95 (-20) ;
  []
 
 
-Overfull \hbox (2.49014pt too wide) detected at line 434
+Overfull \hbox (2.49014pt too wide) detected at line 435
 \OML/lmm/m/it/10.95 G\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 G\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 v\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^^ [] [] ^^T [] [] ^^^ [] \OML/lmm/m/it/10.95 ^^U
  []
 
@@ -2053,7 +2053,7 @@ Overfull \hbox (2.49014pt too wide) detected at line 434
 \c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count712
 \c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count713
  [59]
-Overfull \hbox (37.72968pt too wide) in paragraph at lines 861--861
+Overfull \hbox (37.72968pt too wide) in paragraph at lines 862--862
 \T1/lmr/m/n/10.95 (-20) Dunque, per \T1/lmr/m/it/10.95 (-20) un-der-spill[][][][][][] \T1/lmr/m/n/10.95 (-20) in un ap-pro-pria-to $[][][]\OML/lmm/m/it/10.95 U$\T1/lmr/m/n/10.95 (-20) , esi-ste $\OML/lmm/m/it/10.95 C \OMS/lmsy/m/n/10.95 ^^^ \OT1/lmr/m/n/10.95 (-20) 1$ \T1/lmr/m/n/10.95 (-20) ta-le che $[] \OMS/lmsy/m/n/10.95 ^^T
  []
 
@@ -2109,18 +2109,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70675 strings out of 492616
- 1668874 string characters out of 6129481
- 2316057 words of memory out of 5000000
+ 70674 strings out of 492616
+ 1668857 string characters out of 6129481
+ 2316063 words of memory out of 5000000
  72877 multiletter control sequences out of 15000+600000
- 663726 words of font info for 233 fonts, out of 8000000 for 9000
+ 663667 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,27n,119p,1712b,1556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (71 pages, 699052 bytes).
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (71 pages, 698893 bytes).
 PDF statistics:
- 1283 PDF objects out of 1440 (max. 8388607)
- 1142 compressed objects within 12 object streams
- 426 named destinations out of 1000 (max. 500000)
+ 1281 PDF objects out of 1440 (max. 8388607)
+ 1140 compressed objects within 12 object streams
+ 425 named destinations out of 1000 (max. 500000)
  30125 words of extra memory for PDF output out of 35830 (max. 10000000)
 

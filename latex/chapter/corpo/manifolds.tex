@@ -72,8 +72,7 @@
     \begin{enumerate}
         \item  Se $ f \in C^{1} $, allora per il transfer del teorema del valor medio, esiste $ x \in [a,b] $ tale che \begin{equation}
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{x} (b-a).\label{eq:1}
-    \end{equation}Poiché le derivate parziali sono continue, si ha che\footnote{
-        \commento{Da argomentare}}\[
+    \end{equation}Poiché le derivate parziali sono continue, si ha che\[
             \forall\, y \approx a:\qquad D_{x}-D_{y} \prec\prec 1 
         \]dunque, manipolando \eqref{eq:1}: \[
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{y}(b-a) + (D_{x}-D_{y}  ) (b-a) 
@@ -156,6 +155,8 @@
 }
 \dimostrazioneprop{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd}{
     \commento{\lipsum[1]}\qed
+
+    % See thm 11.6.6 di "True infinitesimal" + prop. after def 2.8 in Nowik Katz
 }
 \osservazione{
     Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
@@ -202,7 +203,7 @@
 }
 
 \osservazione{
-    \commento{Devo aggiungere l'identificazione tra $ T_{a}M  $ e lo spazio tangente standard}
+    \commento{Devo aggiungere l'identificazione tra $ T_{a}M  $ e lo spazio tangente standard} % see thm 12.3.1 di True infinitesimal
 }
 \section{Campi di prevettori}
 

@@ -2001,10 +2001,12 @@
     <bcf:citekey order="4">katz_true_nodate</bcf:citekey>
     <bcf:citekey order="5">katz_true_nodate</bcf:citekey>
     <bcf:citekey order="6">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="7">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="8">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="7">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="8">katz_true_nodate</bcf:citekey>
     <bcf:citekey order="9">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="10">keisler_foundation_2007</bcf:citekey>
+    <bcf:citekey order="10">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="11">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="12">keisler_foundation_2007</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

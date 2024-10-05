@@ -414,6 +414,8 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
 In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcune definizioni.
 
+\subsection{Struttura di campo ordinato di $ \starR $.}
+
 \paragrafo{Osservazione}{%
     Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\left[\sequence{r_{i}}\right]$, $s=\left[\sequence{s_{i}}\right]$\begin{align*}
         r+s &= \left[\sequence{r_{i}+s_{i}}\right];\\
@@ -466,15 +468,62 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
     Pertanto $ M $ è un elemento di $ \starR $, ma per ciascun $ n \in \N $ si ha che $ M\ge n1 $: $ \starR $ non è un campo archimedeo.\qed
 }
 
+\subsection{Finiti ed infinitesimi}
+
 \definizione{
     Un numero iperreale $ x \in \starR $ si dice \begin{itemize}
         \item \emph{finito} se esiste un numero reale $ r \in \R $ tale per cui $ |x|<r $;
         \item \emph{infinito} se per ogni numero reale $ r \in \R$, $ r<|x| $;
         \item \emph{infinitesimo} se per ogni numero reale positivo $ r \in \R $, $ r>0 $, vale \begin{equation*}
-            0 < |x| < r.
+            -r < |x| < r.
         \end{equation*}
     \end{itemize}
 }
+
+\definizione{
+    Dati $ x,y \in \starR $, questi si dicono \emph{infinitamente vicini} (e si scrive $ x\approx y$) se $ x-y $ è infinitesimo.
+}
+
+Le seguenti proprietà seguono dalle definizioni. 
+
+\paragrafo{Proprietà}{%
+    \begin{itemize}
+        \item $\varepsilon \neq 0$ è infinitesimo se e solo se il suo reciproco $1 / \varepsilon$ è infinito;
+        \item  Se $\xi$ e $\beta$ sono finiti, allora anche $\xi+\beta$ e $\xi \cdot \beta$ sono finiti;
+        \item  Se $\varepsilon, \eta \approx 0$ allora $\varepsilon+\eta \approx 0$
+        \item  Se $\varepsilon \approx 0$ e $\xi$ è finito, allora $\varepsilon \cdot \xi \approx 0$
+        \item  Se $\omega$ è infinito e $\xi$ non è infinitesimo, allora $\omega \cdot \xi$ è infinito;
+        \item  Se $0 \approx \varepsilon \neq 0$ e $\xi$ non è infinitesimo, allora $\xi / \varepsilon$ è infinito;
+        \item  Se $\omega$ è infinito e $\xi$ è finito, allora $\xi / \omega \approx 0$.
+    \end{itemize}
+}{}{}
+
+\paragrafo{Lemma}{%
+    Per $ r_1,r_2 \in \R $, $ r_1 \approx r_2 $ se e solo se $ r_1 = r_2 $.
+}{kjndjckjsnskjnckjndkjnskjnc}{}
+\dimostrazioneprop{kjndjckjsnskjnckjndkjnskjnc}{
+    Si assuma $ r_1\approx r_2 $. Se per assurdo $ r_1-r_2\neq 0 $, allora, per completezza di $ \R $, $ r_1 - r_2 = \varepsilon \in \R\setminus \{0\} $, e pertanto $ \varepsilon $ non è infinitesimo. L'implicazione inversa è ovvia.\qed
+}
+
+\teorema{kjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj}{
+    Per ogni numero finito $ \xi \in \starR $, esiste un unico numero reale $ r \in \R $, chiamato \emph{parte standard di $ \xi $} (si scrive $ r=\st(\xi) $) tale che $ \xi \approx r $.
+}
+\dimostrazione{kjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj}{
+    \begin{itemize}
+        \item \emph{Unicità.} Siano $ r_1,r_2 \in \R $ tali che $ r_1\approx \xi \approx r_2 $. Allora $ r_1-\xi $ e $ \xi-r_2 $ sono infinitesimi. Dunque \begin{equation*}
+            r_1-r_2 = (r_1-\xi) - (\xi-r_2)
+        \end{equation*}è infinitesimo, e quindi $ r_1\approx r_2 $. Applicando il lemma \framref{kjndjckjsnskjnckjndkjnskjnc} si ha la tesi.
+        \item \emph{Esistenza.} Sia $ A = \set{s \in \R: s \le \xi} $. $ A $ è non vuoto e limitato (poiché $ \xi $ è finito), e pertanto esiste \begin{equation*}
+            r = \sup A,
+        \end{equation*}poiché $ \R $ è completo. Per le proprietà dell'estremo superiore vale che \begin{equation*}
+            \xi \le r +t \qquad r-t \le \xi
+        \end{equation*}per ogni numero reale $ t $ positivo, e pertanto, \begin{equation*}
+            -t\le(\xi - r) \le t,\qquad \forall\, t >0
+        \end{equation*}e quindi $ \xi - r \approx 0 $, e quindi $ \xi\approx r $.\qed
+    \end{itemize}
+}
+
+\subsection{Insiemi e funzioni non standard}
 
 \definizione{
     Sia $ X \subseteq \R $. Il sottoinsieme $ \nonstandard{X} \subseteq \starR $ si definisce come \begin{equation*}
@@ -488,6 +537,10 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
     \end{align*}
 }
 
+\osservazione{
+    Appare evidente che $ \restriction{\nonstandard{f}}{X} \equiv f $. 
+}
+
 \paragrafo{Osservazione}{%
     Date le definizioni di cui sopra, è possibile ampliare il principio di transfer. 
 
@@ -495,6 +548,46 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
 
     La dimostrazione di ciò sarà l'argomento del capitolo successivo.
 }{tantebellecoseinoijknkjnkjnsd}{}
+
+\subsection{Continuità e derivabilità}
+
+Si dimostra ora un teorema, tramite il principio di transfer, che consente di definire i limiti (e quindi, di conseguenza, la continuità e le derivate) solo in termini di concetti non standard. 
+\teorema{kjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn}{
+    Sia $ A \subseteq \R $, $ x_0 $ un punto di accumulazione di $ A $ e $ f: A \longrightarrow \R $ una funzione, e sia $ L \in \R $. Sono fatti equivalenti \begin{enumerate}
+        \item Se $ x \in \nonstandard{A} $, $ x\approx x_0 $ e $ x \neq x_0 $ allora $ f(x)\approx L $; 
+        \item $ \lim_{x\to x_0} f(x) = L $, ovvero \begin{equation*}
+            \forall\, \varepsilon>0\, \exists\, \delta >0: \quad x \in A \,\land\,0<|x-x_0|< \delta \,\implies\, \left|f(x)-L\right|< \varepsilon 
+        \end{equation*}
+    \end{enumerate}
+}
+\dimostrazione{kjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn}{
+    \begin{itemize}
+        \item[\boxed{1. \Rightarrow 2.}\hspace{1em}] Se il limite $ \lim_{x\to x_0 } f(x) $ non esiste, oppure esiste diverso da $ L $, allora esiste un $ \varepsilon >0  $ reale ed una successione di numeri reali \begin{equation*}
+            \psi : \N \longrightarrow A\setminus\set{x_0}
+        \end{equation*}tale che \begin{equation*}
+            \abs{\psi(n)-a}\le\frac{1}{n}\quad \,\land\,\quad \abs{f\left(\psi(n)\right) - L} > \varepsilon.
+        \end{equation*}Pertanto \begin{equation*}
+            \forall\, n\left[n \in \N \,\implies\, \psi(n) \in A \,\land\, 0 \abs{\psi(n)-a}\le\frac{1}{n} \,\land\,\abs{f\left(\psi(n)\right) - L} > \varepsilon\right].
+        \end{equation*}Per il principio di transfer per ogni $ n \in \nonstandard{\N} $ \begin{equation*}
+            \psi(n) \in \nonstandard{A} \,\land\, 0 \abs{\psi(n)-a}\le\frac{1}{n} \,\land\,\abs{f\left(\psi(n)\right) - L} > \varepsilon
+        \end{equation*}dove per $ \psi $ e $ f $ si intende la loro estensione non standard. In particolare, se $ n \in \nonstandard{\N} $ è infinito, allora $ x= \psi(n) $ soddisfa: $ x \in \nonstandard{A} $, $ x\approx x_0 $ e $ x\neq x_0 $, ma $ \abs{f(x)-L} > \varepsilon$, e pertanto $ f(x)\not\approx L $.
+        \item[\boxed{2. \Rightarrow 1.}\hspace{1em}] Sia $ \varepsilon>0 $ fissato e si scelga $ \delta >0 $ che soddisfi il limite. Allora l'esistenza del limite garantisce che\begin{equation*}
+            \forall\,x\left[x \in A \,\land\, 0<|x-x_0|< \delta \,\implies\, \left|f(x)-L\right|< \varepsilon\right]
+        \end{equation*}e, per il principio di transfer, se $ x \in \nonstandard{A} $, $ 0<|x - x_0|< \delta$, allora $ \abs{f(x)-L} < \varepsilon $. In particolare, se $ x\approx x_0 $ e $ x\neq x_0 $, la condizione su $ x $ è verificata per ogni $ \delta >0 $, e pertanto, per ogni $ \varepsilon >0$ in $ \R $, si ha che $ |f(x)-L|< \varepsilon $, ovvero $ f(x)\approx L $.\qed
+    \end{itemize}
+}
+
+\osservazione{
+    La definizione di continuità classica è equivalente a richiedere che, se $ f: A \subseteq \R \longrightarrow \R $ e $ p \in A $ allora \begin{equation*}
+        \lim_{x\to p} f(x) = f(p)
+    \end{equation*}Pertanto non è necessario definire il concetto di funzione continua nell'ambito dell'analisi non standard, poiché questa segue dalla caratterizzazione dei limiti in termini di infinitesimi.
+}
+
+\definizione{
+    Sia $ A \subseteq \R $, $ x_0 $ un punto di accumulazione di $ A $ e $ f: A \longrightarrow \R $ una funzione, e sia $ L \in \R $. La \emph{derivata di $ f $} è la funzione \begin{equation*}
+        f'(x) = \st\left(\frac{f(x+\lambda)-f(x)}{\lambda}\right),\quad \forall\, \lambda\text{ infinitesimo}
+    \end{equation*}definita per tutti gli $ x $ tali per cui il rapporto incrementale esiste finito.
+}
 
 \subsection{Elementi interni}
 
@@ -505,7 +598,7 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
 Si riporta una versione più debole del teorema 2.8.12 di \cite{loeb_nonstandard_2015}, la cui dimostrazione prescinde dall'obiettivo di questa tesi. 
 
 \teorema{teoriemidkjnkjnc}{
-    Sia $ A $ un sottoinsieme interno di $ \nonstandard{R} $. \begin{enumerate}
+    Sia $ A $ un sottoinsieme interno di $ \starR $. \begin{enumerate}
         \item Se $ \N \subseteq A $, allora contiene almeno un elemento di $ \nonstandard{\N} $ infinito. (Principio dell'\straniero{overspill}).
         \item Se $ A $ contiene tutti gli elementi infiniti di $ \nonstandard{\N} $, allora contiene almeno un elemento finito di $ \N $. (Principio dell'\straniero{underspill}).
     \end{enumerate}

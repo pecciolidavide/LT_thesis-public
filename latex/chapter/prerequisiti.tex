@@ -2,7 +2,178 @@
 
 \section{Prerequisiti di Logica}
 
-\lipsum[1]
+\subsection{Logica del prim'ordine}
+
+\definizione{
+    Un \emph{linguaggio del prim'ordine} $ \mathcal{L} $ è un insieme costituito da \begin{itemize}
+        \item un insieme numerabile di variabili $ \set{v_1,\dots,v_{n},\dots } $;
+        \item un insieme di simboli logici, ovvero i connettivi e i quantificatori; 
+        \item il simbolo di uguaglianza $ \eqcirc $;
+        \item un insieme $ \set{R_{i}: i \in I } $ di simboli di relazione; 
+        \item un insieme $ \set{F_{j}: j \in J } $ di simboli di funzione; 
+        \item una funzione di arietà \begin{equation*}
+            \operatorname{ar}: I \cup J \longrightarrow \N\setminus\set{0};
+        \end{equation*}
+        \item un insieme $ \set{c_{k}: k \in K } $ di simboli di costanti.
+    \end{itemize}
+}
+\definizione{
+    Da un linguaggio del prim'ordine $ \mathcal{L} $, una $ \mathcal{L} $-struttura $ \mathcal{A} $ è il dato di \begin{itemize}
+        \item un insieme non vuoto $ A $, detto \emph{universo} o dominio (denotato con $ \norma{\mathcal{A}} $); 
+        \item per ogni $ i \in I $, un insieme $ R_{i}^{\mathcal{A}} \subseteq A^{\operatorname{ar}(i)}  $;
+        \item per ogni $ j \in J $, una funzione \begin{equation*}
+            f^{\mathcal{A}}_j : A^{\operatorname{ar}(j)} \longrightarrow A;
+        \end{equation*}
+        \item per ogni $ k \in K $ un elemento $ c_{k}^{\mathcal{A}} \in A  $.
+    \end{itemize}
+}
+
+\definizione{
+    Date due $ \mathcal{L} $-strutture $ \mathcal{A}, \mathscr{B} $, un morfismo \begin{equation*}
+        F: \mathcal{A} \longrightarrow \mathscr{B}
+    \end{equation*}è una mappa $ \pi: \norma{\mathcal{A}} \longrightarrow \norma{ \mathscr{B}} $ che soddisfi \begin{itemize}
+        \item[(A)] per ogni $ i \in I $: \begin{equation*}
+            \left(a_1,\dots,a_{\operatorname{ar}(i)} \right) \in R_{i}^{\mathcal{A}} \,\implies\,\left(F\left(a_1\right),\dots,F\left(a_{\operatorname{ar}(i)} \right)\right) \in R_{i}^{ \mathscr{B}}; 
+        \end{equation*}
+        \item[(B)] per ogni $ j \in J $: \begin{equation*}
+            F\left(f_{j}^{\mathcal{A}}\left(a_1,\dots,a_{\operatorname{ar}(j)} \right) \right) = f_{j}^{ \mathscr{B}}\left(F(a_1),\dots,F(a_{\operatorname{ar}(j)} )\right);
+        \end{equation*}
+        \item[(C)] per ogni $ k \in K $: $ F\left(c_{k}^{\mathcal{A}} \right) = c_{k}^{ \mathscr{B}}  $.
+    \end{itemize}Inoltre $ F $ si dice \emph{morfismo pieno} se vale la condizione (A'): per ogni $ i \in I $\begin{equation*}
+        \left(a_1,\dots,a_{\operatorname{ar}(i)} \right) \in R_{i}^{\mathcal{A}} \,\iff\,\left(F\left(a_1\right),\dots,F\left(a_{\operatorname{ar}(i)} \right)\right) \in R_{i}^{ \mathscr{B}}; 
+    \end{equation*}Un morfismo pieno e iniettivo si dice \emph{immersione}.
+}
+\definizione{
+    Siano $ \mathcal{A}, \mathscr{B} $ due $ \mathcal{L} $-strutture. $ \mathcal{A} $ è una sottostruttura di $ \mathscr{B} $ se \begin{itemize}
+        \item $ \norma{\mathcal{A}} \subseteq \norma{ \mathscr{B}} $;
+        \item $ \operatorname{id}: \mathcal{A} \longrightarrow \mathscr{B} $ è una immersione. 
+    \end{itemize}Si scrive $ \mathcal{A} \subseteq \mathscr{B} $.
+}
+
+\definizione{
+    Sono \emph{termini}: \begin{itemize}
+        \item costanti e variabili;
+        \item se $ f $ è un simbolo di funzione con $ \operatorname{ar} (f)=n $ e $ t_1,\dots,t_{n} $ sono termini, allora è termine:\[
+            f(t_1,\dots,t_{n} )
+        \]
+    \end{itemize}
+}
+\osservazione{
+    È naturale introdurre un concetto di \emph{altezza} di una termine: nel grafo costruito a partire termine $ t $, che ricostruisce le operazioni utilizzate per costruirla, l'altezza $ \altezza(t) $ è la lunghezza del ramo più lungo (partendo da zero).
+}
+\definizione{
+Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove $ x_1,\dots,x_{n}  $ sono le variabili che compaiono in $ t $, e dati $ s_1,\dots,s_{n}  $ termini, la scrittura: \[
+    t\left[s_1/x_1,\,s_2/x_2,\dots,\,s_{n}/x_{n}  \right]
+\]è il termine ottenuto da $ t $ sostituendo ogni $ x_{i}  $ con $ s_{i}  $.
+}
+
+\paragrafo{Lemma}{%
+    $ t\left[s_1/x_1,\,s_2/x_2,\dots,\,s_{n}/x_{n}  \right] $ è un termine.
+}{}{}
+\definizione{
+    Una \emph{formula atomica} è \begin{itemize}
+        \item $ t_1 \eqcirc t_2 $ con $ t_1,t_2 $ termini; 
+        \item se $ R_{i}  $ è una relazione di arietà $ n $, è formula atomica \begin{equation*}
+            R_{i}(t_1,\dots,t_{n} ) 
+        \end{equation*}per $ t_1,\dots,t_{n}  $ termini.
+    \end{itemize}
+
+    L'insieme delle \emph{formule} è definito induttivamente come la chiusura dell'insieme delle formule atomiche rispetto alle seguenti operazioni \begin{equation*}
+        \varphi \mapsto \lnot\,\varphi,\quad \varphi,\psi \mapsto \varphi \,\lor\, \psi,\quad \varphi\mapsto \exists\, x \varphi.
+    \end{equation*}
+
+    Tutte le variabili che all'interno di una formula non sono sotto il raggio di un quantificatore si dicono \emph{libere}: indicando con $ \varphi(x_1,\dots,x_{n} ) $ si intende che le variabili libere di $ \varphi $ sono un sottoinsieme di $ \set{x_1,\dots,x_{n} } $.
+}
+\osservazione{
+    È naturale introdurre un concetto di \emph{altezza} di una formula: nel grafo costruito a partire dalla formula $ \varphi $, che ricostruisce le operazioni utilizzate per costruirla, l'altezza $ \altezza(\varphi) $ è la lunghezza del ramo più lungo (partendo da zero).
+}
+
+\definizione{
+    Sia $ t $ un $ \mathcal{L} $-termine e $ x_1,\dots,x_{n}  $ le variabili che occorrono in $ t $. Sia $ \mathcal{M} $ una $ \mathcal{L} $-struttura e $ a_1,\dots,a_{n} \in M  $. Allora \[
+        t^{\mathcal{M}}[a_1,\dots,a_{n} ]
+    \]è l'elemento di $ M $ definito per ricorsione da \begin{itemize}
+        \item se $ t $ è nella forma $ x_{i} $, allora $ t^{\mathcal{M}}[a_1,\dots,a_{n} ] = a_{i} $;
+        \item se $ t $ è nella forma $ c $ per $ c $ simbolo di costante, allora $ t^{\mathcal{M}} [a_1,\dots,a_{n} ] = c^{\mathcal{M}} $;
+        \item se $ t $ è nella forma $ f(s_1,\dots,s_{k} ) $ per qualche $ f $ simbolo di funzione con arietà $ k $ e $ s_1,\dots,s_{k}  $ termini, allora \[
+            t^{\mathcal{M}}[a_1,\dots,a_{n} ] = f^{\mathcal{M}}\left(s_1^{\mathcal{M}}[a_1,\dots,a_{n} ],\dots,s_k^{\mathcal{M}}[a_1,\dots,a_{n} ]\right)
+        \]  
+    \end{itemize}
+}
+\definizione{
+    Data una $ \mathcal{L} $-struttura $ \mathcal{M} $ ed una formula $ \varphi(x_1,\dots,x_{n} ) $, si definisce la relazione di soddisfazione \[
+        \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ]
+    \]per ricorcorsione sulla complessità di $ \varphi(x_1,\dots,x_{n} ) $. \begin{itemize}
+        \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[\varphi(x_1,\dots,x_{n} ):\hspace{4em} t\eqcirc s\](con $ t $ ed $ s $ termini), allora $ \mathcal{M}\vDash \varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+            t^{\mathcal{M}}[a_1,\dots,a_{n} ] = s^{\mathcal{M}}[a_1,\dots,a_{n} ].
+        \]
+        \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[\varphi(x_1,\dots,x_{n} ):\hspace{4em} R(t_1,\dots,t_{k} )\] per $ R $ relazione e $ t_{i}  $ termini, allora $ \mathcal{M}\vDash \varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+            \left(t_1^{\mathcal{M}}[a_1,\dots,a_{n} ],\dots,t_k^{\mathcal{M}}[a_1,\dots,a_{n} ]\right) \in R^{\mathcal{M}}.
+        \]
+        \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[\varphi(x_1,\dots,x_{n} ):\hspace{4em} \lnot\,\psi\]allora $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+            \mathcal{M}\nvDash\psi[a_1,\dots,a_{n} ].
+        \]
+        % \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[%
+        % \psi_1 \,\land\, \psi_2
+        % \]allora $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+        %     \mathcal{M}\vDash\psi_1[a_1,\dots,a_{n} ]\quad\text{e}\quad \mathcal{M}\vDash\psi_2[a_1,\dots,a_{n} ].
+        % \]
+        \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[%
+        \psi_1 \,\lor\, \psi_2
+        \]allora $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+            \mathcal{M}\vDash\psi_1[a_1,\dots,a_{n} ]\quad\text{oppure (inclusivo)}\quad \mathcal{M}\vDash\psi_2[a_1,\dots,a_{n} ].
+        \]
+        % \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[%
+        % \psi_1 \,\implies\, \psi_2
+        % \]allora $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+        %     \mathcal{M}\nvDash\psi_1[a_1,\dots,a_{n} ]\quad\text{oppure }\quad \mathcal{M}\vDash\psi_2[a_1,\dots,a_{n} ].
+        % \]
+        % \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[%
+        % \psi_1 \,\iff\, \psi_2
+        % \]allora $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se \[
+        %     \mathcal{M}\vDash\psi_1[a_1,\dots,a_{n} ]\quad\text{se e solo se}\quad \mathcal{M}\vDash\psi_2[a_1,\dots,a_{n} ].
+        % \]
+        \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo $ \exists\, y\,\psi $ è necessario distinguere tre casi. \begin{itemize}
+            \item Se $ y $ non occorre libera in $ \psi $, allora si può scrivere $ \psi $ come $ \psi(x_1,\dots,x_{n} ) $ e $ \mathcal{M}\vDash\psi[a_1,\dots,a_{n} ] $ se e solo se \[
+                \mathcal{M}\vDash \psi[a_1,\dots,a_{n} ].
+            \]
+            \item Se $ y $ occorre libera in $ \psi $ ed è diversa da tutte le $ x_{i}  $, allora si può scrivere $ \psi $ come $ \psi(x_1,\dots,x_{n},y ) $, e $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se esiste qualche $ b \in M $ tale che \[
+                \mathcal{M}\vDash \psi[a_1,\dots,a_{n},b ].
+            \]
+            \item Se $ y $ occorre libera in $ \psi $ è $ y=x_{i}  $ per qualche $ i $, allora si può scrivere $ \psi $ come $ \psi(x_1,\dots,x_{i-1},y,x_{i+1},\dots,x_{n}   ) $ e si avrà che $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{m} ] $ se e solo se esiste qualche $  b \in M $ tale che \[
+                \mathcal{M}\vDash\psi[a_1,\dots,a_{i-1},b,a_{i+1},\dots,a_{n}].
+            \]
+        \end{itemize}
+        % \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo $ \forall\, y\,\psi $ si devono distinguere tre casi. \begin{itemize}
+        %     \item Se $ y $ non occorre libera in $ \psi $, allora possiamo scrivere $ \psi $ come $ \psi(x_1,\dots,x_{n} ) $ e $ \mathcal{M}\vDash\psi[a_1,\dots,a_{n} ] $ se e solo se \[
+        %         \mathcal{M}\vDash \psi[a_1,\dots,a_{n} ].
+        %     \]
+        %     \item Se $ y $ occorre libera in $ \psi $ ed è diversa da tutte le $ x_{i}  $, allora possiamo scrivere $ \psi $ come $ \psi(x_1,\dots,x_{n},y ) $, e $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ] $ se e solo se per ogni $ b \in M $ si ha che \[
+        %         \mathcal{M}\vDash \psi[a_1,\dots,a_{n},b ].
+        %     \]
+        %     \item Se $ y $ occorre libera in $ \psi $ è $ y=x_{i}  $ per qualche $ i $, allora possiamo scrivere $ \psi $ come $ \psi(x_1,\dots,x_{i-1},y,x_{i+1},\dots,x_{n}   ) $ e si avrò che $ \mathcal{M}\vDash\varphi[a_1,\dots,a_{m} ] $ se e solo se per ogni $  b \in M $ si ha che \[
+        %         \mathcal{M}\vDash\psi[a_1,\dots,a_{i-1},b,a_{i+1},\dots,a_{n}].
+        %     \]
+        % \end{itemize}
+    \end{itemize}
+}
+
+\definizione{Siano $ \mathcal{N} \subseteq \mathcal{M} $ due $ \mathcal{L} $-strutture. $ \mathcal{N} $ è una \emph{sottostruttura elementare di $ \mathcal{M} $} se per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ ed ogni $ a_1,\dots,a_{n} \in N$ \[
+    \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ]\quad\text{se e solo se}\quad \mathcal{N}\vDash\varphi[a_1,\dots,a_{n} ],
+\]}
+\definizione{
+    Se $ F:\mathcal{N}\longrightarrow \mathcal{M}$ è una immersione di $ \mathcal{N} $ in $ \mathcal{M} $ e $ F(\norma{\mathcal{N}}) $, visto come sottostruttura di $ \mathcal{M} $, è una sottostruttura elementare di $ \mathcal{M} $, si dice che $ F $ è una \emph{immersione elementare} e che $ \mathcal{N} $ si \emph{immerge elementarmente} in $ \mathcal{M} $, in simboli $ \mathcal{N}\preceq \mathcal{M} $.
+}
+
+Si riporta inoltre un lemma necessario per dimostrare in seguito un teorema.
+
+\paragrafo{Lemma}{%
+Sia $ F:\mathcal{N}\longrightarrow \mathcal{M} $ un'immersione. Le seguenti affermazioni sono equivalenti: \begin{enumerate}
+    \item $ F $ è un'immersione elementare; 
+    \item per ogni $ \mathcal{L} $-formula $ \varphi(y,x_1,\dots,x_{n} ) $ ed ogni $ a_1,\dots,a_{n} \in N  $ \begin{gather*}
+        \mathcal{M}\vDash \exists y \, \varphi\left[y, F(a_1),\dots,F(a_{n}) \right]\\[1em] \text{se e solo se}\\[1em] \mathcal{M}\vDash\varphi\left[F(a_{0}), F(a_1),\dots,F(a_{n}) \right]\text{ per qualche }a_0 \in N.
+    \end{gather*}
+\end{enumerate}
+}{odijcoijodijocijoijoijoi}{}
 
 \subsection{Assioma della scelta}
 
@@ -14,14 +185,7 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
 \paragrafo{Lemma di Zorn}{%
     Se un insieme (parzialmente) ordinato è tale che ogni catena ha un maggiorante, allora ha un elemento massimale.
 }{}{}
-\proposizione{odijcoijodijocijoijoijoi}{
-    Sia $ F:\mathcal{N}\longrightarrow \mathcal{M} $ un'immersione. Le seguenti affermazioni sono equivalenti: \begin{enumerate}
-        \item $ F $ è un'immersione elementare; 
-        \item per ogni $ \mathcal{L} $-formula $ \varphi(y,x_1,\dots,x_{n} ) $ ed ogni $ a_1,\dots,a_{n} \in N  $ \[
-            \mathcal{M}\vDash \exists y \, \varphi\left[y, F(a_1),\dots,F(a_{n}) \right]\qquad\text{sse}\qquad \parbox{15em}{$\mathcal{M}\vDash\varphi\left[F(a_{0}), F(a_1),\dots,F(a_{n}) \right]${ per qualche }$a_0 \in N.$}
-        \]
-    \end{enumerate}
-}
+
 
 \section{Prerequisiti di Geometria Differenziale}\label{sec:geodiff}
 

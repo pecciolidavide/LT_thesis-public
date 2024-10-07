@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  7 OCT 2024 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  7 OCT 2024 23:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1758,7 +1758,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 9.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 175.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 187.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [3
@@ -1805,7 +1805,9 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <10.95> not available
  [9]
 \c@frammentoAksjnksjjdjdjcskjnsj=\count598
 \c@frammentoBksjnksjjdjdjcskjnsj=\count599
-) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex [10]
+ [10]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex [11] [12
+
+]
 Capitolo 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1815,9 +1817,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 50.
 
-[11
-
-]
+[13]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 74.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 87.
@@ -1828,10 +1828,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12]
+ [14]
 \c@frammentoAdoijcoijoosijoijoijdcidicoijcoijdoijoijoij=\count600
 \c@frammentoBdoijcoijoosijoijoijdcidicoijcoijdoijoijoij=\count601
- [13]
+ [15]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1842,7 +1842,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 147.
 \c@frammentoAdoijcsoijoijoijoijoijoijoij=\count602
 \c@frammentoBdoijcsoijoijoijoijoijoijoij=\count603
- [14]
+ [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 170.
@@ -1853,23 +1853,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 \c@frammentoAdcjkklkmdjjjjultraprodottoinssimo=\count604
 \c@frammentoBdcjkklkmdjjjjultraprodottoinssimo=\count605
-[15]
+[17]
 Overfull \hbox (1.53267pt too wide) detected at line 225
 [] \OMS/lmsy/m/n/10.95 \ [] \ [] ^^R []
  []
 
 \c@frammentoAdoijcoijdijcijijoijoijoijcoaijoijoijoij=\count606
 \c@frammentoBdoijcoijdijcijijoijoijoijcoaijoijoijoij=\count607
-[16]
+[18]
 \c@frammentoAdsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij=\count608
 \c@frammentoBdsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij=\count609
- [17] [18]
+ [19] [20]
 \c@frammentoAdkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn=\count610
 \c@frammentoBdkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn=\count611
- [19]
+ [21]
 \c@frammentoAdkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd=\count612
 \c@frammentoBdkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd=\count613
- [20]
+ [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 417.
@@ -2394,20 +2394,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 417.
 
-[21]
+[23]
 \c@frammentoAdjkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj=\count614
 \c@frammentoBdjkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj=\count615
- [22]
+ [24]
 \c@frammentoAkjndjckjsnskjnckjndkjnskjnc=\count616
 \c@frammentoBkjndjckjsnskjnckjndkjnskjnc=\count617
 \c@frammentoAkjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj=\count618
 \c@frammentoBkjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj=\count619
- [23]
+ [25]
 \c@frammentoAtantebellecoseinoijknkjnkjnsd=\count620
 \c@frammentoBtantebellecoseinoijknkjnkjnsd=\count621
 \c@frammentoAkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count622
 \c@frammentoBkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count623
- [24] [25]
+ [26] [27]
 \c@frammentoAteoriemidkjnkjnc=\count624
 \c@frammentoBteoriemidkjnkjnc=\count625
 
@@ -2417,9 +2417,9 @@ Overfull \hbox (6.05179pt too wide) in paragraph at lines 605--605
 
 \c@frammentoAdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count626
 \c@frammentoBdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count627
-) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex [26]
+) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex [28]
 Capitolo 3.
-[27
+[29
 
 ]
 \c@frammentoAkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count628
@@ -2428,20 +2428,20 @@ Capitolo 3.
 \c@frammentoBdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count631
 \c@frammentoAdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count632
 \c@frammentoBdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count633
- [28] [29]
+ [30] [31]
 \c@frammentoAdjnckjnskjndjckjnsdkjnckjnskjn=\count634
 \c@frammentoBdjnckjnskjndjckjnsdkjnckjnskjn=\count635
 \c@frammentoADkjndjcdjdjdjlemmininoninoinopucciosino=\count636
 \c@frammentoBDkjndjcdjdjdjlemmininoninoinopucciosino=\count637
- [30]
+ [32]
 \c@frammentoAdkjncjskjncjskjndjcdjjjjjdjdjj=\count638
 \c@frammentoBdkjncjskjncjskjndjcdjjjjjdjdjj=\count639
 \c@frammentoAdkjnckjdkckjndjckjndjckkjnckjs=\count640
 \c@frammentoBdkjnckjdkckjndjckjndjckkjnckjs=\count641
- [31]
+ [33]
 \c@frammentoAkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count642
 \c@frammentoBkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count643
- [32] [33]
+ [34] [35]
 \c@frammentoAdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count644
 \c@frammentoBdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count645
 
@@ -2454,23 +2454,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--280
 
  []
 
-[34]
+[36]
 \c@frammentoAdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count646
 \c@frammentoBdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count647
 \c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count648
 \c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count649
- [35] [36]
+ [37] [38]
 \c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count650
 \c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count651
- [37]
+ [39]
 \c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count652
 \c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count653
 \c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count654
 \c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count655
- [38]
+ [40]
 \c@frammentoAjdjdjjjjjjdjjjkjn=\count656
 \c@frammentoBjdjdjjjjjjdjjjkjn=\count657
- [39]
+ [41]
 \c@frammentoAdkjncjskjdjdjdjdjdjdjdjdckjn=\count658
 \c@frammentoBdkjncjskjdjdjdjdjdjdjdjdckjn=\count659
 
@@ -2485,13 +2485,13 @@ Overfull \hbox (10.82048pt too wide) detected at line 532
 []
  []
 
-[40]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex [41] [42
+[42]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex [43] [44
 
 ]
 Capitolo 4.
 \c@frammentoAdjknckjnsjdjdjcskjnskjnckjnskjnd=\count660
 \c@frammentoBdjknckjnsjdjdjcskjnskjnckjnskjnd=\count661
-[43]
+[45]
 LaTeX Font Info:    Try loading font information for U+euf on input line 50.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -2500,46 +2500,46 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 )
 \c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count662
 \c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count663
- [44]
+ [46]
 \c@frammentoAdckjndjjjjjjdjscacchina=\count664
 \c@frammentoBdckjndjjjjjjdjscacchina=\count665
- [45]
+ [47]
 \c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count666
 \c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count667
- [46]
+ [48]
 \c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count668
 \c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count669
 \c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count670
 \c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count671
- [47]
+ [49]
 \c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count672
 \c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count673
- [48]
+ [50]
 \c@frammentoAdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count674
 \c@frammentoBdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count675
- [49]
+ [51]
 \c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count676
 \c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count677
 \c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count678
 \c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count679
- [50]
+ [52]
 \c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count680
 \c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count681
- [51]
+ [53]
 \c@frammentoAkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count682
 \c@frammentoBkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count683
- [52] [53]
+ [54] [55]
 \c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count684
 \c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count685
- [54]
+ [56]
 \c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count686
 \c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count687
 \c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count688
 \c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count689
- [55]
+ [57]
 \c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count690
 \c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count691
- [56]
+ [58]
 Overfull \hbox (3.09418pt too wide) in paragraph at lines 470--470
 []\T1/lmr/m/n/10.95 (-20) Altrimenti si ha $\OML/lmm/m/it/10.95 ^^Uv \OMS/lmsy/m/n/10.95 ^^^ []$\T1/lmr/m/n/10.95 (-20) , e dun-que $\OML/lmm/m/it/10.95 ^^U [][] \OMS/lmsy/m/n/10.95 ^^^ [] []$\T1/lmr/m/n/10.95 (-20) ;
  []
@@ -2553,87 +2553,87 @@ Overfull \hbox (2.49014pt too wide) detected at line 470
 \c@frammentoBdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count693
 \c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count694
 \c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count695
-[57]
+[59]
 \c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count696
 \c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count697
- [58]
+ [60]
 \c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count698
 \c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count699
 \c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count700
 \c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count701
- [59]
+ [61]
 \c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count702
 \c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count703
 \c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count704
 \c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count705
 \c@frammentoAremarkfourpointeight=\count706
 \c@frammentoBremarkfourpointeight=\count707
- [60]
+ [62]
 \c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count708
 \c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count709
 \c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count710
 \c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count711
- [61]
+ [63]
 \c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count712
 \c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count713
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62] [63]
+ [64] [65]
 \c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count714
 \c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count715
 \c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count716
 \c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count717
- [64]
+ [66]
 \c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count718
 \c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count719
 \c@frammentoAosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count720
 \c@frammentoBosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count721
- [65]
+ [67]
 \c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count722
 \c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count723
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count724
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count725
- [66]
+ [68]
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count726
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count727
- [67]
+ [69]
 \c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count728
 \c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count729
- [68]
+ [70]
 \c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count730
 \c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count731
 \c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count732
 \c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count733
- [69]
+ [71]
 \c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count734
 \c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count735
- [70]
+ [72]
 \c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count736
 \c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count737
- [71]
+ [73]
 \c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count738
 \c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count739
- [72]
+ [74]
 \c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count740
 \c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count741
 \c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count742
 \c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count743
- [73]
+ [75]
 \c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count744
 \c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count745
 \c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count746
 \c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count747
- [74]
+ [76]
 \c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count748
 \c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count749
- [75]
+ [77]
 \c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count750
 \c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count751
- [76]
+ [78]
 \c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count752
 \c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count753
-) [77] [78
+) [79] [80
 
 ]
 Package microtype Info: Character `029' is missing
@@ -2647,7 +2647,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [79
+ [81
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
@@ -2656,24 +2656,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `peccioli_tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 92A8DAC6B968CDC1AF56422D3EA3EDAF;3212.
+(rerunfilecheck)             Checksum: 75AA89B5C306AF5627381295558F5F5A;3290.
 Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 \openout1 = `peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70905 strings out of 492616
- 1675476 string characters out of 6129481
- 2306649 words of memory out of 5000000
- 73017 multiletter control sequences out of 15000+600000
- 664553 words of font info for 240 fonts, out of 8000000 for 9000
+ 70916 strings out of 492616
+ 1675604 string characters out of 6129481
+ 2307649 words of memory out of 5000000
+ 73018 multiletter control sequences out of 15000+600000
+ 664636 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,27n,119p,1712b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,27n,119p,1712b,1538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (83 pages, 741934 bytes).
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (85 pages, 745448 bytes).
 PDF statistics:
- 1471 PDF objects out of 1728 (max. 8388607)
- 1313 compressed objects within 14 object streams
- 502 named destinations out of 1000 (max. 500000)
- 30189 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1492 PDF objects out of 1728 (max. 8388607)
+ 1332 compressed objects within 14 object streams
+ 510 named destinations out of 1000 (max. 500000)
+ 30197 words of extra memory for PDF output out of 35830 (max. 10000000)
 

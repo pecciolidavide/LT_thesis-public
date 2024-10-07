@@ -290,11 +290,39 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
 }
 \definizione{
     Sia $ M $ una varietà differenziabile, $ p \in M $ e $ \varphi = (u_1,\dots,u_{n}) $ una carta. Si definiscono le derivazioni $ \pd{}{u_{i}} $ che agiscono su $ \bm{f} \in C^{\infty}(p) $ come \begin{equation*}
-        \dpd{\bm{f}}{u_{i} } \coloneqq \restriction{\dpd{f \circ \varphi^{-1}}{x_{i} }}{\varphi(p)}
+        \restriction{\dpd{\bm{f}}{u_{i} }}{p} \coloneqq \restriction{\dpd{f \circ \varphi^{-1}}{x_{i} }}{\varphi(p)}
     \end{equation*}dove $ (U,f) $ è un rappresentante di $\bm{f}$.
 }
 \teorema{ksjnksjjdjdjcskjnsj}{
     Sia $ M $ una varietà differenziabile, $ p \in M $ e $ \varphi = (u_1,\dots,u_{n}) $ una carta. L'insieme \begin{equation*}
-        \set{\dpd{}{u_1},\dots,\dpd{}{u_{n} }}
+        \set{\restriction{\dpd{}{u_1}}{p},\dots,\restriction{\dpd{}{u_{n} }}{p}}
     \end{equation*}è una base dello spazio vettoriale $ T_{p}M  $.
+}
+\esempio{
+    Sia $ \gamma : (- \varepsilon, \varepsilon) \longrightarrow M $ una curva di classe $ C^{\infty} $ tale che $ \gamma(0)=p \in M $. Il vettore $ \gamma'(0) $ tangente ad $ M $ in $ p $ agisce su $ \bm{f} \in C^{ \infty}(p)$ come \begin{equation*}
+        \gamma'(0)(\bm{f}) \coloneqq \dod{(f\circ \gamma)}{t}(0)
+    \end{equation*}dove $ (U,f) $ è un rappresentante di $ \bm{f} $. Se inoltre $ \varphi = (u_1,\dots,u_{n} ) $ è una carta definita in un intorno di $ p $, si ha che, in coordinate, scrivendo $ \varphi\circ \gamma = (\gamma^{1},\dots,\gamma^{n}) $\begin{equation*}
+        \gamma'(0) = \sum_{j=1}^{n} (\gamma^{j})'(0) \restriction{\dpd{}{u_{j}}}{p}. 
+    \end{equation*}
+}
+\subsection{Campi vettoriali e flusso}
+
+\definizione{
+    Un \emph{campo vettoriale} di classe $ C^{l} $ su $ M $ è una mappa che a ciascun punto $ p \in M $ assegna un vettore $ X_{p} \in T_{p}M $. In particolare, se in coordinate \begin{equation*}
+        X = \sum_{j=1}^{n} X_{j}(p)\restriction{\dpd{}{u_{j}}}{p}
+    \end{equation*}tutte le $ X_{j} $ devono essere funzioni $ C^{k} $.
+}
+\definizione{
+    Sia $ X $ un campo vettoriale su $ M $ varietà differenziabile, e $ p \in M $. Una curva $ \gamma: (- \varepsilon, \varepsilon) \longrightarrow M $ tale che $ \gamma(0)= 0 $ e \begin{equation*}
+        \gamma'(t) = X\left(\gamma(t)\right)
+    \end{equation*}per ogni $ t \in (- \varepsilon, \varepsilon) $ è detta \emph{curva integrale} di $ X $ uscente da $ p $.
+}
+\osservazione{
+    Per il teorema di Cauchy-Lipschitz sull'unicità della soluzione di un problema di Cauchy, se $ X $ è un campo vettoriale almeno $ C^{1} $ tale curva integrale esiste sempre su un intervallo massimale $ I $, contente lo zero.
+}
+\definizione{
+    Sia $ X $ un campo vettoriale su una varietà $ M $. Si definisce il \emph{flusso di $ X $ al tempo $ t $} la mappa \begin{align*}
+    \Theta_{t}:M &\longrightarrow M \\
+    p &\longmapsto \gamma_{p}(t) 
+    \end{align*}dove $ \gamma_{p}  $ è la curva integrale di $ X $ uscente da $ p $.
 }

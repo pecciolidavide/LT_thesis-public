@@ -189,4 +189,112 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
 
 \section{Prerequisiti di Geometria Differenziale}\label{sec:geodiff}
 
-\lipsum[2]
+\subsection{Varietà differenzabili}
+
+\definizione{
+    Una \emph{varietà topologica} $ n $-dimensionale è uno spazio topologico $ M $, di Hausdorf e a base numerabile, tale per cui, per ogni $ p \in M $ sono $ {U} $ intorno aperto di $ p $ in M, $ V \subseteq \R^{n} $ aperto e \begin{equation*}
+        \phi : {U} \longrightarrow V
+    \end{equation*}omeomorfismo. $ \phi $ si dice \emph{carta topologica}.
+}
+\definizione{
+    Se $ M $ è una varietà topologica, un \emph{atlante topologico} di $ M $ è una famiglia di \emph{carte} \begin{equation*}
+        \mathcal{A} = \set{(U_{\alpha}, \varphi_{\alpha}  )}_{\alpha \in I}
+    \end{equation*}indicizzata su un insieme non vuoto, dove \begin{itemize}
+        \item $ \set{U_{\alpha} }_{\alpha \in I} $ è un ricoprimento aperto di $ M $;
+        \item $ \varphi_{\alpha}: U_{\alpha} \longrightarrow V_{\alpha}    $ è una carta topologica per certi $ V_{\alpha} \subseteq \R^{n}  $ aperti.
+    \end{itemize}
+}
+\definizione{
+    Sia $ M $ una varietà topologica e sia $ \mathcal{A} = \set{(U_{\alpha},\varphi_{\alpha}  )}_{\alpha \in I} $ un atlante topologico. $ \mathcal{A} $ è \emph{differenziabile} se tutti i cambi di carte sono dei diffeomorfismi tra aperti di $ \R^{n} $, ovvero se per ogni $ \alpha,\beta \in I $ tali che $ U_{\alpha}\cap U_{\beta}\neq \emptyset   $ \begin{equation*}
+        \varphi_{\alpha}\circ \left(\varphi_{\beta}\right)^{-1}: \varphi_{\beta} (U_{\alpha} \cap U_{\beta}  )   \longrightarrow \varphi_{\alpha} (U_{\alpha} \cap U_{\beta}  )
+    \end{equation*}è una biiezione continua e differenziabile (di classe $ C^{\infty} $), con inversa differenziabile (di classe $ C^{\infty} $).
+}
+\definizione{
+    Due atlanti differenziabili si dicono \emph{compatibili} se la loro unione è ancora un atlante differenziabile.
+}
+\proposizione{kjndjckjncdjckjnsjnkjnkjn}{
+    La compatibilità di atlanti è una relazione di equivalenza.
+}
+\definizione{
+    Una \emph{struttura differenzabile} è un atlante differenziabile che sia massimale rispetto all'inclusione. 
+
+    Una varietà topologica con una struttura differenziabile fissata si dice \emph{varietà differenziabile}.
+}
+\teorema{dkjnckskjncjskjndjckjndjdjjjj}{
+    Ogni atlante differenziabile è contenuto in un'unica struttura differenziabile.
+}
+
+\subsection{Funzioni differenziabili tra varietà}
+
+\definizione{
+    Siano $ {M} $, $ {N} $ due varietà differenziabili, e siano $ \mathcal{A}=\set{(U_{\alpha}, \varphi_{\alpha}  )}_{\alpha \in I} $, $ \mathcal{B}=\set{(V_{\beta}, \psi_{\beta}  )}_{\beta \in J} $ le rispettive strutture differenziabili. 
+
+    $ F: {M} \longrightarrow {N}$ si dice \emph{differenziabile} (o $C^{\infty}$) in $ p \in M $ se esistono una carta $ (U, \varphi) \in \mathcal{A} $ e una carta $ (V, \psi) \in\mathcal{B} $ tali che \begin{itemize}
+        \item $ F(U) \subseteq V $; 
+        \item $ \psi \circ F\circ \varphi^{-1} : \varphi(U) \longrightarrow \psi(V) $ sia di classe $ C^{\infty} $ in un intorno di $ \varphi(p) $.
+    \end{itemize}
+
+    Se $ F $ è differenziabile in ogni punto di $ M $, si dirà che $ F $ è \emph{differenziabile} (o $C^{\infty}$).
+
+    Un'applicazione differenziabile, biiettiva e con inversa differenziabile è detta \emph{diffeomorfismo}.
+}
+\osservazione{
+    La buona definizione di questa definizione segue dalla successiva proposizione.
+}
+\proposizione{jskdjhsfkjhcakjhdvcbloeiruhfcalfs}{
+    Sia $F: M \longrightarrow N$ un'applicazione fra varietà, differenziabile in $p \in M$. Allora per ogni carta $(\tilde{U}, \tilde{\varphi})$ in $p$ e ogni carta $(\tilde{V}, \tilde{\psi})$ in $F(p)$ la composizione $\tilde{\psi} \circ F \circ \tilde{\varphi}^{-1}$ è differenziabile in $\tilde{\varphi}(p)$.
+}
+\proposizione{jnkjnkjnjdjdj}{
+    Se $ M, N, P $ sono varietà differenziabili e \begin{equation*}
+        F: M \longrightarrow N,\quad G: N \longrightarrow P 
+    \end{equation*}sono mappe differenziabili, allora $ G\circ F: M \longrightarrow P $ è differenziabile.
+}
+
+\subsection{Vettori e spazio tangente}
+
+\definizione{
+    Sia $ M $ una varietà e $ p \in M $. Si definisce una relazione di equivalenza su \begin{equation*}
+        \set{(U,f): U\text{ intorno aperto di }p, f: U \longrightarrow \R\text{ differenziabile}}
+    \end{equation*}dove $ (U,f) \sim (V,g) $ se e solo se esiste $ W \subseteq U\cap V $ tale che $ \restriction{f}{W} = \restriction{g}{W} $.
+
+    L'insieme delle classi di equivalenza è denotato con $ C^{\infty}(p) $.
+}
+\paragrafo{Lemma}{%
+    Sia $ M $ una varietà e $ p \in M $. Siano $ \bm{f},\bm{g} \in C^{\infty}(p) $ due classi di equivalenza, e siano $ (U_1,f_1),(U_2,f_2) $ rappresentanti di $ \bm{f} $ e $ (V_1,g_1),(V_2,g_2) $ rappresentanti di $ \bm{g} $. Allora \begin{enumerate}
+        \item $ (U_1\cap V_1, f_1+g_1)\sim (U_2\cap V_2, f_2+g_2) $;
+        \item $ (U_1\cap V_1, f_1 \cdot g_1)\sim (U_2\cap V_2, f_2 \cdot g_2) $;
+        \item $ (U_1, \lambda f_1) \sim (U_2, \lambda f_2)$ per ogni $\lambda \in \R$;
+        \item $ f_1(p)=f_2(p) $.
+    \end{enumerate}
+}{}{}
+\osservazione{
+    Per $ \bm{f} \in C^{\infty}(p) $ rappresentato da $ (U,f) $ ha senso parlare di $ \bm{f}(p) \coloneqq f(p) $.
+}
+\definizione{
+    Si dota $ C^{\infty}(p) $ di somma, prodotto e prodotto per scalari. Siano $ \bm{f},\bm{g} \in C^{\infty}(p) $, con $ (U,f)$ rappresentante di $ \bm{f} $, $ (V,g) $ rappresentante di $ \bm{g} $. \begin{itemize}
+        \item $ \bm{f} + \bm{g} \in C^{\infty}(p) $ è rappresentata da $ (U\cap V, f+g) $;
+        \item $ \bm{f} \cdot \bm{g} \in C^{\infty}(p) $ è rappresentata da $ (U\cap V, f \cdot g) $;
+        \item $ \lambda \bm{f} \in C^{\infty}(p)$ rappresentato da $ (U,\lambda f)$ per ogni $\lambda \in \R$. 
+    \end{itemize}
+}
+\definizione{
+    Sia $ M $ una varietà e sia $ p \in M $. Una \emph{derivazione} su $ M $ in $ p $ è una applicazione $ \R $-lineare $ X: C^{\infty}(p) \longrightarrow \R $ tale che \begin{equation*}
+        X(\bm{f}\bm{g}) = X(\bm{f}) \bm{g}(p) + \bm{f}(p)X(\bm{g})
+    \end{equation*}per ogni $ \bm{f},\bm{g} \in C^{\infty}(p) $.
+}
+\definizione{
+    L'insieme delle derivazioni di $ M $ in $ p $ è detto \emph{spazio tangente} ad $ M $ in $ p $, ed è denotato con $ T_{p}M  $. I suoi elementi si dicono \emph{vettori tangenti} ad $ M $ in $ p $.
+}
+\osservazione{
+    $ T_{p}M  $ è uno spazio vettoriale reale.
+}
+\definizione{
+    Sia $ M $ una varietà differenziabile, $ p \in M $ e $ \varphi = (u_1,\dots,u_{n}) $ una carta. Si definiscono le derivazioni $ \pd{}{u_{i}} $ che agiscono su $ \bm{f} \in C^{\infty}(p) $ come \begin{equation*}
+        \dpd{\bm{f}}{u_{i} } \coloneqq \restriction{\dpd{f \circ \varphi^{-1}}{x_{i} }}{\varphi(p)}
+    \end{equation*}dove $ (U,f) $ è un rappresentante di $\bm{f}$.
+}
+\teorema{ksjnksjjdjdjcskjnsj}{
+    Sia $ M $ una varietà differenziabile, $ p \in M $ e $ \varphi = (u_1,\dots,u_{n}) $ una carta. L'insieme \begin{equation*}
+        \set{\dpd{}{u_1},\dots,\dpd{}{u_{n} }}
+    \end{equation*}è una base dello spazio vettoriale $ T_{p}M  $.
+}

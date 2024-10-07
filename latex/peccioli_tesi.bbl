@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{abate_geometria_2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=94324ab48bb5e1487b3cf6df25b5e301}{%
+           family={Abate},
+           familyi={A\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0b55466a201ce77f742c52e2829b4fa8}{%
+           family={Tovena},
+           familyi={T\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Milano}%
+      }
+      \list{publisher}{1}{%
+        {Springer Milan}%
+      }
+      \strng{namehash}{69eec2008394a08f1fd3b31b841aa43b}
+      \strng{fullhash}{69eec2008394a08f1fd3b31b841aa43b}
+      \strng{bibnamehash}{69eec2008394a08f1fd3b31b841aa43b}
+      \strng{authorbibnamehash}{69eec2008394a08f1fd3b31b841aa43b}
+      \strng{authornamehash}{69eec2008394a08f1fd3b31b841aa43b}
+      \strng{authorfullhash}{69eec2008394a08f1fd3b31b841aa43b}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometria Differenziale}
+      \true{nocite}
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-88-470-1920-1
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-88-470-1920-1
+      \endverb
+    \endentry
     \entry{andretta_elements_2022}{book}{}
       \name{author}{1}{}{%
         {{hash=37200efe788456eb9c1fdee8ec0fabd4}{%

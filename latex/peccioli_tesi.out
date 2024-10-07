@@ -3,37 +3,40 @@
 \BOOKMARK [2][]{subsection.1.1.1}{Logica del prim'ordine}{section.1.1}% 3
 \BOOKMARK [2][]{subsection.1.1.2}{Assioma della scelta}{section.1.1}% 4
 \BOOKMARK [1][]{section.1.2}{Prerequisiti di Geometria Differenziale}{chapter.1}% 5
-\BOOKMARK [0][]{chapter.2}{Campo dei reali non standard}{}% 6
-\BOOKMARK [1][]{section.2.1}{Costruzione degli iperreali}{chapter.2}% 7
-\BOOKMARK [2][]{subsection.2.1.1}{Prodotto di \040L -strutture}{section.2.1}% 8
-\BOOKMARK [2][]{subsection.2.1.2}{Filtri e ultrafiltri}{section.2.1}% 9
-\BOOKMARK [2][]{subsection.2.1.3}{Ultraprodotto di \040L -strutture}{section.2.1}% 10
-\BOOKMARK [2][]{subsection.2.1.4}{Iperreali come ultraprodotto}{section.2.1}% 11
-\BOOKMARK [1][]{section.2.2}{Gli iperreali}{chapter.2}% 12
-\BOOKMARK [2][]{subsection.2.2.1}{Struttura di campo ordinato di \040*toR*toR*toR*toR.}{section.2.2}% 13
-\BOOKMARK [2][]{subsection.2.2.2}{Finiti ed infinitesimi}{section.2.2}% 14
-\BOOKMARK [2][]{subsection.2.2.3}{Insiemi e funzioni non standard}{section.2.2}% 15
-\BOOKMARK [2][]{subsection.2.2.4}{Continuit\340 e derivabilit\340}{section.2.2}% 16
-\BOOKMARK [2][]{subsection.2.2.5}{Elementi interni}{section.2.2}% 17
-\BOOKMARK [2][]{subsection.2.2.6}{Numeri naturali e loro estensione}{section.2.2}% 18
-\BOOKMARK [0][]{chapter.3}{Universo matematico e controparte non standard}{}% 19
-\BOOKMARK [1][]{section.3.1}{Universo matematico}{chapter.3}% 20
-\BOOKMARK [1][]{section.3.2}{Linguaggio del prim'ordine}{chapter.3}% 21
-\BOOKMARK [1][]{section.3.3}{Costruzione dell'universo non standard come ultraprodotto}{chapter.3}% 22
-\BOOKMARK [2][]{subsection.3.3.1}{Ultraprodotto ridotto.}{section.3.3}% 23
-\BOOKMARK [1][]{section.3.4}{Teorema di \225os}{chapter.3}% 24
-\BOOKMARK [1][]{section.3.5}{Immersione elementare}{chapter.3}% 25
-\BOOKMARK [1][]{section.3.6}{Teorema esistenziale}{chapter.3}% 26
-\BOOKMARK [1][]{section.3.7}{Correlazione con gli iperreali}{chapter.3}% 27
-\BOOKMARK [0][]{chapter.4}{Variet\340 differenziabili}{}% 28
-\BOOKMARK [1][]{section.4.1}{Prevettori}{chapter.4}% 29
-\BOOKMARK [1][]{section.4.2}{Campi di prevettori}{chapter.4}% 30
-\BOOKMARK [2][]{subsection.4.2.1}{Condizioni di regolarit\340}{section.4.2}% 31
-\BOOKMARK [1][]{section.4.3}{Propriet\340 globali dei campi di prevettori}{chapter.4}% 32
-\BOOKMARK [1][]{section.4.4}{Flusso di un campo di prevettori}{chapter.4}% 33
-\BOOKMARK [2][]{subsection.4.4.1}{Dipendenza dalle condizioni iniziali e dal campo di prevettori}{section.4.4}% 34
-\BOOKMARK [2][]{subsection.4.4.2}{Il campo di prevettori rappresentativo canonico}{section.4.4}% 35
-\BOOKMARK [1][]{section.4.5}{Parentesi di Lie}{chapter.4}% 36
-\BOOKMARK [2][]{subsection.4.5.1}{Propriet\340 fondamentali}{section.4.5}% 37
-\BOOKMARK [2][]{subsection.4.5.2}{Relazione con le parentesi di Lie classiche}{section.4.5}% 38
-\BOOKMARK [1][]{section.4.6}{Conclusione}{chapter.4}% 39
+\BOOKMARK [2][]{subsection.1.2.1}{Variet\340 differenzabili}{section.1.2}% 6
+\BOOKMARK [2][]{subsection.1.2.2}{Funzioni differenziabili tra variet\340}{section.1.2}% 7
+\BOOKMARK [2][]{subsection.1.2.3}{Vettori e spazio tangente}{section.1.2}% 8
+\BOOKMARK [0][]{chapter.2}{Campo dei reali non standard}{}% 9
+\BOOKMARK [1][]{section.2.1}{Costruzione degli iperreali}{chapter.2}% 10
+\BOOKMARK [2][]{subsection.2.1.1}{Prodotto di \040L -strutture}{section.2.1}% 11
+\BOOKMARK [2][]{subsection.2.1.2}{Filtri e ultrafiltri}{section.2.1}% 12
+\BOOKMARK [2][]{subsection.2.1.3}{Ultraprodotto di \040L -strutture}{section.2.1}% 13
+\BOOKMARK [2][]{subsection.2.1.4}{Iperreali come ultraprodotto}{section.2.1}% 14
+\BOOKMARK [1][]{section.2.2}{Gli iperreali}{chapter.2}% 15
+\BOOKMARK [2][]{subsection.2.2.1}{Struttura di campo ordinato di \040*toR*toR*toR*toR.}{section.2.2}% 16
+\BOOKMARK [2][]{subsection.2.2.2}{Finiti ed infinitesimi}{section.2.2}% 17
+\BOOKMARK [2][]{subsection.2.2.3}{Insiemi e funzioni non standard}{section.2.2}% 18
+\BOOKMARK [2][]{subsection.2.2.4}{Continuit\340 e derivabilit\340}{section.2.2}% 19
+\BOOKMARK [2][]{subsection.2.2.5}{Elementi interni}{section.2.2}% 20
+\BOOKMARK [2][]{subsection.2.2.6}{Numeri naturali e loro estensione}{section.2.2}% 21
+\BOOKMARK [0][]{chapter.3}{Universo matematico e controparte non standard}{}% 22
+\BOOKMARK [1][]{section.3.1}{Universo matematico}{chapter.3}% 23
+\BOOKMARK [1][]{section.3.2}{Linguaggio del prim'ordine}{chapter.3}% 24
+\BOOKMARK [1][]{section.3.3}{Costruzione dell'universo non standard come ultraprodotto}{chapter.3}% 25
+\BOOKMARK [2][]{subsection.3.3.1}{Ultraprodotto ridotto.}{section.3.3}% 26
+\BOOKMARK [1][]{section.3.4}{Teorema di \225os}{chapter.3}% 27
+\BOOKMARK [1][]{section.3.5}{Immersione elementare}{chapter.3}% 28
+\BOOKMARK [1][]{section.3.6}{Teorema esistenziale}{chapter.3}% 29
+\BOOKMARK [1][]{section.3.7}{Correlazione con gli iperreali}{chapter.3}% 30
+\BOOKMARK [0][]{chapter.4}{Variet\340 differenziabili}{}% 31
+\BOOKMARK [1][]{section.4.1}{Prevettori}{chapter.4}% 32
+\BOOKMARK [1][]{section.4.2}{Campi di prevettori}{chapter.4}% 33
+\BOOKMARK [2][]{subsection.4.2.1}{Condizioni di regolarit\340}{section.4.2}% 34
+\BOOKMARK [1][]{section.4.3}{Propriet\340 globali dei campi di prevettori}{chapter.4}% 35
+\BOOKMARK [1][]{section.4.4}{Flusso di un campo di prevettori}{chapter.4}% 36
+\BOOKMARK [2][]{subsection.4.4.1}{Dipendenza dalle condizioni iniziali e dal campo di prevettori}{section.4.4}% 37
+\BOOKMARK [2][]{subsection.4.4.2}{Il campo di prevettori rappresentativo canonico}{section.4.4}% 38
+\BOOKMARK [1][]{section.4.5}{Parentesi di Lie}{chapter.4}% 39
+\BOOKMARK [2][]{subsection.4.5.1}{Propriet\340 fondamentali}{section.4.5}% 40
+\BOOKMARK [2][]{subsection.4.5.2}{Relazione con le parentesi di Lie classiche}{section.4.5}% 41
+\BOOKMARK [1][]{section.4.6}{Conclusione}{chapter.4}% 42

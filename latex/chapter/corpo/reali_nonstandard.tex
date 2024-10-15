@@ -227,8 +227,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture (con dominio, rispettivamente, $ A_{i}  $) indicizzata su $ I \neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. Per ogni $ \mathcal{L} $-termine $ t(x_1,\dots,x_{n} ) $ ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{n}} ,\sequence{b_{i} } \in \prod_{i \in I}A_{i}   $\begin{gather*}
         t^{\mathcal{M}}\left(\left[\sequence{a_{i}^{1}}\right],\dots,\left[\sequence{a_{i}^{k}}\right]\right)=\left[\sequence{b_{i} }\right]\\ 
         \text{se e solo se}\\ 
-        \left\{i \in I: t^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} \right\} \in \mathcal{U};
+        X \coloneqq  \left\{i \in I: t^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} \right\} \in \mathcal{U}
     \end{gather*}
+    dove $ \mathcal{M} \coloneqq \prod_{i \in I} \mathcal{A}_i  $.
 }
 \dimframmento{doijcoijdijcijijoijoijoijcoaijoijoijoij}{
     Si dimostra per induzione sulla complessità del termine. \begin{itemize}
@@ -243,7 +244,29 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         
         Sia dunque $ t(x_1,\dots,x_{n}) $ il termine \begin{equation*}
             f\left(t_1(x_1,\dots,x_{n} ), \dots, t_{k}(x_1,\dots,x_{n} ) \right).
-        \end{equation*} \commento{Non sono riuscito a terminare questa dimostrazione}
+        \end{equation*}Siano ora $ \sequence{c^{1}_i},\dots,\sequence{c^{k}_i} \in \prod_{i \in I} A_{i} $ tali per cui \begin{equation*}
+            \forall\, j = 1,\dots,k,\quad t_{j}^{\mathcal{M}} \left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{c^{\, j}_i }\right].
+        \end{equation*}Per ipotesi induttiva, se \begin{equation*}
+            X_{j} \coloneqq \set{i \in I: T_{j}^{\mathcal{A}_i}(a^{1}_i,\dots,a^{n}_i) = c^{\, j}_i } 
+        \end{equation*}si ha che $ X_{j} \in \mathcal{U}  $, $ \forall\, j = 1,\dots,k $.
+
+        $t^{\mathcal{M}}\left(\left[\sequence{a_{i}^{1}}\right],\dots,\left[\sequence{a_{i}^{k}}\right]\right)=\left[\sequence{b_{i} }\right]$ se e solo se \begin{equation*}
+            f^{\mathcal{M}}\left(t_1^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right),\dots,t_k^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right)\right) = \left[\sequence{b_{i} }\right].
+        \end{equation*}Per la defininizione dei $ \left[\sequence{c_{i}^{\, j} }\right] $, questo è verificato se e solo se \begin{equation*}
+            f^{\mathcal{M}}\left(
+                \left[\sequence{c_{i}^{1} }\right],\dots, \left[\sequence{c_{i}^{k} }\right]
+            \right) = \left[\sequence{b_{i} }\right].
+        \end{equation*}e questo è verificato, per definizione di ultraprodotto, se e solo se \begin{equation*}
+            X' \coloneqq \set{i \in I : f^{\mathcal{A}_i}\left(c^{1}_i,\dots,c^{k}_i\right)=b_{i} } \in \mathcal{U}.
+        \end{equation*}
+
+        Dunque, se $ X \in \mathcal{U} $, allora $ X \cap \bigcap_{j=1}^{k} X_{j} \in \mathcal{U}   $, e \begin{equation*}
+            X \cap \bigcap_{j=1}^{k} X_{j} \in \mathcal{U} \subseteq X'
+        \end{equation*}e dunque $ X' \in \mathcal{U} $. 
+
+        Viceversa, se $ X' \in \mathcal{U} $, allora \begin{equation*}
+            X' \cap \bigcap_{j=1}^{k} X_{j} \subseteq X  
+        \end{equation*}e dunque $ X \in \mathcal{U} $.\qed
         % Fissati $ \sequence{a^{1}_i},\dots,\sequence{a^{n}_i}, \sequence{b_{i} } \in \prod_{i \in I} A_{i}  $, si dimostrerà che \begin{equation*}
         %     t^{\mathcal{M}}\left(\left[\sequence{a^{1}_i}\right],\dots,\left[\sequence{a^{n}_i}\right]\right) = \left[\sequence{t^{\mathcal{A}_i}\left(a^{1}_i,\dots,a^{n}_i\right)}\right].
         % \end{equation*}Questo corrisponde alla tesi.

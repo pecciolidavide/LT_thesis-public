@@ -72,8 +72,8 @@
 \newcommand{\hdrnew}[1]{
 	\fancyhead{} % cancella tutti i campi
 	\fancyfoot{}
-	\fancyhead[RE]{#1}
-	\fancyhead[LO]{\nouppercase{\leftmark}}
+	\fancyhead[LE]{#1}
+	\fancyhead[RO]{\nouppercase{\leftmark}}
 	% \fancyfoot[LE,RO]{\thepage}
 	\fancyfoot[C]{\thepage}
 	% \fancyfoot[CO,RE]{Per: Dean A. Smith}
@@ -211,7 +211,7 @@
 \newcommand{\stampairiferimenti}{%Questo comando va lanciato alla fine, e stampa tutti i riferimenti necessari
 	\setcounter{variabile}{0}
 	\cleardoublepage
-	%\stepcounter{capitoloeccolo}%TODO capire se serve
+	%\stepcounter{capitoloeccolo}
 	\chapter*{Riferimenti in bibliografia}
 	\begin{itemize}
 		\whiledo{\thevariabile < \theRiferimentinum}{\stepcounter{variabile}\item \textbf{\Riferimentiname(\thevariabile):} \Riferimentipoint(\thevariabile).}

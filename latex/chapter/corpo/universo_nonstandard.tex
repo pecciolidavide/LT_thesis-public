@@ -291,7 +291,7 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
         \item se $ m=0 $, allora $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) = \sequence{a_{n} }_{\mathcal{U}}$;
         \item se $ m\ge 1 $, allora si pone \begin{equation*}
             \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) = \set{
-                \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right): \sequence{b_{n} } \in V_{m-1}(X)^{\N} \text{ e }\sequence{b_{n}}_{\mathcal{U}} \nonstandard{\in} \sequence{a_{n} }_{\mathcal{U}}
+                \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right): \sequence{b_{n} }_{\mathcal{U}} \in V_{m-1}(X)^{\N} /\mathcal{U}\text{ e }\sequence{b_{n}}_{\mathcal{U}} \nonstandard{\in} \sequence{a_{n} }_{\mathcal{U}}
             }.
         \end{equation*}
     \end{enumerate}
@@ -315,7 +315,7 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
         \end{equation*}che sono diversi per ipotesi.
         \item Se $ m'=0 $ e $ m\ge 1 $, allora $ b_{n} \in X  $ mentre $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ per ogni $ n \in \N $. Allora $ \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right) = \sequence{b_{n} }_{\mathcal{U}} \in \nonstandard{X}$, mentre $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq V(\nonstandard{X})$ per costruzione. Per definizione di insieme base, \begin{equation*}
             \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right) \cap V(\nonstandard{X}) = \emptyset
-        \end{equation*}dunque, se per assurdo $ \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right) = \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intesezione conterrebbe $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \neq \emptyset $. \commento{Sono sicuro che questo insieme sia non vuoto poiché sarebbe esattamente uguale ad un elemento di $ \nonstandard{X} $?}
+        \end{equation*}dunque, se per assurdo $ \hslash\left(\sequence{b_{n} }_{\mathcal{U}}\right) = \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intesezione conterrebbe $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \neq \emptyset $.
         \item Se $ m=m'\ge 1 $, allora per ogni $ n $: $ a_{n}, b_{n}  \in V_{m}(X)\setminus V_{m-1}(X)$ e quindi, per costruzione \begin{equation*}
             a_{n} \subseteq V_{m-1}(X),\quad b_{n} \subseteq V_{m-1}(X).    
         \end{equation*}Inoltre, se $ n \in T $, allora $ a_{n}\neq b_{n}   $, e dunque esiste $ z \in V_{m-1}(X) $ tale per cui $ z \in a_{n}\setminus b_{n} $ oppure $ z \in b_{n}\setminus a_{n}$. Sia $ c_{n}\coloneqq z $. 
@@ -370,14 +370,40 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
 }
 \dimostrazioneprop{dcsdscsdcsdcsdcsdcsdcsdcs}{
     \begin{enumerate}
-        \item \commento{Non sono riuscito a trovare una dimostrazione per questo fatto.}% Si dimostra per induzione su $ m \in \N $. 
+        \item Si dimostra per induzione su $ m \in \N $. 
         
-        % Si consideri il caso $ m=0 $: per costruzione $ V_0(\nonstandard{X}) = \nonstandard{X} $ e, per definizione di $ \hslash $ e di $ \nonstandard{V(X)} $ si ha che $ \nonstandard{X} \subseteq \nonstandard{V(X)} $. Pertanto \begin{equation*}
-        %     \nonstandard{V(X)}\cap V_0(\nonstandard{X}) = \nonstandard{X}.
-        % \end{equation*}Allo stesso modo $ \nonstandard{V_0(X)} $ è definito come \begin{align*}
-        %     \nonstandard{V_0(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{U}}: \sequence{a_{n} }_{\mathcal{U}} \in V_0(X)^{\N}/\mathcal{U}\right)}\\ 
-        %     &= \set{\sequence{a_{n}}_{\mathcal{U}}:\sequence{a_{n} }_{\mathcal{U}} \in X^{\N}/\mathcal{U}} = \nonstandard{X}.
-        % \end{align*}Si è quindi dimostrato il caso base. 
+        \begin{itemize}
+            \item \emph{Caso base.} Sia $ m=0 $: per costruzione $ V_0(\nonstandard{X}) = \nonstandard{X} $ e, per definizione di $ \hslash $ e di $ \nonstandard{V(X)} $ si ha che $ \nonstandard{X} \subseteq \nonstandard{V(X)} $. Pertanto \begin{equation*}
+                \nonstandard{V(X)}\cap V_0(\nonstandard{X}) = \nonstandard{X}.
+            \end{equation*}Allo stesso modo $ \nonstandard{V_0(X)} $ è definito come \begin{align*}
+                \nonstandard{V_0(X)} &= \set{\hslash\left(\sequence{a_{n} }_{\mathcal{U}}: \sequence{a_{n} }_{\mathcal{U}} \in V_0(X)^{\N}/\mathcal{U}\right)}\\ 
+                &= \set{\sequence{a_{n}}_{\mathcal{U}}:\sequence{a_{n} }_{\mathcal{U}} \in X^{\N}/\mathcal{U}} = \nonstandard{X}.
+            \end{align*}
+            \item \emph{Ipotesi induttiva.} Si supponga che $ \nonstandard{V_{m-1}}(X) = \nonstandard{V(X)}\cap V_{m-1}(\nonstandard{X})$ per $ m\ge 1 $. Si vuole dimostrare che \begin{equation*}
+                \nonstandard{V_{m}}(X) = \nonstandard{V(X)}\cap V_{m}(\nonstandard{X})
+            \end{equation*}\begin{itemize}
+                \item In particolare, si ha che \begin{align*}
+                    \nonstandard{V_{m}(X) } &= \hslash \left(V_{m}(X)^{\N}/\mathcal{U} \right)\\ & \subseteq \hslash\left(V(X)^{\N}_{\bounded}/\mathcal{U}\right) = \nonstandard{V(X)}
+                \end{align*}dove l'inclusione è dettata dal fatto che $ {V_{m}}(X)^{\N} \subseteq  V(X)^{\N}_{\bounded}$. Inoltre, $ \nonstandard{V_{m}(X) }  \subseteq V_{m}(\nonstandard{X})$, per l'osservazione \framref{dkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad}. Pertanto \begin{equation*}
+                    \nonstandard{V_{m}}(X) \subseteq \nonstandard{V(X)}\cap V_{m}(\nonstandard{X})
+                \end{equation*}
+                \item Sia $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in \nonstandard{V(X)}\cap V_{m}(\nonstandard{X})$, per qualche $ \sequence{a_{n}}_{\mathcal{U}} \in V(X)^{\N}_{\bounded} $. 
+                
+                In particolare, $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in V_{m}(\nonstandard{X}) = V_{m-1}(X)\cup \parti{V_{m-1}(X) } $. 
+
+                Se $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in V_{m-1}(\nonstandard{X}) $, allora \begin{equation*}
+                    \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in V_{m-1}(\nonstandard{X})\cap \nonstandard{V(X)} = \nonstandard{V_{m-1}(X) }
+                \end{equation*}per ipotesi induttiva. Allora, poiché $ \nonstandard{V_{m-1}(X) } \subseteq \nonstandard{V_{m}(X) } $, si ha \begin{equation*}
+                    \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in \nonstandard{V_{m}(X) }.
+                \end{equation*}
+
+                Se invece $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq V_{m-1}(\nonstandard{X}) $, per costruzione se $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \neq \sequence{a_{n}}_{\mathcal{U}} $\footnote{Se per assurdo si avesse $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) = \sequence{a_{n}}_{\mathcal{U}} $, si avrebbe $ \sequence{a_{n}}_{\mathcal{U}} $ totalmente di tipo $ 0 $, e dunque $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \not\subseteq V_{m-1}(\nonstandard{X}) $.}, allora \begin{equation*}
+                    \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq V_{m-1}(\nonstandard{X}) \cap \nonstandard{V(X)}.
+                \end{equation*}Dunque $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, e pertanto $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \in \nonstandard{V_{m}(X) } $. Infatti, se $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, allora \begin{equation*}
+                    \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) = \set{\hslash\left(\sequence{c_{n} }_{\mathcal{U}}\right): \sequence{c_{n}} \in K \subseteq V_{m-1}(X)^{\N} }
+                \end{equation*}e dunque per il lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} $ \sequence{c_{n} }_{\mathcal{U}} \mathrel{\nonstandard{\in}} \sequence{a_{n}}_{\mathcal{U}} $, e quindi, per il lemma \framref{dkjnckjdkckjndjckjndjckkjnckjs}, $ \sequence{a_{n}}_{\mathcal{U}} \in V_{m}(X)^{\N}_{\mathcal{U}}  $.
+            \end{itemize}
+        \end{itemize} 
 
         \item Si ricorda che \begin{equation*}
             \nonstandard{V_{m+1}(X) } = \set{\hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) : \sequence{a_{n} }_{\mathcal{U}} \in V_{m+1}(X)^{\N}/\mathcal{U} }
@@ -407,7 +433,7 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
 \section{Teorema esistenziale}
 \teorema{dkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn}{
-    Sia $ X $ un insieme base, e $ V(X) $ l'universo matematico costruito su $ X $. Esiste una estensione non standard $ \nonstandard{V(X)} $ di $ V(X) $.
+    Sia $ X $ un insieme base infinito, e $ V(X) $ l'universo matematico costruito su $ X $. Esiste una estensione non standard $ \nonstandard{V(X)} $ di $ V(X) $.
 }
 \dimostrazione{dkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn}{
     Si nota innanzitutto che per la proposizione \framref{dcsdscsdcsdcsdcsdcsdcsdcs}, $ \nonstandard{V(X)} $ è un sotto universo di $ V(\nonstandard{X}) $, ed inoltre, per costruzione, $ \nonstandard{V(X)} \subseteq V(\nonstandard{X}) $.
@@ -433,11 +459,16 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
     Resta da dimostrare che $ X \subsetneqq \nonstandard{X} $, ovvero che esista $ y \in \nonstandard{X} $ tale per cui $ y\neq \nonstandard{x} $ per ogni $ x \in X $. 
 
-    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in \nonstandard{X} $. \commento{Questo non necessità l'ipotesi che $ X $ sia un insieme infinito? Questa ipotesi deriva dal fatto che $ X $ sia un insieme base?}
+    Siano $ a_0,a_1,\dots $ infiniti elementi di $ X $, tutti distinti tra loro, e sia $ \sequence{a_{n} } \in X^{\N} $. Sia dunque $ \xi = \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in \nonstandard{X} $.
 
     Si dimostra ora che se $ x \in X $, allora $ \xi\neq \nonstandard{x} $: per definizione significa dimostrare che $ \sequence{a_{n} }\not\sim \sequence{x} $, ovvero che $ N={n \in \N: a_{n}\neq x } \in \mathcal{U} $. 
 
     È evidente però che $ N $ contiene tutti i numeri naturali tranne al più l'unico indice $ n_0 $ tale per cui $ a_{n_0}= x  $ (poiché gli $ a_i $ sono tutti distinti). Dunque $ N \in  \mathcal{U} $.\qed
+}
+\osservazione{
+    L'ipotesi di infinitezza di $ X $, nel teorema precedente, è necessaria: infatti, esistono insieme base finiti, come \begin{equation*}
+        \set{\set{\emptyset}}.
+    \end{equation*}
 }
 
 \osservazione{
@@ -527,7 +558,7 @@ In particolare, si dimostra la seguente proposizione.
                     \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \sequence{g^{1}_n}_{\mathcal{U}}&\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} 
                 \end{aligned}
             }
-        \end{align*}\commento{Mi sembra un modo molto macchinoso e che non conduce da nessuna parte.}
+        \end{align*}\commento{Mi sembra un modo molto macchinoso e che non conduce da nessuna parte.} %TODO risolvere
     \end{enumerate}
 }
 

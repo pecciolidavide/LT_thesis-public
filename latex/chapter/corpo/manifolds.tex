@@ -461,11 +461,11 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
         G(a)-G(a+v)\prec \lambda \norma{v}.
     \end{equation*}I casi sono due\footnote{Vedi osservazione \framref{djknckjnsjdjdjcskjnskjnckjnskjnd}.} \begin{itemize}
         \item Se $ G(a)-G(a+v)\prec\prec \lambda\norma{v} $ la tesi è banalmente verificata.
-        \item Altrimenti si ha $ \lambda v \prec \norma{G(a)-G(a+v)} $, e dunque $ \lambda\norma{v}^{2}\prec \norma{v}\norma{G(a)-G(a+v)} $; inoltre, per ipotesi, poiché $ F $ è di classe $ D^{1}$: per ogni $ x $: \begin{equation*}
+        \item Altrimenti si ha $ \lambda v \prec \norma{G(a)-G(a+v)} $, e dunque \[\lambda\norma{v}^{2}\prec \norma{v}\norma{G(a)-G(a+v)};\]inoltre, per ipotesi, poiché $ F $ è di classe $ D^{1}$: per ogni $ x $: \begin{equation*}
             \Delta_{v,v}^{2}G(x) = \Delta_{v,v}^{2}  F(x) \prec \lambda\norma{v}^{2}.
-        \end{equation*}Quindi $ \Delta_{v,v}^{2}G(x)\prec \norma{G(a)-G(a+v)} $, e per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui} esiste $ m \in \nonstandard{ \N}$ tale che $ a+mv \in \hhalo{B} $ e \begin{equation*}
-            G(a)-G(a+v)\prec \norma{v}\norma{G(a)-G(a+mv)} \le \norma{v}\left(\norma{G(a)}+\norma{G(a+mv)}\right)\prec \norma{v}\lambda
-        \end{equation*}poiché $ F $ è un campo di prevettori, e dunque $ G(x)=F(x)-x\prec \lambda $ per ogni $ x $.\qed
+        \end{equation*}Quindi $ \Delta_{v,v}^{2}G(x)\prec \norma{G(a)-G(a+v)} $, e per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui} esiste $ m \in \nonstandard{ \N}$ tale che $ a+mv \in \hhalo{B} $ e {\begin{align*}
+            G(a)-G(a+v)&\prec \norma{v}\norma{G(a)-G(a+mv)} \\&\le \norma{v}\left(\norma{G(a)}+\norma{G(a+mv)}\right)\prec \norma{v}\lambda
+        \end{align*}}poiché $ F $ è un campo di prevettori, e dunque $ G(x)=F(x)-x\prec \lambda $ per ogni $ x $.\qed
     \end{itemize}
 }
 \paragrafo{Osservazione}{%
@@ -491,9 +491,10 @@ Si enunciano di seguito due risultati, che non saranno dimostrati, in merito all
 \dimostrazioneprop{lkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm}{
     \begin{enumerate}
         \item È conseguenza di 2, considerando $ G(a)=a $ per ogni $ a $. 
-        \item Sia \begin{equation*}
-            A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le n\lambda\text{ per ogni }a \in \nonstandard{B}\right\}. 
-        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill} esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
+        \item Sia $\displaystyle 
+            A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le n\lambda\text{ per ogni }a \in \nonstandard{B}\right\}$. 
+
+        Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill} esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
         \item Sia ora invece \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le \frac{\lambda}{n}\lambda\text{ per ogni }a \in \nonstandard{B}\right\}.
         \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill}\footnote{Posso applicarlo in quanto $ A $ è un insieme interno per il teorema \teoref{jdjdjjjjjjdjjjkjn}.} esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \prec\prec 1 $.\qed
@@ -565,7 +566,10 @@ Si enunciano di seguito due risultati, che non saranno dimostrati, in merito all
         \end{align*}Dunque, se per assurdo esistesse $ p \in B_1 $ non compreso in $ f(B_2) $, allora $ \restriction{f}{\partial B_2} $ sarebbe omotopicamente equivalente alla funzione costante, e pertanto questo sarebbe vero anche per l'inclusione di $ \partial B_2 $. Contraddizione. %ATOD capire il perché
     }: per ogni funzione $ f: B_2 \longrightarrow B_3 $, se $ \norma{f(x)-f(y)}\le 2\norma{x-y} $ per ogni $ x,y \in B_2 $ e $ \norma{f(x)-x}<s $ per ogni $ x \in B_2 $, allora $ f(B_2) \supseteq B_1 $.
 
-    Si ottiene dunque che per ogni funzione interna $ f: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $, se $ \norma{f(x)-f(y)}\le  2\norma{x-y} $ per ogni $ x,y \in \nonstandard{B_2} $ e $ \norma{f(x)-x}<s $ per ogni $ x \in \nonstandard{B_2} $, allora $ f(\nonstandard{B_2})\supseteq \nonstandard{B_1} $. Per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} un campo di prevettori $ D^{1} $ rispetta le ipotesi; pertanto la proposizione è dimostrata.\qed %ATOD capire
+    Si ottiene dunque che per ogni funzione interna $ f: \nonstandard{B_2} \longrightarrow \nonstandard{B_3} $, se \begin{align*}
+        \norma{f(x)-f(y)}&\le  2\norma{x-y} & \text{per ogni }x,y &\in \nonstandard{B_2},\\ 
+        \norma{f(x)-x}&<s & \text{per ogni } x & \in \nonstandard{B_2},
+    \end{align*}allora $ f(\nonstandard{B_2})\supseteq \nonstandard{B_1} $. Per la proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} un campo di prevettori $ D^{1} $ rispetta le ipotesi; pertanto la proposizione è dimostrata.\qed %ATOD capire
 }
 \teorema{lddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs}{
    Se $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ è un campo di prevettori di classe $ D^{1} $, allora \begin{equation*}
@@ -783,7 +787,10 @@ Si considerano due casi.
         \item \emph{Passo base.} Il passo base per $ n=1 $ è l'ipotesi \begin{equation*}
             \norma{\Delta^{2}_{v,w}F(a)} \le K \lambda\norma{v}\norma{w}
         \end{equation*}
-        \item \emph{Passo induttivo.} Si ipotizzi l'affermazione valga per $ n $. Sia $ p=F^{n}(a) $, $ x=F^{n}(a+v)-F^{n}(a) $, $ y=F^{n}(a+v)-F^{n}(a) $. Allora per la \eqref{eq:cosa2}:\begin{equation*}
+        \item \emph{Passo induttivo.} Si ipotizzi l'affermazione valga per $ n $. Sia $ p=F^{n}(a) $, \begin{align*}
+            x&=F^{n}(a+v)-F^{n}(a)\\
+            y&=F^{n}(a+v)-F^{n}(a).
+        \end{align*}Allora per la \eqref{eq:cosa2}:\begin{equation*}
             \norma{x}\le (1+K\lambda)^{n}\norma{v},\quad \norma{y}\le (1+K\lambda)^{n}\norma{w}
         \end{equation*}e, sfruttando l'ipotesi induttiva, \begin{align*}
             &\norma{F(p+x+y)- F^{n+1}(a+v+w)} \\
@@ -989,7 +996,7 @@ Si considerano due casi.
 
     Poichè $ G(x) = a = H(y) $, vale che \begin{equation*}
         \norma{G(x) - G(y)} = \norma{H(y)-G(y)} = \beta\lambda
-    \end{equation*}per qualche $ \beta \prec \prec 1 $ (poiché $ G\equiv H $). Poiché $ G $ è di classe $ D^{1} $: $ \norma{G(x)-G(y)-x+y} = K \lambda\norma{x-y} $ per qualche $ K \prec 1 $, e pertanto \begin{equation*}
+    \end{equation*}per qualche $ \beta \prec \prec 1 $ (poiché $ G\equiv H $). Poiché $ G $ è di classe $ D^{1} $:\[\norma{G(x)-G(y)-x+y} = K \lambda\norma{x-y}\]per qualche $ K \prec 1 $, e pertanto \begin{equation*}
         \norma{x-y} \le \norma{G(x)-G(y)-x+y} + \norma{G(x)-G(y)} = K\lambda\norma{x-y}+\beta\lambda
     \end{equation*}e, nello specifico $ (1-K\lambda)\norma{x-y} \le \beta\lambda $. Questo dimostra la tesi, in quanto \begin{equation*}
         \norma{x-y}\le \frac{\beta}{1-K\lambda}\lambda\prec\prec \lambda.\qedd

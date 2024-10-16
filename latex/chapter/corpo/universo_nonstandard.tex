@@ -87,6 +87,20 @@ In particolare, ogni formula sarà espressa nel linguaggio \begin{equation*}
         \exists\,x\, (x \in a \,\land\, \cdots) \quad &\leadsto \quad \exists\, x \in a: (\cdots).
     \end{align*}
 }
+
+Si riporta ora il lemma 4.4.4 di \cite{chang_model_2012}. 
+
+\paragrafo{Lemma}{%
+    Sia $ X $ un insieme base, e siano $ u,v,w, x_1,\dots,x_{n} \in V(X)  $. Allora esistono $ \varphi_{0},\dots,\varphi_{5} $ delle $ \in $-formule limitate tali per cui \begin{enumerate}
+        \item $ u = \emptyset $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{0}[u] $; 
+        \item $ u = \set{x_1,\dots,x_{n} } $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{1}[u,x_1,\dots,x_{n}] $;
+        \item $ u =\left(x_1,\dots,x_{n} \right) $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{2}[u,x_1,\dots,x_{n}]  $;
+        \item $ u \subseteq v $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{3}[u,v] $;
+        \item $ u = v\times w $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{4}[u,v,w] $;
+        \item $ u: v \longrightarrow w $ se e solo se $ \left(V(X), \in\right) \vDash \varphi_{5}[u,v,w] $.
+    \end{enumerate}
+}{dkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj}{}
+
 \section{Costruzione dell'universo non standard come ultraprodotto}
 
 \definizione{
@@ -173,7 +187,7 @@ Si possono ora definire delle classi di equivalenza: \begin{equation*}
 
 È quindi evidente il seguente corollario. 
 \paragrafo{Corollario}{%
-    Ogni elemento di $ V(X)^{\N}_{\bounded}/\mathcal{U} $ è nella forma $ \sequence{x_{n} }_{\mathcal{U}} $, dove $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui $ x_{n} \in V_{m}(X)\setminus V_{m-1}(X)$ per ogni $ n \in \N $.
+    Ogni elemento di $ V(X)^{\N}_{\bounded}/\mathcal{U} $ è nella forma $ \sequence{x_{n} }_{\mathcal{U}} $, dove \mbox{$ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $} è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui \[x_{n} \in V_{m}(X)\setminus V_{m-1}(X)\]per ogni $ n \in \N $.
 }{dkjncjskjncjskjndjcdjjjjjdjdjj}{}
 \definizione{
     Per $ \sequence{x_{n} }_{\mathcal{U}}, \sequence{y_{n} }_{\mathcal{U}} \in V(X)^{\N}_{\bounded}/\mathcal{U} $ si definisce una relazione binaria: \begin{equation*}
@@ -260,7 +274,7 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
 
         Se $ n \notin T_{\psi, \sequence{a_{n}},\sequence{b_{n}}}$, si scelga $ c_{n} \in V_{m-1}(X) $ in maniera arbitraria. 
 
-        Si è quindi costruita (utilizzando l'assioma della scalta) una successione $ \sequence{c_{n} } \in V_{m-1}(X)^{\N} \subseteq V(X)^{\N}_{\bounded}  $. Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $ allora $ n \in U_{\sequence{c_{n}}}  $, dunque \begin{equation*}
+        Si è quindi costruita (utilizzando l'assioma della scalta) una successione \[\sequence{c_{n} } \in V_{m-1}(X)^{\N} \subseteq V(X)^{\N}_{\bounded}.\]Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $ allora $ n \in U_{\sequence{c_{n}}}  $, dunque \begin{equation*}
             T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \subseteq U_{\sequence{c_{n}} } 
         \end{equation*}e pertanto $ U_{\sequence{c_{n} }} \in \mathcal{U} $.
     \qed\end{itemize}
@@ -284,7 +298,9 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
     \end{equation*}$\nonstandard{X}$ così definito è un insieme base\footnote{La dimostrazione di questo fatto può essere trovata nella sezione 17.2 di \cite{katz_true_nodate}.}.
 }
 \definizione{
-    Sia $ \hslash:V(X)^{\N}_{\bounded}/\mathcal{U} \longrightarrow V(\nonstandard{X})$ definita come segue. Sia $ \sequence{a_{n}}_{\mathcal{U}} \in V(X)^{\N}_{\bounded}/\mathcal{U}$; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
+    Sia $ \hslash:V(X)^{\N}_{\bounded}/\mathcal{U} \longrightarrow V(\nonstandard{X})$ definita come segue. 
+    
+    Sia \mbox{$ \sequence{a_{n}}_{\mathcal{U}} \in V(X)^{\N}_{\bounded}/\mathcal{U}$}; senza perdita di generalità si può considerare $ \sequence{a_{n} } $ totalmente di tipo $ m $, per qualche $ m $, ovvero tale per cui $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ (oppure $ a_{n} \in X $) per ogni $ n $. 
     
     $ \hslash $ è definita per induzione:
     \begin{enumerate}
@@ -296,7 +312,6 @@ In questa sezione si fornisce una versione modificata del teorema \teoref{dsoijs
         \end{equation*}
     \end{enumerate}
 }
-% \commento{Devo consultare un libro (Model Theory di Chang e Keisler, 1990) che non trovo in digitale ma ho prenotato in biblioteca in merito al "Mostowski collapse".}
 
 \paragrafo{Osservazione}{%
 Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $, allora $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in V_{m}(\nonstandard{X}) $.
@@ -397,7 +412,7 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
                     \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \in \nonstandard{V_{m}(X) }.
                 \end{equation*}
 
-                Se invece $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq V_{m-1}(\nonstandard{X}) $, per costruzione se $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \neq \sequence{a_{n}}_{\mathcal{U}} $\footnote{Se per assurdo si avesse $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) = \sequence{a_{n}}_{\mathcal{U}} $, si avrebbe $ \sequence{a_{n}}_{\mathcal{U}} $ totalmente di tipo $ 0 $, e dunque $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \not\subseteq V_{m-1}(\nonstandard{X}) $.}, allora \begin{equation*}
+                Se invece $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq V_{m-1}(\nonstandard{X}) $, per costruzione se $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \neq \sequence{a_{n}}_{\mathcal{U}} $\footnote{Se per assurdo si avesse $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) = \sequence{a_{n}}_{\mathcal{U}} $, si avrebbe $ \sequence{a_{n}}_{\mathcal{U}} $ totalmente di tipo $ 0 $, e dunque \[\hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \not\subseteq V_{m-1}(\nonstandard{X}).\]}, allora \begin{equation*}
                     \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq V_{m-1}(\nonstandard{X}) \cap \nonstandard{V(X)}.
                 \end{equation*}Dunque $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, e pertanto $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \in \nonstandard{V_{m}(X) } $. Infatti, se $ \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, allora \begin{equation*}
                     \hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right) = \set{\hslash\left(\sequence{c_{n} }_{\mathcal{U}}\right): \sequence{c_{n}} \in K \subseteq V_{m-1}(X)^{\N} }
@@ -407,11 +422,11 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
 
         \item Si ricorda che \begin{equation*}
             \nonstandard{V_{m+1}(X) } = \set{\hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) : \sequence{a_{n} }_{\mathcal{U}} \in V_{m+1}(X)^{\N}/\mathcal{U} }
-        \end{equation*}dunque la tesi è equivalente a mostrare che $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m}(X) } $ per $ \sequence{a_{n} }_{\mathcal{U}} \in V_{m+1}(X)^{\N}/\mathcal{U} $.\begin{align*}
+        \end{equation*}dunque la tesi è equivalente a mostrare che \[\hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m}(X) }\text{ per }\sequence{a_{n} }_{\mathcal{U}} \in V_{m+1}(X)^{\N}/\mathcal{U}.\]Scrivendo esplicitamente i due insiemi:\begin{align*}
             \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) &= \set{\hslash \left(\sequence{b_{n} }_{\mathcal{U}}\right): \sequence{b_{n} }_{\mathcal{U}} \mathrel{\nonstandard{\in}}\sequence{a_{n} }_{\mathcal{U}} \,\land\, \sequence{b_{n} } \in V_{m}(X)^{\N} }\\ 
             \nonstandard{V_{m}(X) } &= \set{\hslash\left(\sequence{c_{n} }_{\mathcal{U}}\right): \sequence{c_{n} }_{\mathcal{U}} \in V_{m}(X)^{\N}/\mathcal{U} }\\ 
-            &=\set{\hslash\left(\sequence{c_{n} }_{\mathcal{U}}\right): \sequence{c_{n} } \in V_{m}(X)^{\N} }
-        \end{align*}È evidente che $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m}(X) } $.
+            &=\set{\hslash\left(\sequence{c_{n} }_{\mathcal{U}}\right): \sequence{c_{n} } \in V_{m}(X)^{\N} },
+        \end{align*}è evidente che $ \hslash\left(\sequence{a_{n} }_{\mathcal{U}}\right) \subseteq \nonstandard{V_{m}(X) } $.
         \item Si ha che \begin{align*}
             \bigcup_{m \in \N} \nonstandard{V_{m}(X) } &= \bigcup_{m \in \N} \set{\hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right): \sequence{a_{n}}_{\mathcal{U}} \in V_{m}(X)^{\N}/\mathcal{U} }\\ 
             &=\bigcup_{m \in \N} \set{\hslash\left(\sequence{a_{n}}_{\mathcal{U}}\right): \sequence{a_{n}}\in V_{m}(X)^{\N} }\\ 
@@ -452,7 +467,7 @@ Dal lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatame
 
     Si è quindi dimostrata la validità del punto (I) della definizione. 
 
-    Per quanto riguarda il punto (II), se $ \phi(x^1,\dots,x^{k} ) $ è una $ \in $-formula limitata e $ a^{1},\dots,a^{k} \in V(X) $, allora \begin{itemize}
+    Per dimostrare il punto (II), se $ \phi(x^1,\dots,x^{k} ) $ è una $ \in $-formula limitata e \mbox{$ a^{1},\dots,a^{k} \in V(X) $}, allora \begin{itemize}
         \item $ \left(V(X),\in\right)\vDash\phi[a^{1},\dots,a^{k}] $ se e solo se $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{U}},\dots,\sequence{a^{k}}_{\mathcal{U}}\right] $ per il corollario \framref{djjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio};
         \item $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right)\vDash \phi\left[\sequence{a^{1}}_{\mathcal{U}},\dots,\sequence{a^{k}}_{\mathcal{U}}\right] $ se e solo se $ \left(\nonstandard{V(X)}, \in\right)\vDash \phi[\nonstandard{a^{1}},\dots, \nonstandard{a^{k}}] $, per il corollario \framref{dkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj}.
     \end{itemize}
@@ -529,18 +544,21 @@ In particolare, si dimostra la seguente proposizione.
                 a & n \notin C' 
             \end{cases}\qquad b_{n} \in A, \forall\, n \in \N
         \end{equation*}Poiché $ C' \in \mathcal{U}$, $ \sequence{a_{n} }_{\mathcal{U}} = \sequence{b_{n} }_{\mathcal{U}} $, e dunque $ \sequence{a_{n} }_{\mathcal{U}} \in \set{\sequence{u_{n} }_{\mathcal{U}}: u_{n} \in A, \forall\, n \in \N }  $.
-        \item Per costruzione, le funzioni vengono considerate come sottoinsiemi del prodotto cartesiano; pertanto, $ f \subseteq A \times \R $, mentre $ \nonstandard{f} \subseteq \nonstandard{A}\times \starR $. 
-        
-        La tesi equivale a richiedere che \begin{equation*}
+        \item Per il lemma \framref{dkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj}, $ \nonstandard{f}: \nonstandard{A} \longrightarrow \starR $. Poiché per il punto precedente \[\nonstandard{A} = \set{\sequence{a_{n}}_{\mathcal{U}}: u_{n} \in A, \forall\, n \in \N },\]
+        % Necessariamente, per il transfer principle e ricordando la definizione di $ \hslash $, si ha che \begin{equation*}
+        %     \set{\left(\sequence{a}_{\mathcal{U}}, \sequence{f(a)}_{\mathcal{U}}\right): a \in A} \subseteq \nonstandard{f}.
+        % \end{equation*}
+        % , mentre $ \nonstandard{f} \subseteq \nonstandard{A}\times \starR $. 
+        la tesi equivale a richiedere che \begin{equation*}
             \nonstandard{f} = \set{
                 \set{\set{\sequence{u_{n} }_{\mathcal{U}}}, \set{\sequence{u_{n} }_{\mathcal{U}}, \sequence{f(u_{n} ) }_{\mathcal{U}}}}: \sequence{u_{n} } \in A^{\N}
             }.
-        \end{equation*}Per il lemma 4.4.3 di \cite{chang_model_2012}, $ f \in V_3(\R) $. 
+        \end{equation*}Per l'osservazione \framref{dkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn}, $ f \in V_3(\R) $. 
         
-        Si scriva dunque in modo esplicito $ \nonstandard{f} $\begin{align*}\footnotesize
-            \nonstandard{f} &= \hslash \left(\sequence{f}_{\mathcal{U}}\right)\\ 
-            &= \set{\hslash\left(\sequence{g^{1}_n}_{\mathcal{U}}\right): \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} }\\ 
-            &= \set{\set{\hslash\left(\sequence{g^{2}_n}_{\mathcal{U}}\right): \sequence{g^{2}_n} \in V_{1}(\R)^{\N}, \sequence{g^{2}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}_{\mathcal{U}}}: \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} }\\ 
+        Si scriva dunque in modo esplicito $ \nonstandard{f} ${\small\begin{align}
+            \nonstandard{f} &= \hslash \left(\sequence{f}_{\mathcal{U}}\right)\notag\\ 
+            &= \set{\hslash\left(\sequence{g^{1}_n}_{\mathcal{U}}\right): \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} }\notag\\ 
+            &= \set{\set{\hslash\left(\sequence{g^{2}_n}_{\mathcal{U}}\right): \sequence{g^{2}_n} \in V_{1}(\R)^{\N}, \sequence{g^{2}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}_{\mathcal{U}}}: \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \sequence{g^{1}_n}_{\mathcal{U}}\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} }\notag\\ 
             &=%
             \set{%
                 \set{
@@ -557,8 +575,30 @@ In particolare, si dimostra la seguente proposizione.
                 \begin{aligned}
                     \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \sequence{g^{1}_n}_{\mathcal{U}}&\mathrel{\nonstandard{\in}}\sequence{f}_{\mathcal{U}} 
                 \end{aligned}
-            }
-        \end{align*}\commento{Mi sembra un modo molto macchinoso e che non conduce da nessuna parte.} %TODO risolvere
+            }\label{eq:funzione}
+        \end{align}}Innanzitutto si noti che \begin{equation*}
+            f = \set{\set{\set{u},\set{u,f(u)}}: u \in A} \in V_3(\R)
+        \end{equation*}Pertanto, se $ \sequence{g_{n}^{1} }_{\mathcal{U}} \mathrel{\nonstandard{\in}} \sequence{f}_{\mathcal{U}} $, allora per qualche $ I^{1} \in \mathcal{U} $, \begin{equation*}
+            g_{n}^{1} =  \set{\set{u_{n} },\set{u_{n} ,f(u_{n} )}},\quad \forall\, n \in I^{1}
+        \end{equation*}con $ u_{n} \in A  $.
+        
+        Per quanto riguarda $ \sequence{g_{n}^{2}} $, per definizione esiste $ I^{2} \in \mathcal{U} $ tale che $ g_{n}^{2} \in g_{n}^{1} $ per ogni $ n \in I^{2} $. Pertanto, \begin{equation*}
+            \forall\, n \in I^{1}\cap I^{2},\quad g_{n}^{2} = \set{u_{n}}\text{ oppure }g_{n}^{2} = \set{u_{n}, f(u_{n} ) }  
+        \end{equation*}Si osserva che $ I^{1}\cap I^{2} \in \mathcal{U} $.
+
+        Esiste inoltre per definizione $ I^{3} \in \mathcal{U} $ tale che $ g_{n}^{3} \in g_{n}^{2} $ per ogni $ n \in I^{3} $. Pertanto \begin{equation*}
+            \forall\, n \in I^{1}\cap I^{2}\cap I^{3},\quad g_{n}^{3} = u_{n}\text{ oppure }g_{n}^{3} = f(u_{n}).   
+        \end{equation*}dove $ I^{1}\cap I^{2}\cap I^{3} \in \mathcal{U}$. 
+        
+        Pertanto, applicando a \eqref{eq:funzione}, si ottiene proprio la tesi: \begin{equation*}
+            \nonstandard{f} = \set{
+                \set{
+                    \set{
+                        \sequence{u_{n}}_{\mathcal{U}}, \sequence{f(u_{n})}_{\mathcal{U}}
+                    }
+                }: \sequence{u_{n}} \in A^\N 
+            }\qedd
+        \end{equation*}
     \end{enumerate}
 }
 

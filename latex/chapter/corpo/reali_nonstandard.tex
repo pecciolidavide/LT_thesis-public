@@ -60,7 +60,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     Quando $ A_{i} =A $ per ogni $ i \in I $ si scriverà $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
 }{}{}
 \paragrafo{Prodotto di strutture}{%
-    Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture (con dominio, rispettivamente, $ A_{i}  $) indicizzata su $ I\neq \emptyset $. Il loro \emph{prodotto (diretto)} $ \prod_{i \in I} \mathcal{A}_{i} $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{i \in I} A_{i} $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
+    Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture (con dominio, rispettivamente, $ A_{i}  $) indicizzata su $ I\neq \emptyset $. Il loro \emph{prodotto (diretto)} $ \prod_{i \in I} \mathcal{A}_{i} $ è la \mbox{$\mathcal{L}$-struttura} $ \mathcal{M} $ con dominio $ \prod_{i \in I} A_{i} $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
         \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $, ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} \in\prod_{i \in I} A_{i}$ \[
             \left(\sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}}\right) \in R^{\mathcal{M}}\qquad \text{se e solo se}\qquad \left(a_{i}^{1}, \dots, a_{i}^{k}  \right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
         \]
@@ -345,7 +345,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
                 \end{cases} 
             \]e si ha che, necessariamente, \[
                 X_{\psi,\sequence{b_{i}}} = \left\{i \in I: \mathcal{A}_i\vDash \psi\left[b_{i} \right]\right\} \supseteq X_{\varphi} \in \mathcal{U}
-            \]e dunque $ X_{\psi,\sequence{b_{i}}} \in \mathcal{U}  $. Per ipotesi induttiva, $ \mathcal{M}\vDash\psi\left[\left[\sequence{b_{i} }\right]\right] $, e quindi $ \mathcal{M}\vDash \exists y\,\psi(y) $.\qed
+            \]e dunque $ X_{\psi,\sequence{b_{i}}} \in \mathcal{U}  $. Per ipotesi induttiva, $ \mathcal{M}\vDash\psi\left[\left[\sequence{b_{i} }\right]\right] $, e quindi \mbox{$ \mathcal{M}\vDash \exists y\,\psi(y) $}.\qed
         \end{itemize}
     \end{itemize}
 }
@@ -459,7 +459,7 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
             B\coloneqq\{i \in \N: r_{i}< 0 \} \in \mathcal{U},
         \end{equation*}ma $ B= \{i \in \N: -r_{i} = |r_{i}|  \} $ e pertanto $ |r| = -r = \left[\sequence{-r_{i}}\right]$.
     \end{itemize}
-}{}{}
+}{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn}{}
 \paragrafo{Notazione}{%
     Poiché è presente una inclusione naturale $ \R \hookrightarrow \starR $, non è necessario indicare con simboli diversi $ r \in R $ e $ \nonstandard{r} = \pi(r) \in \starR $. 
 
@@ -558,6 +558,9 @@ Le seguenti proprietà seguono dalle definizioni.
     \nonstandard{f}:\nonstandard{X} &\longrightarrow \starR \\
     \left[\sequence{a_{n}}\right] &\longmapsto \left[\sequence{f(u_{n} )}\right].
     \end{align*}
+}
+\osservazione{
+    La definizione di valore assoluto su $ \starR $ dell'osservazione \framref{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn} è effettivamente l'estensione su $ \starR $ della mappa reale $ x \mapsto |x| $.
 }
 
 \osservazione{

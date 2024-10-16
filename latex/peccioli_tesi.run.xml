@@ -79,7 +79,7 @@
       <file>peccioli_tesi.bcf</file>
     </requires>
     <requires type="editable">
-      <file>bibliografia.bib</file>
+      <file>frontbackmatter/bibliografia.bib</file>
     </requires>
   </external>
 </requests>

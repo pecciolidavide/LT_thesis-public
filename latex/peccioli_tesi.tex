@@ -1,8 +1,8 @@
 \documentclass[11pt, titlepage, twoside, a4paper]{book}
 
-\input{header_tesi.tex}
+\input{frontbackmatter/header_tesi.tex}
 
-\bibliography{bibliografia}
+\bibliography{frontbackmatter/bibliografia}
 
 \hypersetup{
     pdfauthor={Davide Peccioli},
@@ -25,7 +25,7 @@
 
 \frontmatter
 
-\input{chapter/titlepage.tex}
+\input{frontbackmatter/titlepage.tex}
 {\pagestyle{empty}
 \null\cleardoublepage}
 
@@ -45,12 +45,12 @@
 
 \mainmatter
 
-\input{chapter/introduzione.tex}
-\input{chapter/prerequisiti.tex}
+\input{mainmatter/introduzione.tex}
+\input{mainmatter/prerequisiti.tex}
 
-\input{chapter/corpo/reali_nonstandard.tex}
-\input{chapter/corpo/universo_nonstandard.tex}
-\input{chapter/corpo/manifolds.tex}
+\input{mainmatter/corpo/reali_nonstandard.tex}
+\input{mainmatter/corpo/universo_nonstandard.tex}
+\input{mainmatter/corpo/manifolds.tex}
 
 
 \backmatter
@@ -60,8 +60,3 @@
 
 \end{document}
 
-%% Cose da fare, in ordine
-% 1. Finire capitolo 4 sulle varietà differenziabili
-
-% 3. Correggere capitolo 2 dalle indicazioni del prof
-% 4. Finire capitolo 2 con le principali proprietà

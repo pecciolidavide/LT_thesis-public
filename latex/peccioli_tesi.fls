@@ -10,8 +10,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/header_tesi.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/header_tesi.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/header_tesi.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/header_tesi.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
@@ -560,14 +560,14 @@ INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli
 INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
 INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
 OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.out
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/titlepage.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/titlepage.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/titlepage.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/titlepage.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/logo.png
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/logo.png
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/logo.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
@@ -632,10 +632,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.t
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 OUTPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/introduzione.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/prerequisiti.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/prerequisiti.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/introduzione.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/introduzione.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/prerequisiti.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/prerequisiti.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -650,8 +650,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/reali_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/reali_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/reali_nonstandard.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
@@ -694,8 +694,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr7.tfm
@@ -719,8 +719,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/chapter/corpo/manifolds.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd

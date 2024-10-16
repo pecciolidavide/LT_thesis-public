@@ -332,7 +332,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definizione {3.29}.}{39}{section*.140}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Osservazione {3.30}.}{39}{section*.141}% 
+\contentsline {paragraph}{Osservazione {3.30}.}{40}{section*.141}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Lemma {3.31}.}{40}{section*.142}% 
 \defcounter {refsection}{0}\relax 

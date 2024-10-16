@@ -481,7 +481,10 @@
 % \tcbset{parskip/.style={before={\par\pagebreak[0]\parindent=0pt}, after={\par}}}
 \newcounter{teorema}
 \newcommand{\teorema}[3][]{
-	\begin{tcolorbox}[parbox=true, colback=white,colframe=white!20!black, sharpish corners, leftrule=1em, bottomrule=0pt, rightrule=0pt, bottom=0mm, top=-3mm, oversize, parbox=false]
+	\begin{tcolorbox}[parbox=true, colback=white,colframe=white!20!black, sharpish corners,  boxrule=1mm,
+	% leftrule=1em, bottomrule=0pt, rightrule=0pt, bottom=0mm, 
+	top=-2.5mm, 
+	oversize, parbox=false]
 	\ifx&#1&%
   		\paragrafo{Teorema}{%
 			#3

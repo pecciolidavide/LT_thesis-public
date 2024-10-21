@@ -5,18 +5,18 @@
 \definizione{
     Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
         \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
-        \item $ r \prec\prec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
+        \item $ r \pprec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
     \end{itemize}
 }
 \osservazione{
-    Questa definizione si estende naturalmente ad elementi di $ \starR^{n} $. In particolare, se $ v \in \starR^{n} $ e $ s \in \starR $, si adotta la seguente notazione: \begin{itemize}
+    Questa definizione si estende naturalmente ad elementi di $ \nonstandard{(\R^n)} $. In particolare, se $ v \in \nonstandard{(\R^n)} $ e $ s \in \starR $, si adotta la seguente notazione: \begin{itemize}
         \item $ v \prec s $ se $ \nonstandard{\norm{v}} \prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
-        \item $ v \prec\prec s $ se $ \nonstandard{\norm{v}} \prec\prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+        \item $ v \pprec s $ se $ \nonstandard{\norm{v}} \pprec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
     \end{itemize}
 
-    Se $ v, w \in \starR^{n} $, si scriverà $ v\approx w $ se $ v-w \prec\prec 1 $.
+    Se $ v, w \in \nonstandard{(\R^n)} $, si scriverà $ v\approx w $ se $ v-w \pprec 1 $.
 
-    In particolare, se $ v = (v_1,\dots,v_{n} ) \in \starR^{n} $, si ha che $ v \prec s $ oppure $ v \prec \prec s $ se e solo se ogni $ v_{i}  $ soddisfa $ v_{i} \prec s  $ oppure $ v_{i} \prec\prec s $. 
+    In particolare, se $ v = (v_1,\dots,v_{n} ) \in \nonstandard{(\R^n)} $, si ha che $ v \prec s $ oppure $ v \pprec s $ se e solo se ogni $ v_{i}  $ soddisfa $ v_{i} \prec s  $ oppure $ v_{i} \pprec s $. 
 }
 \osservazione{
     Poiché su $ \R^{n} $ tutte le norme sono equivalenti, la definizione precedente è ben posta.
@@ -25,7 +25,7 @@
 \paragrafo{Osservazione}{%
     Per ogni $ a,b \in \starR $, vale almeno una delle seguenti: \begin{itemize}
         \item $ a \prec b $; 
-        \item $ b\prec \prec a $.
+        \item $ b\pprec a $.
     \end{itemize}Infatti, se per assurdo esistessero $ a,b \in \starR $ tali per cui nessuna delle due fossero verificate, allora \begin{itemize}
         \item $ a/b $ è infinito,
         \item $ b/a $ non è infinitesimo,
@@ -47,6 +47,9 @@
             \hhalo{A} = \bigcup_{a \in A} \halo(a).
         \]
     \end{itemize} 
+}
+\osservazione{
+    Se $ M $ è una varietà differenziabile, e $ p \in M $, $ \halo(p) \subseteq \nonstandard{M} $ è l'insieme dei punti $ x \in \nonstandard{M} $ per i quali vi è un intorno coordinato $ U $ di $ p $ tale che $ x \in \nonstandard{U} $, e $ x \approx p $ in quelle date coordinate.
 }
 \proprieta{
     Per uno spazio topologico $ X $ (con estensione non standard $ \nonstandard{X} $) valgono le seguenti proprietà. \begin{enumerate}
@@ -84,14 +87,14 @@
         \item  Se $ f \in C^{1} $, allora per il transfer del teorema del valor medio, esiste $ x \in [a,b] $ tale che \begin{equation}
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{x} (b-a).\label{eq:1}
     \end{equation}Poiché le derivate parziali sono continue, si ha che\[
-            \forall\, y \approx a:\qquad D_{x}-D_{y} \prec\prec 1 
+            \forall\, y \approx a:\qquad D_{x}-D_{y} \pprec 1 
         \]dunque, manipolando \eqref{eq:1}: \[
             \nonstandard{f}(b)-\nonstandard{f}(a) = D_{y}(b-a) + (D_{x}-D_{y}  ) (b-a) 
         \] 
         
-        $\implies$ $ \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec\prec \norm{b-a} $.
+        $\implies$ $ \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \pprec \norm{b-a} $.
 
-        Se inoltre le derivate parziali sono Lipschitziane ed esiste $ \beta \prec\prec 1 $\footnote{cioè $ \beta $ infinitesimo} tale che \[
+        Se inoltre le derivate parziali sono Lipschitziane ed esiste $ \beta \pprec 1 $\footnote{cioè $ \beta $ infinitesimo} tale che \[
             \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
         \]allora vale la condizione più forte \[
             \nonstandard{f}(b)-\nonstandard{f}(a) - D_{y}(b-a) \prec \beta\norm{b-a}.
@@ -103,10 +106,10 @@
             \varphi: U & \longrightarrow \R^{n}\\
             x &\longmapsto \left(\varphi_{1}(x), \dots, \varphi_{n}(x)  \right)
         \end{align*}ottenendo così una condizione sulla matrice Jacobiana $ J_{a}  $ (composta dalle $ n $ righe $ D_{a}^{i}  $ corrispondenti alle $ \varphi_{i}  $): \[
-            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a)-J_{y}(b-a)\prec\prec \norm{b-a}\qquad\forall y \approx a 
+            \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a)-J_{y}(b-a)\pprec \norm{b-a}\qquad\forall y \approx a 
         \]
 
-        Se inoltre tutte le derivate parziali delle $ \varphi_{i}  $ sono Lipschitziane ed esiste $ \beta \prec\prec 1 $ tale che \[
+        Se inoltre tutte le derivate parziali delle $ \varphi_{i}  $ sono Lipschitziane ed esiste $ \beta \pprec 1 $ tale che \[
             \forall\, \xi \in [a,b]\qquad \norm{\xi-y}\prec \beta
         \]allora vale la condizione più forte \[
             \nonstandard{\varphi}(b)-\nonstandard{\varphi}(a) - J_{y}(b-a) \prec \beta\norm{b-a}.
@@ -145,7 +148,7 @@
 }
 \definizione{
     Si definisce una relazione di equivalenza $ \equiv $ in $ P_{a}M  $ come segue: \[
-        (a,x) \equiv (a,y) \qquad \text{se e solo se}\qquad \nonstandard{f}(y)-\nonstandard{f}(x)\prec \prec \lambda
+        (a,x) \equiv (a,y) \qquad \text{se e solo se}\qquad \nonstandard{f}(y)-\nonstandard{f}(x)\pprec \lambda
     \]per ogni funzione differenziabile $ f: M \longrightarrow \R $.
 
     L'insieme delle classi di equivalenza $ P_{a}M/\equiv  $ si denoterà con $ T_{a}(M)  $.
@@ -157,7 +160,7 @@
     Sia $ a \in \hhalo{M} $, e siano $ x,y \in \hhalo{M} $. Sono fatti equivalenti: \begin{enumerate}
         \item $ (a,x) \equiv (a,y) $;
         \item Se $ W $ è un intorno coordinato di $ \st(a) $ la cui immagine è $ U \subseteq \R^{n} $, e $ \hat{x}, \hat{y} \in \nonstandard{U} $ sono le coordinate di $ x $ e $ y $ rispettivamente: \[
-            \hat{y}-\hat{x}\prec\prec \lambda.
+            \hat{y}-\hat{x}\pprec \lambda.
         \]
     \end{enumerate}
 }
@@ -171,8 +174,8 @@
     \end{align*}
 
     Si definisce ora \begin{align*}
-        (\R^{n})^{\lambda}_{\text{F}} &\coloneqq \set{v \in \starR^{n}: v\prec \lambda}\\ 
-        (\R^{n})^{\lambda}_{\text{I}} &\coloneqq \set{v \in \starR^{n}: v\prec\prec \lambda}
+        (\R^{n})^{\lambda}_{\text{F}} &\coloneqq \set{v \in \nonstandard{(\R^n)}: v\prec \lambda}\\ 
+        (\R^{n})^{\lambda}_{\text{I}} &\coloneqq \set{v \in \nonstandard{(\R^n)}: v\pprec \lambda}
     \end{align*}Il teorema 10.3.8 di \cite{katz_true_nodate} garantisce che $ (\R^{n})^{\lambda}_{\text{F}}/(\R^{n})^{\lambda}_{\text{I}} \cong \R^{n}$. Dunque, la mappa suriettiva \begin{align*}
     P_{a} &\longrightarrow (\R^{n})^{\lambda}_{\text{F}} \\
     (a,x) &\longmapsto \hat{x}-\hat{a}
@@ -182,7 +185,7 @@
     \end{align*}che è quindi biiettiva. Questo induce una struttura di spazio vettoriale reale su $ T_{a}$.
 
     Inoltre, se $ W' $ è un differente intorno coordinato di $ \st(a) $, con immagine $ U' $, e $ \varphi: U \longrightarrow U' $ è il cambio di coordinate, allora per il punto 3. della proprietà \framref{dckjndjjjjjjdjscacchina} si ha \begin{equation*}
-        \varphi(\hat{x})-\varphi(\hat{a}) - J_{\st(a)} (\hat{x}-\hat{a}) \prec \prec \norma{\hat{x}-\hat{a}} \prec \lambda
+        \varphi(\hat{x})-\varphi(\hat{a}) - J_{\st(a)} (\hat{x}-\hat{a}) \pprec \norma{\hat{x}-\hat{a}} \prec \lambda
     \end{equation*}Dunque la mappa $ \R^{n} \longrightarrow \R^{n} $ indotta dalle due identificazioni di $ T_{a} $ con $ \R^{n} $  fornite dalle due scelte di coordinate è data dalla moltiplicazione per una matrice $ J_{\st(a)} $, e pertanto è lineare. Dunque la struttura di spazio vettoriale di $ T_{a}$ su $ \R $ è ben definita.\qed
 }
 \osservazione{
@@ -301,7 +304,7 @@
     \end{equation*}dove $ J_{\varphi}(a)  $ è la matrice jacobiana di $ \varphi $ calcolata in $ a $. Siano $ F,G $ le mappe: \begin{equation*}
         F(a) = a + \lambda\,X(a),\quad G(b) = b+ \lambda\,Y(b),\qquad \forall\, a \in \nonstandard{U}, b \in \nonstandard{W}.
     \end{equation*}Allora $ F\equiv \varphi^{-1} \circ G \circ \varphi $, o equivalentemente, \begin{equation*}
-        \varphi \circ F(a) - G\circ\varphi(a)\prec\prec \lambda,\qquad \forall\, a \in \hhalo{U}.
+        \varphi \circ F(a) - G\circ\varphi(a)\pprec \lambda,\qquad \forall\, a \in \hhalo{U}.
     \end{equation*}
 }
 \osservazione{
@@ -314,9 +317,9 @@
     \end{align*}Per la proprietà \framref{dckjndjjjjjjdjscacchina}, esiste $ c \in \left[a,a+\lambda\,X(a)\right] $ tale che, se $ D^{i}_c $ è l'$i$-esima riga di $ J_{\varphi}(c)  $, \begin{equation*}
         \varphi^{i} \left(a+\lambda\,X(a)\right) - \varphi^{i}(a) = \lambda\,D^{i}_c \,X(a)
     \end{equation*}Dunque si ha che \begin{equation*}
-        \varphi^{i}\circ F(a) - G^{i}\circ \varphi(a) = \lambda\, \left(D^{i}_c-D^{i}\right) X(a) \prec\prec \lambda.
+        \varphi^{i}\circ F(a) - G^{i}\circ \varphi(a) = \lambda\, \left(D^{i}_c-D^{i}\right) X(a) \pprec \lambda.
     \end{equation*}Poichè questo è vero per ogni componente $ i $, si ha \begin{equation*}
-        \varphi \circ F(a) - G\circ\varphi(a)\prec\prec \lambda,\qquad \forall\, a \in \hhalo{U}.\qedd
+        \varphi \circ F(a) - G\circ\varphi(a)\pprec \lambda,\qquad \forall\, a \in \hhalo{U}.\qedd
     \end{equation*}
 }
 \definizione{
@@ -362,13 +365,13 @@ Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico 
     \end{equation*}per ogni $ v_1,\dots,v_{k}  $ e per ogni $ a $. Questo consente di dare la seguente definizione. 
 }
 \definizione{
-    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{k} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n} $, con $ v_{i} \prec \lambda  $, si ha, in coordinate, \begin{equation*}
+    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{k} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v_1,\dots,v_{k} \in \nonstandard{(\R^n)} $, con $ v_{i} \prec \lambda  $, si ha, in coordinate, \begin{equation*}
         \Delta_{v_1,\dots,v_{k} }^{k} F(a) \prec \lambda\,\norma{v_1} \cdots\norma{v_{k} }. 
     \end{equation*}}
 
 Per semplicità, si dà anche la seguente definizione, rindondante, per i campi di prevettori di classe $ D^{2} $. 
 \definizione{
-    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{2} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v,w \in \starR^{n} $, con $ v,w \prec \lambda  $, si ha, in coordinate, \begin{equation*}
+    Un campo di prevettori $ F $ su un intorno $ U $ di una varietà differenziabile $ M $ è di classe $ D^{2} $ se, per ogni $ a \in \hhalo{U} $ e per ogni $ v,w \in \nonstandard{(\R^n)} $, con $ v,w \prec \lambda  $, si ha, in coordinate, \begin{equation*}
         \Delta_{v,w}^{2} F(a) = F(a)-F(a+v)-F(a+w)+F(a+v+w) \prec \lambda\,\norma{v}\norma{w }. 
     \end{equation*}
 }
@@ -379,7 +382,7 @@ Per semplicità, si dà anche la seguente definizione, rindondante, per i campi 
 Nella proposizione successiva si mostrerà che il campo di prevettori costruito secondo la dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, indotto da un campo vettoriale di classe $ C^k $, è un campo di prevettori di classe $ D^{k} $. 
 
 \proposizione{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj}{
-    Sia $ W \subseteq \R^{n} $ un aperto, e sia $ X: W \longrightarrow \R^{n} $ un campo vettoriale classico di classe $ C^{k} $. Allora, per ogni $ a \in \hhalo{W} $ e ogni $ v_1,\dots,v_{k} \in \starR^{n}  $, con $ v_{i} \prec \prec 1  $, si ha \begin{equation*}
+    Sia $ W \subseteq \R^{n} $ un aperto, e sia $ X: W \longrightarrow \R^{n} $ un campo vettoriale classico di classe $ C^{k} $. Allora, per ogni $ a \in \hhalo{W} $ e ogni $ v_1,\dots,v_{k} \in \nonstandard{(\R^n)}  $, con $ v_{i} \pprec 1  $, si ha \begin{equation*}
         \Delta_{v_1,\dots,v_{k} }^{k} X(a) \prec \norma{v_1}\norma{v_2} \cdots\norma{v_{k} }. 
     \end{equation*}
 }
@@ -400,7 +403,7 @@ Nella proposizione successiva si mostrerà che il campo di prevettori costruito 
         \norma{\Delta_{v_1,\dots,v_{k} }^{k}X(p)}\le K \norma{v_1}\norma{v_2} \cdots\norma{v_{k} }
     \end{equation*}per ogni $ p \in U $ e per ogni $ v_1,\dots,v_{k} \in \R^{n} $ tale per cui $ p + s_1v_1+\dots+s_{k}v_{k} \in U   $ per ogni $ 0\le s_1,\dots,s_{k} \le 1  $.
 
-    Per il principio di transfer questo è vero, con lo stesso $ K $, per ogni $ p \in \nonstandard{U} $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n}  $ tali per cui $ a+s_1v_1+\dots+s_{k}v_{k} \in \nonstandard{U} $ per ogni $ 0\le s_1,\dots,s_{k} \le 1  $, $ s_{i} \in \starR  $. In particolare, questo è vero per $ a $ e per ogni $ v_1,\dots,v_{k} \in \starR^{n}$ con $ v_{i} \prec\prec 1 $. \qed
+    Per il principio di transfer questo è vero, con lo stesso $ K $, per ogni $ p \in \nonstandard{U} $ e per ogni $ v_1,\dots,v_{k} \in \nonstandard{(\R^n)}  $ tali per cui $ a+s_1v_1+\dots+s_{k}v_{k} \in \nonstandard{U} $ per ogni $ 0\le s_1,\dots,s_{k} \le 1  $, $ s_{i} \in \starR  $. In particolare, questo è vero per $ a $ e per ogni $ v_1,\dots,v_{k} \in \nonstandard{(\R^n)}$ con $ v_{i} \pprec 1 $. \qed
 }
 \proposizione{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}{
     Sia $ F $ un campo di prevettori di classe $ D^{1} $, e siano $ a, b \in \hhalo{M} $, con $ a-b \prec \lambda $, allora, in coordinate, \begin{equation*}
@@ -417,13 +420,13 @@ Nella proposizione successiva si mostrerà che il campo di prevettori costruito 
 
 Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrare che un campo di prevettori di classe $ D^{2} $ è anche di classe $ D^{1} $.
 \paragrafo{Lemma}{%
-    Sia $ B \subseteq \R^{n} $ una palla aperta centrata nell'origine, e sia $ a \in \halo(0) $, e sia $ 0\neq v \in \starR^{n} $ con $ v\prec\prec 1 $. Se $ G: \nonstandard{B} \longrightarrow \starR^{n} $ è una funzione \emph{interna} tale per cui \begin{equation*}
+    Sia $ B \subseteq \R^{n} $ una palla aperta centrata nell'origine, e sia $ a \in \halo(0) $, e sia $ 0\neq v \in \nonstandard{(\R^n)} $ con $ v\pprec 1 $. Se $ G: \nonstandard{B} \longrightarrow \nonstandard{(\R^n)} $ è una funzione \emph{interna} tale per cui \begin{equation*}
         \Delta_{v,v}^{2}G(x) \prec \norma{v}\,\norma{G(a)-G(a+v)} 
     \end{equation*}per ogni $ x \in \hhalo{B} $, allora esiste $ m \in \nonstandard{ \N} $ tale per cui $ a+mv \in \hhalo{B} $ e \begin{equation*}
         G(a)-G(a+v) \prec \norma{v}\,\norma{G(a)-G(a+mv)}.
     \end{equation*}
 }{djjjjjjjjjframmentinoframmentucciovieniqui}{}
-\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}\dimframmento{djjjjjjjjjframmentinoframmentucciovieniqui}{
+\dimframmento{djjjjjjjjjframmentinoframmentucciovieniqui}{
     Sia $ 0<r \in \R $ un raggio più piccolo di quello di $ B $, e per $ x \in \starR $ si denoti con $ \floor{x} \in \nonstandard{ \N} $ la parte intera di $ x $. Sia dunque $ N = \floor{r/\norma{v}} $. 
 
     Dunque ogni $ m\le N $ soddisfa la condizione $ a + mv \in \hhalo{B} $. 
@@ -460,7 +463,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     Se $ v \coloneqq b-a $ e $ G=F-I $ (i.e. $ G(x)=F(x)-x $) la condizione è equivalente a richiedere che \begin{equation*}
         G(a)-G(a+v)\prec \lambda \norma{v}.
     \end{equation*}I casi sono due\footnote{Vedi osservazione \framref{djknckjnsjdjdjcskjnskjnckjnskjnd}.} \begin{itemize}
-        \item Se $ G(a)-G(a+v)\prec\prec \lambda\norma{v} $ la tesi è banalmente verificata.
+        \item Se $ G(a)-G(a+v)\pprec \lambda\norma{v} $ la tesi è banalmente verificata.
         \item Altrimenti si ha $ \lambda v \prec \norma{G(a)-G(a+v)} $, e dunque \[\lambda\norma{v}^{2}\prec \norma{v}\norma{G(a)-G(a+v)};\]inoltre, per ipotesi, poiché $ F $ è di classe $ D^{1}$: per ogni $ x $: \begin{equation*}
             \Delta_{v,v}^{2}G(x) = \Delta_{v,v}^{2}  F(x) \prec \lambda\norma{v}^{2}.
         \end{equation*}Quindi $ \Delta_{v,v}^{2}G(x)\prec \norma{G(a)-G(a+v)} $, e per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui} esiste $ m \in \nonstandard{ \N}$ tale che $ a+mv \in \hhalo{B} $ e {\begin{align*}
@@ -497,7 +500,7 @@ Si enunciano di seguito due risultati, che non saranno dimostrati, in merito all
         Ogni $ n \in \nonstandard{ \N} $ infinito è contenuto in $ A $, e pertanto, per il principio dell'\straniero{underspill} esiste $ C \in A $ \emph{finito}. Questo porta alla tesi.
         \item Sia ora invece \begin{equation*}
             A=\left\{n \in \nonstandard{ \N}: \norma{F(a)-G(a)}\le \frac{\lambda}{n}\lambda\text{ per ogni }a \in \nonstandard{B}\right\}.
-        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill}\footnote{Posso applicarlo in quanto $ A $ è un insieme interno per il teorema \teoref{jdjdjjjjjjdjjjkjn}.} esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \prec\prec 1 $.\qed
+        \end{equation*}Ogni $ n \in \nonstandard{ \N} $ finito è contenuto in $ A $, e perciò, per \straniero{overspill}\footnote{Posso applicarlo in quanto $ A $ è un insieme interno per il teorema \teoref{jdjdjjjjjjdjjjkjn}.} esiste un $ m \in \nonstandard{ \N} $ infinito contenuto in $ A $. Pertanto, sia $ \beta = 1/m \pprec 1 $.\qed
     \end{enumerate}
 }
 \proposizione{dlikjckjdlkmnckslkmdkcoslkdlkj}{
@@ -527,7 +530,7 @@ Si enunciano di seguito due risultati, che non saranno dimostrati, in merito all
 \proposizione{dkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj}{
     Sia $ F $ un campo di prevettori di classe $ D^{2} $. Se $ W $ è un intorno coordinato con immagine $ U \subseteq \R^{n} $ e $ B \subseteq U $ è una palla chiusa, allora esiste $ K \in \R $ tale per cui \begin{equation*}
         \norma{\Delta_{v,w}^{2} F(a) } \le K\lambda\norma{w}\norma{v}
-    \end{equation*}per ogni $ a \in \nonstandard{B} $ e per ogni $ v,w \in \starR^{n}$ tali per cui \begin{equation*}
+    \end{equation*}per ogni $ a \in \nonstandard{B} $ e per ogni $ v,w \in \nonstandard{(\R^n)}$ tali per cui \begin{equation*}
         a+v,a+w,a+v+w \in \nonstandard{B}.
     \end{equation*}
 }
@@ -583,7 +586,7 @@ Il teorema segue dalle proposizioni \framref{djknckjndjckjnxkjnkjnckjndskjnckjnk
 
    D'altra parte, però, per ogni $ A \subseteq M $, $ \restriction{F}{\nonstandard{A}} $ è interna. Inoltre, su $ \nonstandard{B_1} $ della proposizione \framref{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}, $ F $ ha una inversa $ F^{-1}:\nonstandard{B_1} \longrightarrow \nonstandard{B_2} $ (ovvero $ F \circ F^{-1} (a) = a $ per ogni $ a \in \nonstandard{B_1} $) e $ F^{-1} $ è interna. 
 
-   Dunque, a meno di ridimensionare il dominio, è sempre possibile assumere che un campo di prevettori locale $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ di classe $ D_1 $ ammetta un inverso $ F^{-1}:\nonstandard{U} \longrightarrow \nonstandard{V} $.
+   Dunque, a meno di ridimensionare il dominio, è sempre possibile assumere che un campo di prevettori locale $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ di classe $ D^{1} $ ammetta un inverso $ F^{-1}:\nonstandard{U} \longrightarrow \nonstandard{V} $.
 }{remarkfourpointeight}{}
 \proposizione{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd}{
     Se $ F $ è di classe $ D^{1} $, allora $ F^{-1} $ è di classe $ D^{1} $. 
@@ -607,7 +610,7 @@ Il teorema segue dalle proposizioni \framref{djknckjndjckjnxkjnkjnckjndskjnckjnk
     Fissato $ b $, sia $ K $ dato dalla proposizione \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} applicata sia ad $ F $ che a $ G $ in una palla di centro $ a=\st(b) $. Allora \begin{align*}
         \norma{F(b)-G(b)} &= \norma{F(b)-F(a)-b+a+F(a)-G(a)+G(a)-G(b)-a+b}\\ 
         &\le \norma{F(b)-F(a)-b+a} + \norma{F(a)-G(a)} + \norma{G(a)-G(b)-a+b}\\ 
-        &\le K \lambda \norma{a-b}+\norma{F(a)-G(a)} + K\lambda\norma{a-b} \prec \prec \lambda.\qedd
+        &\le K \lambda \norma{a-b}+\norma{F(a)-G(a)} + K\lambda\norma{a-b} \pprec \lambda.\qedd
     \end{align*}
 }
 \osservazione{
@@ -619,7 +622,7 @@ Si considerano due casi.
 \begin{itemize}
     \item Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ un campo di prevettori globale, e, per $ 0\le t \in \nonstandard{R} $, sia $ n = n(t) = \floor{t/\lambda} $. Per ogni $ a \in \nonstandard{M} $ si definisce il \emph{flusso di $ F $ al tempo $ t $}, $ F_{t}(a) = F^{n}(a) $. 
 
-    Per definire $ F^{n}(a) $, sia $ \Phi $ la mappa \begin{align*}
+    Per definire $ F^{n}(a) $, sia $ \Phi $ la mappa\footnote{Si ricorda che $ \operatorname{Map}(M) $ è l'insieme di tutte le mappe $ f: M \longrightarrow M $} \begin{align*}
     \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
     (f,n) &\longmapsto \underset{n\text{ volte}}{\underbrace{f\circ \dots\circ f}}
     \end{align*}e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $: $ F^{n} = \nonstandard{\Phi}(F,n) $.
@@ -832,7 +835,7 @@ Si considerano due casi.
     \end{align*}
 }
 \lemma{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
-    Sia $ v \in \starR^{n} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
+    Sia $ v \in \nonstandard{(\R^n)} $, con $ v\prec \lambda $, sia $ g:[0,+ \infty) \longrightarrow \R^{n} $ una funzione standard, \begin{equation*}
         g(t) = \st\left(\floor{t/\lambda}\,v\right)
     \end{equation*}e sia $ V= \st(v/\lambda). $
 
@@ -841,8 +844,8 @@ Si considerano due casi.
 \dimostrazionelem{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj}{
     Sia $ n=\floor{t/\lambda} $. Allora $ g(t) = \st(nv) $, e \begin{align*}
         \norma{tV-nv} &\le \norma{tV-t\left(\frac{v}{\lambda}\right)} + \norma{t\left(\frac{v}{\lambda}\right) - n\lambda\left(\frac{v}{\lambda}\right)}\\ 
-        &= t\norma{V-v/\lambda} + \abs{t-n\lambda}\norma{v/\lambda} \prec\prec 1.
-    \end{align*}Dunque $ g(t) = tV $, e quindi $ g(\lambda) = \lambda V $, e si ha che $ \norma{\lambda V-v} = \lambda\norma{V-v/\lambda}\prec\prec \lambda $.\qed
+        &= t\norma{V-v/\lambda} + \abs{t-n\lambda}\norma{v/\lambda} \pprec 1.
+    \end{align*}Dunque $ g(t) = tV $, e quindi $ g(\lambda) = \lambda V $, e si ha che $ \norma{\lambda V-v} = \lambda\norma{V-v/\lambda}\pprec \lambda $.\qed
 }
 \teorema{dkjncjdjdkjnckjnskjndkjnckskjnckjndkjn}{
     Se $ F $ è un campo di prevettori locale di classe $ D^{1} $, allora $ \tilde{F}\equiv F $.
@@ -858,7 +861,7 @@ Si considerano due casi.
     \end{align*} per qualche $ A \in \R $, per il lemma \framref{kdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn}. 
     
     Per il principio di transfer, valutando questo in $ t=\lambda $, si ottiene che \begin{equation*}
-        \norma{\tilde{F}(a)-g_{\lambda}(a)} \le A\lambda^{2}\prec\prec \lambda
+        \norma{\tilde{F}(a)-g_{\lambda}(a)} \le A\lambda^{2}\pprec \lambda
     \end{equation*}e dunque $ \tilde{F}(a)\equiv g_{\lambda}(a) $.
 
     Si ha che $ g_{t}(a)-a = \st\left(\floor{t/\lambda} \left(F(a)-a\right)\right) $ e dunque, per il lemma \framref{dkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj} $ g_{\lambda}(a)\equiv F(a)  $. Dal fatto che $ \equiv $ è una relazione di equivalenza segue la tesi.\qed
@@ -964,18 +967,18 @@ Si considerano due casi.
     La dimostrazione del teorema \teoref{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj} garantisce che esista $ C''\prec 1 $ tale per cui \[\norma{H(a)-H(b)-a+b}\le C''\lambda^{2}\norma{a-b}\]per ogni $ a,b $.
     
     Dunque, considerando il lemma \framref{djnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn}, e ponendo $ C = C'\lambda $ e $ K = C'' \lambda $ e $ n=1/\lambda $, si ottiene che \begin{equation*}
-        \norma{H^{1/\lambda}(a)-a - \frac{1}{\lambda} \left(H(a)-a\right)} \le C'' \lambda \cdot C' \lambda \cdot \frac{1}{\lambda^{2}} \lambda^{2} = C'' C'' \lambda^{2}\prec\prec \lambda\qedd 
+        \norma{H^{1/\lambda}(a)-a - \frac{1}{\lambda} \left(H(a)-a\right)} \le C'' \lambda \cdot C' \lambda \cdot \frac{1}{\lambda^{2}} \lambda^{2} = C'' C'' \lambda^{2}\pprec \lambda\qedd 
     \end{equation*}
 }
 \lemma{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
     Se $ G,H $ sono campi di prevettori di classe $ D^{2} $ e $ G\equiv H $, allora \begin{equation*}
-        \left(G(a)-H(a)\right)-\left(G(b)-H(b)\right)\prec\prec \lambda\norma{a-b}
+        \left(G(a)-H(a)\right)-\left(G(b)-H(b)\right)\pprec \lambda\norma{a-b}
     \end{equation*}per ogni $ a,b $ con $ a-b\prec \lambda $.
 }
 \dimostrazionelem{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi}{
-    Sia $ F(x) = G(x)-H(x) $: si ha che $ F(x) \prec\prec \lambda $ per ogni $ x $ (questo è garantito dall'ipotesi $ G\equiv H $). 
+    Sia $ F(x) = G(x)-H(x) $: si ha che $ F(x) \pprec \lambda $ per ogni $ x $ (questo è garantito dall'ipotesi $ G\equiv H $). 
 
-    Se per assurdo $ F(a)-F(b)$ non è $ \prec\prec \lambda\norma{a-b} $ per qualche $ a,b $, con $ a-b\prec \lambda $, allora \begin{equation*}
+    Se per assurdo $ F(a)-F(b)$ non è $ \pprec \lambda\norma{a-b} $ per qualche $ a,b $, con $ a-b\prec \lambda $, allora \begin{equation*}
         \lambda\norma{a-b}\prec \norma{F(a)-F(b)}.
     \end{equation*}Sia $ v = b-a $, allora \begin{equation*}
         \lambda\norma{v}^{2}\prec \norma{v}\norma{F(a)-F(a+v)},
@@ -983,7 +986,7 @@ Si considerano due casi.
         \Delta_{v,v}^{2}F(x) \prec \norma{v}\,\norma{F(a)-F(a+v)} .
     \end{equation*}Per il lemma \framref{djjjjjjjjjframmentinoframmentucciovieniqui}, prendendo una palla aperta attorno ad $ \st(a) $, esiste $ m \in \nonstandard{N} $ tale per cui \begin{align*}
         F(a)-F(a+v)&\prec \norma{v}\norma{F(a) - F(a+mv)}\\ 
-        & \le \norma{v}\left(\norma{F(a)}+\norma{F(a+mv)}\right)\prec\prec \norma{v}\lambda.\qedd
+        & \le \norma{v}\left(\norma{F(a)}+\norma{F(a+mv)}\right)\pprec \norma{v}\lambda.\qedd
     \end{align*}
 }
 \lemma{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
@@ -992,14 +995,14 @@ Si considerano due casi.
 \dimostrazionelem{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}{
     Fissato $ a $, siano \begin{equation*}
         x= G^{-1}(a),\quad y = H^{-1}(a);
-    \end{equation*}si deve mostrare che $ x-y\prec\prec \lambda $. 
+    \end{equation*}si deve mostrare che $ x-y\pprec \lambda $. 
 
     Poichè $ G(x) = a = H(y) $, vale che \begin{equation*}
         \norma{G(x) - G(y)} = \norma{H(y)-G(y)} = \beta\lambda
-    \end{equation*}per qualche $ \beta \prec \prec 1 $ (poiché $ G\equiv H $). Poiché $ G $ è di classe $ D^{1} $:\[\norma{G(x)-G(y)-x+y} = K \lambda\norma{x-y}\]per qualche $ K \prec 1 $, e pertanto \begin{equation*}
+    \end{equation*}per qualche $ \beta \pprec 1 $ (poiché $ G\equiv H $). Poiché $ G $ è di classe $ D^{1} $:\[\norma{G(x)-G(y)-x+y} = K \lambda\norma{x-y}\]per qualche $ K \prec 1 $, e pertanto \begin{equation*}
         \norma{x-y} \le \norma{G(x)-G(y)-x+y} + \norma{G(x)-G(y)} = K\lambda\norma{x-y}+\beta\lambda
     \end{equation*}e, nello specifico $ (1-K\lambda)\norma{x-y} \le \beta\lambda $. Questo dimostra la tesi, in quanto \begin{equation*}
-        \norma{x-y}\le \frac{\beta}{1-K\lambda}\lambda\prec\prec \lambda.\qedd
+        \norma{x-y}\le \frac{\beta}{1-K\lambda}\lambda\pprec \lambda.\qedd
     \end{equation*}
 }
 \teorema{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
@@ -1014,15 +1017,15 @@ Si considerano due casi.
 
     Fissato $ x $, siano \begin{equation*}
         a= G\left(F(x)\right), \quad b = H\left(F(x)\right);
-    \end{equation*}per ipotesi, $ a-b\prec\prec \lambda $. Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} e \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} \begin{equation*}
-        F^{-1}(a)-F^{-1}(b)-a+b\prec \lambda\norma{a-b}\prec\prec \lambda^{2}.
+    \end{equation*}per ipotesi, $ a-b\pprec \lambda $. Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} e \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} \begin{equation*}
+        F^{-1}(a)-F^{-1}(b)-a+b\prec \lambda\norma{a-b}\pprec \lambda^{2}.
     \end{equation*}Sia ora $ c \coloneqq G^{-1}\circ F^{-1}\circ G\circ F(x) $. Per il lemma \framref{dkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi} \begin{equation*}
-        F^{-1}(a)-H(c) - a +b = \left(G(c)-H(c)\right) - \left(G\left(F(x)\right)-H\left(F(x)\right)\right) \prec\prec \lambda \norma{c-F(x)}\prec\prec \lambda^{2}
-    \end{equation*}Sommando le ultime due espressioni si ottiene che $ H(c) - F^{-1}(b)\prec\prec \lambda^{2} $ e pertanto \begin{multline*}
+        F^{-1}(a)-H(c) - a +b = \left(G(c)-H(c)\right) - \left(G\left(F(x)\right)-H\left(F(x)\right)\right) \pprec \lambda \norma{c-F(x)}\pprec \lambda^{2}
+    \end{equation*}Sommando le ultime due espressioni si ottiene che $ H(c) - F^{-1}(b)\pprec \lambda^{2} $ e pertanto \begin{multline*}
         G^{-1}\circ F^{-1}\circ G\circ F(x) - H^{-1}\circ F^{-1}\circ H\circ F(x) =\\ 
-        = H^{-1}\left(H(c)\right) - H^{1}\left(F^{-1}(b)\right)\prec \norma{H(c)-F^{-1}(b)}\prec\prec \lambda^{3}
+        = H^{-1}\left(H(c)\right) - H^{1}\left(F^{-1}(b)\right)\prec \norma{H(c)-F^{-1}(b)}\pprec \lambda^{3}
     \end{multline*}per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm}, \framref{kjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd} e \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc}. Dunque vale \begin{equation*}
-        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(x)\right) - \frac{1}{\lambda}\left(H^{-1}\circ F^{-1}\circ H\circ F(x)\right) \prec\prec \lambda
+        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(x)\right) - \frac{1}{\lambda}\left(H^{-1}\circ F^{-1}\circ H\circ F(x)\right) \pprec \lambda
     \end{equation*}e dunque, per la proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns} $ [F,G](x)\equiv [F,H](x) $.\qed
 }
 \subsection{Relazione con le parentesi di Lie classiche}
@@ -1056,18 +1059,18 @@ Si dimostra prima la versione per le parentesi di Lie non standard, e poi, come 
 }
 \dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Si assuma che $ [F,G]\equiv I $, i.e. \begin{equation*}
-        [F,G](a)-a\prec\prec \lambda
+        [F,G](a)-a\pprec \lambda
     \end{equation*}per ogni $ a $. Per la proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns} 
     \begin{equation*}
-        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\prec\prec \lambda
-    \end{equation*}e dunque $ \left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\prec\prec \lambda^{2} $ per ogni $ a $. Questo implica, per la proposizione \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc} che \begin{equation*}
-        G\circ F(a)-F\circ G(a)\prec\prec \lambda^{2}\qquad \forall\, a.
+        \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\pprec \lambda
+    \end{equation*}e dunque $ \left(G^{-1}\circ F^{-1}\circ G\circ F ( a) - a\right)\pprec \lambda^{2} $ per ogni $ a $. Questo implica, per la proposizione \framref{kjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc} che \begin{equation*}
+        G\circ F(a)-F\circ G(a)\pprec \lambda^{2}\qquad \forall\, a.
     \end{equation*}
 
     Siano quindi $ n = \floor{t/\lambda}, m =\floor{s/\lambda} $: è necessario mostrare che $ F^{n}\circ G^{m}(a)\approx G^{m}\circ F^{n}(a) $ per ogni $ a $. Questo processo comporta $ nm $ scambi di $ F $ e $ G $; ciascuno scambio è nella forma \begin{equation*}
         F^{k}\circ G^{r}\circ F \circ G^{m-r}\circ F^{n-k-1} \quad \longrightarrow \quad F^{k}\circ G^{r+1}\circ F\circ G^{m-r-1} \circ F^{n-k-1}
-    \end{equation*}Applicando $ G\circ F(p)-F\circ G(p)\prec\prec \lambda^{2} $ a $ p = G^{m-r-1}\circ F^{n-k-1}(a) $ si ottiene \begin{equation*}
-        F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)\prec\prec \lambda^{2}
+    \end{equation*}Applicando $ G\circ F(p)-F\circ G(p)\pprec \lambda^{2} $ a $ p = G^{m-r-1}\circ F^{n-k-1}(a) $ si ottiene \begin{equation*}
+        F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)\pprec \lambda^{2}
     \end{equation*}
 
     Per le proposizioni \framref{dkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm} e \framref{dlikjckjdlkmnckslkmdkcoslkdlkj} esiste $ K \in \R $ tale per cui \begin{align*}
@@ -1076,10 +1079,10 @@ Si dimostra prima la versione per le parentesi di Lie non standard, e poi, come 
     \end{align*}per ogni $ a,b $ in un dominio appropriato. 
     Allora, per il teorema \teoref{dlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk} applicato a $ G^{r} $ e poi a $ F^{k} $ si ottiene che \begin{multline*}
         \norma{F^{k}\circ G^{r} \circ F\circ G^{m-r} \circ F^{n-k-1}(a)- F^{k}\circ G^{r+1} \circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)}\\ 
-        \le e^{K(t+s)}\norma{F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)}\prec\prec \lambda^{2}
+        \le e^{K(t+s)}\norma{F\circ G^{m-r} \circ F^{n-k-1}(a)-G\circ F\circ G^{m-r-1}\circ F^{n-k-1}(a)}\pprec \lambda^{2}
     \end{multline*}Dunque, sommando gli $ nm$ contributi passando da $ F^{n}\circ G^{m}(a) $ a $ G^{m}\circ F^{n}(a)$ si ottiene che \begin{equation*}
-        F^{n}\circ G^{m}(a)-G^{m}\circ F^{n}(a)\prec\prec 1.
-    \end{equation*}Questo perché tra le $ nm $ differenze che si sommano, ce ne sarà una massimale (sia ad esempio $ \beta \lambda^{2} $), e pertanto la somma di tutti gli $ nm $ contributi sarà $ \le nm\beta \lambda^{2}\le ts\beta \prec\prec 1 $. Si è dimostrata la prima implicazione.
+        F^{n}\circ G^{m}(a)-G^{m}\circ F^{n}(a)\pprec 1.
+    \end{equation*}Questo perché tra le $ nm $ differenze che si sommano, ce ne sarà una massimale (sia ad esempio $ \beta \lambda^{2} $), e pertanto la somma di tutti gli $ nm $ contributi sarà $ \le nm\beta \lambda^{2}\le ts\beta \pprec 1 $. Si è dimostrata la prima implicazione.
 
     Viceversa, se $ h_{t}^{F}\circ h_{t}^{G} = h_{t}^{G}\circ h_{t}^{F}  $. Allora per il principio di transfer, $ \tilde{F}\circ \tilde{G} = \tilde{G} \circ \tilde{F} $. e pertanto \begin{equation*}
         \tilde{G}^{-1}\circ \tilde{F}^{-1} \circ \tilde{G}\circ\tilde{F} = I

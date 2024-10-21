@@ -1995,18 +1995,22 @@
     <bcf:datasource type="file" datatype="bibtex">frontbackmatter/bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">andretta_elements_2022</bcf:citekey>
-    <bcf:citekey order="2">loeb_nonstandard_2015</bcf:citekey>
-    <bcf:citekey order="3">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="4">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="5">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="6">katz_true_nodate</bcf:citekey>
+    <bcf:citekey order="1">robinson_non-standard_1961</bcf:citekey>
+    <bcf:citekey order="2">robinson_non-standard_1966</bcf:citekey>
+    <bcf:citekey order="3">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="4">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="5">andretta_elements_2022</bcf:citekey>
+    <bcf:citekey order="6">loeb_nonstandard_2015</bcf:citekey>
     <bcf:citekey order="7">chang_model_2012</bcf:citekey>
     <bcf:citekey order="8">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="9">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="10">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="11">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="12">keisler_foundation_2007</bcf:citekey>
+    <bcf:citekey order="9">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="10">katz_true_nodate</bcf:citekey>
+    <bcf:citekey order="11">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="12">katz_true_nodate</bcf:citekey>
+    <bcf:citekey order="13">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="14">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="15">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="16">keisler_foundation_2007</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

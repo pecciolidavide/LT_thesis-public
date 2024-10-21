@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  16 OCT 2024 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  21 OCT 2024 23:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1725,50 +1725,50 @@ Package pdftex.def Info: frontbackmatter/logo_vecchio.png  used on input line 26
 
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png>]) [2] (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 9.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 9.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 9.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 9.
+(Font)              <10.95> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 9.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(Font)              <6> on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OMX+yhex on input line 9.
+LaTeX Font Info:    Try loading font information for OMX+yhex on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 187.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 185.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [3
@@ -1785,37 +1785,55 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[4] (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/introduzione.tex) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/prerequisiti.tex [1
-
-
-
-] [2
-
-]
-Capitolo 1.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 19.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
+[4] (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/introduzione.tex
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 26.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 28.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 28.
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 28.
+ [1
+
+
+
+]
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 37.
+ [2] [3]
+LaTeX Font Info:    Try loading font information for U+euf on input line 113.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-euf.cfg
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+) [4] [5]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/prerequisiti.tex [6]
+Capitolo 1.
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 19.
- [3] [4] [5] [6]
+[7
+
+] [8] [9] [10]
 \c@frammentoAodijcoijodijocijoijoijoi=\count588
 \c@frammentoBodijcoijodijocijoijoijoi=\count589
- [7]
+ [11]
 \c@frammentoAkjndjckjncdjckjnsjnkjnkjn=\count590
 \c@frammentoBkjndjckjncdjckjnsjnkjnkjn=\count591
 \c@frammentoAdkjnckskjncjskjndjckjndjdjjjj=\count592
 \c@frammentoBdkjnckskjncjskjndjckjndjdjjjj=\count593
- [8]
+ [12]
 \c@frammentoAjskdjhsfkjhcakjhdvcbloeiruhfcalfs=\count594
 \c@frammentoBjskdjhsfkjhcakjhdvcbloeiruhfcalfs=\count595
 \c@frammentoAjnkjnkjnjdjdj=\count596
 \c@frammentoBjnkjnkjnjdjdj=\count597
- [9]
+ [13]
 \c@frammentoAksjnksjjdjdjcskjnsj=\count598
 \c@frammentoBksjnksjjdjdjcskjnsj=\count599
- [10]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/reali_nonstandard.tex [11] [12
+ [14]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/reali_nonstandard.tex [15] [16
 
 ]
 Capitolo 2.
@@ -1829,9 +1847,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 50.
 
-[13]
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 74.
+[17]
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 87.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1840,21 +1856,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14]
+ [18]
 \c@frammentoAdoijcoijoosijoijoijdcidicoijcoijdoijoijoij=\count600
 \c@frammentoBdoijcoijoosijoijoijdcidicoijcoijdoijoijoij=\count601
- [15]
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 147.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 147.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 147.
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 147.
+ [19]
 \c@frammentoAdoijcsoijoijoijoijoijoijoij=\count602
 \c@frammentoBdoijcsoijoijoijoijoijoijoij=\count603
- [16]
+ [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 170.
@@ -1865,22 +1873,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 \c@frammentoAdcjkklkmdjjjjultraprodottoinssimo=\count604
 \c@frammentoBdcjkklkmdjjjjultraprodottoinssimo=\count605
-[17]
+[21]
 Overfull \hbox (1.53267pt too wide) detected at line 225
 [] \OMS/lmsy/m/n/10.95 \ [] \ [] ^^R []
  []
 
 \c@frammentoAdoijcoijdijcijijoijoijoijcoaijoijoijoij=\count606
 \c@frammentoBdoijcoijdijcijijoijoijoijcoaijoijoijoij=\count607
-[18] [19]
+[22] [23]
 \c@frammentoAdsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij=\count608
 \c@frammentoBdsoijsocijoijdididcoijdoijoijoicjoijoijocijoijoijcoijoijoij=\count609
- [20] [21]
+ [24] [25]
 \c@frammentoAdkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn=\count610
 \c@frammentoBdkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn=\count611
 \c@frammentoAdkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd=\count612
 \c@frammentoBdkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd=\count613
- [22] [23]
+ [26] [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 440.
@@ -2407,20 +2415,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 \c@frammentoAckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn=\count614
 \c@frammentoBckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn=\count615
-[24]
+[28]
 \c@frammentoAdjkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj=\count616
 \c@frammentoBdjkjncdjcjndkjncjdjckjncjjdkjncjdkjncsdkjncskjndjncdksj=\count617
- [25]
+ [29]
 \c@frammentoAkjndjckjsnskjnckjndkjnskjnc=\count618
 \c@frammentoBkjndjckjsnskjnckjndkjnskjnc=\count619
 \c@frammentoAkjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj=\count620
 \c@frammentoBkjndjckjnsjdkjnckjnsjdkckjnjjjdjjjdjdj=\count621
- [26]
+ [30]
 \c@frammentoAtantebellecoseinoijknkjnkjnsd=\count622
 \c@frammentoBtantebellecoseinoijknkjnkjnsd=\count623
 \c@frammentoAkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count624
 \c@frammentoBkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count625
- [27]
+ [31]
 \c@frammentoAteoriemidkjnkjnc=\count626
 \c@frammentoBteoriemidkjnkjnc=\count627
 
@@ -2428,37 +2436,37 @@ Overfull \hbox (6.05179pt too wide) in paragraph at lines 631--631
 []\T1/lmr/m/n/10.95 (-20) Se $\U/dsrom/m/n/10.95 N \OMS/lmsy/m/n/10.95 ^^R \OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 (-20) , al-lo-ra con-tie-ne al-me-no un ele-men-to di $[][][]\U/dsrom/m/n/10.95 N$ \T1/lmr/m/n/10.95 (-20) in-fi-ni-to. (Prin-ci-pio dell'\T1/lmr/m/it/10.95 (-20) overspill\T1/lmr/m/n/10.95 (-20) ). 
  []
 
-[28]
+[32]
 \c@frammentoAdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count628
 \c@frammentoBdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count629
-) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex [29] [30
+) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex [33] [34
 
 ]
 Capitolo 3.
-[31]
+[35]
 \c@frammentoAkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count630
 \c@frammentoBkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count631
 \c@frammentoAdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count632
 \c@frammentoBdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count633
 \c@frammentoAdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count634
 \c@frammentoBdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count635
- [32]
+ [36]
 \c@frammentoAdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count636
 \c@frammentoBdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count637
- [33] [34]
+ [37] [38]
 \c@frammentoAdjnckjnskjndjckjnsdkjnckjnskjn=\count638
 \c@frammentoBdjnckjnskjndjckjnsdkjnckjnskjn=\count639
 \c@frammentoADkjndjcdjdjdjlemmininoninoinopucciosino=\count640
 \c@frammentoBDkjndjcdjdjdjlemmininoninoinopucciosino=\count641
- [35]
+ [39]
 \c@frammentoAdkjncjskjncjskjndjcdjjjjjdjdjj=\count642
 \c@frammentoBdkjncjskjncjskjndjcdjjjjjdjdjj=\count643
 \c@frammentoAdkjnckjdkckjndjckjndjckkjnckjs=\count644
 \c@frammentoBdkjnckjdkckjndjckjndjckkjnckjs=\count645
- [36]
+ [40]
 \c@frammentoAkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count646
 \c@frammentoBkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count647
- [37] [38]
+ [41] [42]
 \c@frammentoAdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count648
 \c@frammentoBdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count649
 
@@ -2475,173 +2483,160 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--294
 \c@frammentoBdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count651
 \c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count652
 \c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count653
-[39] [40]
+[43] [44]
 \c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count654
 \c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count655
- [41] [42]
+ [45] [46]
 \c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count656
 \c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count657
- [43]
+ [47]
 \c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count658
 \c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count659
- [44]
+ [48]
 \c@frammentoAjdjdjjjjjjdjjjkjn=\count660
 \c@frammentoBjdjdjjjjjjdjjjkjn=\count661
 \c@frammentoAdkjncjskjdjdjdjdjdjdjdjdckjn=\count662
 \c@frammentoBdkjncjskjdjdjdjdjdjdjdjdckjn=\count663
- [45]
+ [49]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 603.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 603.
- [46]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex [47] [48
+ [50]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex [51] [52
 
 ]
 Capitolo 4.
 \c@frammentoAdjknckjnsjdjdjcskjnskjnckjnskjnd=\count664
 \c@frammentoBdjknckjnsjdjdjcskjnskjnckjnskjnd=\count665
-[49]
-LaTeX Font Info:    Try loading font information for U+euf on input line 50.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-euf.cfg
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-)
+[53]
 \c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count666
 \c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count667
- [50]
+ [54]
 \c@frammentoAdckjndjjjjjjdjscacchina=\count668
 \c@frammentoBdckjndjjjjjjdjscacchina=\count669
- [51]
+ [55]
 \c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count670
 \c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count671
- [52]
+ [56]
 \c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count672
 \c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count673
 \c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count674
 \c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count675
- [53]
+ [57]
 \c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count676
 \c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count677
- [54]
+ [58]
 \c@frammentoAdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count678
 \c@frammentoBdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count679
- [55]
+ [59]
 \c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count680
 \c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count681
 \c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count682
 \c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count683
- [56]
+ [60]
 \c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count684
 \c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count685
- [57]
+ [61]
 \c@frammentoAkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count686
 \c@frammentoBkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count687
- [58] [59]
+ [62] [63]
 \c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count688
 \c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count689
- [60]
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+ [64]
 \c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count690
 \c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count691
 \c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count692
 \c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count693
- [61]
+ [65] [66]
 \c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count694
 \c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count695
- [62]
 \c@frammentoAdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count696
 \c@frammentoBdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count697
+ [67]
 \c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count698
 \c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count699
- [63]
 \c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count700
 \c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count701
- [64]
+ [68]
 \c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count702
 \c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count703
- [65]
+ [69]
 \c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count704
 \c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count705
 \c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count706
 \c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count707
 \c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count708
 \c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count709
- [66]
+ [70]
 \c@frammentoAremarkfourpointeight=\count710
 \c@frammentoBremarkfourpointeight=\count711
 \c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count712
 \c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count713
+ [71]
 \c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count714
 \c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count715
- [67]
+ [72]
 \c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count716
 \c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count717
- [68] [69]
+ [73]
 \c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count718
 \c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count719
 \c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count720
 \c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count721
- [70]
+ [74]
 \c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count722
 \c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count723
+ [75]
 \c@frammentoAosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count724
 \c@frammentoBosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count725
- [71]
 \c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count726
 \c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count727
+ [76]
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count728
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count729
- [72]
 \c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count730
 \c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count731
- [73]
+ [77] [78]
 \c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count732
 \c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count733
- [74]
+ [79]
 \c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count734
 \c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count735
 \c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count736
 \c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count737
- [75]
+ [80]
 \c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count738
 \c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count739
- [76]
+ [81]
 \c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count740
 \c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count741
- [77]
+ [82]
 \c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count742
 \c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count743
- [78]
+ [83]
 \c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count744
 \c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count745
 \c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count746
 \c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count747
- [79]
+ [84]
 \c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count748
 \c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count749
 \c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count750
 \c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count751
- [80]
+ [85]
 \c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count752
 \c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count753
- [81]
+ [86]
 \c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count754
 \c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count755
- [82]
+ [87]
 \c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count756
 \c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count757
-) [83] [84
+) [88] [89
 
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 59.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [85
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
@@ -2656,18 +2651,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71031 strings out of 492616
- 1678616 string characters out of 6129481
- 2308114 words of memory out of 5000000
- 73096 multiletter control sequences out of 15000+600000
- 684687 words of font info for 269 fonts, out of 8000000 for 9000
+ 71011 strings out of 492616
+ 1678423 string characters out of 6129481
+ 2309339 words of memory out of 5000000
+ 73067 multiletter control sequences out of 15000+600000
+ 685147 words of font info for 272 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,27n,119p,1728b,1538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (89 pages, 949311 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (93 pages, 947516 bytes).
 PDF statistics:
- 1543 PDF objects out of 1728 (max. 8388607)
- 1375 compressed objects within 14 object streams
- 527 named destinations out of 1000 (max. 500000)
- 35834 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1564 PDF objects out of 1728 (max. 8388607)
+ 1394 compressed objects within 14 object streams
+ 539 named destinations out of 1000 (max. 500000)
+ 35322 words of extra memory for PDF output out of 35830 (max. 10000000)
 

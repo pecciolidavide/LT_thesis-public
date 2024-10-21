@@ -91,10 +91,10 @@
 % ---
 \let\oldemptyset\emptyset
 % ---
-% \let\emptyset\varnothing 
+\let\emptyset\varnothing 
 % ---
-\let\emptyset\relax
-\newcommand{\emptyset}{\text{\textnormal{\O}}}
+% \let\emptyset\relax
+% \newcommand{\emptyset}{\text{\textnormal{\O}}}
 % ---
 
 \DeclareMathOperator{\bounded}{bd}
@@ -147,15 +147,15 @@
 \newcommand{\Z}{\mathds{Z}}
 \newcommand{\rmn}{\R^{m,n}}
 \newcommand{\qo}{\hspace{1em}\text{q.o.}\,}
-\newcommand{\pprec}{\prec\!\! \prec}
-\newcommand{\npprec}{\prec\!\! \nprec}
+\newcommand{\pprec}{\mathrel{\prec\! \prec}}
+\newcommand{\npprec}{\mathrel{\prec\! \nprec}}
 \renewcommand{\tilde}[1]{\widetilde{#1}}
 \renewcommand{\parallel}{\mathrel{/\mkern-5mu/}}
 \newcommand{\cardin}[1]{\left\vert #1\right\vert}
 \newcommand{\parti}[1]{\wp (#1)}
 \newcommand{\diff}[1]{\operatorname{d}_{#1}}
 \renewcommand{\vec}[1]{\overrightarrow{\vphantom{i}#1}}
-
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 %tramite i prossimi due comandi posso decidere come scrivere i logaritmi naturali in tutti i documenti: ho infatti eliminato qualsiasi differenza tra "ln" e "log": se si vuole qualcosa di diverso bisogna inserire manualmente il tutto
 \let\ln\relax
 \DeclareMathOperator{\ln}{ln}

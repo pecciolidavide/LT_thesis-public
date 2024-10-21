@@ -36,7 +36,7 @@
         {Milano}%
       }
       \list{publisher}{1}{%
-        {Springer Milan}%
+        {Springer}%
       }
       \strng{namehash}{69eec2008394a08f1fd3b31b841aa43b}
       \strng{fullhash}{69eec2008394a08f1fd3b31b841aa43b}
@@ -50,12 +50,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Geometria Differenziale}
       \true{nocite}
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/978-88-470-1920-1
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/978-88-470-1920-1
-      \endverb
     \endentry
     \entry{andretta_elements_2022}{book}{}
       \name{author}{1}{}{%
@@ -75,15 +69,10 @@
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{3}
-      \field{langid}{english}
       \field{title}{Elements of Mathematical Logic}
       \field{year}{2022}
       \field{dateera}{ce}
       \true{nocite}
-      \verb{file}
-      \verb Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/9A8SI799/Andretta, Alessandro - Elements of Mathematical Logic (2022, 3rd).pdf:application/pdf
-      \endverb
     \endentry
     \entry{chang_model_2012}{book}{}
       \name{author}{2}{}{%
@@ -108,9 +97,6 @@
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{978-0-486-48821-9}
-      \field{pagetotal}{650}
-      \field{series}{Dover books on mathematics}
       \field{title}{Model theory}
       \field{year}{2012}
       \field{dateera}{ce}
@@ -141,9 +127,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Le direzioni della logica in Italia: metodi e modelli non standard}
       \true{nocite}
-      \verb{file}
-      \verb Di Nasso-Forti_Le direzioni della logica in Italia, metodi e modelli non standard (2018).pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/YEPXX46W/Di Nasso-Forti_Le direzioni della logica in Italia, metodi e modelli non standard (2018).pdf:application/pdf
-      \endverb
     \endentry
     \entry{hurd_introduction_1985}{book}{}
       \name{author}{2}{}{%
@@ -171,9 +154,6 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{978-0-12-362440-6}
-      \field{number}{118}
-      \field{series}{Pure and applied mathematics}
       \field{title}{An introduction to nonstandard real analysis}
       \field{year}{1985}
       \field{dateera}{ce}
@@ -207,7 +187,6 @@
       \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{langid}{english}
       \field{title}{True infinitesimal differential geometry}
       \true{nocite}
     \endentry
@@ -229,17 +208,10 @@
       \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{langid}{english}
       \field{title}{Foundation of Infinitesimal Calculus.}
       \field{year}{2007}
       \field{dateera}{ce}
       \true{nocite}
-      \verb{urlraw}
-      \verb https://people.math.wisc.edu/~hkeisler/foundations.html
-      \endverb
-      \verb{url}
-      \verb https://people.math.wisc.edu/~hkeisler/foundations.html
-      \endverb
     \endentry
     \entry{loeb_nonstandard_2015}{collection}{}
       \name{editor}{2}{}{%
@@ -270,20 +242,10 @@
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{langid}{english}
       \field{title}{Nonstandard Analysis for the Working Mathematician}
       \field{year}{2015}
       \field{dateera}{ce}
       \true{nocite}
-      \verb{file}
-      \verb Loeb e Wolff - 2015 - Nonstandard Analysis for the Working Mathematician.pdf:/Users/davidepeccioli/Documents/3. Resources/Zotero/storage/HBVH7NYW/Loeb e Wolff - 2015 - Nonstandard Analysis for the Working Mathematician.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/10.1007/978-94-017-7327-0
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/10.1007/978-94-017-7327-0
-      \endverb
     \endentry
     \entry{nowik_differential_2015}{article}{}
       \name{author}{2}{}{%
@@ -308,19 +270,66 @@
       \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{17599008}
-      \field{journaltitle}{Journal of Logic and Analysis}
-      \field{langid}{english}
       \field{title}{Differential geometry via infinitesimal displacements}
       \field{year}{2015}
       \field{dateera}{ce}
       \true{nocite}
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1405.0984
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1405.0984
-      \endverb
+    \endentry
+    \entry{robinson_non-standard_1961}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5f4355e2c0a0f4b42689b8b56a880935}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{fullhash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{bibnamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authorbibnamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authornamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authorfullhash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indag. Math.}
+      \field{note}{Nederl. Akad. Wetensch. Proc. Ser. A {\bf 64}}
+      \field{title}{Non-standard analysis}
+      \field{volume}{23}
+      \field{year}{1961}
+      \true{nocite}
+      \field{pages}{432\bibrangedash 440}
+      \range{pages}{9}
+    \endentry
+    \entry{robinson_non-standard_1966}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5f4355e2c0a0f4b42689b8b56a880935}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland Publishing Co., Amsterdam}%
+      }
+      \strng{namehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{fullhash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{bibnamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authorbibnamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authornamehash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \strng{authorfullhash}{5f4355e2c0a0f4b42689b8b56a880935}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Non-standard analysis}
+      \field{year}{1966}
+      \true{nocite}
+      \field{pages}{xi+293}
+      \range{pages}{-1}
     \endentry
   \enddatalist
 \endrefsection

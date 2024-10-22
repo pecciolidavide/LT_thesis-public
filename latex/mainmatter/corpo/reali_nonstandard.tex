@@ -40,7 +40,7 @@ In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali
 % }
 
 % \osservazione{
-%     Il teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
+%     Il Teorema \teoref{ijpijoijodijoijoijodijcoijoijoijoijoijoij} assicura che esista un campo $ \starR $ elementarmente equivalente ad $ \R $ ma non archimedeo. 
 % }
 
 \section{Costruzione degli iperreali}
@@ -49,7 +49,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
 \subsection{Prodotto di $ \mathcal{L} $-strutture}
 
-\paragrafo{Prodotto Cartesiano}{%
+\definizione{
     Sia $ (A_{i} )_{i \in I} $ una famiglia di insiemi non vuoti indicizzata su $ I\neq \emptyset $. Il \emph{prodotto cartesiano} degli $ A_{i}$ è l'insieme%
     \[
         \prod_{i \in I} A_{i}=\left\{f:I\longrightarrow \bigcup_{i \in I} A_{i}: f(i) \in A_{i}\text{ per ogni } i \in I  \right\}  
@@ -58,8 +58,8 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     Quando è chiaro l'insieme su cui varia $ i $, si userà $ \sequence{a_{i}} $ in luogo di $ \sequence{a_{i}}_{i \in I} $.
 
     Quando $ A_{i} =A $ per ogni $ i \in I $ si scriverà $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
-}{}{}
-\paragrafo{Prodotto di strutture}{%
+}
+\definizione{
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture (con dominio, rispettivamente, $ A_{i}  $) indicizzata su $ I\neq \emptyset $. Il loro \emph{prodotto (diretto)} $ \prod_{i \in I} \mathcal{A}_{i} $ è la \mbox{$\mathcal{L}$-struttura} $ \mathcal{M} $ con dominio $ \prod_{i \in I} A_{i} $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
         \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $, ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} \in\prod_{i \in I} A_{i}$ \[
             \left(\sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}}\right) \in R^{\mathcal{M}}\qquad \text{se e solo se}\qquad \left(a_{i}^{1}, \dots, a_{i}^{k}  \right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
@@ -71,7 +71,8 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
             c^{\mathcal{M}}=\sequence{b_{i}}\qquad\text{se e solo se}\qquad c^{\mathcal{A}_i}=b_{i} \text{ per ogni }i \in I.
         \]
     \end{itemize}
-}{}{}
+}
+
 \subsection{Filtri e ultrafiltri}
 
 \definizione{
@@ -85,14 +86,14 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 \definizione{
     Il \emph{filtro di Fréchet} $ \mathcal{F}_{\text{Fr}}^{I} $ su $ I $ è definito nel seguente modo:\citazione{$ A \in \mathcal{F}_{\text{Fr}}^{I} $ se e solo se $ I\setminus A $ è finito.}
 }
-\paragrafo{FIP}{%
+\definizione{
     Una famiglia $ \mathcal{G} \subseteq\parti{I} \setminus\{\emptyset\}$ ha la \emph{proprietà dell'intersezione finita} (brevemente FIP) se ogni intersezione finita di elementi di $ \mathcal{G} $ è non vuota.
-}{}{}
-\paragrafo{Estensione canonica}{%
+}
+
     Ogni famiglia $ \mathcal{G}\subseteq\parti{I} \setminus\{\emptyset\}$ con la FIP si estende canonicamente al filtro proprio\[
         \langle \mathcal{G}\rangle =\{ B \subseteq I: B \supseteq A_1\cap\dots\cap A_{k}\text{ per qualche }k \in \N\text{ e }A_1,\dots,A_{k} \in \mathcal{G}\}.
     \]Equivalentemente, $ \langle \mathcal{G}\rangle $ è il più piccolo filtro su $ I $ che contiene $ G $
-}{}{}
+
 \paragrafo{Osservazione}{%
     $ \langle \mathcal{G}\rangle $ è un filtro proprio. Infatti:\begin{itemize}
         \item se $ A \in \langle \mathcal{G}\rangle $, allora per qualche $ A_1,\dots,A_{k} \in \mathcal{G}  $ \[
@@ -139,9 +140,13 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
     $ \boxed{3.\Rightarrow 1.} $\hspace{1em} Si supponga per assurdo che $ A \notin \mathcal{F} $ e $ I\setminus A \notin \mathcal{F} $. 
     
-    Sia $ \mathcal{G}=\mathcal{F}\cup \{A\} $. $ \mathcal{G} $ ha la FIP\footnote{Infatti, siano $ A_1,\dots,A_{k} \in \mathcal{G}   $, senza perdita di generalità assunti tutti diversi. Se $ A_1,\dots,A_{k} \in \mathcal{F}  $, allora $ A_1\cap\dots\cap A_{k}\neq \emptyset  $ perché $ \mathcal{F} $ è un filtro proprio. Se invece $ A_{k} = A  $, allora \[
+    Sia $ \mathcal{G}=\mathcal{F}\cup \{A\} $. $ \mathcal{G} $ ha la FIP. 
+    
+    Infatti, siano $ A_1,\dots,A_{k} \in \mathcal{G}   $, senza perdita di generalità assunti tutti diversi. Se $ A_1,\dots,A_{k} \in \mathcal{F}  $, allora $ A_1\cap\dots\cap A_{k}\neq \emptyset  $ perché $ \mathcal{F} $ è un filtro proprio. Se invece $ A_{k} = A  $, allora \[
         \parentesi{ \in \mathcal{F}}{A_1\cap \dots\cap A_{k-1} }\cap A =  B \cap A
-    \]con $B = A_1\cap \dots\cap A_{k-1}$. Se capitasse che $ B\cap A =\emptyset$, allora $ B \subseteq I\setminus A $, da cui $ I\setminus A \in \mathcal{F} $, assurdo poiché per ipotesi $ I \setminus A \notin \mathcal{F} $.}. Sia ora $ \mathcal{F}'=\langle \mathcal{G}\rangle $. $ \mathcal{F}' $ è un filtro proprio, e si ha \[
+    \]con $B = A_1\cap \dots\cap A_{k-1}$. Se capitasse che $ B\cap A =\emptyset$, allora $ B \subseteq I\setminus A $, da cui $ I\setminus A \in \mathcal{F} $, assurdo poiché per ipotesi $ I \setminus A \notin \mathcal{F} $.
+    
+    Sia ora $ \mathcal{F}'=\langle \mathcal{G}\rangle $. $ \mathcal{F}' $ è un filtro proprio, e si ha \[
         \mathcal{F}' \supseteq \mathcal{G}\supseteq \mathcal{F}, \qquad \mathcal{F}'\neq \mathcal{F}
     \]poiché $ A \in \mathcal{F}'\setminus \mathcal{F} $. Questo contraddice 3.\qed
 }
@@ -165,7 +170,11 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \]e quindi $ A\cap B \in \mathcal{G} $ (oppure $ A\cap B \in \mathcal{G}' $) poiché $ \mathcal{G} $ (oppure $ \mathcal{G}' $) è un filtro. Dunque $ A\cap B \in \mathcal{H} $.
     \end{itemize}
 
-    Per il lemma di Zorn, esiste $ \mathcal{U} $ massimale in $ X $, e necessariamente $ \mathcal{U} \supseteq \mathcal{F} $. Dunque $ \mathcal{U} $ è un filtro massimale rispetto alla famiglia di tutti i filtri su $ I $\footnote{Se per assurdo $ \mathcal{U} $ non fosse un ultrafiltro massimale, sia $ \mathcal{U}' \supsetneqq \mathcal{U} $ un filtro proprio su $ I $. Dunque $ \mathcal{U}' \supseteq \mathcal{F}$ e $ \mathcal{U}' $ filtro proprio su $ I $, e quindi $ \mathcal{U}' \in X $. Questo contraddice il risultato secondo cui $ \mathcal{U} $ è massimale in $ X $.}, e per la proposizione \framref{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}, un filtro massimale è un ultrafiltro.\qed
+    Per il lemma di Zorn, esiste $ \mathcal{U} $ massimale in $ X $, e necessariamente $ \mathcal{U} \supseteq \mathcal{F} $. 
+    
+    Dunque $ \mathcal{U} $ è un filtro massimale rispetto alla famiglia di tutti i filtri su $ I $. Se per assurdo $ \mathcal{U} $ non fosse un ultrafiltro massimale, sia $ \mathcal{U}' \supsetneqq \mathcal{U} $ un filtro proprio su $ I $. Dunque $ \mathcal{U}' \supseteq \mathcal{F}$ e $ \mathcal{U}' $ filtro proprio su $ I $, e quindi $ \mathcal{U}' \in X $. Questo contraddice il risultato secondo cui $ \mathcal{U} $ è massimale in $ X $.
+    
+    Quindi, per la Proposizione \framref{doijcoijoosijoijoijdcidicoijcoijdoijoijoij}, $ \mathcal{U} $ è un ultrafiltro.\qed
 }
 \subsection{Ultraprodotto di $ \mathcal{L} $-strutture}
 
@@ -185,12 +194,12 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         X_{\sequence{a_i},\sequence{b_i}} \cap X_{\sequence{b_i},\sequence{c_i}} \subseteq X_{\sequence{a_i},\sequence{c_i}}   
     \]ma $ X_{\sequence{a_i},\sequence{b_i}} \cap X_{\sequence{b_i},\sequence{c_i}} \in \mathcal{F} $, e dunque $ X_{\sequence{a_i},\sequence{c_i}} \in \mathcal{F} $.
 }
-\paragrafo{Prodotto ridotto di insiemi}{%
+\definizione{
     Il \emph{prodotto ridotto} $ \prod_{{\mathcal{F}}} A_{i}$ degli $ A_{i}  $ modulo $ \mathcal{F} $ è il quoziente \[
         \prod_{i \in I}A_{i}/\sim_{\mathcal{F}} = \left\{\left[\sequence{a_{i}}\right]: \sequence{a_{i}} \in \prod_{i \in I}A_{i}  \right\}. 
     \]Se $ \mathcal{F} $ è un ultrafiltro, il prodotto ridotto corrispondente $ \prod_{\mathcal{F}}A_{i}   $ si dice \emph{ultraprodotto}. Quando $ A_{i}=A  $ per ogni $ i \in I $, si parla invece di \emph{potenza ridotta} e scriviamo $ A^{I}/\mathcal{F} $; se $ \mathcal{F} $ è un ultrafiltro, si parla di \emph{ultrapotenza}.
-}{}{}
-\paragrafo{Ultraprodotto di strutture}{%
+}
+\definizionegenerale{Definizione}{
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture indicizzata da $ I\neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. L'ultraprodotto $ \prod_{\mathcal{U}}\mathcal{A}_i  $ è la $ \mathcal{L} $-struttura $ \mathcal{M} $ con dominio $ \prod_{\mathcal{U}}A_{i}   $ e simboli di $ \mathcal{L} $ interpretati come segue: \begin{itemize}
         \item per ogni $ R \in \operatorname{Rel} $ con arietà $ k $ ed ogni $ \sequence{a_{i}^{1}},\dots,\sequence{a_{i}^{k}} \in \prod_{i \in I}A_{i}  $%
             \begin{gather*}
@@ -210,6 +219,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     \end{itemize}
     Se $ \mathcal{A}_i = \mathcal{A}$ per ogni $  i \in I $, la $ \mathcal{L} $-struttura $ \mathcal{A}^{I}/\mathcal{U} $ si dice \emph{ultrapotenza} di $ \mathcal{A} $.
 }{dcjkklkmdjjjjultraprodottoinssimo}{}
+
 \osservazione{
     Le definizioni sopra riportate sono ben date. A titolo esplicativo si dimostra che se $ R $ è un simbolo di relazione binario, e $ \sequence{a^{1}_i}, \sequence{a^{2}_i },\sequence{b^{1}_i}, \sequence{b^{2}_i } \in \prod_{i \in I} A_{i}  $ con \begin{equation*}
         \sequence{a_{i}^{1} } \sim_{\mathcal{U}} \sequence{b_{i}^{1} } ,\qquad \sequence{a_{i}^{2} } \sim_{\mathcal{U}} \sequence{b_{i}^{2} } 
@@ -357,7 +367,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
     Si indichi con $ A $ il dominio di $ \mathcal{A} $, e con $ A^{I}/\mathcal{U} $ il dominio di $ \mathcal{A}^{I}/\mathcal{U} $.
 
-    Per dimostrare che $ \pi $ sia una immersione elementare si sfrutta la proposizione \framref{odijcoijodijocijoijoijoi}. Si vuole dimostrare che per ogni $ \mathcal{L} $-formula $ \phi(y,x_1,\dots,x_{n}) $ e per ogni $ a^{1},\dots,a^{n} \in A $, \begin{gather}
+    Per dimostrare che $ \pi $ sia una immersione elementare si sfrutta la Proposizione \framref{odijcoijodijocijoijoijoi}. Si vuole dimostrare che per ogni $ \mathcal{L} $-formula $ \phi(y,x_1,\dots,x_{n}) $ e per ogni $ a^{1},\dots,a^{n} \in A $, \begin{gather}
         \mathcal{A}^{I}/\mathcal{U}\vDash \exists y \,\phi\left[y,\pi(a^{1}), \dots, \pi(a^{n})\right]\label{eq:uno}\\ 
         \text{se e solo se}\notag\\ 
         \mathcal{A}^{I}/\mathcal{U}\vDash \phi\left[\pi(a^{0}),\pi(a^{1}), \dots, \pi(a^{n})\right]\label{eq:due}
@@ -390,7 +400,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
     Si consideri dunque il filtro di Fréchet su $ \N $: $ \mathcal{F}_{\text{Fr}}^{ \N} $. 
     
-    Per il lemma \framref{doijcsoijoijoijoijoijoijoij} esiste $ \mathcal{U} $ ultrafiltro su $ \N $ tale che $ \mathcal{U}\supseteq \mathcal{F}_{\text{Fr}}^{ \N} $. Inoltre $ \mathcal{U} $ non può contenere alcun insieme finito. \qed
+    Per il Lemma \framref{doijcsoijoijoijoijoijoijoij} esiste $ \mathcal{U} $ ultrafiltro su $ \N $ tale che $ \mathcal{U}\supseteq \mathcal{F}_{\text{Fr}}^{ \N} $. Inoltre $ \mathcal{U} $ non può contenere alcun insieme finito. \qed
     
     % Infatti, se $ F \subseteq \N $ è finito e $ F \in \mathcal{U} $ 
     
@@ -415,7 +425,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \sequence{a_{i}}_{i \in \N} $. Si continuerà ad adottare la scrittura $ \sequence{a_{i}} $ per le successioni, sottintendendo che l'indice vari su $ \N $.
 }
 \paragrafo{Proprietà}{%
-    Segue dal corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
+    Segue dal Corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
     \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
     a &\longmapsto \left[\sequence{a}\right]
     \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
@@ -535,7 +545,7 @@ Le seguenti proprietà seguono dalle definizioni.
     \begin{itemize}
         \item \emph{Unicità.} Siano $ r_1,r_2 \in \R $ tali che $ r_1\approx \xi \approx r_2 $. Allora $ r_1-\xi $ e $ \xi-r_2 $ sono infinitesimi. Dunque \begin{equation*}
             r_1-r_2 = (r_1-\xi) - (\xi-r_2)
-        \end{equation*}è infinitesimo, e quindi $ r_1\approx r_2 $. Applicando il lemma \framref{kjndjckjsnskjnckjndkjnskjnc} si ha la tesi.
+        \end{equation*}è infinitesimo, e quindi $ r_1\approx r_2 $. Applicando il Lemma \framref{kjndjckjsnskjnckjndkjnskjnc} si ha la tesi.
         \item \emph{Esistenza.} Sia $ A = \set{s \in \R: s \le \xi} $. $ A $ è non vuoto e limitato (poiché $ \xi $ è finito), e pertanto esiste \begin{equation*}
             r = \sup A,
         \end{equation*}poiché $ \R $ è completo. Per le proprietà dell'estremo superiore vale che \begin{equation*}
@@ -560,7 +570,7 @@ Le seguenti proprietà seguono dalle definizioni.
     \end{align*}
 }
 \osservazione{
-    La definizione di valore assoluto su $ \starR $ dell'osservazione \framref{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn} è effettivamente l'estensione su $ \starR $ della mappa reale $ x \mapsto |x| $.
+    La definizione di valore assoluto su $ \starR $ dell'Osservazione \framref{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn} è effettivamente l'estensione su $ \starR $ della mappa reale $ x \mapsto |x| $.
 }
 
 \osservazione{

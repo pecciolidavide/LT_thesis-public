@@ -44,7 +44,7 @@
     \end{equation*}Un morfismo pieno e iniettivo si dice \emph{immersione}.
 }
 \definizione{
-    Siano $ \mathcal{A}, \mathcal{B} $ due $ \mathcal{L} $-strutture. $ \mathcal{A} $ è una sottostruttura di $ \mathcal{B} $ se \begin{itemize}
+    Siano $ \mathcal{A}, \mathcal{B} $ due $ \mathcal{L} $-strutture. Si dice che $ \mathcal{A} $ è una sottostruttura di $ \mathcal{B} $ se \begin{itemize}
         \item $ \norma{\mathcal{A}} \subseteq \norma{ \mathcal{B}} $;
         \item $ \operatorname{id}: \mathcal{A} \longrightarrow \mathcal{B} $ è una immersione. 
     \end{itemize}Si scrive $ \mathcal{A} \subseteq \mathcal{B} $.
@@ -157,7 +157,7 @@ Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove $ x_1,\dots,x_{n}  $ sono le variab
     \end{itemize}
 }
 
-\definizione{Siano $ \mathcal{N} \subseteq \mathcal{M} $ due $ \mathcal{L} $-strutture. $ \mathcal{N} $ è una \emph{sottostruttura elementare di $ \mathcal{M} $} se per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ ed ogni $ a_1,\dots,a_{n} \in N$ \[
+\definizione{Siano $ \mathcal{N} \subseteq \mathcal{M} $ due $ \mathcal{L} $-strutture. Di dice che $ \mathcal{N} $ è una \emph{sottostruttura elementare di $ \mathcal{M} $} se per ogni $ \mathcal{L} $-formula $ \varphi(x_1,\dots,x_{n} ) $ ed ogni $ a_1,\dots,a_{n} \in N$ \[
     \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ]\quad\text{se e solo se}\quad \mathcal{N}\vDash\varphi[a_1,\dots,a_{n} ],
 \]}
 \definizione{
@@ -192,7 +192,7 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
 \definizione{
     Una \emph{varietà topologica} $ n $-dimensionale è uno spazio topologico $ M $, di Hausdorf e a base numerabile, tale per cui, per ogni $ p \in M $ sono $ {U} $ intorno aperto di $ p $ in M, $ V \subseteq \R^{n} $ aperto e \begin{equation*}
         \phi : {U} \longrightarrow V
-    \end{equation*}omeomorfismo. $ \phi $ si dice \emph{carta topologica}.
+    \end{equation*}omeomorfismo. La funzione $ \phi $ si dice \emph{carta topologica}.
 }
 \definizione{
     Se $ M $ è una varietà topologica, un \emph{atlante topologico} di $ M $ è una famiglia di \emph{carte} \begin{equation*}
@@ -203,7 +203,7 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
     \end{itemize}
 }
 \definizione{
-    Sia $ M $ una varietà topologica e sia $ \mathcal{A} = \set{(U_{\alpha},\varphi_{\alpha}  )}_{\alpha \in I} $ un atlante topologico. $ \mathcal{A} $ è \emph{differenziabile} se tutti i cambi di carte sono dei diffeomorfismi tra aperti di $ \R^{n} $, ovvero se per ogni $ \alpha,\beta \in I $ tali che $ U_{\alpha}\cap U_{\beta}\neq \emptyset   $ \begin{equation*}
+    Sia $ M $ una varietà topologica e sia $ \mathcal{A} = \set{(U_{\alpha},\varphi_{\alpha}  )}_{\alpha \in I} $ un atlante topologico. Questo è \emph{differenziabile} se tutti i cambi di carte sono dei diffeomorfismi tra aperti di $ \R^{n} $, ovvero se per ogni $ \alpha,\beta \in I $ tali che $ U_{\alpha}\cap U_{\beta}\neq \emptyset   $ \begin{equation*}
         \varphi_{\alpha}\circ \left(\varphi_{\beta}\right)^{-1}: \varphi_{\beta} (U_{\alpha} \cap U_{\beta}  )   \longrightarrow \varphi_{\alpha} (U_{\alpha} \cap U_{\beta}  )
     \end{equation*}è una biiezione continua e differenziabile (di classe $ C^{\infty} $), con inversa differenziabile (di classe $ C^{\infty} $).
 }
@@ -316,7 +316,7 @@ Per la costruzione di $ \starR $ come ultraprodotto, sarà necessario utilizzare
     \end{equation*}per ogni $ t \in (- \varepsilon, \varepsilon) $ è detta \emph{curva integrale} di $ X $ uscente da $ p $.
 }
 \osservazione{
-    Per il teorema di Cauchy-Lipschitz sull'unicità della soluzione di un problema di Cauchy, se $ X $ è un campo vettoriale almeno $ C^{1} $ tale curva integrale esiste sempre su un intervallo massimale $ I $, contente lo zero.
+    Per il Teorema di Cauchy-Lipschitz sull'unicità della soluzione di un problema di Cauchy, se $ X $ è un campo vettoriale almeno $ C^{1} $ tale curva integrale esiste sempre su un intervallo massimale $ I $, contente lo zero.
 }
 \definizione{
     Sia $ X $ un campo vettoriale su una varietà $ M $. Si definisce il \emph{flusso di $ X $ al tempo $ t $} la mappa \begin{align*}

@@ -176,7 +176,7 @@
     Si definisce ora \begin{align*}
         (\R^{n})^{\lambda}_{\text{F}} &\coloneqq \set{v \in \nonstandard{(\R^n)}: v\prec \lambda}\\ 
         (\R^{n})^{\lambda}_{\text{I}} &\coloneqq \set{v \in \nonstandard{(\R^n)}: v\pprec \lambda}
-    \end{align*}Il teorema 10.3.8 di \cite{katz_true_nodate} garantisce che $ (\R^{n})^{\lambda}_{\text{F}}/(\R^{n})^{\lambda}_{\text{I}} \cong \R^{n}$. Dunque, la mappa suriettiva \begin{align*}
+    \end{align*}Il Teorema 10.3.8 di \cite{katz_true_nodate} garantisce che $ (\R^{n})^{\lambda}_{\text{F}}/(\R^{n})^{\lambda}_{\text{I}} \cong \R^{n}$. Dunque, la mappa suriettiva \begin{align*}
     P_{a} &\longrightarrow (\R^{n})^{\lambda}_{\text{F}} \\
     (a,x) &\longmapsto \hat{x}-\hat{a}
     \end{align*}induce una mappa iniettiva \begin{align*}
@@ -189,7 +189,7 @@
     \end{equation*}Dunque la mappa $ \R^{n} \longrightarrow \R^{n} $ indotta dalle due identificazioni di $ T_{a} $ con $ \R^{n} $  fornite dalle due scelte di coordinate è data dalla moltiplicazione per una matrice $ J_{\st(a)} $, e pertanto è lineare. Dunque la struttura di spazio vettoriale di $ T_{a}$ su $ \R $ è ben definita.\qed
 }
 \osservazione{
-    Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione di \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
+    Se $ a,b \in \hhalo{M} $ e $ a \approx b $, allora date le coordinate in un intorno di $ \st(a) $, l'identificazione di $ T_{a}M  $ e $ T_{b}M  $ con $ \R^{n}$ indotta dalle coordinate induce una identificazione tra $ T_{a}M  $ e $ T_{b}M  $. Per una diversa scelta di coordinate, la matrice jacobiana $ J_{\st(a)}  $ definita nella dimostrazione della Proposizione \framref{dkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd} è la stessa per $ a $ e per $ b $, e dunque l'identificazione tra $ T_{a}M$ e $ T_{b}M  $ è indipendente dalle coordinate, e dunque ben definita. 
 
     Di conseguenza, quando $ a \approx b $ è possibile sommare senza ambiguità due vettori $ \vec{ax} \in T_{a}M  $ e $ \vec{by} \in T_{b}M  $.
 }
@@ -376,7 +376,7 @@ Per semplicità, si dà anche la seguente definizione, rindondante, per i campi 
     \end{equation*}
 }
 \osservazione{
-    Anche se non esplicitamente mostrato in questo lavoro, le definizioni dei campi di prevettori di classe $ D^{1} $ e $ D^{2} $ sono indipendenti dalle coordinate. Per una trattazione più approfondita, si rimanda alle proposizioni 3.10 e 3.14 di \cite{nowik_differential_2015}.
+    Anche se non esplicitamente mostrato in questo lavoro, le definizioni dei campi di prevettori di classe $ D^{1} $ e $ D^{2} $ sono indipendenti dalle coordinate. Per una trattazione più approfondita, si rimanda alla Proposition 3.10 e alla Proposition 3.14 di \cite{nowik_differential_2015}.
 }
 
 Nella proposizione successiva si mostrerà che il campo di prevettori costruito secondo la dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, indotto da un campo vettoriale di classe $ C^k $, è un campo di prevettori di classe $ D^{k} $. 
@@ -472,7 +472,7 @@ Si dimostrano ora un lemma tecnico, che servirà, tra le altre cose, a dimostrar
     \end{itemize}
 }
 \paragrafo{Osservazione}{%
-Si enunciano di seguito due risultati, che non saranno dimostrati, in merito alla composizione di campi di prevettori. Si veda le proposizioni 3.16 e 3.17 di \cite{nowik_differential_2015}.\begin{itemize}
+Si enunciano di seguito due risultati, che non saranno dimostrati, in merito alla composizione di campi di prevettori. Si veda la Proposizion 3.16 e la Proposition 3.17 di \cite{nowik_differential_2015}.\begin{itemize}
     \item Se $ F,G $ sono campi di prevettori di classe $ D^{1} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{1} $. 
     \item Se $ F,G $ sono campi di prevettori di classe $ D^{2} $, allora $ F\circ G $ è un campo di prevettori di classe $ D^{2} $.
 \end{itemize}
@@ -626,7 +626,7 @@ Si considerano due casi.
     \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
     (f,n) &\longmapsto \underset{n\text{ volte}}{\underbrace{f\circ \dots\circ f}}
     \end{align*}e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $: $ F^{n} = \nonstandard{\Phi}(F,n) $.
-    \item Sia $ F:\nonstandard{U} \longrightarrow \nonstandard{V} $ un campo di prevettori locale. Si estenda $ F $ ad $ F': \nonstandard{V} \longrightarrow \nonstandard{V} $ definendo $ F'(a) = a $ per ogni $ a \in \nonstandard{V} \setminus \nonstandard{U}$. $ F' $ può ora essere considerato un campo di prevettori globale su $ \nonstandard{V} $.
+    \item Sia $ F:\nonstandard{U} \longrightarrow \nonstandard{V} $ un campo di prevettori locale. Si estenda $ F $ ad $ F': \nonstandard{V} \longrightarrow \nonstandard{V} $ definendo $ F'(a) = a $ per ogni $ a \in \nonstandard{V} \setminus \nonstandard{U}$. La mappa $ F' $ può ora essere considerato un campo di prevettori globale su $ \nonstandard{V} $.
     
     Sia $ Y_{n} \coloneqq \set{a \in \nonstandard{U}: (F')^{n}(a) \in \nonstandard{U}}$. Si definisce dunque il \emph{flusso di $ F $ al tempo $ t $} la funzione \begin{align*}
     F_{t} : Y_{n(t)}  &\longrightarrow \nonstandard{U} \\
@@ -731,7 +731,7 @@ Si considerano due casi.
     Il teorema segue banalmente dal Teorema \teoref{dlkmckdkclkmskdkclkmskdkcdkkkkkkkk} e dal Corollario \framref{djdkjncjdjndimostrazioncinainainainaianinaiai}.\qed
 }
 \paragrafo{Osservazione}{%
-    È possibile dimostrare che se $ F $ è un campo di prevettori ottenuto a partire da un campo vettoriale classico $ X $ tramite la procedura illustrata nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, allora $ h_{t}^{F} $ è esattamente il flusso di $ X $ nel senso classico. Si rimanda al \straniero{Remark} 5.8 di \cite{nowik_differential_2015} e al Teorema 14.1 di \cite{keisler_foundation_2007}.
+    È possibile dimostrare che se $ F $ è un campo di prevettori ottenuto a partire da un campo vettoriale classico $ X $ tramite la procedura illustrata nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, allora $ h_{t}^{F} $ è esattamente il flusso di $ X $ nel senso classico. Si rimanda al Remark 5.8 di \cite{nowik_differential_2015} e al Theorem 14.1 di \cite{keisler_foundation_2007}.
 }{osservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh}{}
 \subsection{Il campo di prevettori rappresentativo canonico}
 

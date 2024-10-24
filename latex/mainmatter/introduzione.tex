@@ -40,19 +40,19 @@ In particolare, se $ \mathcal{U} $ è un ultrafiltro non principale su $ \N $, o
     \item per ogni $ A \subseteq \N $, si ha che $ A \in \mathcal{U} $ oppure $ \N \setminus A \in \mathcal{U} $
 \end{itemize}si definisce la relazione di equivalenza $ \sim_{\mathcal{U}}  $ tra elementi di $ \R^{\N} $. 
 
-Per ogni \mbox{$ \sequence{a_{n} }_{n \in \N}, \sequence{b_{n} }_{n \in \N} \in \R^{\N} $}, \begin{equation*}
-    \sequence{a_{n} }_{n \in \N}\mathrel{\sim_{\mathcal{U}} }\sequence{b_{n} }_{n \in \N}\quad\text{ se e solo se }\quad\set{ i \in \N: a_{n}=b_{n}  } \in \mathcal{U}.
+Per ogni \mbox{$ \sequence{a_{n}}, \sequence{b_{n} } \in \R^{\N} $}, \begin{equation*}
+    \sequence{a_{n} }\mathrel{\sim_{\mathcal{U}} }\sequence{b_{n} }\quad\text{ se e solo se }\quad\set{ n \in \N: a_{n}=b_{n}  } \in \mathcal{U}.
 \end{equation*}È quindi possibile definire $ \starR $ come il quoziente di $ \R^{\N} $ con $ \sim_{\mathcal{U}}  $. Si scriverà: \begin{equation*}
     \starR \coloneqq \R^{\N}/\mathcal{U},
-\end{equation*}e si indicheranno con $ \sequence{a_{n}}_{n \in \N}/\mathcal{U} $ gli elementi di $ \R^{\N}/\mathcal{U} $. 
+\end{equation*}e si indicheranno con $ \filtersequence{a_{n}} $ gli elementi di $ \R^{\N}/\mathcal{U} $. 
 
-All'interno di $ \starR $ somma, prodotto e relazione d'ordine vengono definite come segue: per ogni $ \sequence{a_{n}}_{n \in \N}/\mathcal{U}, \sequence{b_{n}}_{n \in \N}/\mathcal{U} $ \begin{itemize}
-    \item $ \displaystyle \sequence{a_{n}}_{n \in \N}/\mathcal{U} + \sequence{b_{n}}_{n \in \N}/\mathcal{U} = \sequence{a_{n} + b_{n} }_{n \in \N}/\mathcal{U} $;
-    \item $ \displaystyle \sequence{a_{n}}_{n \in \N}/\mathcal{U} \cdot  \sequence{b_{n}}_{n \in \N}/\mathcal{U} = \sequence{a_{n} \cdot  b_{n} }_{n \in \N}/\mathcal{U} $;
-    \item $ \displaystyle \sequence{a_{n}}_{n \in \N}/\mathcal{U} \le \sequence{b_{n}}_{n \in \N}/\mathcal{U} $ se e solo se $ \set{ n\in \N: a_{n}\le b_{n}  } \in \mathcal{U} $;
+All'interno di $ \starR $ somma, prodotto e relazione d'ordine vengono definite come segue: per ogni $ \filtersequence{a_{n}}, \filtersequence{b_{n}} $ \begin{itemize}
+    \item $ \displaystyle \filtersequence{a_{n}} + \filtersequence{b_{n}} = \filtersequence{a_{n} + b_{n} } $;
+    \item $ \displaystyle \filtersequence{a_{n}} \cdot  \filtersequence{b_{n}} = \filtersequence{a_{n} \cdot  b_{n} }$;
+    \item $ \displaystyle \filtersequence{a_{n}} \le \filtersequence{b_{n}} $ se e solo se $ \set{ n\in \N: a_{n}\le b_{n}  } \in \mathcal{U} $;
 \end{itemize}
 
-Questa costruzione di $ \starR $ prende il nome di \emph{ultrapotenza} di $ \R $. È quindi possibile sfruttare un potente teorema della teoria degli ultrapodotti e delle ultrapotenze: il teorema di Łoś. Questo consente di affermare che \begin{equation*}
+Questa costruzione di $ \starR $ prende il nome di \emph{ultrapotenza} di $ \R $. È quindi possibile sfruttare un potente teorema della teoria degli ultrapodotti e delle ultrapotenze: il Teorema di Łoś. Questo consente di affermare che \begin{equation*}
     \left(\R,+,-,\cdot , 0,1,\le \right)\quad\text{e}\quad\left(\starR,+,-,\cdot , 0,1,\le \right)
 \end{equation*}siano elementarmente equivalenti, ovvero che esista \begin{equation*}
     *: \R \longrightarrow \starR
@@ -60,11 +60,11 @@ Questa costruzione di $ \starR $ prende il nome di \emph{ultrapotenza} di $ \R $
     \R\vDash\phi[a_1,\dots,a_{n} ]\quad\text{se e solo se}\quad \starR\vDash\phi[\nonstandard{a_1},\dots,\nonstandard{a_{n} }].
 \end{equation*}In particolare, questa iniezione è \begin{align*}
 * :\R  &\hookrightarrow\starR \\
-r &\longmapsto \sequence{r}_{n \in \N}/\mathcal{U}
+r &\longmapsto \filtersequence{r}
 \end{align*}È possibile dunque identificare ogni numero reale con un elemento di $ \starR $, e pertanto per ogni $ r \in \R $ si scriverà $ r $ in luogo di $ \nonstandard{r} \in \starR $. 
 
 Si verifica che l'elemento $ M \in \starR $: \begin{equation*}
-    M \coloneqq \sequence{n}_{n \in \N}/\mathcal{U}
+    M \coloneqq \filtersequence{n}
 \end{equation*}sia \emph{infinito}, ovvero per ogni $ r \in \R $, $ M > r $. 
 
 Ovviamente quindi $ 1/M $ sarà un elemento infinitesimo di $ \starR $, ovvero per ogni $ r \in \R$ positivo \begin{equation*}
@@ -101,7 +101,7 @@ L'intero capitolo 3 è dedicato alla dimostrazione dell'esistenza di $ \nonstand
 
 Se $ M $ è una varietà differenziabile, si può identificare l'insieme dei punti di $ M $ con un elemento di $ V_1(\R)\setminus V_0(\R) $. In questo contesto, quindi, ha senso considerare l'estensione non-standard di tutti gli oggetti di interesse della geometria differenziale, quali atlanti differenziabili, topologia di $ M $ e campi vettoriali e scalari. 
 
-L'obiettivo di questa trattazione è la defininizione di flusso di un campo vettoriale su una varietà come un oggetto combinatorico invece che integrale. In seguito si mostrerà, come applicazione, la dimostrazione di un corollario del teorema di Frobenius.
+L'obiettivo di questa trattazione è la defininizione di flusso di un campo vettoriale su una varietà come un oggetto combinatorico invece che integrale. In seguito si mostrerà, come applicazione, la dimostrazione di un corollario del Teorema di Frobenius.
 
 Il primo passo da compiere è quello di definire una nozione di punti infinitamente vicini a $ p \in M $. Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
     \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
@@ -120,7 +120,7 @@ Si definisce l'\emph{alone} di $ p $ come $ \halo(p) \subseteq \nonstandard{M} $
     \end{equation*}Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $. 
     \item Due prevettori $ (a,x), (a,y) $ sono equivalenti se per ogni funzione differenziabile $ f: M \longrightarrow \R $ \begin{equation*}
         \nonstandard{f(y)}-\nonstandard{f(x)}\pprec \lambda.
-    \end{equation*}Si denota con $ T_{a}M $ il quoziente di $ P_{a}M  $ rispetto a questa relazione di equivalenza. $ T_{a}M  $ è uno spazio vettoriale reale indipendente dalla scelta delle coordinate, i cui elementi sono denotati con $ \vec{ax} $.
+    \end{equation*}Si denota con $ T_{a}M $ il quoziente di $ P_{a}M  $ rispetto a questa relazione di equivalenza. Il quoziente $ T_{a}M  $ è uno spazio vettoriale reale indipendente dalla scelta delle coordinate, i cui elementi sono denotati con $ \vec{ax} $.
 \end{itemize}
 
 Se $ a \in \hhalo{M} $ e $ (a,x) $ è un prevettore ed $ \vec{ax} $ è un vettore, si definiscono le derivazioni su $ f: M \longrightarrow \R $: \begin{align*}
@@ -173,7 +173,7 @@ Dunque, se $ F $ e $ G $ sono campi di prevettori sufficientemente regolari, si 
 \end{equation*}Inoltre, è significativo notare che per ogni $ a $ nel dominio di $ [F,G] $: \begin{equation*}
     [F,G](a) - a - \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(a)-a\right)\pprec \lambda.
 \end{equation*}Infatti, se $ X $ e $ Y $ sono campi vettoriali classici di classe $ C^{2} $ di flussi $ \Phi^{X}_t  $ e $ \Phi^{Y}_t $, allora le parentesi di Lie tra $ X $ e $ Y $ sono, per ogni $ p \in M $: \begin{equation*}
-    [X,Y](p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(\Phi^{Y}_t\right)^{-1}\circ\left(\Phi^{X}_t\right)^{-1}\circ \left(\Phi^{Y}_t\right)\circ \left(\Phi^{X}_t\right)(p)-p\right).
-\end{equation*}È dunque naturale dedurre che se $ X,Y $ sono campi vettoriali classici e $ F(a)=a + \lambda X(a) $, $ G(b) = b+\lambda Y(b) $ sono campi di prevettori che realizzano, rispettivamente, $ X $ e $ Y $, allora $ [F,G] $ realizza $ [X,Y] $.
+    [X,Y]_{\text{cl}}(p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(\Phi^{Y}_t\right)^{-1}\circ\left(\Phi^{X}_t\right)^{-1}\circ \left(\Phi^{Y}_t\right)\circ \left(\Phi^{X}_t\right)(p)-p\right).
+\end{equation*}È dunque naturale dedurre che se $ X,Y $ sono campi vettoriali classici e $ F(a)=a + \lambda X(a) $, $ G(b) = b+\lambda Y(b) $ sono campi di prevettori che realizzano, rispettivamente, $ X $ e $ Y $, allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 
-Si termina il lavoro dimostrando, tramite un metodo puramente combinatorico, che per due campi vettoriali classici $ X, Y$ si ha che i loro flussi commutano se e solo se $ [X,Y]=0 $.
+Si termina il lavoro dimostrando, tramite un metodo puramente combinatorico, che per due campi vettoriali classici $ X, Y$ si ha che i loro flussi commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.

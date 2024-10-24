@@ -133,7 +133,30 @@
 \newcommand{\nonstandard}[1]{\prescript{*}{}{#1}}
 \newcommand{\halo}{\mathfrak{h}}
 \newcommand{\hhalo}[1]{\prescript{\halo}{}{#1}}
-\newcommand{\sequence}[1]{\langle #1\rangle}
+%%% Modo 1
+
+% \newcommand{\sequence}[2][n \in \N]{{\langle #2\rangle}^{#1}
+% }
+% \newcommand{\filtersequence}[2][n \in \N]{\sequence[#1]{#2}_{\mathcal{U}}}
+
+%%%
+%%% Modo 2
+
+\newcommand{\sequence}[2][n \in \N]{{\langle #2\rangle}_{\!#1}
+}
+\newcommand{\filtersequence}[2][n \in \N]{%
+	{\overline{\langle #2\rangle}}_{\!#1}%
+}
+
+%%%
+
+%%% Modo 3
+
+% \newcommand{\sequence}[2][n \in \N]{{\langle #2\rangle}_{#1}
+% }
+% \newcommand{\filtersequence}[2][n \in \N]{\sequence[#1]{#2}^{\mathcal{U}}}
+
+%%%
 \newcommand{\R}{\mathds{R}}
 \newcommand{\starR}{\nonstandard{\R}}
 \newcommand{\borel}{\mathscr{B}}
@@ -156,6 +179,7 @@
 \newcommand{\diff}[1]{\operatorname{d}_{#1}}
 \renewcommand{\vec}[1]{\overrightarrow{\vphantom{i}#1}}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+
 %tramite i prossimi due comandi posso decidere come scrivere i logaritmi naturali in tutti i documenti: ho infatti eliminato qualsiasi differenza tra "ln" e "log": se si vuole qualcosa di diverso bisogna inserire manualmente il tutto
 \let\ln\relax
 \DeclareMathOperator{\ln}{ln}

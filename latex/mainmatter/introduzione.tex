@@ -15,7 +15,7 @@
 
 Quando Lebniz sviluppò per la prima volta gli oggetti dell'analisi matematica (quali funzioni continue, derivate, integrali\dots) il suo lavoro si fondava sul concetto intuitivo di infinitesimo. Per lui gli infinitesimi erano quei numeri diversi da zero ma minori di ogni numero reale positivo.
 
-Leibniz supponeva che per questi elementi valessero le normali regole aritmetiche di clacolo. Vi erano però delle contraddizioni logiche, come messo in luce da George Berkeley. 
+Leibniz supponeva che per questi elementi valessero le normali regole aritmetiche di calcolo. Vi erano però delle contraddizioni logiche, come messo in luce da George Berkeley. 
 
 Pertanto, nel diciannovesimo secolo vi fu la necessità di riformare le basi dell'analisi matematica; questa necessità culminò nel 1861, con l'introduione da parte di Weierstrass della definizione $ (\varepsilon$-$\delta) $ di limite come la conosciamo oggi. 
 
@@ -25,13 +25,13 @@ Solo con Abraham Robinson fu possibile dare una solida base teorica all'utilizzo
 
 Egli scoprì infatti che $ \R $ poteva essere esteso ad un campo non archimedeo\footnote{
     Un campo ordinato si dice archimedeo se per ogni $ x \in \K $ positivo, esiste $ n \in \N $ tale che\[x<\parentesi{n\text{-volte}}{1+\dots+1}.\]
-}$\starR$ (detto \emph{campo degli iperreali}) in cui sono quindi presenti degli elementi infiniti e degli elementi infinitesi, il cui comportamento è quello supposto da Leibniz.
+}$\starR$ (detto \emph{campo degli iperreali}) in cui sono quindi presenti degli elementi infiniti e degli elementi infinitesimi, il cui comportamento è quello supposto da Leibniz.
 
 \section*{Campo degli iperreali}
 
-Il campo ordinato degli iperreali è \emph{elementarmente equivalente} al campo ordinato dei numeri reali, ovvero ogni enunciato esprimibile al prim'ordine vero per i numeri reali è vero anche per gli iperreali. 
+Il campo ordinato dei numeri reali si immerge elementarmente nel campo ordinato degli iperreali. Questo implica anche che ogni enunciato esprimibile al prim'ordine vero per i numeri reali è vero anche per gli iperreali. 
 
-Il capitolo 2 è dedicato proprio alla costruzione di $ \starR $. Questo si costruisce ponendo una relazione di equivalenza su $ \R^{\N} $ (l'insieme delle successioni a valori reali), sfruttando la teoria degli ultraprodotti. 
+Il Capitolo 2 è dedicato proprio alla costruzione di $ \starR $. Questo si costruisce ponendo una relazione di equivalenza su $ \R^{\N} $ (l'insieme delle successioni a valori reali), sfruttando la teoria degli ultraprodotti. 
 
 In particolare, se $ \mathcal{U} $ è un ultrafiltro non principale su $ \N $, ovvero $ \mathcal{U} \subseteq \parti{\N} $ tale che \begin{itemize}
     \item se $ A \in \mathcal{U} $ e $ A \subseteq B \subseteq \N $, allora $ B \in \mathcal{U} $;
@@ -42,26 +42,29 @@ In particolare, se $ \mathcal{U} $ è un ultrafiltro non principale su $ \N $, o
 
 Per ogni \mbox{$ \sequence{a_{n}}, \sequence{b_{n} } \in \R^{\N} $}, \begin{equation*}
     \sequence{a_{n} }\mathrel{\sim_{\mathcal{U}} }\sequence{b_{n} }\quad\text{ se e solo se }\quad\set{ n \in \N: a_{n}=b_{n}  } \in \mathcal{U}.
-\end{equation*}È quindi possibile definire $ \starR $ come il quoziente di $ \R^{\N} $ con $ \sim_{\mathcal{U}}  $. Si scriverà: \begin{equation*}
+\end{equation*}Si ha quindi che $ \starR $ è il quoziente di $ \R^{\N} $ con $ \sim_{\mathcal{U}}  $. Si scriverà: \begin{equation*}
     \starR \coloneqq \R^{\N}/\mathcal{U},
 \end{equation*}e si indicheranno con $ \filtersequence{a_{n}} $ gli elementi di $ \R^{\N}/\mathcal{U} $. 
 
-All'interno di $ \starR $ somma, prodotto e relazione d'ordine vengono definite come segue: per ogni $ \filtersequence{a_{n}}, \filtersequence{b_{n}} $ \begin{itemize}
-    \item $ \displaystyle \filtersequence{a_{n}} + \filtersequence{b_{n}} = \filtersequence{a_{n} + b_{n} } $;
-    \item $ \displaystyle \filtersequence{a_{n}} \cdot  \filtersequence{b_{n}} = \filtersequence{a_{n} \cdot  b_{n} }$;
-    \item $ \displaystyle \filtersequence{a_{n}} \le \filtersequence{b_{n}} $ se e solo se $ \set{ n\in \N: a_{n}\le b_{n}  } \in \mathcal{U} $;
-\end{itemize}
-
-Questa costruzione di $ \starR $ prende il nome di \emph{ultrapotenza} di $ \R $. È quindi possibile sfruttare un potente teorema della teoria degli ultrapodotti e delle ultrapotenze: il Teorema di Łoś. Questo consente di affermare che \begin{equation*}
-    \left(\R,+,-,\cdot , 0,1,\le \right)\quad\text{e}\quad\left(\starR,+,-,\cdot , 0,1,\le \right)
-\end{equation*}siano elementarmente equivalenti, ovvero che esista \begin{equation*}
+Questa costruzione di $ \starR $ prende il nome di \emph{ultrapotenza} di $ \R $. È possibile sfruttare un potente teorema della teoria degli ultrapodotti e delle ultrapotenze: il Teorema di Łoś. Questo consente di affermare che esista una immersione elementare da \begin{equation*}
+    \left(\R,+,-,\cdot , 0,1,\le \right)\quad\text{a}\quad\left(\starR,+,-,\cdot , 0,1,\le \right)
+\end{equation*}ovvero che esista una funzione \begin{equation*}
     *: \R \longrightarrow \starR
-\end{equation*}tale che se $ \mathcal{L}_{\text{ord}} $ è il linguaggio del prim'ordine dei campi ordinati, per ogni $ \mathcal{L}_{\text{ord}} $-formula $ \phi(x_1,\dots,x_{n} ) $ e per ogni $ a_1,\dots,a_{n} \in \R  $: \begin{equation*}
+\end{equation*}tale che, se $ \mathcal{L}_{\text{ord}} $ è il linguaggio del prim'ordine dei campi ordinati, per ogni $ \mathcal{L}_{\text{ord}} $-formula $ \phi(x_1,\dots,x_{n} ) $ e per ogni $ a_1,\dots,a_{n} \in \R  $: \begin{equation*}
     \R\vDash\phi[a_1,\dots,a_{n} ]\quad\text{se e solo se}\quad \starR\vDash\phi[\nonstandard{a_1},\dots,\nonstandard{a_{n} }].
 \end{equation*}In particolare, questa iniezione è \begin{align*}
 * :\R  &\hookrightarrow\starR \\
-r &\longmapsto \filtersequence{r}
-\end{align*}È possibile dunque identificare ogni numero reale con un elemento di $ \starR $, e pertanto per ogni $ r \in \R $ si scriverà $ r $ in luogo di $ \nonstandard{r} \in \starR $. 
+r &\longmapsto \filtersequence{r}.
+\end{align*}Siccome è possibile identificare ogni numero reale con un elemento di $ \starR $, per ogni $ r \in \R $ si scriverà $ r $ in luogo di $ \nonstandard{r} \in \starR $. 
+
+All'interno di $ \starR $ somma, prodotto e relazione d'ordine vengono definite in maniera canonica; ad esempio, per ogni $ \filtersequence{a_{n}}, \filtersequence{b_{n}} \in \starR$: \begin{equation*}
+    \filtersequence{a_{n}} + \filtersequence{b_{n}} = \filtersequence{a_{n} + b_{n} }.
+\end{equation*}
+%  \begin{itemize}
+%     \item $ \displaystyle \filtersequence{a_{n}} + \filtersequence{b_{n}} = \filtersequence{a_{n} + b_{n} } $;
+%     \item $ \displaystyle \filtersequence{a_{n}} \cdot  \filtersequence{b_{n}} = \filtersequence{a_{n} \cdot  b_{n} }$;
+%     \item $ \displaystyle \filtersequence{a_{n}} \le \filtersequence{b_{n}} $ se e solo se $ \set{ n\in \N: a_{n}\le b_{n}  } \in \mathcal{U} $;
+% \end{itemize}
 
 Si verifica che l'elemento $ M \in \starR $: \begin{equation*}
     M \coloneqq \filtersequence{n}
@@ -76,11 +79,11 @@ Ovviamente quindi $ 1/M $ sarà un elemento infinitesimo di $ \starR $, ovvero p
         0 < |x| < r.
     \end{equation*}
 \end{itemize}
-Poiché per ogni $ x \in \starR $ esiste un unico $ r_{x}  \in \R $ tale che $ x-r_{x}  $ è infinitesimo o nullo, è ben definita la funzione $ \st: \nonstandard{R} \longrightarrow \R $, che a ciascun $ x $ associa $ r_{x}  $.
+Poiché per ogni $ x \in \starR $ finito esiste un unico $ r_{x}  \in \R $ tale che $ x-r_{x}  $ è infinitesimo o nullo, è ben definita la funzione $ \st: \starR_{\bounded}  \longrightarrow \R $, che a ciascun $ x $ associa $ r_{x}  $, dove $ \starR_{\bounded} \subseteq \starR $ sono gli elementi finiti di $ \starR $.
 
 È possibile estendere questa costruzione ad un insieme molto più grande di oggetti: l'universo matematico. Vi sono diversi approcci. In questa tesi si seguirà quello di \cite{nowik_differential_2015}, che a sua volta di rifà a \cite{chang_model_2012}.
 
-Sia $ X $ un insieme base\footnote{La definizione formale di questo concetto sarà riportata nel corpo di questo lavoro. Vale che $ \R $ è un insieme base.}. Siano \begin{align*}
+Sia $ X $ un insieme base\footnote{La definizione formale di questo concetto sarà riportata nel corpo di questo lavoro. È possibile dimostrare che $ \R $ è un insieme base.}. Siano \begin{align*}
     V_0(X) &= X, \\\forall\, n \in \N\setminus\{0\}\quad V_{n+1}(X) &= V_{n}(X)\cup\parti{V_{n}(X) }.
 \end{align*}Si definisce \emph{universo matematico} costruito su $ X $ l'insieme \begin{equation*}
     V(X)\coloneqq \bigcup_{n \in \N} V_{n}(X). 
@@ -92,27 +95,62 @@ Una estensione non standard di $ V(X) $ consiste in un insieme base $ \nonstanda
     \item[(II)] Per ogni formula limitata $ \phi(x_1,\dots,x_{k} ) $ e ogni $ k $-upla di costanti $ a_1,\dots,a_{k} \in V(X)  $, la formula $ \phi[a_1,\dots,a_{k} ] $ è vera in $ V(X) $ se e solo se $ \phi[\nonstandard{a_1},\dots,\nonstandard{a_{k} }] $ è vera in $ \nonstandard{V(X)} $.
 \end{enumerate}
 
-L'intero capitolo 3 è dedicato alla dimostrazione dell'esistenza di $ \nonstandard{V(X)} $, con una costruzione simile a quella di $ \starR $.  L'oggetto di interesse per questa tesi è $ V(\R) $, la cui utilità è dovuta al fatto che tra i suoi elementi vi siano: \begin{itemize}
+L'intero Capitolo 3 è dedicato alla dimostrazione dell'esistenza di $ \nonstandard{V(X)} $, con una costruzione simile a quella di $ \starR $.  L'oggetto di interesse per questa tesi è $ V(\R) $, la cui utilità è dovuta al fatto che tra i suoi elementi vi siano: \begin{itemize}
     \item sottoinsiemi di $ \R^{n} $ per $ n \in \N $ arbitrario;
     \item funzioni $ f: A \subseteq \R^{n} \longrightarrow B \subseteq \R^{m} $ per $ n,m \in \N $ arbitrari.
 \end{itemize}
 
 \section*{Geometria differenziale}
 
-Se $ M $ è una varietà differenziabile, si può identificare l'insieme dei punti di $ M $ con un elemento di $ V_1(\R)\setminus V_0(\R) $. In questo contesto, quindi, ha senso considerare l'estensione non-standard di tutti gli oggetti di interesse della geometria differenziale, quali atlanti differenziabili, topologia di $ M $ e campi vettoriali e scalari. 
+Se $ M $ è una varietà differenziabile, si può identificare l'insieme dei punti di $ M $ con un elemento di $ V_1(\R)\setminus V_0(\R) $. In questo contesto, quindi, ha senso considerare l'estensione non-standard di tutti gli oggetti di interesse della geometria differenziale, quali atlanti differenziabili, topologia di $ M $ e campi vettoriali e scalari. In questo modo sarà ben definito $ \nonstandard{M} $, con $ M \hookrightarrow \nonstandard{M} $.
 
-L'obiettivo di questa trattazione è la defininizione di flusso di un campo vettoriale su una varietà come un oggetto combinatorico invece che integrale. In seguito si mostrerà, come applicazione, la dimostrazione di un corollario del Teorema di Frobenius.
+L'obiettivo di questa trattazione è la definizione di flusso di un campo vettoriale su una varietà come un oggetto combinatorico invece che integrale. In seguito si mostrerà, come applicazione, la dimostrazione di un corollario del Teorema di Frobenius. 
 
-Il primo passo da compiere è quello di definire una nozione di punti infinitamente vicini a $ p \in M $. Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
-    \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
-    \item $ r \pprec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
-\end{itemize}Inoltre, se $ v \in \nonstandard{(\R^{n})} $ si scriverà $ v\prec s $ e $ v\pprec s $ se per qualche norma $ \norma{\cdot } $ su $ \R^{n} $ la relazione vale per $ \nonstandard{\norma{v}} $. Per $ v,w \in \nonstandard{(\R^{n})} $ si scriverà $ v\approx w $ se $ v-w \pprec 1$. 
+% Sia dunque $ \lambda \in \starR $ un \emph{infinitesimo} fissato.
 
-Sia dunque $ \lambda \in \starR $ un infinitesimo fissato.
+% È possibile definire, su $ \nonstandard{M} $, una nozione di distanza infinitesima tra punti (e si dirà che i punti sono infinitamente vicini), ereditata proprio dalla struttura non archimedea di $ \starR $. 
 
-Si definisce l'\emph{alone} di $ p $ come $ \halo(p) \subseteq \nonstandard{M} $ l'insieme di tutti gli $ x \in \nonstandard{M} $ per i quali vi è un intorno coordinato $ U $ di $ p $ tale che $ x \in \nonstandard{U} $ e $ x \approx p$ in quelle date coordinate. Per ogni $ A \subseteq M $ è definito l'alone di $ A $: \begin{equation*}
-    \hhalo{A} \coloneqq \bigcup_{p \in A}\halo(p).
-\end{equation*}Questa unione è disgiunta, e pertanto è ben definita una funzione $ \st: \hhalo{A} \longrightarrow A $ che ad $ x $ associa l'unico $ p \in A $ tale per cui $ x \in \halo(p) $.
+% Questo consente di definire i cosiddetti \emph{prevettori}, ovvero coppie di punti di infinitamente vicini. A meno di una relazione di equivalenza (dettata dal fatto che una distanza può assumere una quantità non numerabile di valori infinitesimi), ogni vettore \emph{classico} $ X $ in un punto $ p $ induce un unico prevettore $ (p,x) $, dove $ x \in \nonstandard{M} $ è infinitamente vicino a $ p $ e, in coordinate, $ x = p + \lambda X $.  
+
+% Un prevettore $ (a,x) $ agisce come derivazione sulle funzioni differenziabili $ f: M \longrightarrow \R $: \begin{equation*}
+%     (a,x)\,f \coloneqq \frac{1}{\lambda}\left(\nonstandard{f}(x)-\nonstandard{f}(a)\right)
+% \end{equation*}Per come è stata definita la distanza infinitesima tra punti, questo è necessariamente un elemento finito di $ \starR $, e pertanto se ne può considerare la  \begin{equation*}
+%     \st\left(\frac{1}{\lambda}\left(\nonstandard{f}(x)-\nonstandard{f}(a)\right)\right).
+% \end{equation*}
+
+% È possibile dunque definire un \emph{campo di prevettori} come una mappa $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ per opportuni intorni $ \nonstandard{U} \subseteq \nonstandard{V} \subseteq \nonstandard{M}$ che a ciascun punto $ a \in \nonstandard{U} $ associa $ F(a) $ infinitamente vicino ad $ a $. 
+
+% Si dirà che un campo di prevettori $ F $\ emph{realizza} un campo vettoriale classico $ X $ se in ogni punto di $ U $ le derivazioni di $ X $ e di $ F $ coincidono
+
+% $ \nonstandard{M} $ in\begin{equation*}
+% F:\nonstandard{U}\longrightarrow \nonstandard{V}
+% \end{equation*}, definite per opportuni intorni $ \nonstandard{U} \subseteq \nonstandard{V} \subseteq M $, che a ciascun punto $ a $ di $ \nonstandard{U} $ associano un punto $ F(a) $ infinitamente vicino ad $ a $. A meno di una relazione di equivalenza, ogni campo vettoriale 
+
+Il primo passo da compiere è quello di definire una nozione di punti infinitamente vicini su $ M $. Sia dunque $ \lambda \in \starR$ un infinitesimo fissato. 
+
+Siano $ a,b \in \nonstandard{M} $. Si scriverà \begin{itemize}
+    \item $ a-b \prec \lambda $ se, in coordinate, \begin{equation*}
+        \norma{a-b} = r \lambda
+    \end{equation*}per qualche $ r \in \R\setminus\{0\} $;
+    \item $ a-b\pprec \lambda $ se, in coordinate, \begin{equation*}
+        \norma{a- b} = \mu \lambda
+    \end{equation*}per qualche $\mu \in \starR$ infinitesimo.
+\end{itemize}In entrambi i casi si dirà che $ a,b $ sono \emph{infinitamente vicini}. Queste relazioni si potranno utilizzare anche sostituendo numeri iperreali $ t \in \starR $ ad $ a-b $, utilizzando $ \abs{t} $ in luogo di $ \norma{a-b} $. 
+
+%% Scrivere una nozione per \prec e \pprec
+
+% Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
+%     \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ finito;
+%     \item $ r \pprec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
+% \end{itemize}Inoltre, se $ v \in \nonstandard{(\R^{n})} $ si scriverà $ v\prec s $ e $ v\pprec s $ se per qualche norma $ \norma{\cdot } $ su $ \R^{n} $ la relazione vale per $ \nonstandard{\norma{v}} $. Per $ v,w \in \nonstandard{(\R^{n})} $ si scriverà $ v\approx w $ se $ v-w \pprec 1$. 
+
+
+
+% Si definisce l'\emph{alone} di $ p $ come $ \halo(p) \subseteq \nonstandard{M} $ l'insieme di tutti gli $ x \in \nonstandard{M} $ per i quali vi è un intorno coordinato $ U $ di $ p $ tale che $ x \in \nonstandard{U} $ e $ x \approx p$ in quelle date coordinate. Per ogni $ A \subseteq M $ è definito l'alone di $ A $: \begin{equation*}
+%     \hhalo{A} \coloneqq \bigcup_{p \in A}\halo(p).
+% \end{equation*}Questa unione è disgiunta, e pertanto è ben definita una funzione $ \st: \hhalo{A} \longrightarrow A $ che ad $ x $ associa l'unico $ p \in A $ tale per cui $ x \in \halo(p) $.
+
+Inoltre, poiché l'obiettivo finale è di studiare oggetti ``standard'', è conveniente definire $ \hhalo{M} \subseteq \nonstandard{M}$ come l'insieme dei punti di $ \nonstandard{M} $ che sono infinitamente vicini a punti standard di $ M $. La definizione si estende naturalmente a $ \hhalo{U} $ per $ U \subseteq M $.
 
 È ora possibile dunque dare una definizione nonstandard per i vettori tangenti ad $ M $.\begin{itemize}
     \item Per $ a \in \hhalo{M} $ si definisce \emph{prevettore} in $ a $ una coppia $ (a,x) $ tale che, in coordinate, \begin{equation*}
@@ -128,9 +166,9 @@ Se $ a \in \hhalo{M} $ e $ (a,x) $ è un prevettore ed $ \vec{ax} $ è un vettor
 \vec{ax} \,f &\coloneqq \st\left((a,x)\,f\right) \in \R.
 \end{align*}
 
-Ogni vettore \emph{classico} in $ a $ induce un unico vettore non standard $ \vec{ax} \in T_{a}M $, dove in coordinate $ x = a+ \lambda X $. 
+Ogni vettore \emph{classico} $ X $ in $ a $ induce un unico vettore non standard $ \vec{ax} \in T_{a}M $, dove in coordinate $ x = a+ \lambda X $, nel senso che $ X $ e $ \vec{ax} $ agiscono allo stesso modo come derivazioni.
 
-È possibile dunque definire un campo di prevettori: \begin{equation*}
+Un campo di prevettori è una mappa interna \begin{equation*}
     F: \nonstandard{M} \longrightarrow \nonstandard{M}
 \end{equation*}tale che per ogni $ a \in \hhalo{M} $ valga $ F(a) -a\prec \lambda$.
 
@@ -153,16 +191,20 @@ a &\longmapsto a + \lambda \cdot X(a)
 
 Si può inoltre dimostrare che se $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ è un campo di prevettori che soddisfa determinate condizioni di regolarità, a meno di ridimensionare il dominio, la mappa $ F $ ammette un'inversa $ F^{-1}: \nonstandard{U} \longrightarrow \nonstandard{V} $.
 
-Con queste nozioni è possibile definire il flusso di un campo di prevettori globale per tempi positivi. Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M}  $ un campo di prevettori locale, e sia $ t>0 $, $ t \in \starR $. Sia $ n = n(t) = \floor{t/\lambda} $. Sia $ \Phi $ la mappa \begin{align*}
+Con queste nozioni è possibile definire il flusso di un campo di prevettori globale per tempi positivi. Siano $ F: \nonstandard{M} \longrightarrow \nonstandard{M}  $ un campo di prevettori locale, e $ t>0 $ con $ t \in \starR $ e  $ n = n(t) = \floor{t/\lambda} $. Sia $ \Phi $ la mappa \begin{align*}
     \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
     (f,n) &\longmapsto \underset{n\text{ volte}}{\underbrace{f\circ \dots\circ f}},
     \end{align*}dove $ \operatorname{Map}(M) $ è l'insieme delle mappe $ M \longrightarrow M$, e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $. Per ogni $ a \in \nonstandard{M} $ il flusso di $ F $ al tempo $ t $ è definito come $ F_{t}(a) = \nonstandard{\Phi}\left(F,n(t)\right)(a) $. 
 
-Questa nozione si estende naturalmente a campi di prevettori locali e per tempi negativi: questo è trattato approfonditamente nel capitolo 4. 
+In questo modo si è formalizzata l'idea intuitiva di flusso come insieme di spostamenti infinitesimi: per costruzione, ciascuna successiva applicazione di $ F $ genera uno spostamento infinitesimo. Ciò nonostante, siccome $ n(t) $ varia su $ \nonstandard{\N} $ e in particolare per $ t $ reali $ n(t) $ è \emph{infinito}, la composizione di spostamenti infinitesimi diventa diventa una ``composizione infinita'', e pertanto lo spostamento totale risulta apprezzabile. 
 
-A partire dal flusso di un campo vettoriale, in un intorno $ B \subseteq M$ adeguato, e per tempi adeguati, si può definire il \emph{flusso standard} indotto da $ F $: \begin{align*}
+Pertanto, ha senso ``tornare'' alla varietà classica $ M $, per mezzo del \emph{flusso standard}.
+
+% È possibile estendere a campi di prevettori locali e per tempi negativi la costruzione di cui sopra: questo è trattato approfonditamente nel Capitolo 4. 
+
+Questo, infatti, si può definire a partire dal flusso di un campo di prevettori $ F $, in un intorno $ B \subseteq M$ adeguato, e per tempi adeguati, come: \begin{align*}
 h^{F}_t:B &\longrightarrow M \\
-x &\longmapsto \st\left(F_{t}(x) \right)
+x &\longmapsto \st\left(F_{t}(x) \right).
 \end{align*}Questo è un oggetto classico, e si può dimostrare che se $ X $ è un campo vettoriale classico e $ F(a) =a + \lambda \cdot X $, allora $ h_{t}^{F}  $  è esattamente il flusso di $ X $ nel senso classico. 
 % Si può considerare l'estensione non standard di $ h_{t}^{F} $, ovvero il campo di prevettori: \begin{equation*}
 %     \tilde{F} \coloneqq h_{\lambda}^{F}: \nonstandard{B} \longrightarrow \nonstandard{M}.
@@ -174,6 +216,6 @@ Dunque, se $ F $ e $ G $ sono campi di prevettori sufficientemente regolari, si 
     [F,G](a) - a - \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(a)-a\right)\pprec \lambda.
 \end{equation*}Infatti, se $ X $ e $ Y $ sono campi vettoriali classici di classe $ C^{2} $ di flussi $ \Theta^{X}_t  $ e $ \Theta^{Y}_t $, allora la parentesi di Lie tra $ X $ e $ Y $ è, per ogni $ p \in M $: \begin{equation*}
     [X,Y]_{\text{cl}}(p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(\Theta^{Y}_t\right)^{-1}\circ\left(\Theta^{X}_t\right)^{-1}\circ \left(\Theta^{Y}_t\right)\circ \left(\Theta^{X}_t\right)(p)-p\right).
-\end{equation*}È dunque naturale dedurre che se $ X,Y $ sono campi vettoriali classici e $ F(a)=a + \lambda X(a) $, $ G(b) = b+\lambda Y(b) $ sono campi di prevettori che realizzano, rispettivamente, $ X $ e $ Y $, allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
+\end{equation*}È naturale dedurre che se $ X,Y $ sono campi vettoriali classici e $ F(a)=a + \lambda X(a) $, $ G(b) = b+\lambda Y(b) $ sono campi di prevettori che realizzano, rispettivamente, $ X $ e $ Y $, allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 
 Si termina il lavoro dimostrando, tramite un metodo puramente combinatorico, che per due campi vettoriali classici $ X, Y$ si ha che i loro flussi commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.

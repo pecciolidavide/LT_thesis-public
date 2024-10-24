@@ -1,18 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'peccioli_tesi.blg'
-[56] biber-darwin:315> INFO - === Thu Oct 24, 2024, 18:04:17
-[90] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
-[216] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[234] Biber.pm:4093> INFO - Processing section 0
-[252] Biber.pm:4254> INFO - Looking for bibtex format file 'frontbackmatter/bibliografia.bib' for section 0
-[255] bibtex.pm:1523> INFO - LaTeX decoding ...
-[283] bibtex.pm:1340> INFO - Found BibTeX data source 'frontbackmatter/bibliografia.bib'
-[326] Utils.pm:193> WARN - ISBN '978-88-470-1919-5; 978-88-470-1920-1' in entry 'abate_geometria_2011' is invalid - run biber with '--validate_datamodel' for details.
-[345] Utils.pm:193> WARN - ISBN '978-94-017-7326-3; 978-94-017-7327-0' in entry 'loeb_nonstandard_2015' is invalid - run biber with '--validate_datamodel' for details.
-[403] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[403] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[403] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[403] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
-[427] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
-[432] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
-[433] Biber.pm:110> INFO - WARNINGS: 2
+[39] biber-darwin:315> INFO - === Thu Oct 24, 2024, 23:51:47
+[63] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
+[136] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[145] Biber.pm:4093> INFO - Processing section 0
+[158] Biber.pm:4254> INFO - Looking for bibtex format file 'frontbackmatter/bibliografia.bib' for section 0
+[160] bibtex.pm:1523> INFO - LaTeX decoding ...
+[177] bibtex.pm:1340> INFO - Found BibTeX data source 'frontbackmatter/bibliografia.bib'
+[221] Utils.pm:193> WARN - ISBN '978-88-470-1919-5; 978-88-470-1920-1' in entry 'abate_geometria_2011' is invalid - run biber with '--validate_datamodel' for details.
+[227] Utils.pm:193> WARN - ISBN '978-94-017-7326-3; 978-94-017-7327-0' in entry 'loeb_nonstandard_2015' is invalid - run biber with '--validate_datamodel' for details.
+[246] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[247] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[247] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[247] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
+[263] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
+[267] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
+[267] Biber.pm:110> INFO - WARNINGS: 2

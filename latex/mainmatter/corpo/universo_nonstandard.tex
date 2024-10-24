@@ -12,9 +12,9 @@
 
 % Dunque la complessità nel definire tutti gli oggetti e le strutture necessarie per studiare le varietà differenziabili, ovvero l'obiettivo di questo lavoro, rende necessaria una generalizzazione della costruzione precedente tale per cui, preso un ``qualsiasi''\footnote{Nella definizione formale si indicherà con più precisione cosa significhi questo ``qualsiasi''} oggetto matematico, sia chiaro e naturale quale sia la sua controparte non standard.
 
-Nel capitolo precedente si è costruito $ \starR $, con l'estensione non standard per ogni funzione $ f: A \subseteq \R^{n} \longrightarrow \R $ e per ogni sottoinsieme di $ \R^{n} $, per $ n $ arbitrario. Identificando una funzione col suo grafo, è ancora possibile, mediante la suddetta costruzione, estendere funzioni $ g: A \subseteq \R^{m} \longrightarrow \R^{n}$per $ n, m $ fissati.
+Nel capitolo precedente si è costruito $ \starR $, dotando di estensione non standard ogni funzione $ f: A \subseteq \R^{n} \longrightarrow \R $ e ogni sottoinsieme di $ \R^{n} $, per $ n $ arbitrario. Identificando una funzione col suo grafo, è stato possibile, mediante la suddetta costruzione, estendere funzioni $ g: A \subseteq \R^{m} \longrightarrow \R^{n}$ per $ n, m $ fissati.
 
-Siccome però l'oggetto di interesse di questo lavoro è una varietà differenziabile, è necessario avere una definizione di estensione per oggetti diversi da quelli sopracitati: infatti non è possibile ottenere nulla disostanzialmente diverso da sottoinsiemi di $ \R^{n} $ e questo comporta delle ambiguità.
+Siccome però l'oggetto di interesse di questo lavoro è una varietà differenziabile, è necessario avere una definizione di estensione per oggetti diversi da quelli sopracitati: infatti non è possibile ottenere nulla di sostanzialmente diverso da sottoinsiemi di $ \R^{n} $ e questo comporta delle ambiguità.
 
 In questo capitolo, invece, si costruirà una struttura $ V(\R) $ contentente oggetti molto più variegati, e, pertanto, sarà possibile identificare una varietà $ M $ all'interno di $ V(\R) $.
 
@@ -46,7 +46,7 @@ Si definirà la controparte non standard $ \nonstandard{V(\R)} $ e si mostrerà 
     D'ora in avanti $ X $ indicherà sempre, salvo diversamente indicato, un insieme base.
 }{}{}
 \paragrafo{Corollario}{%
-    Sia $ X $ è un insieme base. Se $ a \in V(X) $, $ a \in b \in V_{m}(X)  $, allora $ m\ge 1 $ e $ a \in V_{m-1}(X) $.
+    Sia $ X $ un insieme base. Se $ a \in V(X) $, $ a \in b \in V_{m}(X)  $, allora $ m\ge 1 $ e $ a \in V_{m-1}(X) $.
 }{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}{}
 
 Il corollario precedente è il Lemma 4.4.1 di \cite{chang_model_2012}.
@@ -136,8 +136,8 @@ Lo scopo di tutta questa sezione sarà dimostrare che esistono estensioni non st
     Sia $ X $ un insieme base. Si definisce la funzione\begin{equation*}
         \rank_{X}: V(X) \longrightarrow \N 
     \end{equation*}come segue:\begin{itemize}
-        \item se $ b \in X $, allora $ \rank_{X}(b) =0  $;
-        \item se $ b \in V_{m}(X)\setminus V_{m-1}(X)  $, allora $ \rank_{X}(b) = m $.
+        \item se $ b \in X $ oppure $ b= \emptyset $, allora $ \rank_{X}(b) =0  $;
+        \item se $ b \in V_{m}(X)\setminus V_{m-1}(X)  $ e $ b\neq \emptyset $, allora $ \rank_{X}(b) = m $.
     \end{itemize}
 }
 
@@ -167,7 +167,7 @@ La definizione è ben posta, poiché per ogni $ b \in V(X)\setminus X $ esiste u
 
 Per semplicità si scriverà $ \sim $ in luogo di $ \sim_{\mathcal{U}}  $.
 \lemma{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
-    Sia $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ una sequenza di tipo $ m $. Allora esiste una sequenza $ \sequence{y_{n} } \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ tale per cui $ \sequence{x_{n} }\sim \sequence{y_{n} } $.
+    Sia $ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $ una sequenza di tipo $ m $. Allora esiste una sequenza\[\sequence{y_{n} } \in V(X)^{\N}_{\bounded}\]totalmente di tipo $ m $ tale per cui $ \sequence{x_{n} }\sim \sequence{y_{n} } $.
 }
 \dimostrazionelem{Dkjndjcdjdjdjlemmininoninoinopucciosino}{
     Sia \begin{equation*}
@@ -190,9 +190,8 @@ Si possono ora definire delle classi di equivalenza: \begin{equation*}
     V(X)^{\N}_{\bounded}/\mathcal{U} = \set{\filtersequence{x_{n}}: \sequence{x_{n}} \in V(X)^{\N}_{\bounded}}
 \end{equation*}
 
-È quindi evidente il seguente corollario. 
 \paragrafo{Corollario}{%
-    Ogni elemento di $ V(X)^{\N}_{\bounded}/\mathcal{U} $ è nella forma $ \filtersequence{x_{n} } $, dove \mbox{$ \sequence{x_{n} } \in V(X)^{\N}_{\bounded} $} è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui \[x_{n} \in V_{m}(X)\setminus V_{m-1}(X)\]per ogni $ n \in \N $.
+    Ogni elemento di $ V(X)^{\N}_{\bounded}/\mathcal{U} $ è nella forma $ \filtersequence{x_{n} } $, dove\[\sequence{x_{n} } \in V(X)^{\N}_{\bounded} \]è una successione totalmente di tipo $ m $ per qualche $ m $, ovvero tale per cui \[x_{n} \in V_{m}(X)\setminus V_{m-1}(X)\]per ogni $ n \in \N $.
 }{dkjncjskjncjskjndjcdjjjjjdjdjj}{}
 
 Per il corollario precedente, si può affermare che \begin{equation*}
@@ -255,7 +254,7 @@ In questa sezione si fornisce una versione modificata del Teorema \teoref{dsoijs
         Sia $ \sequence{a_{n} } \in V(X)^{\N}_{\bounded} $. La formula $ \lnot\,\phi\left[\filtersequence{a_{n}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right) $ se e solo se $ \phi\left[\filtersequence{a_{n}}\right] $ è falsa, ovvero, per ipotesi induttiva, se e solo se $ T_{\phi, \sequence{a_{n} }} \notin \mathcal{U} $. Poiché $ T_{\phi, \sequence{a_{n} }} = \N\setminus T_{\lnot\,\phi,\sequence{a_{n} }} $, e poiché $ \mathcal{U} $ è un ultrafiltro, segue la tesi.
         \item \textit{Passo $ \lor $.} Siano $ \phi(x), \psi(x) $ due $ \in $-formula limitate. Si supponga che il teorema valga per $ \phi(x) $ e per $ \psi(x) $. Si vuole dimostrare che valga per $ \phi(x) \lor \psi(x) $.
         
-        Sia $ \sequence{a_{n} } \in V(X)^{\N}_{\bounded} $. $ \phi\lor\psi\left[\filtersequence{a_{n}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right) $ se e solo se almeno una tra $ \phi\left[\filtersequence{a_{n}}\right] $ e $ \psi\left[\filtersequence{a_{n}}\right] $ sono vere, ovvero, per ipotesi induttiva, se e solo se almeno uno tra $ T_{\phi, \sequence{a_{n} }}  $ e $ T_{\psi, \sequence{a_{n} }}  $ è contenuto in $ \mathcal{U} $.
+        Sia $ \sequence{a_{n} } \in V(X)^{\N}_{\bounded} $. $ \phi\lor\psi\left[\filtersequence{a_{n}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right) $ se e solo se almeno una tra $ \phi\left[\filtersequence{a_{n}}\right] $ e $ \psi\left[\filtersequence{a_{n}}\right] $ è vera. Per ipotesi induttiva questo si verifica se e solo se almeno uno tra $ T_{\phi, \sequence{a_{n} }}  $ e $ T_{\psi, \sequence{a_{n} }}  $ è contenuto in $ \mathcal{U} $.
 
         Poiché $ \mathcal{U} $ è un ultrafiltro allora è primo, e quindi la condizione di cui sopra è equivalente a $ T_{\phi, \sequence{a_{n} }}  \cup T_{\psi, \sequence{a_{n} }}  \in \mathcal{U} $. La tesi segue dal fatto che \begin{equation*}
             T_{\phi, \sequence{a_{n} }}  \cup T_{\psi, \sequence{a_{n} }} = T_{\phi\lor\psi, \sequence{a_{n} }}. 
@@ -274,7 +273,9 @@ In questa sezione si fornisce una versione modificata del Teorema \teoref{dsoijs
             U_{\sequence{c_{n} }}'' &= T_{\phi, \sequence{a_{n} }, \sequence{b_{n} }, \sequence{c_{n} }} = \set{n \in \N: V(X)\vDash \phi[a_{n}, b_{n}, c_{n}   ]}. 
         \end{align*}Sia dunque $ U_{\sequence{c_{n} }} =  U_{\sequence{c_{n} }}'\cap U_{\sequence{c_{n} }}'' $
 
-        Dunque $\left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right)\vDash\psi\left[\filtersequence{a_{n}},\filtersequence{b_{n}}\right]  $ se e solo se esiste $ \sequence{c_{n} } \in V(X)^{\N}_{\bounded} $ tale che $ U_{\sequence{c_{n}}} \in \mathcal{U}$.
+        Dunque $\left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right)\vDash\psi\left[\filtersequence{a_{n}},\filtersequence{b_{n}}\right]  $ se e solo se esiste \[
+            \sequence{c_{n} } \in V(X)^{\N}_{\bounded}\quad\text{tale che}\quad U _{\sequence{c_{n}}} \in \mathcal{U}.
+        \]
 
         Se tale $ \sequence{c_{n} } $ esiste, allora \begin{equation*}
             U_{\sequence{c_{n} }} \subseteq T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} = \set{n \in \N: \exists\, z \in a_{n}: \phi(a_{n}, b_{n}, z  ) \text{ è vero in }V(X)},   
@@ -286,7 +287,7 @@ In questa sezione si fornisce una versione modificata del Teorema \teoref{dsoijs
 
         Se $ n \notin T_{\psi, \sequence{a_{n}},\sequence{b_{n}}}$, si scelga $ c_{n} \in V_{m-1}(X) $ in maniera arbitraria. 
 
-        Si è quindi costruita (utilizzando l'assioma della scalta) una successione \[\sequence{c_{n} } \in V_{m-1}(X)^{\N} \subseteq V(X)^{\N}_{\bounded}.\]Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $ allora $ n \in U_{\sequence{c_{n}}}  $, dunque \begin{equation*}
+        Si è quindi costruita (utilizzando l'Assioma della Scelta) una successione \[\sequence{c_{n} } \in V_{m-1}(X)^{\N} \subseteq V(X)^{\N}_{\bounded}.\]Se $ n \in T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} $ allora $ n \in U_{\sequence{c_{n}}}  $, dunque \begin{equation*}
             T_{\psi, \sequence{a_{n}},\sequence{b_{n}}} \subseteq U_{\sequence{c_{n}} } 
         \end{equation*}e pertanto $ U_{\sequence{c_{n} }} \in \mathcal{U} $.
     \qed\end{itemize}
@@ -302,7 +303,7 @@ In questa sezione si fornisce una versione modificata del Teorema \teoref{dsoijs
 
     Dunque, per il Teorema \teoref{kdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn}, $ \phi\left[\filtersequence{a^{1}},\dots,\sequence{a^{k}}\right] $ è vera in $ \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right) $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}}  \in\mathcal{U} $. 
 
-    Per le proprietà di ultrafiltro di $ \mathcal{U} $, $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} \in \mathcal{U} $ se e solo se $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} = \N $. Quest'ultimo è valido se e solo se $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $.\qed
+    Per le proprietà di ultrafiltro di $ \mathcal{U} $, $ T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} \in \mathcal{U} $ se e solo se \[T_{\phi, \sequence{a^{1}},\dots,\sequence{a^{k}}} = \N .\]Questa uguaglianza è valida se e solo se $ \phi[a^{1},\dots,a^{k}] $ è vera in $ \left(V(X), \in\right) $.\qed
 }
 \osservazione{
     È possibile ora definire l'insieme $ \nonstandard{X} $ necessario per costruire l'estensione non standard di $ V(X) $. In particolare, si pone \begin{equation*}
@@ -330,7 +331,9 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
 }{dkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad}{}
 
 \lemma{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj}{
-    La funzione $ \hslash $ definita sopra è iniettiva. Inoltre, per ogni $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
+    La funzione $ \hslash $ definita sopra è iniettiva. 
+    
+    Inoltre, per ogni $ \sequence{a_{n} },\sequence{b_{n} } \in V(X)^{\N}_{\bounded} $ \begin{equation*}
         \filtersequence{a_{n}} \mathrel{\nonstandard{\in}}\filtersequence{b_{n}}\text{ se e solo se }\hslash\left(\filtersequence{a_{n}}\right) \in \hslash\left(\filtersequence{b_{n}}\right).
     \end{equation*}
 }
@@ -343,7 +346,7 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
         \end{equation*}che sono diversi per ipotesi.
         \item Se $ m'=0 $ e $ m\ge 1 $, allora $ b_{n} \in X  $ mentre $ a_{n} \in V_{m}(X) \setminus V_{m-1}(X) $ per ogni $ n \in \N $. Allora $ \hslash\left(\filtersequence{b_{n}}\right) = \filtersequence{b_{n}} \in \nonstandard{X}$, mentre $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq V(\nonstandard{X})$ per costruzione. Per definizione di insieme base, \begin{equation*}
             \hslash\left(\filtersequence{b_{n}}\right) \cap V(\nonstandard{X}) = \emptyset
-        \end{equation*}dunque, se per assurdo $ \hslash\left(\filtersequence{b_{n}}\right) = \hslash\left(\filtersequence{a_{n}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intesezione conterrebbe $ \hslash\left(\filtersequence{a_{n}}\right) \neq \emptyset $.
+        \end{equation*}dunque, se per assurdo $ \hslash\left(\filtersequence{b_{n}}\right) = \hslash\left(\filtersequence{a_{n}}\right) \subseteq V(\nonstandard{X}) $ si avrebbe che l'intersezione conterrebbe $ \hslash\left(\filtersequence{a_{n}}\right) \neq \emptyset $.
         \item Se $ m=m'\ge 1 $, allora per ogni $ n $: $ a_{n}, b_{n}  \in V_{m}(X)\setminus V_{m-1}(X)$ e quindi, per costruzione \begin{equation*}
             a_{n} \subseteq V_{m-1}(X),\quad b_{n} \subseteq V_{m-1}(X).    
         \end{equation*}Inoltre, se $ n \in T $, allora $ a_{n}\neq b_{n}   $, e dunque esiste $ z \in V_{m-1}(X) $ tale per cui $ z \in a_{n}\setminus b_{n} $ oppure $ z \in b_{n}\setminus a_{n}$. Sia $ c_{n}\coloneqq z $. 
@@ -371,7 +374,7 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
         \end{equation*}
     \end{itemize}
 
-    Si dimostra che sia un \emph{isomorfismo}. Siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ ed $ m' $. \begin{itemize}
+    Per la seconda parte, siano $ \sequence{a_{n} },\sequence{b_{n}} \in V(X)^{\N}_{\bounded} $ totalmente di tipo $ m $ ed $ m' $. \begin{itemize}
         \item Se $ \filtersequence{a_{n}} \mathrel{\nonstandard{\in}} \filtersequence{b_{n}} $, allora \begin{equation*}
             N=\set{n \in \N: a_{n} \in b_{n}} \in \mathcal{U}
         \end{equation*}e quindi, per ogni $ n \in N $, si ha che $ a_{n} \in V_{m'-1}(X) $, per il Corollario \framref{kjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj}. 
@@ -425,11 +428,13 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
                     \hslash\left(\filtersequence{a_{n}}\right) \in \nonstandard{V_{m}(X) }.
                 \end{equation*}
 
-                Se invece $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq V_{m-1}(\nonstandard{X}) $, per costruzione se $ \hslash\left(\filtersequence{a_{n}}\right) \neq \filtersequence{a_{n}} $\footnote{Se per assurdo si avesse $ \hslash\left(\filtersequence{a_{n}}\right) = \filtersequence{a_{n}} $, si avrebbe $ \filtersequence{a_{n}} $ totalmente di tipo $ 0 $, e dunque \[\hslash\left(\filtersequence{a_{n}}\right) \not\subseteq V_{m-1}(\nonstandard{X}).\]}, allora \begin{equation*}
-                    \hslash\left(\filtersequence{a_{n}}\right) \subseteq V_{m-1}(\nonstandard{X}) \cap \nonstandard{V(X)}.
-                \end{equation*}Dunque $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, e pertanto $ \hslash\left(\filtersequence{a_{n}}\right) \in \nonstandard{V_{m}(X) } $. Infatti, se $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, allora \begin{equation*}
+                Se invece $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq V_{m-1}(\nonstandard{X}) $, per costruzione se\begin{equation*}
+                    \hslash\left(\filtersequence{a_{n}}\right) \neq \filtersequence{a_{n}}\quad\text{allora}\quad\hslash\left(\filtersequence{a_{n}}\right) \subseteq V_{m-1}(\nonstandard{X}) \cap \nonstandard{V(X)}.
+                \end{equation*}Questa ipotesi non è restrittiva poiché se per assurdo si avesse\[\hslash\left(\filtersequence{a_{n}}\right) = \filtersequence{a_{n}},\] si avrebbe $ \filtersequence{a_{n}} $ totalmente di tipo $ 0 $, e dunque \[\hslash\left(\filtersequence{a_{n}}\right) \not\subseteq V_{m-1}(\nonstandard{X}).\]
+                
+                Dunque $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, e pertanto $ \hslash\left(\filtersequence{a_{n}}\right) \in \nonstandard{V_{m}(X) } $. Infatti, se $ \hslash\left(\filtersequence{a_{n}}\right) \subseteq \nonstandard{V_{m-1}}(X) $, allora \begin{equation*}
                     \hslash\left(\filtersequence{a_{n}}\right) = \set{\hslash\left(\filtersequence{c_{n}}\right): \sequence{c_{n}} \in K \subseteq V_{m-1}(X)^{\N} }
-                \end{equation*}e dunque per il Lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} $ \filtersequence{c_{n}} \mathrel{\nonstandard{\in}} \filtersequence{a_{n}} $, e quindi, per il Lemma \framref{dkjnckjdkckjndjckjndjckkjnckjs}, $ \filtersequence{a_{n}} \in V_{m}(X)^{\N}_{\mathcal{U}}  $.
+                \end{equation*}e quindi per il Lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} $ \filtersequence{c_{n}} \mathrel{\nonstandard{\in}} \filtersequence{a_{n}} $. Segue, per il Lemma \framref{dkjnckjdkckjndjckjndjckkjnckjs}, che $ \filtersequence{a_{n}} \in V_{m}(X)^{\N}_{\mathcal{U}}  $.
             \end{itemize}
         \end{itemize} 
 
@@ -452,7 +457,7 @@ Si può dimostrare per induzione che se $ \sequence{a_{n} } \in V_{m}(X)^{\N} $,
     Si ha che $ \nonstandard{X}= \nonstandard{V_0(X)} $.
 
 
-Dal Lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatamente il corollario.
+Dal Lemma \framref{dkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj} segue immediatamente il seguente corollario.
 \paragrafo{Corollario}{%
     Se $ \phi(x^{1},\dots,x^{k}) $ è una $ \in $-formula limitata e $ \xi^{1},\dots,\xi^{k} \in V(X)^{\N}_{\bounded}/\mathcal{U}$, allora \begin{equation*}
         \left(V(X)^{\N}_{\bounded}/\mathcal{U}, \nonstandard{\in}\right)\vDash \phi[\xi^{1},\dots,\xi^{k}]\text{ se e solo se }\left(\nonstandard{V(X)}, \in\right)\vDash\phi\left[\hslash(\xi^{1}),\dots,\hslash(\xi^{k})\right].
@@ -526,7 +531,7 @@ Si riporta un risultato, la Proposition 4.4.14 di \cite{chang_model_2012}, la cu
 %     \]
 % }
 
-Nel capitolo precedente, con l'Osservazione \framref{tantebellecoseinoijknkjnkjnsd} è stato esteso il principio di transfer molto ampio. A seguito della costruzione di $ \nonstandard{V(\R)} $ è conveniente mostrare che tutti i teoremi dimostrati nel Capitolo 3 per $ \starR $ siano ancora validi all'interno di $ \nonstandard{V(\R)} $. Per fare ciò, è sufficiente mostrare che le estensioni non standard delle funzioni e degli insiemi corrispondano per entrambe le costruzioni. Per semplicità si mostra unicamente per funzioni ed insiemi di arietà uno.
+Nel capitolo precedente, con l'Osservazione \framref{tantebellecoseinoijknkjnkjnsd}, è stato esteso il principio di transfer molto ampio. A seguito della costruzione di $ \nonstandard{V(\R)} $, è conveniente mostrare che tutti i teoremi dimostrati nel Capitolo 3 per $ \starR $ siano ancora validi all'interno di $ \nonstandard{V(\R)} $. Per fare ciò è sufficiente mostrare che le estensioni non standard delle funzioni e degli insiemi corrispondano per entrambe le costruzioni. Per semplicità si mostra unicamente per funzioni ed insiemi di arietà uno.
 
 % appare chiaro che questo funzioni a patto che la definizione di estensione non standard di funzioni e sottoinsiemi data nello scorso capitolo sia coerente con la estensione definita dalla funzione \begin{equation*}
 %     *: V(\R) \longrightarrow \nonstandard{V(\R)}.
@@ -572,23 +577,36 @@ In particolare, si dimostra la seguente proposizione.
         
         Si scriva dunque in modo esplicito $ \nonstandard{f} ${\small\begin{align}
             \nonstandard{f} &= \hslash \left(\filtersequence{f}\right)\notag\\ 
-            &= \set{\hslash\left(\filtersequence{g^{1}_n}\right): \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \filtersequence{g^{1}_n}\mathrel{\nonstandard{\in}}\sequence{f} }\notag\\ 
-            &= \set{\set{\hslash\left(\filtersequence{g^{2}_n}\right): \sequence{g^{2}_n} \in V_{1}(\R)^{\N}, \filtersequence{g^{2}_n}\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}}: \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \filtersequence{g^{1}_n}\mathrel{\nonstandard{\in}}\sequence{f} }\notag\\ 
+            &= \set{\hslash\left(\filtersequence{g^{1}_n}\right): \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \filtersequence{g^{1}_n}\mathrel{\nonstandard{\in}}\filtersequence{f} }\notag\\ 
+            % &= \set{\set{\hslash\left(\filtersequence{g^{2}_n}\right): \sequence{g^{2}_n} \in V_{1}(\R)^{\N}, \filtersequence{g^{2}_n}\mathrel{\nonstandard{\in}}
+            % \filtersequence{g^{1}_n}}: \sequence{g^{1}_n} \in V_{2}(\R)^{\N}, \filtersequence{g^{1}_n}\mathrel{\nonstandard{\in}}\filtersequence{f} }\notag\\ 
+            &=%
+            \set{%
+                \set{
+                    \hslash\left(\filtersequence{g^{2}_n}\right): 
+                    \begin{aligned}
+                        \sequence{g^{2}_n} &\in V_{1}(\R)^{\N},\\ \filtersequence{g^{2}_n}&\mathrel{\nonstandard{\in}}\filtersequence{g^{1}_n}
+                    \end{aligned}
+                }: 
+                \begin{aligned}
+                    \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \filtersequence{g^{1}_n}&\mathrel{\nonstandard{\in}}\filtersequence{f} 
+                \end{aligned}
+            }\notag\\
             &=%
             \set{%
                 \set{
                     \set{
                         \filtersequence{g^{3}_n}: 
                             \begin{aligned}
-                                \sequence{g^{3}_n} &\in \R^{\N},\\ \filtersequence{g^{3}_n}&\mathrel{\nonstandard{\in}}\sequence{g^2_n}
+                                \sequence{g^{3}_n} &\in \R^{\N},\\ \filtersequence{g^{3}_n}&\mathrel{\nonstandard{\in}}\filtersequence{g^2_n}
                             \end{aligned}
                     }: 
                     \begin{aligned}
-                        \sequence{g^{2}_n} &\in V_{1}(\R)^{\N},\\ \filtersequence{g^{2}_n}&\mathrel{\nonstandard{\in}}\sequence{g^{1}_n}
+                        \sequence{g^{2}_n} &\in V_{1}(\R)^{\N},\\ \filtersequence{g^{2}_n}&\mathrel{\nonstandard{\in}}\filtersequence{g^{1}_n}
                     \end{aligned}
                 }: 
                 \begin{aligned}
-                    \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \filtersequence{g^{1}_n}&\mathrel{\nonstandard{\in}}\sequence{f} 
+                    \sequence{g^{1}_n} &\in V_{2}(\R)^{\N},\\ \filtersequence{g^{1}_n}&\mathrel{\nonstandard{\in}}\filtersequence{f} 
                 \end{aligned}
             }\label{eq:funzione}
         \end{align}}Innanzitutto si noti che \begin{equation*}

@@ -118,7 +118,7 @@
 }{dckjndjjjjjjdjscacchina}{}
 \paragrafo{Notazione}{%
     Si fissano ora delle convenzioni valide per tutto il capitolo. \begin{itemize}
-        \item Sia $ M $ la varietà differenziabile di dimensione $ n $ di interesse, definita come nella sezione \ref{sec:geodiff}. 
+        \item Sia $ M $ la varietà differenziabile di dimensione $ n $ di interesse, definita come nella Sezione \ref{sec:geodiff}. 
         \item D'ora in avanti sia $ \lambda \in \starR $ un infinitesimo positivo \emph{fissato}.
     \end{itemize}
 }{}{}
@@ -565,7 +565,7 @@ Si enunciano di seguito due risultati, che non saranno dimostrati, in merito all
 \dimostrazioneprop{djncsjkndkjnckjsndkjncskjndkjncskjndjjjdj}{
     Sia $ 0<s \in \R $ fissato, $ s<r_2-r_1 $ e $ s<r_3-r_2 $. Si applicherà il principio di transfer al seguente enunciato: per ogni funzione $ f: B_2 \longrightarrow B_3 $, se $ \norma{f(x)-f(y)}\le 2\norma{x-y} $ per ogni $ x,y \in B_2 $ e $ \norma{f(x)-x}<s $ per ogni $ x \in B_2 $, allora $ f(B_2) \supseteq B_1 $.
 
-    L'enunciato è vero poiché la condizione su $ f $ implica che questa si continua. La continuità, unita alla definizione di $ s $, garantisce che per ogni $ x \in \partial B_2 $ il segmento $ [x,f(x)] $ sia contenuto in $ B_3\setminus B_1 $. 
+    L'enunciato è vero poiché la condizione su $ f $ implica che questa sia continua. La continuità, unita alla definizione di $ s $, garantisce che per ogni $ x \in \partial B_2 $ il segmento $ [x,f(x)] $ sia contenuto in $ B_3\setminus B_1 $. 
 
     Segue che $ \restriction{f}{\partial B_2}: \partial B_2  \longrightarrow B_3\setminus B_1$ sia omotopa alla inclusione di $ \partial B_2 $ all'interno di $ B_3\setminus B_1 $, con omotopia \begin{align*}
     H:\partial B_2\times [0,1] &\longrightarrow B_3\setminus B_1 \\
@@ -639,7 +639,7 @@ Si considerano due casi.
 }
 \osservazione{
     È possibile estendere la definizione di $ F_{t} $ (di cui sopra) per $ t\le 0 $. In particolare: \begin{itemize}
-        \item per campi di prevettori globali che sono biettivi su $ \nonstandard{M} $,
+        \item per campi di prevettori globali che sono biiettivi su $ \nonstandard{M} $,
         \item per campi di prevettori locali biiettivi nel senso dell'Osservazione \framref{remarkfourpointeight}
     \end{itemize}
     si definisce $ F_{t}  $ per $ t\le  0 $ come $ \left(F^{-1}\right)_{-t} $.
@@ -671,7 +671,7 @@ Si considerano due casi.
         \end{equation}
     \end{itemize}
     
-    Sia dunque $ T=\frac{r}{2C} $, allora $ 0<T \in \R $. In particolare, \eqref{eq:cosa1} e \eqref{eq:cosa2} valgono per $ n=\floor{t/\lambda} $ per $ 0\le t\le T $, ed è equindi possibile scrivere \begin{align*}
+    Sia dunque $ T=\frac{r}{2C} $, allora $ 0<T \in \R $. In particolare, \eqref{eq:cosa1} e \eqref{eq:cosa2} valgono per $ n=\floor{t/\lambda} $ per $ 0\le t\le T $, ed è quindi possibile scrivere \begin{align*}
         F_{t}(a) \in \nonstandard{B}\qquad&\text{per ogni }a \in \nonstandard{B'};\\
         \norma{F_{t}(a)-F_{t}(b)} \le (1+K\lambda)^{n}\norma{a-b}\qquad&\text{per ogni }a, b \in \nonstandard{B}.
     \end{align*}
@@ -793,7 +793,7 @@ Si considerano due casi.
         \item \emph{Passo base.} Il passo base per $ n=1 $ è l'ipotesi \begin{equation*}
             \norma{\Delta^{2}_{v,w}F(a)} \le K \lambda\norma{v}\norma{w}
         \end{equation*}
-        \item \emph{Passo induttivo.} Si ipotizzi l'affermazione valga per $ n $. Sia $ p=F^{n}(a) $, \begin{align*}
+        \item \emph{Passo induttivo.} Si ipotizzi che l'affermazione valga per $ n $. Sia $ p=F^{n}(a) $, \begin{align*}
             x&=F^{n}(a+v)-F^{n}(a)\\
             y&=F^{n}(a+v)-F^{n}(a).
         \end{align*}Allora per la \eqref{eq:cosa2}:\begin{equation*}
@@ -1012,7 +1012,7 @@ Si noti che $ F^{-1} $ e $ G^{-1} $ esistono per l'Osservazione \framref{remarkf
     Se $ F,E,G,H $ sono campi di prevettori di classe $ D^{2} $ e $ F\equiv E $, $ G\equiv H $, allora $ [F,G]\equiv [E,H] $.
 }
 \dimostrazione{dkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk}{
-    In primo luogo, mostriamo che è sufficiente mostrare il caso per $ F=E $. Dalla definizione è chiaro che $ [G,F]=[F,G]^{-1} $, e dunque, se $ [F,G]\equiv [F,H] $ e $ [H,F]\equiv [H,E] $, allora \begin{equation*}
+    È sufficiente mostrare il caso per $ F=E $. Infatti, dalla definizione è chiaro che $ [G,F]=[F,G]^{-1} $, e dunque, se $ [F,G]\equiv [F,H] $ e $ [H,F]\equiv [H,E] $, allora \begin{equation*}
         [F,G]\equiv [F,H] = [H,F]^{-1} \equiv [H, E]^{-1} = [E,H]
     \end{equation*}per il Teorema \teoref{jkndkckdkjncjdjckjndjcjdkjncdkjncjdcj} e il Lemma \framref{dlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn}. 
 

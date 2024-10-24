@@ -483,6 +483,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.code.tex
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/footmisc/footmisc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -563,9 +565,9 @@ INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbac
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
-INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/logo_vecchio.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/LogoUniToConvertito.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/LogoUniToConvertito.png
+INPUT /Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/frontbackmatter/LogoUniToConvertito.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm

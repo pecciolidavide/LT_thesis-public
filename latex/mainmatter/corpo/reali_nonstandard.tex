@@ -63,7 +63,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
             \left(\sequence[i \in I]{a_{i}^{1}},\dots,\sequence[i \in I]{a_{i}^{k}}\right) \in R^{\mathcal{M}}\qquad \text{se e solo se}\qquad \left(a_{i}^{1}, \dots, a_{i}^{k}  \right) \in R^{\mathcal{A}_i}\text{ per ogni }i \in I;
         \]
         \item per ogni $ f \in \operatorname{Fun} $ con arietà $ k $, ed ogni $ \sequence[i \in I]{a_{i}^{1}},\dots,\sequence[i \in I]{a_{i}^{k}}, \sequence[i \in I]{b_{i} } \in\prod_{i \in I} A_{i}$ \[
-            f^{\mathcal{M}}\left(\sequence[i \in I]{a_{i}^{1}},\dots,\sequence[i \in I]{a_{i}^{k}}\right) = \sequence[i \in I]{b_{i} }\qquad \text{se e solo se}\qquad \parbox{12em}{$f^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} $ per ogni $i \in I$;}
+            f^{\mathcal{M}}\left(\sequence[i \in I]{a_{i}^{1}},\dots,\sequence[i \in I]{a_{i}^{k}}\right) = \sequence[i \in I]{b_{i} }\quad \text{se e solo se}\quad \parbox{12em}{$f^{\mathcal{A}_i}\left(a_{i}^{1}, \dots, a_{i}^{k}  \right) = b_{i} $ per ogni $i \in I$;}
         \]
         \item per ogni $ c \in \operatorname{Cost} $ ed ogni $ \sequence[i \in I]{b_{i}} \in \prod_{i \in I}A_{i}   $ \[
             c^{\mathcal{M}}=\sequence[i \in I]{b_{i}}\qquad\text{se e solo se}\qquad c^{\mathcal{A}_i}=b_{i} \text{ per ogni }i \in I.
@@ -221,19 +221,19 @@ Sebbene la FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ 
     Se $ \mathcal{A}_i = \mathcal{A}$ per ogni $  i \in I $, la $ \mathcal{L} $-struttura $ \mathcal{A}^{I}/\mathcal{U} $ si dice \emph{ultrapotenza} di $ \mathcal{A} $.
 }{dcjkklkmdjjjjultraprodottoinssimo}{}
 
-% \osservazione{
-%     Le definizioni sopra riportate sono ben date. A titolo esplicativo si dimostra che se $ R $ è un simbolo di relazione binario, e $ [i \in I]a^{1}_i}, \sequence[i \in I]{a^{2}_i },\sequence[i \in I]{b^{1}_i}, \sequence[i \in I]{b^{2}_i } \in \prod_{i \in I} A_{i}  $ con \begin{equation*}
-%         \sequence[i \in I]{a_{i}^{1} } \sim_{\mathcal{U}} \sequence[i \in I]{b_{i}^{1} } ,\qquad \sequence[i \in I]{a_{i}^{2} } \sim_{\mathcal{U}} \sequence[i \in I]{b_{i}^{2} } 
-%     \end{equation*}allora $  \set{i \in I: \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}} \in \mathcal{U} $ se e solo se $  \set{i \in I: \left(b_{i}^{1}, b_{i}^{2}  \right) \in R^{\mathcal{A}_i}} \in \mathcal{U} $. Per simmetria si dimostra un'unica implicazione.
+\osservazione{
+    Le definizioni sopra riportate sono ben date. A titolo esplicativo si dimostra che se $ R $ è un simbolo di relazione binario e $ \sequence[i \in I]{a^{1}_i}, \sequence[i \in I]{a^{2}_i },\sequence[i \in I]{b^{1}_i}, \sequence[i \in I]{b^{2}_i } $ sono elementi di $ \prod_{i \in I} A_{i}  $ con \begin{equation*}
+        \sequence[i \in I]{a_{i}^{1} } \sim_{\mathcal{U}} \sequence[i \in I]{b_{i}^{1} } ,\qquad \sequence[i \in I]{a_{i}^{2} } \sim_{\mathcal{U}} \sequence[i \in I]{b_{i}^{2} } 
+    \end{equation*}allora $  \set{i \in I: \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}} \in \mathcal{U} $ se e solo se $  \set{i \in I: \left(b_{i}^{1}, b_{i}^{2}  \right) \in R^{\mathcal{A}_i}} \in \mathcal{U} $. 
+    
+    Per simmetria si dimostra un'unica implicazione. Per definizione, i seguenti insiemi appartengono ad $ \mathcal{U} $: \begin{equation*}
+        \set{i \in I: a^{1}_i = b^{1}_i}, \quad\set{i \in I: a^{2}_i = b^{2}_i}. 
+    \end{equation*}Inoltre vale \begin{equation*}
+        \set{i \in I: \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}}\cap\set{i \in I: a^{1}_i = b^{1}_i}\cap\set{i \in I: a^{2}_i = b^{2}_i} \subseteq \set{i \in I: \left(b_{i}^{1}, b_{i}^{2}  \right) \in R^{\mathcal{A}_i}}
+    \end{equation*}infatti, fissato $ i \in I $, se $ \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i} $ e $ a_{i}^{1} = b_{i}^{1}   $ e $ a_{i}^{2} = b^{2}_i  $, allora $ \left(b_{i}^{1},b_{i}^{2}  \right) = \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}$.
 
-%     Per definizione, i seguenti insiemi appartengono ad $ \mathcal{U} $: \begin{equation*}
-%         \set{i \in I: a^{1}_i = b^{1}_i}, \quad\set{i \in I: a^{2}_i = b^{2}_i}. 
-%     \end{equation*}Inoltre vale \begin{equation*}
-%         \set{i \in I: \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}}\cap\set{i \in I: a^{1}_i = b^{1}_i}\cap\set{i \in I: a^{2}_i = b^{2}_i} \subseteq \set{i \in I: \left(b_{i}^{1}, b_{i}^{2}  \right) \in R^{\mathcal{A}_i}}
-%     \end{equation*}infatti, fissato $ i \in I $, se $ \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i} $ e $ a_{i}^{1} = b_{i}^{1}   $ e $ a_{i}^{2} = b^{2}_i  $, allora $ \left(b_{i}^{1},b_{i}^{2}  \right) = \left(a_{i}^{1}, a_{i}^{2}  \right) \in R^{\mathcal{A}_i}$.
-
-%     Questo dimostra la buona definizione della definizione precedente nel caso in una relazione binaria.
-% }
+    Questo dimostra che la definizione precedente è ben posta nel caso in una relazione binaria.
+}
 \proposizione{doijcoijdijcijijoijoijoijcoaijoijoijoij}{
     Sia $ (\mathcal{A}_i)_{i \in I} $ una famiglia di $ \mathcal{L} $-strutture (con dominio, rispettivamente, $ A_{i}  $) indicizzata su $ I \neq \emptyset $, e sia $ \mathcal{U} $ un ultrafiltro su $ I $. Per ogni $ \mathcal{L} $-termine $ t(x_1,\dots,x_{n} ) $ ed ogni $ \sequence[i \in I]{a_{i}^{1}},\dots,\sequence[i \in I]{a_{i}^{n}} ,\sequence[i \in I]{b_{i} } \in \prod_{i \in I}A_{i}   $\begin{gather*}
         t^{\mathcal{M}}\left(\filtersequence[i \in I]{a_{i}^{1}},\dots,\filtersequence[i \in I]{a_{i}^{k}}\right)=\filtersequence[i \in I]{b_{i} }\\ 
@@ -246,7 +246,7 @@ Sebbene la FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ 
     Si dimostra per induzione sulla complessità del termine. \begin{itemize}
         \item \emph{Caso base:} i termini di complessità minima sono le costanti e le variabili. Nel caso in cui il termine $ t $ sia una costante, il risultato è valido per definizione di ultraprodotto. 
         
-        Quanto $ t(x): x $ è una costante, fissati $ \sequence[i \in I]{a_{i} },\sequence[i \in I]{b_{i} } \in \prod_{i \in I} A_{i}   $, \begin{equation*}
+        Quando $ t(x): x $ è una variabile, fissati $ \sequence[i \in I]{a_{i} },\sequence[i \in I]{b_{i} } \in \prod_{i \in I} A_{i}   $, \begin{equation*}
             t^{\mathcal{M}}\left(\filtersequence[i \in I]{a_{i} }\right) = \filtersequence[i \in I]{b_{i} }
         \end{equation*}se e solo se $ \filtersequence[i \in I]{a_{i} }=\filtersequence[i \in I]{b_{i} } $, ovvero, per definizione di classi di equivalenze, se e solo se \begin{equation*}
             \set{i \in I: t^{\mathcal{A}_i}(a_{i} ) = b_{i} }=\set{i \in I: a_{i} = b_{i}  } \in \mathcal{U}.
@@ -571,9 +571,9 @@ Le seguenti proprietà seguono dalle definizioni.
     \end{equation*}
 }
 \dimostrazioneprop{cskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc}{
-    Per definizione di ultraprodotto, per ogni $ \sequence{a_{n}} \in \R^{\N} $, $ \filtersequence{a_{n}} \in \nonstandard{A} $ se e solo se \begin{equation*}
-        \set{n \in \N: a_{n} \in A } \in \mathcal{U}. 
-    \end{equation*}. 
+    Per definizione di ultraprodotto, per ogni $ \sequence{a_{n}} \in \R^{\N} $\begin{equation*}
+        \filtersequence{a_{n}} \in \nonstandard{A}\quad\text{se e solo se}\quad\set{n \in \N: a_{n} \in A } \in \mathcal{U}. 
+    \end{equation*}
 
     Dunque, l'inclusione ``$\supseteq$'' è ovvia, in quanto $ \N \in \mathcal{U} $. 
 

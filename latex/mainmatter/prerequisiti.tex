@@ -62,10 +62,10 @@ Nella definizione di linguaggio non si inseriscono gli altri connettivi e quanti
     \end{itemize}
 }
 \osservazione{
-    È naturale introdurre un concetto di \emph{altezza} di una termine: nell'albero costruito a partire termine $ t $, che ricostruisce le operazioni utilizzate, l'altezza $ \altezza(t) $ è la lunghezza del ramo più lungo (partendo da zero).
+    È naturale introdurre un concetto di \emph{altezza} di un termine: nell'albero costruito a partire termine $ t $, che ricostruisce le operazioni utilizzate, l'altezza $ \altezza(t) $ è la lunghezza del ramo più lungo (partendo da zero).
 }
 \definizione{
-Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove tra le $ x_1,\dots,x_{n}  $ sono presenti tutte le variabili che occorrono in $ t $, e dati $ s_1,\dots,s_{n}  $ termini, la scrittura: \[
+Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove tra le $ x_1,\dots,x_{n}  $ sono presenti tutte le variabili che occorrono in $ t $. Dati $ s_1,\dots,s_{n}  $ termini, la scrittura: \[
     t\left[s_1/x_1,\,s_2/x_2,\dots,\,s_{n}/x_{n}  \right]
 \]è il termine ottenuto da $ t $ sostituendo ogni $ x_{i}  $ con $ s_{i}  $.
 }
@@ -85,14 +85,16 @@ Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove tra le $ x_1,\dots,x_{n}  $ sono pr
         \varphi \mapsto \lnot\,\varphi,\quad \varphi,\psi \mapsto \varphi \,\lor\, \psi,\quad \varphi\mapsto \exists\, x \varphi.
     \end{equation*}
 
-    Tutte le variabili che all'interno di una formula non sono sotto il raggio di un quantificatore si dicono \emph{libere}: indicando con $ \varphi(x_1,\dots,x_{n} ) $ si intende che le variabili libere di $ \varphi $ sono un sottoinsieme di $ \set{x_1,\dots,x_{n} } $.
+    Tutte le variabili che all'interno di una formula non sono sotto il raggio di un quantificatore si dicono \emph{libere}: indicando $ \varphi(x_1,\dots,x_{n} ) $ si intende che le variabili libere di $ \varphi $ sono un sottoinsieme di $ \set{x_1,\dots,x_{n} } $.
 }
 \osservazione{
     È naturale introdurre un concetto di \emph{altezza} di una formula: nell'albero costruito a partire dalla formula $ \varphi $, che ricostruisce le operazioni utilizzate, l'altezza $ \altezza(\varphi) $ è la lunghezza del ramo più lungo (partendo da zero).
 }
 
 \definizione{
-    Sia $ t(x_1,\dots,x_{n} ) $ un $ \mathcal{L} $-termine. Sia $ \mathcal{M} $ una $ \mathcal{L} $-struttura e $ a_1,\dots,a_{n} \in M  $. Allora \[
+    Siano $ t(x_1,\dots,x_{n} ) $ un $ \mathcal{L} $-termine e $ \mathcal{M} $ una $ \mathcal{L} $-struttura. 
+     
+    Se $ a_1,\dots,a_{n} \in M  $ allora \[
         t^{\mathcal{M}}[a_1,\dots,a_{n} ]
     \]è l'elemento di $ M $ definito per ricorsione da \begin{itemize}
         \item se $ t $ è nella forma $ x_{i} $, allora $ t^{\mathcal{M}}[a_1,\dots,a_{n} ] = a_{i} $;
@@ -105,7 +107,7 @@ Sia $ t(x_1,\dots,x_{n} ) $ un termine, dove tra le $ x_1,\dots,x_{n}  $ sono pr
 \definizione{
     Data una $ \mathcal{L} $-struttura $ \mathcal{M} $ ed una formula $ \varphi(x_1,\dots,x_{n} ) $, si definisce la relazione di soddisfazione \[
         \mathcal{M}\vDash\varphi[a_1,\dots,a_{n} ]
-    \]per ricorcorsione sulla complessità di $ \varphi(x_1,\dots,x_{n} ) $. \begin{itemize}
+    \]per ricorsione sulla complessità di $ \varphi(x_1,\dots,x_{n} ) $. \begin{itemize}
         \item Se $ \varphi(x_1,\dots,x_{n} ) $ è del tipo \[t\eqcirc s\](con $ t $ ed $ s $ termini), allora $ \mathcal{M}\vDash \varphi[a_1,\dots,a_{n} ] $ se e solo se \[
             t^{\mathcal{M}}[a_1,\dots,a_{n} ] = s^{\mathcal{M}}[a_1,\dots,a_{n} ].
         \]
@@ -197,12 +199,12 @@ La forma equivalente utilizzata in questo lavoro è il seguente Lemma di Zorn.
 
 \section{Prerequisiti di Geometria Differenziale}\label{sec:geodiff}
 
-\subsection{Varietà differenzabili}
+\subsection{Varietà differenziabili}
 
 \definizione{
-    Una \emph{varietà topologica} $ n $-dimensionale è uno spazio topologico $ M $, di Hausdorf e a base numerabile, tale per cui, per ogni $ p \in M $ esistono $ {U} $ intorno aperto di $ p $ in M, $ V \subseteq \R^{n} $ aperto e \begin{equation*}
-        \phi : {U} \longrightarrow V
-    \end{equation*}omeomorfismo. La funzione $ \phi $ si dice \emph{carta topologica}.
+    Una \emph{varietà topologica} $ n $-dimensionale è uno spazio topologico $ M $, di Hausdorf e a base numerabile, tale per cui, per ogni $ p \in M $ esistono un intorno aperto $ U \ni p $ in $M$, $ V \subseteq \R^{n} $ aperto e un omeomorfismo\begin{equation*}
+        \phi : {U} \longrightarrow V.
+    \end{equation*}La funzione $ \phi $ si dice \emph{carta topologica}.
 }
 \definizione{
     Se $ M $ è una varietà topologica, un \emph{atlante topologico} di $ M $ è una famiglia di \emph{carte} \begin{equation*}
@@ -224,7 +226,7 @@ La forma equivalente utilizzata in questo lavoro è il seguente Lemma di Zorn.
     La compatibilità di atlanti è una relazione di equivalenza.
 
 \definizione{
-    Una \emph{struttura differenzabile} è un atlante differenziabile che sia massimale rispetto all'inclusione. 
+    Una \emph{struttura differenziabile} è un atlante differenziabile che sia massimale rispetto all'inclusione. 
 
     Una varietà topologica con una struttura differenziabile fissata si dice \emph{varietà differenziabile}.
 }
@@ -250,7 +252,7 @@ Il seguente teorema consente di affermare che esista una struttura differenziabi
     Un'applicazione differenziabile, biiettiva e con inversa differenziabile è detta \emph{diffeomorfismo}.
 }
 
-    La buona definizione di questa definizione segue dalla seguente proposizione.
+    La definizione precedente è ben posta a seguito della seguente proposizione.
 
 \proposizione{jskdjhsfkjhcakjhdvcbloeiruhfcalfs}{
     Sia $F: M \longrightarrow N$ un'applicazione fra varietà, differenziabile in $p \in M$. Allora per ogni carta $(\tilde{U}, \tilde{\varphi})$ con $p \in \tilde{U}$ e per ogni carta $(\tilde{V}, \tilde{\psi})$ con $F(p) \in \tilde{V}$ la composizione $\tilde{\psi} \circ F \circ \tilde{\varphi}^{-1}$ è differenziabile in $\tilde{\varphi}(p)$.
@@ -271,7 +273,7 @@ Il seguente teorema consente di affermare che esista una struttura differenziabi
     L'insieme delle classi di equivalenza è denotato con $ C^{\infty}(p) $.
 }
 \paragrafo{Lemma}{%
-    Sia $ M $ una varietà e $ p \in M $. Siano $ \bm{f},\bm{g} \in C^{\infty}(p) $ due classi di equivalenza, e siano $ (U_1,f_1),(U_2,f_2) $ rappresentanti di $ \bm{f} $ e $ (V_1,g_1),(V_2,g_2) $ rappresentanti di $ \bm{g} $. Allora \begin{enumerate}
+    Sia $ M $ una varietà e $ p \in M $. Siano $ \bm{f},\bm{g} \in C^{\infty}(p) $ due classi di equivalenza, e siano $ (U_1,f_1),(U_2,f_2) $ dei rappresentanti di $ \bm{f} $ e $ (V_1,g_1),(V_2,g_2) $ dei rappresentanti di $ \bm{g} $. Allora \begin{enumerate}
         \item $ (U_1\cap V_1, f_1+g_1)\sim (U_2\cap V_2, f_2+g_2) $;
         \item $ (U_1\cap V_1, f_1 \cdot g_1)\sim (U_2\cap V_2, f_2 \cdot g_2) $;
         \item $ (U_1, \lambda f_1) \sim (U_2, \lambda f_2)$ per ogni $\lambda \in \R$;
@@ -331,7 +333,7 @@ Il seguente teorema consente di affermare che esista una struttura differenziabi
     \end{equation*}per ogni $ t \in (- \varepsilon, \varepsilon) $ è detta \emph{curva integrale} di $ X $ uscente da $ p $.
 }
 \osservazione{
-    Per il Teorema di Cauchy-Lipschitz sull'unicità della soluzione di un problema di Cauchy, se $ X $ è un campo vettoriale almeno $ C^{1} $ tale curva integrale esiste sempre su un intervallo massimale $ I $, contente lo zero.
+    Per il Teorema di Cauchy-Lipschitz sull'unicità della soluzione di un problema di Cauchy, se $ X $ è un campo vettoriale almeno $ C^{1} $ tale curva integrale esiste sempre su un intervallo massimale $ I $, contenente lo zero.
 }
 \definizione{
     Sia $ X $ un campo vettoriale su una varietà $ M $. Si definisce il \emph{flusso di $ X $ al tempo $ t $} la mappa \begin{align*}

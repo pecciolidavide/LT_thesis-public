@@ -8,11 +8,17 @@
 % Si riconoscerà poi un'immersione elementare tra R* (come definita nel chap precedente) e R* all'interno di *V(R). Vedi retro tesi
 % All'interno di V(RR), poi, si identificherà il manifold M.
 
-Nel capitolo precedente, a seguito della costruzione di $ \starR $, è stato necessario definire attentamente l'estensione di altri oggetti matematici strettamente collegati, come funzioni, relazioni d'ordine e sottoinsiemi.
+% Nel capitolo precedente, a seguito della costruzione di $ \starR $, è stato necessario definire attentamente l'estensione di altri oggetti matematici strettamente collegati, come funzioni, relazioni d'ordine e sottoinsiemi.
 
-Dunque la complessità nel definire tutti gli oggetti e le strutture necessarie per studiare le varietà differenziabili, ovvero l'obiettivo di questo lavoro, rende necessaria una generalizzazione della costruzione precedente tale per cui, preso un ``qualsiasi''\footnote{Nella definizione formale si indicherà con più precisione cosa significhi questo ``qualsiasi''} oggetto matematico, sia chiaro e naturale quale sia la sua controparte non standard.
+% Dunque la complessità nel definire tutti gli oggetti e le strutture necessarie per studiare le varietà differenziabili, ovvero l'obiettivo di questo lavoro, rende necessaria una generalizzazione della costruzione precedente tale per cui, preso un ``qualsiasi''\footnote{Nella definizione formale si indicherà con più precisione cosa significhi questo ``qualsiasi''} oggetto matematico, sia chiaro e naturale quale sia la sua controparte non standard.
 
-In particolare si costruirà una struttura $ V(\R) $ contentente tutti gli oggetti di interesse, e contenente $ \R $, e se ne definirà la controparte non standard $ \nonstandard{V(\R)} $. Si mostrerà che le definizioni di funzioni e sottoinsiemi in $ \starR $ date nel capitolo precedente sono coerenti con il principio di transfer più generale dato in questo capitolo. 
+Nel capitolo precedente si è costruito $ \starR $, con l'estensione non standard per ogni funzione $ f: A \subseteq \R^{n} \longrightarrow \R $ e per ogni sottoinsieme di $ \R^{n} $, per $ n $ arbitrario. Identificando una funzione col suo grafo, è ancora possibile, mediante la suddetta costruzione, estendere funzioni $ g: A \subseteq \R^{m} \longrightarrow \R^{n}$per $ n, m $ fissati.
+
+Siccome però l'oggetto di interesse di questo lavoro è una varietà differenziabile, è necessario avere una definizione di estensione per oggetti diversi da quelli sopracitati: infatti non è possibile ottenere nulla disostanzialmente diverso da sottoinsiemi di $ \R^{n} $ e questo comporta delle ambiguità.
+
+In questo capitolo, invece, si costruirà una struttura $ V(\R) $ contentente oggetti molto più variegati, e, pertanto, sarà possibile identificare una varietà $ M $ all'interno di $ V(\R) $.
+
+Si definirà la controparte non standard $ \nonstandard{V(\R)} $ e si mostrerà che le definizioni di funzioni e sottoinsiemi in $ \starR $ date nel capitolo precedente siano coerenti con il principio di transfer più generale dato in questo capitolo. 
 
 \section{Universo matematico}
 
@@ -520,9 +526,11 @@ Si riporta un risultato, la Proposition 4.4.14 di \cite{chang_model_2012}, la cu
 %     \]
 % }
 
-Nel capitolo precedente, al paragrafo \framref{tantebellecoseinoijknkjnkjnsd} è stato esteso il principio di transfer senza darne una reale dimostrazione. A seguito della costruzione di $ \nonstandard{V(\R)} $ appare chiaro che questo funzioni a patto che la definizione di estensione non standard di funzioni e sottoinsiemi data nello scorso capitolo sia coerente con la estensione definita dalla funzione \begin{equation*}
-    *: V(\R) \longrightarrow \nonstandard{V(\R)}.
-\end{equation*}
+Nel capitolo precedente, con l'Osservazione \framref{tantebellecoseinoijknkjnkjnsd} è stato esteso il principio di transfer molto ampio. A seguito della costruzione di $ \nonstandard{V(\R)} $ è conveniente mostrare che tutti i teoremi dimostrati nel Capitolo 3 per $ \starR $ siano ancora validi all'interno di $ \nonstandard{V(\R)} $. Per fare ciò, è sufficiente mostrare che le estensioni non standard delle funzioni e degli insiemi corrispondano per entrambe le costruzioni. Per semplicità si mostra unicamente per funzioni ed insiemi di arietà uno.
+
+% appare chiaro che questo funzioni a patto che la definizione di estensione non standard di funzioni e sottoinsiemi data nello scorso capitolo sia coerente con la estensione definita dalla funzione \begin{equation*}
+%     *: V(\R) \longrightarrow \nonstandard{V(\R)}.
+% \end{equation*}
 
 In particolare, si dimostra la seguente proposizione. 
 \proposizione{dkjncjskjdjdjdjdjdjdjdjdckjn}{
@@ -530,8 +538,8 @@ In particolare, si dimostra la seguente proposizione.
         \item $ \nonstandard{A} = \set{\filtersequence{u_{n}}: u_{n} \in A, \forall\, n \in \N } $;
         \item $ \nonstandard{f} $ è una funzione \begin{equation*}
             \nonstandard{f}: \nonstandard{A} \longrightarrow \starR
-        \end{equation*}tale per cui $ \nonstandard{f}\left(\filtersequence{u_{n}}\right) = \filtersequence{f(u_{n} )} $.
-    \end{enumerate}
+        \end{equation*}tale per cui $ \nonstandard{f}\left(\filtersequence{u_{n}}\right) = \filtersequence{f(u_{n} )} $;
+    \end{enumerate}dove $ \nonstandard{f} $ e $ \nonstandard{A} $ sono le estensioni di $ f $ e $ A $ all'interno di $ \nonstandard{V(X)} $.
 }
 \dimostrazioneprop{dkjncjskjdjdjdjdjdjdjdjdckjn}{
     \begin{enumerate}
@@ -609,10 +617,10 @@ In particolare, si dimostra la seguente proposizione.
     \end{enumerate}
 }
 
-\osservazione{
-    Dopo aver mostrato che i teoremi di base dimostrati nel capitolo precedente abbiano una solida base formale, per procedere alla trattazione delle varietà differenziabili è necessario capire se e come definire l'estensione non standard di una varietà. 
+\paragrafo{Osservazione}{%
+Dopo aver mostrato che i teoremi di base dimostrati nel capitolo precedente abbiano una solida base formale, per procedere alla trattazione delle varietà differenziabili è necessario capire se e come definire l'estensione non standard di una varietà. 
 
-    Per farlo, si consideri una varietà $ M $, e si indichi con $ \abs{M} $ l'insieme dei suoi punti. Si identifica poi $ \abs{M} $ con un insieme all'interno di $ V_1(\R)\setminus V_0(\R) $. Questo assicura che l'intersezione tra $ \abs{M} $ ed $ \R $ sia vuota. 
+Per farlo, si consideri una varietà $ M $, e si indichi con $ \abs{M} $ l'insieme dei suoi punti. Si identifica poi $ \abs{M} $ con un insieme all'interno di $ V_1(\R)\setminus V_0(\R) $. Questo assicura che l'intersezione tra $ \abs{M} $ ed $ \R $ sia vuota. 
 
-    In questo modo, come indicato nell'Osservazione \framref{dkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn}, ogni oggetto di interesse nello studio di una varietà differenziabile $ M $ è contenuto all'interno di $ V(\R) $. Risulta quindi elementare, utilizzando la funzione $ *:V(\R) \longrightarrow \nonstandard{V(\R)} $, estendere tutto alla propria versione non standard.
-}
+In questo modo, come indicato nell'Osservazione \framref{dkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn}, ogni oggetto di interesse nello studio di una varietà differenziabile $ M $ è contenuto all'interno di $ V(\R) $. Risulta quindi elementare, utilizzando la funzione $ *:V(\R) \longrightarrow \nonstandard{V(\R)} $, estendere tutto alla propria versione non standard.
+}{dkjncjsjdkjcnjsjsisosservaziondcinaonfinale}{}

@@ -409,7 +409,7 @@ Sebbene la FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ 
     Segue dal Corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
     \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
     a &\longmapsto \filtersequence{a}
-    \end{align*}è una immersione elementare, ed in particolare che $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti; questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'Example 3.21 di \cite{andretta_elements_2022}},
+    \end{align*}è una immersione elementare, ed in particolare che $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti; questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'Esempio 3.21 di \cite{andretta_elements_2022}},
     
     Inoltre $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \nonstandard{a} $.
 
@@ -535,30 +535,104 @@ Le seguenti proprietà seguono dalle definizioni.
 
 \subsection{Insiemi e funzioni non standard}
 
-\definizione{
-    Sia $ X \subseteq \R $. Il sottoinsieme $ \nonstandard{X} \subseteq \starR $ si definisce come \begin{equation*}
-        \nonstandard{X} \coloneqq \set{\filtersequence{a_{n}}:\forall\, n \in \N\, a_{n} \in X}.
+\paragrafo{Osservazione}{%
+    È possibile ampliare il principio di transfer modificando il linguaggio a cui si applica la costruzione appena svolta. 
+    
+    Sia $ \mathcal{L_{\text{ext}} } $ il linguaggio del prim'ordine tale che: \begin{itemize}
+        % \item per ogni $ n \in \N $ e per ogni $ \bm{x} \in \R^{n} $ vi sia un simbolo di costante;
+        \item per ogni $ n \in \N\setminus\set{0} $ e per ogni $ A \subseteq \R^{n} $ vi sia un simbolo di relazione $ n $-aria; 
+        \item per ogni $ n \in \N\setminus\set{0} $ e per ogni $ f:\R^{n}\longrightarrow \R $ vi sia un simbolo di funzione $ n $-aria.
+    \end{itemize}Siccome per applicare la costruzione dell'ultrapotenza non sono necessarie ipotesi sul linguaggio utilizzato, se $ \mathscr{R} $ è la $ \mathcal{L_{\text{ext}} } $-struttura di dominio $ \R $ e in cui tutti i simboli sono interpretati nel modo naturale, esiste una struttura \begin{equation*}
+        \nonstandard{\mathscr{R}} = \mathscr{R}^{\N}/\mathcal{U}
+    \end{equation*}tale per cui \begin{align*}
+    *:\R &\longrightarrow \norma{\nonstandard{\mathscr{R}}} \\
+    r &\longmapsto \filtersequence{r}
+    \end{align*}è una immersione elementare. In particolare, vale il principio di transfer, ovvero per ogni $ \mathcal{L}_{\text{ext}} $-formula $ \varphi(x_1,\dots,x_{n} ) $ e per ogni $ a_1,\dots,a_{n} \in \R  $, \begin{equation*}
+        \mathscr{R}\vDash \varphi[a_1,\dots,a_{n} ]\quad\text{se e solo se }\nonstandard{\mathscr{R}}\vDash \varphi[\nonstandard{a_1},\dots,\nonstandard{a_{n} }].
+    \end{equation*}In questo contesto, si continua ad indicare con $ \starR = \norma{\nonstandard{\mathcal{R}}} $.
+
+    Si considerino queste convenzioni notazionali, introdotte per semplicità di lettura delle formule: \begin{itemize}
+        \item se $ R \in \mathcal{L}_{\text{ext}}  $ è un simbolo di relazione $ n $-ario, si scriverà \begin{equation*}
+            (x_1,\dots,x_{n} ) \in R
+        \end{equation*}in luogo di $ R(x_1,\dots,x_{n} ) $; 
+        \item se $ A \subseteq \R^{n} $ è l'interpretazione in $ \mathscr{R} $ di un simbolo di relazione $ n $-ario, si indicherà con $ \nonstandard{A} $ l'interpretazione dello stesso simbolo in $ \nonstandard{\mathscr{R}} $;
+        \item se $ f: \R^{n} \longrightarrow \R$ è l'interpretazione in $ \mathscr{R} $ di un simbolo di funzione $ n $-ario, si indicherà con $ \nonstandard{f} $ l'interpretazione dello stesso simbolo in $ \nonstandard{\mathscr{R}} $.
+    \end{itemize}
+    % Date le definizioni di cui sopra, è possibile ampliare il principio di transfer. 
+
+    % In particolare se $ \phi(x_1,\dots,x_{n} ) $ è una formula che contiene unicamente elementi di $ \mathcal{L}_{ord} $ oppure espressioni come $ f(x) $ e $ x \in D $, dove $ f:\R \longrightarrow \R $ è una funzione e $ D \subseteq \R $ è un sottoinsieme specifico di $ \R $, allora $ \phi[a_1,\dots,a_{n} ] $ è verificata su $ \R $ se e solo se $ \tilde{\phi}[\nonstandard{a_1},\dots,\nonstandard{a_{n} }] $ è verificata su $ \nonstandard{\R} $, dove $ \tilde{\phi} $ è la formula ottenuta sostituendo a ciascun simbolo di funzione $ f $ la sua estensione non standard $ \nonstandard{f} $, e sostituendo a ciascun simbolo di sottoinsieme $ D $ la sua estensione non standard. 
+
+    % La dimostrazione di ciò sarà l'argomento del capitolo successivo.
+}{tantebellecoseinoijknkjnkjnsd}{}
+
+\proposizione{cskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc}{
+    Sia $ A \subseteq \R $. Il sottoinsieme $ \nonstandard{X} \subseteq \starR $ è \begin{equation*}
+        \nonstandard{A} = \set{\filtersequence{a_{n}}:\forall\, n \in \N\, a_{n} \in X}.
     \end{equation*}
 }
-\definizione{
-    Sia $ X \subseteq \R $ e sia $ f: X \longrightarrow \R $. Si definisce l'estensione non standard di $ f $ come \begin{align*}
-    \nonstandard{f}:\nonstandard{X} &\longrightarrow \starR \\
-    \filtersequence{a_{n}} &\longmapsto \filtersequence{f(u_{n} )}.
-    \end{align*}
+\dimostrazioneprop{cskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc}{
+    Per definizione di ultraprodotto, per ogni $ \sequence{a_{n}} \in \R^{\N} $, $ \filtersequence{a_{n}} \in \nonstandard{A} $ se e solo se \begin{equation*}
+        \set{n \in \N: a_{n} \in A } \in \mathcal{U}. 
+    \end{equation*}. 
+
+    Dunque, l'inclusione ``$\supseteq$'' è ovvia, in quanto $ \N \in \mathcal{U} $. 
+
+    Sia ora $ \filtersequence{a_{n} } \in \nonstandard{X} $, e sia $ X_{a} = \set{n \in \N: a_{n} \in A }  $. Sia $ c \in A $ fissato, si definisce $ \sequence{b_{n} } \in \R^{\N} $: \begin{equation*}
+        b_{n}= \begin{cases}
+            a_{n} & n \in X_{a}  \\ 
+            c & n \notin X_{a} 
+        \end{cases} 
+    \end{equation*}Per costruzione $ \filtersequence{a_{n} }=\filtersequence{b_{n}} $, e $ \forall\, n \in \N $, $ b_{n} \in A  $. Pertanto $ \filtersequence{a_{n}} \in A $.\qed
+}
+\osservazione{
+    Si noti che, sebbene tutti i simboli di funzione di $ \mathcal{L}_{\text{ext}} $ possano essere interpretati solo da funzioni totali su $ \R^{n} $, è possibile codificare funzioni parziali \begin{equation*}
+        f: A \subseteq \R^{n} \longrightarrow \R
+    \end{equation*}come $ \Gamma \subseteq \R^{n}\times \R $, di cui esiste un simbolo in $ \mathcal{L}_{\text{ext}} $. In particolare, è sempre possibile utilizzare $ f(x_1,\dots,x_{n} ) $ all'interno di formule del prim'ordine.
+}
+\proposizione{kjnskjncskjnsdjcjdkjn}{
+    Sia $ A \subseteq \R $ e sia $ f: A \longrightarrow \R $. L'estensione non standard di $ f $ è \begin{align*}
+        \nonstandard{f}:\nonstandard{A} &\longrightarrow \starR \\
+        \filtersequence{a_{n}} &\longmapsto \filtersequence{f(a_{n} )}.
+        \end{align*}
+}
+\dimostrazioneprop{kjnskjncskjnsdjcjdkjn}{
+    In primo luogo è necessario mostrare che il dominio di $ \nonstandard{f} $ sia effettivamente $ \nonstandard{A} $. Siano dunque $ \bm{f} \in \mathcal{L}_{\text{ext}}$ e $ \bm{A}  \in \mathcal{L}_{\text{ext}}$ i simboli tali per cui \begin{equation*}
+        \bm{f}^{\mathscr{R}} = f,\qquad \bm{A}^{\mathscr{R}} = A
+    \end{equation*}e si consideri l'$ \mathcal{L}_{\text{ext}} $-enunciato: \begin{equation*}
+        \varphi:\quad \forall\, x\left(x \in \bm{A} \,\implies\, \exists\, y\left( (x,y) \in \bm{f}\right) \right)
+    \end{equation*}Siccome il dominio di $ f $ è $ A $, si ha che $ \mathscr{R} \vDash \varphi $. 
+
+    Pertanto, poiché $ \mathscr{R} $ e $ \nonstandard{ \mathscr{R}} $ sono elementarmente equivalenti, $\nonstandard{ \mathscr{R}} \vDash \varphi$. Dunque $ \nonstandard{f} $ ha dominio $ \nonstandard{A} $.
+
+    Noto il dominio di $ \nonstandard{F} $, è sufficiente dimostrare che \begin{equation*}
+        \nonstandard{f} = \set{\left(\filtersequence{a_{n}}, \filtersequence{f(a_{n} )}\right): \filtersequence{a_{n}} \in \nonstandard{A}}
+    \end{equation*}\begin{itemize}
+        \item[\boxed{\subseteq}] Se $ \left(\filtersequence{a_{n} }, \filtersequence{b_{n} }\right) \in \nonstandard{f}$, allora, per definizione, \begin{equation*}
+            X\coloneqq \set{n \in \N: (a_{n}, b_{n}) \in f} \in \mathcal{U}
+        \end{equation*}Si noti che, parafrasando, \begin{equation*}
+            X = \set{n \in \N: a_{n} \in A \,\land\, b_{n}=f(a_{n}) }
+        \end{equation*}
+
+        Si definisca dunque una successione $ \sequence{c_{n} } $: \begin{equation*}
+            c_{n}= \begin{cases}
+                b_{n} & n \in X\\ 
+                f(a_{n}) & n \notin X 
+            \end{cases} 
+        \end{equation*}allora $ \filtersequence{c_{n}}=\filtersequence{b_{n}} $ poiché $ X \in \mathcal{U} $, e \begin{equation*}
+            \forall\, n \in \N:\, c_{n} = f(a_{n}). 
+        \end{equation*}Inoltre, per la Proposizione \framref{cskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc}, $ \filtersequence{a_{n}} \in \nonstandard{A} $, e pertanto \begin{equation*}
+            \left(\filtersequence{a_{n} }, \filtersequence{b_{n} }\right) \in \set{\left(\filtersequence{a_{n}}, \filtersequence{f(a_{n} )}\right): \filtersequence{a_{n}} \in \nonstandard{A}}.
+        \end{equation*}
+        \item[\boxed{\supseteq}] Sia ora $ \filtersequence{a_{n}} \in \nonstandard{A} $. \begin{equation*}
+            \left(\filtersequence{a_{n}}, \filtersequence{f(a_{n} )}\right) \in \nonstandard{f}
+        \end{equation*}se e solo se $ X'\coloneqq\set{n \in \N: \left(a_{n}, f(a_{n} ) \right) \in f} \in \mathcal{U} $, ma $ X' = \N $ e dunque $ X' \in \mathcal{U} $.
+    \qed\end{itemize}
 }
 \osservazione{
     La definizione di valore assoluto su $ \starR $ dell'Osservazione \framref{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn} è effettivamente l'estensione su $ \starR $ della mappa reale $ x \mapsto |x| $.
 }
 
 Appare evidente che per ogni $ x \in X $, $ \nonstandard{f}(x)=f(x) $.
-
-\paragrafo{Osservazione}{%
-    Date le definizioni di cui sopra, è possibile ampliare il principio di transfer. 
-
-    In particolare se $ \phi(x_1,\dots,x_{n} ) $ è una formula che contiene unicamente elementi di $ \mathcal{L}_{ord} $ oppure espressioni come $ f(x) $ e $ x \in D $, dove $ f:\R \longrightarrow \R $ è una funzione e $ D \subseteq \R $ è un sottoinsieme specifico di $ \R $, allora $ \phi[a_1,\dots,a_{n} ] $ è verificata su $ \R $ se e solo se $ \tilde{\phi}[\nonstandard{a_1},\dots,\nonstandard{a_{n} }] $ è verificata su $ \nonstandard{\R} $, dove $ \tilde{\phi} $ è la formula ottenuta sostituendo a ciascun simbolo di funzione $ f $ la sua estensione non standard $ \nonstandard{f} $, e sostituendo a ciascun simbolo di sottoinsieme $ D $ la sua estensione non standard. 
-
-    La dimostrazione di ciò sarà l'argomento del capitolo successivo.
-}{tantebellecoseinoijknkjnkjnsd}{}
 
 \subsection{Continuità e derivabilità}
 
@@ -611,10 +685,10 @@ Il Teorema \teoref{kjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn} garanti
 \subsection{Elementi interni}
 
 \definizione{
-    Un elemento $\xi \in \starR$ si dice interno se appartiene a qualche iper-estensione $ \nonstandard{\Upsilon } $ per $ \Upsilon  \subseteq \starR $. Un elemento dell’universo non standard che non è interno si dice esterno.
+    Un elemento $\xi \in \starR$ si dice interno se appartiene a qualche iper-estensione $ \nonstandard{\Upsilon } $ per $ \Upsilon  \subseteq \R$. Un elemento dell’universo non standard che non è interno si dice esterno.
 }
 
-Si riporta una versione più debole del Theorem 2.8.12 di \cite{loeb_nonstandard_2015}, la cui dimostrazione prescinde dall'obiettivo di questa tesi. 
+Si riporta una versione più debole del Teorema 2.8.12 di \cite{loeb_nonstandard_2015}, la cui dimostrazione prescinde dall'obiettivo di questa tesi. 
 
 \teorema{teoriemidkjnkjnc}{
     Sia $ A $ un sottoinsieme interno di $ \starR $. \begin{enumerate}

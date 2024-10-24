@@ -777,4 +777,5 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb

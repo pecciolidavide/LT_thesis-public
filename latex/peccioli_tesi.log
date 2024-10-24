@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  24 OCT 2024 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.21)  24 OCT 2024 18:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2410,225 +2410,233 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \c@frammentoAtantebellecoseinoijknkjnkjnsd=\count618
 \c@frammentoBtantebellecoseinoijknkjnkjnsd=\count619
  [30]
-\c@frammentoAkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count620
-\c@frammentoBkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count621
+\c@frammentoAcskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc=\count620
+\c@frammentoBcskjnskdjcnskjndkjncskjndjdjskjnsckjndkjnc=\count621
+\c@frammentoAkjnskjncskjnsdjcjdkjn=\count622
+\c@frammentoBkjnskjncskjnsdjcjdkjn=\count623
  [31]
-\c@frammentoAcdkjnscjdkjnckjnskjnckjndj=\count622
-\c@frammentoBcdkjnscjdkjnckjnskjnckjndj=\count623
-\c@frammentoAteoriemidkjnkjnc=\count624
-\c@frammentoBteoriemidkjnkjnc=\count625
-\c@frammentoAdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count626
-\c@frammentoBdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count627
- [32]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex [33] [34
+\c@frammentoAkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count624
+\c@frammentoBkjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn=\count625
+ [32]
+\c@frammentoAcdkjnscjdkjnckjnskjnckjndj=\count626
+\c@frammentoBcdkjnscjdkjnckjnskjnckjndj=\count627
+ [33]
+\c@frammentoAteoriemidkjnkjnc=\count628
+\c@frammentoBteoriemidkjnkjnc=\count629
+\c@frammentoAdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count630
+\c@frammentoBdkjncjskjnskjncjdjckjnsjdkjnckjnskjnd=\count631
+ [34]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/universo_nonstandard.tex [35] [36
 
 ]
 Capitolo 3.
-[35]
-\c@frammentoAkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count628
-\c@frammentoBkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count629
-\c@frammentoAdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count630
-\c@frammentoBdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count631
-\c@frammentoAdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count632
-\c@frammentoBdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count633
- [36]
-\c@frammentoAdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count634
-\c@frammentoBdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count635
- [37] [38]
-\c@frammentoAdjnckjnskjndjckjnsdkjnckjnskjn=\count636
-\c@frammentoBdjnckjnskjndjckjnsdkjnckjnskjn=\count637
-\c@frammentoADkjndjcdjdjdjlemmininoninoinopucciosino=\count638
-\c@frammentoBDkjndjcdjdjdjlemmininoninoinopucciosino=\count639
-\c@frammentoAdkjncjskjncjskjndjcdjjjjjdjdjj=\count640
-\c@frammentoBdkjncjskjncjskjndjcdjjjjjdjdjj=\count641
- [39]
-Overfull \hbox (25.98975pt too wide) in paragraph at lines 190--190
+[37]
+\c@frammentoAkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count632
+\c@frammentoBkjndjciosujosidjosfjnsjndscskjhadnvkjhsdbvkjhdfbj=\count633
+\c@frammentoAdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count634
+\c@frammentoBdkjncskjndjjdjskjnckjnsjdkkjnkjnkjnknkkjnkjnjnj=\count635
+\c@frammentoAdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count636
+\c@frammentoBdkjncksjndjdjjjdjdjkjnckjnkjnelksdnojkncsdjkn=\count637
+ [38]
+\c@frammentoAdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count638
+\c@frammentoBdkjnskjnckjnskjndjcjdjkskjncsjdjdjcjjdskjncjdjdj=\count639
+ [39] [40]
+\c@frammentoAdjnckjnskjndjckjnsdkjnckjnskjn=\count640
+\c@frammentoBdjnckjnskjndjckjnsdkjnckjnskjn=\count641
+\c@frammentoADkjndjcdjdjdjlemmininoninoinopucciosino=\count642
+\c@frammentoBDkjndjcdjdjdjlemmininoninoinopucciosino=\count643
+\c@frammentoAdkjncjskjncjskjndjcdjjjjjdjdjj=\count644
+\c@frammentoBdkjncjskjncjskjndjcdjjjjjdjdjj=\count645
+ [41]
+Overfull \hbox (25.98975pt too wide) in paragraph at lines 196--196
  []\T1/lmr/bx/n/10.95 Corollario 3.20.[] \T1/lmr/m/n/10.95 (-20) Ogni ele-men-to di $\OML/lmm/m/it/10.95 V\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 X\OT1/lmr/m/n/10.95 (-20) )[]\OML/lmm/m/it/10.95 =\OMS/lmsy/m/n/10.95 U$ \T1/lmr/m/n/10.95 (-20) è nel-la for-ma $[][]$, do-ve []
  []
 
-\c@frammentoAdkjnckjdkckjndjckjndjckkjnckjs=\count642
-\c@frammentoBdkjnckjdkckjndjckjndjckkjnckjs=\count643
-\c@frammentoAkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count644
-\c@frammentoBkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count645
-[40] [41] [42]
-\c@frammentoAdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count646
-\c@frammentoBdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count647
+\c@frammentoAdkjnckjdkckjndjckjndjckkjnckjs=\count646
+\c@frammentoBdkjnckjdkckjndjckjndjckkjnckjs=\count647
+\c@frammentoAkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count648
+\c@frammentoBkdjnckskjjjdkjncjdjdkskjncjdjskjncjdkjcndkjnckjnsjdjckskjn=\count649
+[42] [43] [44]
+\c@frammentoAdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count650
+\c@frammentoBdjjjdjjckjnskjndjdjjcjlucrezianoncihamandatilvididio=\count651
 
-Overfull \hbox (3.5845pt too wide) in paragraph at lines 300--300
+Overfull \hbox (3.5845pt too wide) in paragraph at lines 306--306
  [][][]\T1/lmr/bx/it/10.95 Dimostrazione.[][][] \T1/lmr/m/n/10.95 (-20) Poi-ché le $[][]$ so-no suc-ces-sio-ni co-stan-ti, l'in-sie-me $\OML/lmm/m/it/10.95 T[]$
  []
 
-\c@frammentoAdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count648
-\c@frammentoBdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count649
-\c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count650
-\c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count651
-[43]
-Overfull \hbox (9.19789pt too wide) in paragraph at lines 330--330
+\c@frammentoAdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count652
+\c@frammentoBdkjnsjdjdjdjjdosdsoijaplkadplkfapdlkfapcokad=\count653
+\c@frammentoAdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count654
+\c@frammentoBdkjnckjdncjdjdjckjndjcjskkjkjncjdkjskjncdj=\count655
+[45]
+Overfull \hbox (9.19789pt too wide) in paragraph at lines 336--336
  []\T1/lmr/bx/n/10.95 Lemma 3.29.[] \T1/lmr/m/n/10.95 (-20) La fun-zio-ne $\U/msb/m/n/10.95 }$ \T1/lmr/m/n/10.95 (-20) de-fi-ni-ta so-pra è iniet-ti-va. Inol-tre, per ogni $[][]\OML/lmm/m/it/10.95 ; [][] \OMS/lmsy/m/n/10.95 2
  []
 
-[44]
-\c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count652
-\c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count653
- [45] [46] [47]
-\c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count654
-\c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count655
-\c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count656
-\c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count657
- [48]
-Overfull \hbox (5.2967pt too wide) in paragraph at lines 489--489
+[46]
+\c@frammentoAdcsdscsdcsdcsdcsdcsdcsdcs=\count656
+\c@frammentoBdcsdscsdcsdcsdcsdcsdcsdcs=\count657
+ [47] [48] [49]
+\c@frammentoAdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count658
+\c@frammentoBdkjnckjnsjjjdjdjdjdkjncjnskjnsdkjnckjnskjnkjnkjnjjjjj=\count659
+\c@frammentoAdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count660
+\c@frammentoBdkjncsksddkjncjskkskjnscnkckjnsdjncjsdkjncjsdkjnckjnsjdjdjskckjncjdjdjskjn=\count661
+ [50]
+Overfull \hbox (5.2967pt too wide) in paragraph at lines 495--495
 []$[] \U/msa/m/n/10.95 ^^O \OML/lmm/m/it/10.95 ^^^ []$ \T1/lmr/m/n/10.95 (-20) se e so-lo se $[] \U/msa/m/n/10.95 ^^O \OML/lmm/m/it/10.95 ^^^\OT1/lmr/m/n/10.95 (-20) [[][][][]\OML/lmm/m/it/10.95 ; [] ; [][][][]\OT1/lmr/m/n/10.95 (-20) ]$\T1/lmr/m/n/10.95 (-20) ,
  []
 
-\c@frammentoAjdjdjjjjjjdjjjkjn=\count658
-\c@frammentoBjdjdjjjjjjdjjjkjn=\count659
-[49]
-\c@frammentoAdkjncjskjdjdjdjdjdjdjdjdckjn=\count660
-\c@frammentoBdkjncjskjdjdjdjdjdjdjdjdckjn=\count661
+\c@frammentoAjdjdjjjjjjdjjjkjn=\count662
+\c@frammentoBjdjdjjjjjjdjjjkjn=\count663
+[51]
+\c@frammentoAdkjncjskjdjdjdjdjdjdjdjdckjn=\count664
+\c@frammentoBdkjncjskjdjdjdjdjdjdjdjdckjn=\count665
 
-Overfull \hbox (3.94336pt too wide) in paragraph at lines 610--610
+Overfull \hbox (3.94336pt too wide) in paragraph at lines 618--618
 \T1/lmr/m/n/10.95 (-20) Poiché $\OML/lmm/m/it/10.95 C[] \OMS/lmsy/m/n/10.95 2 U$\T1/lmr/m/n/10.95 (-20) , $[][] \OT1/lmr/m/n/10.95 (-20) = [][]$\T1/lmr/m/n/10.95 (-20) , e dun-que $[][] \OMS/lmsy/m/n/10.95 2 []$\T1/lmr/m/n/10.95 (-20) . 
  []
 
-[50]
+[52]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 610.
+(Font)              <10> on input line 618.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 610.
+(Font)              <7> on input line 618.
 
-Overfull \hbox (58.07555pt too wide) detected at line 610
+Overfull \hbox (58.07555pt too wide) detected at line 618
 []
  []
 
-[51]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex [52]
+\c@frammentoAdkjncjsjdkjcnjsjsisosservaziondcinaonfinale=\count666
+\c@frammentoBdkjncjsjdkjcnjsjsisosservaziondcinaonfinale=\count667
+[53]) (/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/mainmatter/corpo/manifolds.tex [54]
 Capitolo 4.
-\c@frammentoAdjknckjnsjdjdjcskjnskjnckjnskjnd=\count662
-\c@frammentoBdjknckjnsjdjdjcskjnskjnckjnskjnd=\count663
-[53
+\c@frammentoAdjknckjnsjdjdjcskjnskjnckjnskjnd=\count668
+\c@frammentoBdjknckjnsjdjdjcskjnskjnckjnskjnd=\count669
+[55
 
 ]
-\c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count664
-\c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count665
- [54]
-\c@frammentoAdckjndjjjjjjdjscacchina=\count666
-\c@frammentoBdckjndjjjjjjdjscacchina=\count667
- [55]
-\c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count668
-\c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count669
+\c@frammentoAkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count670
+\c@frammentoBkjnsckjndjcjsjnckjnsdkjncskjndkjncskjnkjnj=\count671
  [56]
-\c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count670
-\c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count671
-\c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count672
-\c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count673
- [57] [58]
-\c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count674
-\c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count675
-\c@frammentoAdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count676
-\c@frammentoBdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count677
- [59]
-\c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count678
-\c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count679
-\c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count680
-\c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count681
- [60]
-\c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count682
-\c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count683
+\c@frammentoAdckjndjjjjjjdjscacchina=\count672
+\c@frammentoBdckjndjjjjjjdjscacchina=\count673
+ [57]
+\c@frammentoAdkjnckjnsckjnsjdjckjnsjcjdkjn=\count674
+\c@frammentoBdkjnckjnsckjnsjdjckjnsjcjdkjn=\count675
+ [58]
+\c@frammentoAdinckjndjcjdkckjncskjdkckjnk=\count676
+\c@frammentoBdinckjndjcjdkckjncskjdkckjnk=\count677
+\c@frammentoAdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count678
+\c@frammentoBdkjnckjnskjndjcjskjncjsjdkjncjdkjkjncjsjdkcjdjckjnscdd=\count679
+ [59] [60]
+\c@frammentoAdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count680
+\c@frammentoBdkjncjdjckjnskjnckjdjckjnkjnkjnkjn=\count681
+\c@frammentoAdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count682
+\c@frammentoBdkjnckakjndjcjskjndjcjskjndjdjckjnsdjkjncjdjdjsk=\count683
  [61]
-\c@frammentoAkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count684
-\c@frammentoBkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count685
- [62] [63]
-\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count686
-\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count687
- [64]
-\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count688
-\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count689
-\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count690
-\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count691
- [65] [66]
-\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count692
-\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count693
-\c@frammentoAdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count694
-\c@frammentoBdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count695
- [67]
-\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count696
-\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count697
-\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count698
-\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count699
- [68]
-\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count700
-\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count701
+\c@frammentoAkcjndkjndjdjjdjjjjjjjjjjj=\count684
+\c@frammentoBkcjndkjndjdjjdjjjjjjjjjjj=\count685
+\c@frammentoAdkjnckjdjdjdjjjjjdjjjdicoij=\count686
+\c@frammentoBdkjnckjdjdjdjjjjjdjjjdicoij=\count687
+ [62]
+\c@frammentoAkjndjcjdkjncjdjckjnskdkjckskjn=\count688
+\c@frammentoBkjndjcjdkjncjdjckjnskdkjckskjn=\count689
+ [63]
+\c@frammentoAkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count690
+\c@frammentoBkjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs=\count691
+ [64] [65]
+\c@frammentoAdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count692
+\c@frammentoBdcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj=\count693
+ [66]
+\c@frammentoAkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count694
+\c@frammentoBkjndjckjndjckjnskdkjncjdkskjncjdkjckjnjnjnjckjnkskjnc=\count695
+\c@frammentoAdjjjjjjjjjframmentinoframmentucciovieniqui=\count696
+\c@frammentoBdjjjjjjjjjframmentinoframmentucciovieniqui=\count697
+ [67] [68]
+\c@frammentoAdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count698
+\c@frammentoBdkjncjdkkjncsjdkjncsiujdoijfdosoidocodidislkdmlkmlkm=\count699
+\c@frammentoAdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count700
+\c@frammentoBdkcjnacjdjdkjcnkjnskjncjdjckjnsjcjdkjnc=\count701
  [69]
-\c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count702
-\c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count703
-\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count704
-\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count705
+\c@frammentoAlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count702
+\c@frammentoBlkmdkclslkmdkcoijskiklkmclknsdlkmcslkmslkmlkm=\count703
+\c@frammentoAdlikjckjdlkmnckslkmdkcoslkdlkj=\count704
+\c@frammentoBdlikjckjdlkmnckslkmdkcoslkdlkj=\count705
  [70]
-\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count706
-\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count707
-\c@frammentoAremarkfourpointeight=\count708
-\c@frammentoBremarkfourpointeight=\count709
-\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count710
-\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count711
+\c@frammentoAdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count706
+\c@frammentoBdkjncjdkjncjdkjncjdkjncjdjcjdkjncsdkjnkj=\count707
  [71]
-\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count712
-\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count713
+\c@frammentoAdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count708
+\c@frammentoBdjknckjndjckjnxkjnkjnckjndskjnckjnkjn=\count709
+\c@frammentoAdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count710
+\c@frammentoBdjncsjkndkjnckjsndkjncskjndkjncskjndjjjdj=\count711
  [72]
-\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count714
-\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count715
+\c@frammentoAlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count712
+\c@frammentoBlddlkmckdkdkclkmckskdlkmclslkmdlkckskdlkmlkcmlkmlslkmdlkmcs=\count713
+\c@frammentoAremarkfourpointeight=\count714
+\c@frammentoBremarkfourpointeight=\count715
+\c@frammentoAkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count716
+\c@frammentoBkjndjckjnsdkjncjdjckjnsjdkcnskjncjdjdjcjskjnckskjnd=\count717
  [73]
-\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count716
-\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count717
-\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count718
-\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count719
+\c@frammentoAkjndkjncjdkjnckskdkjnjcsnkjn=\count718
+\c@frammentoBkjndkjncjdkjnckskdkjnjcsnkjn=\count719
  [74]
-\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count720
-\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count721
+\c@frammentoAdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count720
+\c@frammentoBdlkmncldlslkmckdlclkmsdkckdkdkkkkkdkk=\count721
  [75]
-\c@frammentoAosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count722
-\c@frammentoBosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count723
-\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count724
-\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count725
+\c@frammentoAdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count722
+\c@frammentoBdlkmckdkclkmskdkclkmskdkcdkkkkkkkk=\count723
+\c@frammentoAdjdkjncjdjndimostrazioncinainainainaianinaiai=\count724
+\c@frammentoBdjdkjncjdjndimostrazioncinainainainaianinaiai=\count725
  [76]
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count726
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count727
-\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count728
-\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count729
- [77] [78]
-\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count730
-\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count731
- [79]
-\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count732
-\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count733
-\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count734
-\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count735
- [80]
-\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count736
-\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count737
+\c@frammentoAkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count726
+\c@frammentoBkjndjcjdkjncjskjncjsdjcjdjkjnckjndjncjsjdjj=\count727
+ [77]
+\c@frammentoAosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count728
+\c@frammentoBosservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh=\count729
+\c@frammentoAdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count730
+\c@frammentoBdjnckskdkjncjdkjnckjnskjndkjnckjnskcjnkjnkjnkjnkjnkjn=\count731
+ [78]
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count732
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjn=\count733
+\c@frammentoAkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count734
+\c@frammentoBkdjnsckjndkjncskjndkjnckjnskjnckjnkjnclassedidue=\count735
+ [79] [80]
+\c@frammentoAkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count736
+\c@frammentoBkdjnckjnskjndjcjskjncjnsckjskjndjcjskjncjn=\count737
  [81]
-\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count738
-\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count739
+\c@frammentoAdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count738
+\c@frammentoBdkjnckjnsjdkjncjdkjnckjnkjnskjncjdjckjnsnncjdjdjjjjj=\count739
+\c@frammentoAdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count740
+\c@frammentoBdkjncjdjdkjnckjnskjndkjnckskjnckjndkjn=\count741
  [82]
-\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count740
-\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count741
+\c@frammentoAdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count742
+\c@frammentoBdkjnckjnskjnkjnkjnkjnkknknkjnkkjnkkjnknkkjnkkjnkkjnk=\count743
  [83]
-\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count742
-\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count743
-\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count744
-\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count745
+\c@frammentoAkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count744
+\c@frammentoBkjndkckjnsdjckjndjdjcjdkjnccjdkjncjdjckjnsjdnj=\count745
  [84]
-\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count746
-\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count747
-\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count748
-\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count749
+\c@frammentoAjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count746
+\c@frammentoBjkndkckdkjncjdjckjndjcjdkjncdkjncjdcj=\count747
  [85]
-\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count750
-\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count751
+\c@frammentoAkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count748
+\c@frammentoBkjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns=\count749
+\c@frammentoAdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count750
+\c@frammentoBdkjnckjnskjdjckjncjdjdjdjdjlemminoinoinoinoinoinoinoinoi=\count751
  [86]
-\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count752
-\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count753
+\c@frammentoAdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count752
+\c@frammentoBdlknckjnskjnckjdjjjjjdjjjdlemininiosjndksjnckjn=\count753
+\c@frammentoAdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count754
+\c@frammentoBdkjncjdkjnckjnskdjjjjjdjjdkjncjdkkjncjskdlkcsk=\count755
  [87]
-\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count754
-\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count755
-) [88]
+\c@frammentoAdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count756
+\c@frammentoBdkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj=\count757
+ [88]
+\c@frammentoASkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count758
+\c@frammentoBSkjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn=\count759
+ [89]
+\c@frammentoAdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count760
+\c@frammentoBdjnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc=\count761
+) [90]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 59.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2637,7 +2645,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [89
+ [91
 
 
 ]
@@ -2653,18 +2661,18 @@ Package logreq Info: Writing requests to 'peccioli_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70842 strings out of 492616
- 1675753 string characters out of 6129481
- 2305136 words of memory out of 5000000
- 72931 multiletter control sequences out of 15000+600000
- 682548 words of font info for 268 fonts, out of 8000000 for 9000
+ 70871 strings out of 492616
+ 1677275 string characters out of 6129481
+ 2305330 words of memory out of 5000000
+ 72964 multiletter control sequences out of 15000+600000
+ 682169 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,27n,119p,1728b,1554s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (93 pages, 958715 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
+Output written on "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" (95 pages, 967498 bytes).
 PDF statistics:
- 1553 PDF objects out of 1728 (max. 8388607)
- 1383 compressed objects within 14 object streams
- 518 named destinations out of 1000 (max. 500000)
+ 1569 PDF objects out of 1728 (max. 8388607)
+ 1396 compressed objects within 14 object streams
+ 522 named destinations out of 1000 (max. 500000)
  35330 words of extra memory for PDF output out of 35830 (max. 10000000)
 

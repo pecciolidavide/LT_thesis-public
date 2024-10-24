@@ -151,12 +151,12 @@ a &\longmapsto a + \lambda \cdot X(a)
 
 % Se $ X $ è un campo vettoriale classico di classe $ C^{k} $, allora il corrispondende campo di prevettori $ F(a) = a + \lambda \cdot X(a) $ è di classe $ D^{k} $. 
 
-Si può inoltre dimostrare che se $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ è un campo di prevettori che soddisfa determinate condizioni di regolarità, a meno di ridimensionare il dominio, $ F $ ammette un'inversa $ F^{-1}: \nonstandard{U} \longrightarrow \nonstandard{V} $.
+Si può inoltre dimostrare che se $ F: \nonstandard{U} \longrightarrow \nonstandard{V} $ è un campo di prevettori che soddisfa determinate condizioni di regolarità, a meno di ridimensionare il dominio, la mappa $ F $ ammette un'inversa $ F^{-1}: \nonstandard{U} \longrightarrow \nonstandard{V} $.
 
 Con queste nozioni è possibile definire il flusso di un campo di prevettori globale per tempi positivi. Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M}  $ un campo di prevettori locale, e sia $ t>0 $, $ t \in \starR $. Sia $ n = n(t) = \floor{t/\lambda} $. Sia $ \Phi $ la mappa \begin{align*}
     \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
     (f,n) &\longmapsto \underset{n\text{ volte}}{\underbrace{f\circ \dots\circ f}},
-    \end{align*}dove $ \operatorname{Map}(M) $ è l'insieme delle mappe $ M \longrightarrow M$, e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $. Per ogni $ a \in \nonstandard{M} $ il flusso di $ F $ al tempo $ t $, $ F_{t}(a) = \nonstandard{\Phi}\left(F,n(t)\right)(a) $. 
+    \end{align*}dove $ \operatorname{Map}(M) $ è l'insieme delle mappe $ M \longrightarrow M$, e se ne consideri l'estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $. Per ogni $ a \in \nonstandard{M} $ il flusso di $ F $ al tempo $ t $ è definito come $ F_{t}(a) = \nonstandard{\Phi}\left(F,n(t)\right)(a) $. 
 
 Questa nozione si estende naturalmente a campi di prevettori locali e per tempi negativi: questo è trattato approfonditamente nel capitolo 4. 
 
@@ -168,12 +168,12 @@ x &\longmapsto \st\left(F_{t}(x) \right)
 %     \tilde{F} \coloneqq h_{\lambda}^{F}: \nonstandard{B} \longrightarrow \nonstandard{M}.
 % \end{equation*}
 
-Dunque, se $ F $ e $ G $ sono campi di prevettori sufficientemente regolari, si definiscono le parentesi di Lie come il campo di prevettori: \begin{equation*}
+Dunque, se $ F $ e $ G $ sono campi di prevettori sufficientemente regolari, si definisce la parentesi di Lie come il campo di prevettori: \begin{equation*}
     [F,G] \coloneqq \left(G^{-1}\circ F^{-1}\circ G\circ F\right)^{\floor{1/\lambda}}.
 \end{equation*}Inoltre, è significativo notare che per ogni $ a $ nel dominio di $ [F,G] $: \begin{equation*}
     [F,G](a) - a - \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(a)-a\right)\pprec \lambda.
-\end{equation*}Infatti, se $ X $ e $ Y $ sono campi vettoriali classici di classe $ C^{2} $ di flussi $ \Phi^{X}_t  $ e $ \Phi^{Y}_t $, allora le parentesi di Lie tra $ X $ e $ Y $ sono, per ogni $ p \in M $: \begin{equation*}
-    [X,Y]_{\text{cl}}(p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(\Phi^{Y}_t\right)^{-1}\circ\left(\Phi^{X}_t\right)^{-1}\circ \left(\Phi^{Y}_t\right)\circ \left(\Phi^{X}_t\right)(p)-p\right).
+\end{equation*}Infatti, se $ X $ e $ Y $ sono campi vettoriali classici di classe $ C^{2} $ di flussi $ \Theta^{X}_t  $ e $ \Theta^{Y}_t $, allora la parentesi di Lie tra $ X $ e $ Y $ è, per ogni $ p \in M $: \begin{equation*}
+    [X,Y]_{\text{cl}}(p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(\Theta^{Y}_t\right)^{-1}\circ\left(\Theta^{X}_t\right)^{-1}\circ \left(\Theta^{Y}_t\right)\circ \left(\Theta^{X}_t\right)(p)-p\right).
 \end{equation*}È dunque naturale dedurre che se $ X,Y $ sono campi vettoriali classici e $ F(a)=a + \lambda X(a) $, $ G(b) = b+\lambda Y(b) $ sono campi di prevettori che realizzano, rispettivamente, $ X $ e $ Y $, allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
 
 Si termina il lavoro dimostrando, tramite un metodo puramente combinatorico, che per due campi vettoriali classici $ X, Y$ si ha che i loro flussi commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.

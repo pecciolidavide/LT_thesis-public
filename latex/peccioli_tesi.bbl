@@ -32,11 +32,8 @@
            given={Francesca},
            giveni={F\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Milano}%
-      }
       \list{publisher}{1}{%
-        {Springer}%
+        {Springer, Milan}%
       }
       \strng{namehash}{69eec2008394a08f1fd3b31b841aa43b}
       \strng{fullhash}{69eec2008394a08f1fd3b31b841aa43b}
@@ -48,8 +45,24 @@
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Geometria Differenziale}
+      \field{isbn}{978-88-470-1919-5; 978-88-470-1920-1}
+      \field{note}{La Matematica per il 3+2}
+      \field{series}{Unitext}
+      \field{title}{Geometria differenziale}
+      \field{volume}{54}
+      \field{year}{2011}
       \true{nocite}
+      \field{pages}{xiv+465}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/978-88-470-1920-1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-88-470-1920-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-88-470-1920-1
+      \endverb
     \endentry
     \entry{andretta_elements_2022}{book}{}
       \name{author}{1}{}{%
@@ -71,36 +84,45 @@
       \field{labeltitlesource}{title}
       \field{title}{Elements of Mathematical Logic}
       \field{year}{2022}
-      \field{dateera}{ce}
       \true{nocite}
+      \field{pages}{xiii+626}
+      \range{pages}{-1}
     \endentry
     \entry{chang_model_2012}{book}{}
       \name{author}{2}{}{%
-        {{hash=c33564af19e0cefd25ed4905e79722f6}{%
+        {{hash=7b1f8e34ca9a7357bc8fa2c374550720}{%
            family={Chang},
            familyi={C\bibinitperiod},
-           given={Chen\bibnamedelima Chung},
+           given={C.\bibnamedelimi C.},
            giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=8462e0856cc893e2bf292cfd4b5e5ab2}{%
+        {{hash=1c898e04bc68e412ad068cf443afa1f1}{%
            family={Keisler},
            familyi={K\bibinitperiod},
-           given={H.\bibnamedelimi Jerome},
+           given={H.\bibnamedelimi J.},
            giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
-      \strng{namehash}{9fcf330f2157d98cbade37b4021d0863}
-      \strng{fullhash}{9fcf330f2157d98cbade37b4021d0863}
-      \strng{bibnamehash}{9fcf330f2157d98cbade37b4021d0863}
-      \strng{authorbibnamehash}{9fcf330f2157d98cbade37b4021d0863}
-      \strng{authornamehash}{9fcf330f2157d98cbade37b4021d0863}
-      \strng{authorfullhash}{9fcf330f2157d98cbade37b4021d0863}
+      \list{publisher}{1}{%
+        {North-Holland Publishing Co., Amsterdam}%
+      }
+      \strng{namehash}{0a2cc2ed50d784a8702e67d2a6361e48}
+      \strng{fullhash}{0a2cc2ed50d784a8702e67d2a6361e48}
+      \strng{bibnamehash}{0a2cc2ed50d784a8702e67d2a6361e48}
+      \strng{authorbibnamehash}{0a2cc2ed50d784a8702e67d2a6361e48}
+      \strng{authornamehash}{0a2cc2ed50d784a8702e67d2a6361e48}
+      \strng{authorfullhash}{0a2cc2ed50d784a8702e67d2a6361e48}
       \field{sortinit}{C}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{edition}{Third}
+      \field{isbn}{0-444-88054-2}
+      \field{series}{Studies in Logic and the Foundations of Mathematics}
       \field{title}{Model theory}
-      \field{year}{2012}
-      \field{dateera}{ce}
+      \field{volume}{73}
+      \field{year}{1990}
       \true{nocite}
+      \field{pages}{xvi+650}
+      \range{pages}{-1}
     \endentry
     \entry{di_nasso_direzioni_nodate}{report}{}
       \name{author}{2}{}{%
@@ -126,14 +148,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Le direzioni della logica in Italia: metodi e modelli non standard}
+      \field{year}{2017}
       \true{nocite}
+      \field{pages}{56}
+      \range{pages}{1}
     \endentry
     \entry{hurd_introduction_1985}{book}{}
       \name{author}{2}{}{%
-        {{hash=09c555bd5f039a21a5e7d70f6afa7f2d}{%
+        {{hash=ce86ffc28b13da8c0551f678d6cd81a3}{%
            family={Hurd},
            familyi={H\bibinitperiod},
-           given={Albert\bibnamedelima Emerson},
+           given={Albert\bibnamedelima E.},
            giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
         {{hash=d37c0ffeb5f51f81aa366ea4946dbc54}{%
            family={Loeb},
@@ -142,22 +167,26 @@
            giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Academic press}%
+        {Academic Press, Inc., Orlando, FL}%
       }
-      \strng{namehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
-      \strng{fullhash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
-      \strng{bibnamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
-      \strng{authorbibnamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
-      \strng{authornamehash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
-      \strng{authorfullhash}{cc314bfe1d0c75ebbb7dfbb3b7ba9c61}
+      \strng{namehash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
+      \strng{fullhash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
+      \strng{bibnamehash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
+      \strng{authorbibnamehash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
+      \strng{authornamehash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
+      \strng{authorfullhash}{d8dd5eae764f1ff9088709bb1dc6b8ba}
       \field{sortinit}{H}
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{isbn}{0-12-362440-1}
+      \field{series}{Pure and Applied Mathematics}
       \field{title}{An introduction to nonstandard real analysis}
+      \field{volume}{118}
       \field{year}{1985}
-      \field{dateera}{ce}
       \true{nocite}
+      \field{pages}{xii+232}
+      \range{pages}{-1}
     \endentry
     \entry{katz_true_nodate}{book}{}
       \name{author}{3}{}{%
@@ -189,6 +218,14 @@
       \field{labeltitlesource}{title}
       \field{title}{True infinitesimal differential geometry}
       \true{nocite}
+      \field{pages}{224}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://u.math.biu.ac.il/~katzmik/tidg.pdf
+      \endverb
+      \verb{url}
+      \verb https://u.math.biu.ac.il/~katzmik/tidg.pdf
+      \endverb
     \endentry
     \entry{keisler_foundation_2007}{book}{}
       \name{author}{1}{}{%
@@ -210,10 +247,17 @@
       \field{labeltitlesource}{title}
       \field{title}{Foundation of Infinitesimal Calculus.}
       \field{year}{2007}
-      \field{dateera}{ce}
       \true{nocite}
+      \field{pages}{x+203}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://people.math.wisc.edu/~hkeisler/foundations.pdf
+      \endverb
+      \verb{url}
+      \verb https://people.math.wisc.edu/~hkeisler/foundations.pdf
+      \endverb
     \endentry
-    \entry{loeb_nonstandard_2015}{collection}{}
+    \entry{loeb_nonstandard_2015}{book}{}
       \name{editor}{2}{}{%
         {{hash=d37c0ffeb5f51f81aa366ea4946dbc54}{%
            family={Loeb},
@@ -226,11 +270,8 @@
            given={Manfred\bibnamedelimb P.\bibnamedelimi H.},
            giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Dordrecht}%
-      }
       \list{publisher}{1}{%
-        {Springer Netherlands}%
+        {Springer, Dordrecht}%
       }
       \strng{namehash}{4e5cd4e73c4ee53a9b62b28121578add}
       \strng{fullhash}{4e5cd4e73c4ee53a9b62b28121578add}
@@ -242,10 +283,22 @@
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{Nonstandard Analysis for the Working Mathematician}
+      \field{edition}{Second}
+      \field{isbn}{978-94-017-7326-3; 978-94-017-7327-0}
+      \field{title}{Nonstandard analysis for the working mathematician}
       \field{year}{2015}
-      \field{dateera}{ce}
       \true{nocite}
+      \field{pages}{xv+481}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/978-94-017-7327-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-94-017-7327-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-94-017-7327-0
+      \endverb
     \endentry
     \entry{nowik_differential_2015}{article}{}
       \name{author}{2}{}{%
@@ -270,10 +323,23 @@
       \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{issn}{1759-9008}
+      \field{journaltitle}{J. Log. Anal.}
       \field{title}{Differential geometry via infinitesimal displacements}
+      \field{volume}{7}
       \field{year}{2015}
-      \field{dateera}{ce}
       \true{nocite}
+      \field{pages}{Paper 5\bibrangessep 44}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.4115/jla.2015.7.5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.4115/jla.2015.7.5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4115/jla.2015.7.5
+      \endverb
     \endentry
     \entry{robinson_non-standard_1961}{article}{}
       \name{author}{1}{}{%

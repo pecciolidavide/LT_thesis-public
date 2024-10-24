@@ -1999,18 +1999,19 @@
     <bcf:citekey order="2">robinson_non-standard_1966</bcf:citekey>
     <bcf:citekey order="3">nowik_differential_2015</bcf:citekey>
     <bcf:citekey order="4">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="5">andretta_elements_2022</bcf:citekey>
-    <bcf:citekey order="6">loeb_nonstandard_2015</bcf:citekey>
-    <bcf:citekey order="7">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="8">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="9">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="10">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="11">chang_model_2012</bcf:citekey>
-    <bcf:citekey order="12">katz_true_nodate</bcf:citekey>
-    <bcf:citekey order="13">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="5">abate_geometria_2011</bcf:citekey>
+    <bcf:citekey order="6">andretta_elements_2022</bcf:citekey>
+    <bcf:citekey order="7">loeb_nonstandard_2015</bcf:citekey>
+    <bcf:citekey order="8">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="9">katz_true_nodate</bcf:citekey>
+    <bcf:citekey order="10">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="11">katz_true_nodate</bcf:citekey>
+    <bcf:citekey order="12">chang_model_2012</bcf:citekey>
+    <bcf:citekey order="13">katz_true_nodate</bcf:citekey>
     <bcf:citekey order="14">nowik_differential_2015</bcf:citekey>
     <bcf:citekey order="15">nowik_differential_2015</bcf:citekey>
-    <bcf:citekey order="16">keisler_foundation_2007</bcf:citekey>
+    <bcf:citekey order="16">nowik_differential_2015</bcf:citekey>
+    <bcf:citekey order="17">keisler_foundation_2007</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

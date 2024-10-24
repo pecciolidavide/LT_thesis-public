@@ -1,15 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'peccioli_tesi.blg'
-[47] biber-darwin:315> INFO - === Wed Oct 23, 2024, 18:43:57
-[76] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
-[192] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[208] Biber.pm:4093> INFO - Processing section 0
-[222] Biber.pm:4254> INFO - Looking for bibtex format file 'frontbackmatter/bibliografia.bib' for section 0
-[224] bibtex.pm:1523> INFO - LaTeX decoding ...
-[239] bibtex.pm:1340> INFO - Found BibTeX data source 'frontbackmatter/bibliografia.bib'
-[318] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[318] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[318] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[318] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
-[331] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
-[335] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
+[47] biber-darwin:315> INFO - === Thu Oct 24, 2024, 13:27:59
+[75] Biber.pm:371> INFO - Reading 'peccioli_tesi.bcf'
+[160] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[173] Biber.pm:4093> INFO - Processing section 0
+[186] Biber.pm:4254> INFO - Looking for bibtex format file 'frontbackmatter/bibliografia.bib' for section 0
+[187] bibtex.pm:1523> INFO - LaTeX decoding ...
+[205] bibtex.pm:1340> INFO - Found BibTeX data source 'frontbackmatter/bibliografia.bib'
+[235] Utils.pm:193> WARN - ISBN '978-88-470-1919-5; 978-88-470-1920-1' in entry 'abate_geometria_2011' is invalid - run biber with '--validate_datamodel' for details.
+[246] Utils.pm:193> WARN - ISBN '978-94-017-7326-3; 978-94-017-7327-0' in entry 'loeb_nonstandard_2015' is invalid - run biber with '--validate_datamodel' for details.
+[284] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[284] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[284] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[284] Biber.pm:3927> INFO - No sort tailoring available for locale 'it-IT'
+[300] bbl.pm:636> INFO - Writing 'peccioli_tesi.bbl' with encoding 'UTF-8'
+[304] bbl.pm:739> INFO - Output to peccioli_tesi.bbl
+[304] Biber.pm:110> INFO - WARNINGS: 2

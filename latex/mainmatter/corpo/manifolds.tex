@@ -38,7 +38,7 @@
             \halo(p) = \bigcap_{U \in I(p) }\hspace{-.5em}\nonstandard{U} 
         \]dove $ I(p) $ è l'insieme di tutti gli intorni aperti di $ p $.
         \item I punti di $ X $ si chiamano \emph{standard}, e un punto che fa parte di $ \halo(p) $ per qualche $ p \in X$ è detto \emph{quasi-standard}: \begin{equation*}
-            \hhalo{X} \coloneqq \{a \in \halo(p),\text{ per qualche }p \in X\}.
+            \hhalo{X} \coloneqq \bigcup_{p \in X}\halo(p) .
         \end{equation*}
         \item Se $ a $ è un punto quasi-standard allora la \emph{parte standard} di $ a $, denotata con $ \st(a)$, è l'unico $ p \in X$ tale che \[
             a \in \halo(p).
@@ -203,9 +203,9 @@
         \vec{ax} \,f = \st\left((a,x)\,f\right) \in \R.
     \] 
 }
-\osservazione{
+
     La definizione di derivazione è ben definita per la definizione della classe di equivalenza $ \equiv $ su $ P_{a}M  $.
-}
+
 \proposizione{dkjncjdjckjnskjnckjdjckjnkjnkjnkjn}{
     L'azione di un prevettore rispetta la regola di Leibniz fino agli infinitesimi, ovvero, se $ a \in \hhalo{M} $, $ (a,x) \in P_{a}M  $ e $ f,g: M \longrightarrow \R $ sono funzioni differenziabili, allora \begin{equation}
         (a,x)\,(fg) \approx \nonstandard{f}(a) \cdot (a,x)\, g + (a,x)\,f\cdot \nonstandard{g}(a).\label{eq:eqdddd}
@@ -248,11 +248,11 @@
 \definizione{%
     Si definisce un \emph{campo di prevettori} su $ \nonstandard{M} $ una mappa \emph{interna} $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ tale che $ \left(a, F(a)\right) \in P_{a}M  $ per ogni $ a \in \hhalo{M} $.
 } 
-\osservazione{
+
     La definizione precedente è equivalente a richiedere che \begin{equation*}
         F(a)-a \prec \lambda\qquad \forall\, a \in \hhalo{M}.
     \end{equation*}
-}
+
 \definizione{
     Se $ F,G: \nonstandard{M} \longrightarrow \nonstandard{M} $ sono due campi di prevettori, $ F $ e $ G $ si dicono \emph{equivalenti} (e si scrive $ F\equiv G $) se \begin{equation*}
         \left(a,F(a)\right) \equiv \left(a,G(a)\right)\qquad \forall\,a \in \hhalo{M}
@@ -263,9 +263,9 @@
         F: \nonstandard{U} \longrightarrow \nonstandard{V}
     \end{equation*}che soddisfi la condizione di cui sopra, per $ U \subseteq V \subseteq M $ aperti.
 }
-\osservazione{
+
     Segue naturalmente che un campo di prevettori definito su tutto $ \nonstandard{M} $ viene detto \emph{campo di prevettori globale}. 
-}
+
 \definizionegenerale{Definizione}{
     Un campo locale di prevettori $F: \nonstandard{U} \longrightarrow \nonstandard{V}$ \emph{realizza} un campo vettoriale classico $ X $ se per ogni funzione differenziabile \begin{equation*}
         h : U \longrightarrow \R
@@ -273,6 +273,9 @@
         X\,h(a) = \vec{a\, F(a)}\,h,\qquad \forall\, a \in U.
     \end{equation*} 
 }{kcjndkjndjdjjdjjjjjjjjjjj}{}%Un vettore tangente, come abbiamo visto, associa a ciascuna funzione f : M to R un numero: il valore della corrispondente derivata direzionale di f in quel punto. Un campo vettoriale X,  pertanto, associa alla funzione f una nuova funzione su M, che denotiamo con X(f).
+
+Questa definizione prende in considerazione solo i punti standard.
+
 \paragrafo{Proposizione}{%
     Sia $ p \in M $, $ V $ un intorno coordinato di $ p $. Per ogni campo vettoriale \begin{equation*}
         X: V \longrightarrow \R^{n}
@@ -295,9 +298,9 @@
     a &\longmapsto a + \lambda \cdot X'(a)
     \end{align*}che induce un campo di prevettori locale $ F:\nonstandard{U} \longrightarrow \nonstandard{V} $ che realizza $ X $ in $ U $.\qed
 }
-\osservazione{
-    La Definizione \framref{kcjndkjndjdjjdjjjjjjjjjjj} prende in considerazione solo i punti standard.
-}
+
+La costruzione del campo di prevettori espresso in coordinate da $ F(a) = a + \lambda X(a) $ presentata nella precedente definizione sarà utilizzata più volte. $ F $ prenderà il nome di \emph{campo di prevettori naturale} di un campo vettoriale $ X $.
+
 \proposizione{kjndjcjdkjncjdjckjnskdkjckskjn}{
     Sia $ U \subseteq \R^{n} $ aperto, e sia $ X: U \longrightarrow \R^{n} $ un campo vettoriale classico; sia $ \varphi: U \longrightarrow W \subseteq \R^{n} $ un cambio di coordinate\footnote{Ovvero almeno di classe $ C^{1} $.}; sia $ Y: W \longrightarrow \R^{n} $ il campo vettoriale corrispondente, ovvero tale per cui \begin{equation*}
         Y\left(\varphi(a)\right) = J_{\varphi}(a) \cdot X(a) 
@@ -307,9 +310,9 @@
         \varphi \circ F(a) - G\circ\varphi(a)\pprec \lambda,\qquad \forall\, a \in \hhalo{U}.
     \end{equation*}
 }
-\osservazione{
-    Questa proposizione assicura che il campo locale di prevettori che realizza $ X $ come costruito nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij} è indipendente dalla scelta di coordinate sull'intorno coordinato di $ p $.
-}
+
+    Questa proposizione assicura che il campo locale di prevettori che realizza $ X $ come costruito nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij} è indipendente dalla scelta di coordinate sull'intorno coordinato di $ p $.
+
 \dimostrazioneprop{kjndjcjdkjncjdjckjnskdkjckskjn}{
     Sia $ a \in \hhalo{U} $ fissato. Siano $ \varphi^{i}, Y^{i} $ e $ G^{i} $, rispettivamente, l'$i$-esima coordinata di $ \varphi $, $ Y $ e $ G $. Sia $ D^{i} $ l'$i$-esima riga di $ J_{\varphi}(a) $. Allora si ha \begin{align*}
         \varphi^{i}\circ F(a) - G^{i}\circ \varphi(a) &= \varphi^{i} \left(a+\lambda\,X(a)\right) - \varphi^{i}(a)-\lambda\, Y^{i}\left(\varphi(a)\right)\\  
@@ -326,7 +329,7 @@
     Si definisce $ I $ come il campo di prevettori identità, su $ \nonstandard{M} $ o su $ \nonstandard{U} $ per ogni $ U \subseteq M $, per ogni $ a $: $ I(a)=a $.
 }
 \paragrafo{Osservazione}{%
-Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico zero, tramite la procedura della dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}.
+Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico zero, tramite la procedura illustrata nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}.
 }{kjndkjncskjndjjjdjjdjdjdjjdsjhbcsjhdbcs}{}
 \subsection{Condizioni di regolarità}
 \definizione{
@@ -339,7 +342,7 @@ Il campo di prevettori identità $ I $ corrisponde al campo vettoriale classico 
 
     Infatti, un campo vettoriale $ X: U \longrightarrow \R^{n} $ si dice Lipschitziano se esiste $ K \in \R $ tale per cui, per ogni $ a,b \in U $ \begin{equation}
         \norma{X(a)-X(b)}\le K\,\norma{a-b}\label{eq:unino}
-    \end{equation}Sia ora $ F $ il campo di prevettori che realizza $ X $, come nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, dove $ F(a)-a= \lambda\,X(a) $. La \eqref{eq:unino} diventa: \begin{equation*}
+    \end{equation}Sia ora $ F $ il campo di prevettori che realizza $ X $, come nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, dove $ F(a)-a= \lambda\,X(a) $. La \eqref{eq:unino} diventa: \begin{equation*}
         \norma{\left(F(a)-a\right)-\left(F(b)-b\right)}\le K\lambda\,\norma{a-b}
     \end{equation*}ovvero esattamente $ F $ di classe $ D^{1} $.
 }
@@ -379,7 +382,7 @@ Per semplicità, si dà anche la seguente definizione, rindondante, per i campi 
     Anche se non esplicitamente mostrato in questo lavoro, le definizioni dei campi di prevettori di classe $ D^{1} $ e $ D^{2} $ sono indipendenti dalle coordinate. Per una trattazione più approfondita, si rimanda alla Proposition 3.10 e alla Proposition 3.14 di \cite{nowik_differential_2015}.
 }
 
-Nella proposizione successiva si mostrerà che il campo di prevettori costruito secondo la dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, indotto da un campo vettoriale di classe $ C^k $, è un campo di prevettori di classe $ D^{k} $. 
+Nella proposizione successiva si mostrerà che il campo di prevettori costruito secondo la dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, indotto da un campo vettoriale di classe $ C^k $, è un campo di prevettori di classe $ D^{k} $. 
 
 \proposizione{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj}{
     Sia $ W \subseteq \R^{n} $ un aperto, e sia $ X: W \longrightarrow \R^{n} $ un campo vettoriale classico di classe $ C^{k} $. Allora, per ogni $ a \in \hhalo{W} $ e ogni $ v_1,\dots,v_{k} \in \nonstandard{(\R^n)}  $, con $ v_{i} \pprec 1  $, si ha \begin{equation*}
@@ -613,9 +616,9 @@ Il teorema segue dalla Proposizione \framref{djknckjndjckjnxkjnkjnckjndskjnckjnk
         &\le K \lambda \norma{a-b}+\norma{F(a)-G(a)} + K\lambda\norma{a-b} \pprec \lambda.\qedd
     \end{align*}
 }
-\osservazione{
+
     Questo lemma garantisce che la definizione di un campo di prevettori utilizzando unicamente i punti standard determina univocamente il campo di prevettori di classe $ D^1 $ a meno di equivalenze.
-}
+
 \section{Flusso di un campo di prevettori}
 \definizione{%
 Si considerano due casi.
@@ -872,9 +875,9 @@ Si considerano due casi.
         [F,G] = \left(G^{-1}\circ F^{-1}\circ G \circ F\right)^{\floor{1/\lambda}}.
     \end{equation*}
 }
-\osservazione{
-    In merito alla definizione precedente, $ F^{-1} $ e $ G^{-1} $ esistono per l'Osservazione \framref{remarkfourpointeight}.
-}
+
+Si noti che $ F^{-1} $ e $ G^{-1} $ esistono per l'Osservazione \framref{remarkfourpointeight}.
+
 \osservazione{
     Dal momento che fin dall'inizio $ \lambda $ è fissato e arbitrario, si può supporre che \begin{equation*}
         \lambda = \frac{1}{N},\quad N \in \nonstandard{\N}\setminus \N
@@ -1028,7 +1031,7 @@ Si considerano due casi.
         \frac{1}{\lambda}\left(G^{-1}\circ F^{-1}\circ G\circ F(x)\right) - \frac{1}{\lambda}\left(H^{-1}\circ F^{-1}\circ H\circ F(x)\right) \pprec \lambda
     \end{equation*}e dunque, per la Proposizione \framref{kjndkjnckjnskdjnckjnskjdjcjdkjncjdjckjncdkjnckjnckjns} $ [F,G](x)\equiv [F,H](x) $.\qed
 }
-\subsection{Relazione con le parentesi di Lie classiche}
+\subsection{Relazione con la parentesi di Lie classica}
 
 \teorema{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}{
     Siano $ X,Y $ due campi vettoriali di classe $ C^{2} $, e sia $ [X,Y]_{\text{cl}} $ le loro parentesi di Lie classiche. 
@@ -1040,7 +1043,7 @@ Si considerano due casi.
         [X,Y]_{\text{cl}} (p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(h_{t}^{G} \right)^{-1} \circ \left(h_{t}^{F} \right)^{-1}\circ h_{t}^{G}\circ h_{t}^{F} - p \right).
     \end{equation*}Per la caratterizzazione dei limiti attraverso gli infinitesimi, si ha \begin{equation*}
         [X,Y]_{\text{cl}} (p) \approx \frac{1}{\lambda^{2}}\left(\tilde{G}^{-1}\circ\tilde{F}^{-1}\circ \tilde{G}\circ \tilde{F}(p)-p\right).
-    \end{equation*}Se $ v\approx w $, allora $ \lambda v\equiv \lambda w $ e pertanto, per la procedura introdotta nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, $ [X,Y]_{\text{cl}} $ è realizzato dal campo di prevettori \begin{equation*}
+    \end{equation*}Se $ v\approx w $, allora $ \lambda v\equiv \lambda w $ e pertanto, per la procedura introdotta nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, $ [X,Y]_{\text{cl}} $ è realizzato dal campo di prevettori \begin{equation*}
         A(a) = a + \frac{1}{\lambda}\left(\tilde{G}^{-1}\circ\tilde{F}^{-1}\circ \tilde{G}\circ \tilde{F}(p)-p\right).
     \end{equation*}
 
@@ -1050,12 +1053,12 @@ Si considerano due casi.
 \section{Conclusione}
 Si conclude quindi con quello che è l'obiettivo di questa tesi: un corollario classico, dimostrato con gli strumenti dell'analisi non standard.
 
-Si dimostra prima la versione per le parentesi di Lie non standard, e poi, come corollario, tramite il Teorema \teoref{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}, si dimostra per le parentesi di Lie standard. 
+Si dimostra prima la versione per la parentesi di Lie non standard, e poi, come corollario, tramite il Teorema \teoref{dkjnckskjndjjjdjjdjjdkjnckjnskjnkjnkjnkjnkjnkjnkjnkkjnkjnkjnkjkjnkjnjnjjnjnj}, si dimostra per la parentesi di Lie standard. 
 
 \teorema{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Siano $ F,G $ due campi di prevettori di classe $ D^{2} $. 
 
-    Allora $ [F,G]\equiv I $ se e solo se $ h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}$ per ogni $ 0\le t,s\le T $ per qualche $ 0<T \in \R$.
+    Allora $ [F,G]\equiv I $ se e solo se esiste $ 0<T \in \R $ tale che per ogni $ 0\le t,s\le T $:\[h_{t}^{F}\circ h_{s}^{G} = h_{s}^{G}\circ h_{t}^{F}.\]
 }
 \dimostrazione{Skjndkjnckjnsjdkjncjndkjncjdkjnsdjckjn}{
     Si assuma che $ [F,G]\equiv I $, i.e. \begin{equation*}
@@ -1095,7 +1098,7 @@ Si dimostra prima la versione per le parentesi di Lie non standard, e poi, come 
     Allora i flussi di $ X $ e di $ Y $ commutano se e solo se $ [X,Y]_{\text{cl}}=0 $.
 }
 \dimostrazione{djnckjnsjdjckjnskjndjcjdkjncjdkjncjdjdkjnc}{
-    Siano $ F,G $ campi di prevettori definiti come nella dimostrazione di \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, ovvero \begin{align*}
+    Siano $ F,G $ campi di prevettori definiti come nella dimostrazione della Proposizione \framref{dkjnckjdjdjdjjjjjdjjjdicoij}, ovvero \begin{align*}
         F(a) &= a + \lambda X(a)\\ 
         G(a) &= a+ \lambda Y(a).
     \end{align*}Applicando la Proposizione \framref{dcoickjdkjnckjnkskjnksckjndkjnckjnckjdkjnckkjnksjncj} si ottiene che $ F,G $ sono di classe $ D^{2} $, e per l'Osservazione \framref{osservsADJKNCkjnadkjhdbcakjfhakjdhfgaskjdfghadsfjgh} $ h_{t}^{F}  $ e $ h_{t}^{G}  $ rappresentano i flussi di, rispettivamente, $ X $ e $ Y $ nel senso classico. 

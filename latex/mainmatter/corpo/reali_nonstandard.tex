@@ -5,7 +5,7 @@ Si parla di modelli non standard dei numeri reali quando si considerano campi re
 In questo capitolo si costruirà formalmente un campo $ ^{*}\R $ di numeri reali non standard, e se ne vedranno le principali proprietà.
 
 \definizione{
-    Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento \[\parentesi{n\text{-volte}}{1+\dots+1} \eqqcolon n1\]sia $ x<n1 $.
+    Un campo ordinato $ \mathcal{K}=(\K, +,-, \cdot ,0,1,\le) $ si dice \emph{archimedeo} se per ogni $ x \in \K $, con $ 0<x $, esiste $ n \in \N $ tale che l'elemento \[n1\coloneqq\parentesi{n\text{-volte}}{1+\dots+1}\]soddisfi $ x<n1 $.
 }
 
 % % \section{Esistenza di un campo non archimedeo}
@@ -55,8 +55,6 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \prod_{i \in I} A_{i}=\left\{f:I\longrightarrow \bigcup_{i \in I} A_{i}: f(i) \in A_{i}\text{ per ogni } i \in I  \right\}  
     \]Gli elementi $ f \in \prod_{i \in I} A_{i} $ si indicano come sequenze generalizzate $ \sequence[i \in I]{a_{i}} $ dove $ a_{i}=f(i)  $ è la $ i $-esima coordinata di $ \sequence[i \in I]{a_{i}} $ (o di $ f $) per ogni $ i \in I $. 
 
-    Quando è chiaro l'insieme su cui varia $ i $, si userà $ \sequence[i \in I]{a_{i}} $ in luogo di $ \sequence[i \in I]{a_{i}}$.
-
     Quando $ A_{i} =A $ per ogni $ i \in I $ si scriverà $ A^{I} $ invece di $ \prod_{i \in I} A_{i} $.
 }
 \definizione{
@@ -84,7 +82,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     Un filtro $ \mathcal{F} $ si dice \emph{proprio} se $ \emptyset\notin \mathcal{F} $.
 }
 \definizione{
-    Il \emph{filtro di Fréchet} $ \mathcal{F}_{\text{Fr}}^{I} $ su $ I $ è definito nel seguente modo:\citazione{$ A \in \mathcal{F}_{\text{Fr}}^{I} $ se e solo se $ I\setminus A $ è finito.}
+    Il \emph{filtro di Fréchet} $ \mathcal{F}_{\text{Fr}}^{I} $ su $ I $ è definito nel seguente modo: \begin{equation*}
+        A \in \mathcal{F}_{\text{Fr}}^{I}\quad\text{se e solo se}\quad I\setminus A\text{ è finito}
+    \end{equation*}
 }
 \definizione{
     Una famiglia $ \mathcal{G} \subseteq\parti{I} \setminus\{\emptyset\}$ ha la \emph{proprietà dell'intersezione finita} (brevemente FIP) se ogni intersezione finita di elementi di $ \mathcal{G} $ è non vuota.
@@ -96,6 +96,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
 \paragrafo{Osservazione}{%
     $ \langle \mathcal{G}\rangle $ è un filtro proprio. Infatti:\begin{itemize}
+        \item la FIP di $ \mathcal{G} $ garantisce che $ \langle\mathcal{G}\rangle $ sia un filtro proprio;
         \item se $ A \in \langle \mathcal{G}\rangle $, allora per qualche $ A_1,\dots,A_{k} \in \mathcal{G}  $ \[
             A \supseteq A_1 \cap \dots\cap A_{k} 
         \]e se $ B \supseteq A $ allora \[
@@ -108,9 +109,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
             B_1\cap B_2 \supseteq A_1\cap \dots\cap A_{k}\cap C_1\cap \dots\cap C_{k}
         \]e quindi $ B_1\cap B_2 \in \langle \mathcal{G}\rangle$. 
     \end{itemize}
-
-    La condizione FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ sia un filtro \emph{proprio}, ma è possibile costruire un filtro in questo modo a partire da una qualsiasi famiglia di sottoinsiemi di $ I $. 
 }{}{}
+
+Sebbene la FIP di $ \mathcal{G} $ garantisce che $ \langle \mathcal{G}\rangle $ sia un filtro \emph{proprio}, è possibile costruire un filtro a partire da una qualsiasi famiglia di sottoinsiemi di $ I $ utilizzando la stessa estensione.
 \definizione{
     Un filtro proprio $ \mathcal{F} $ su $ I $ si dice \begin{itemize}
         \item \emph{ultrafiltro} se per ogni $ A \subseteq I $ si ha $ A \in \mathcal{F} $ o $ I\setminus A \in \mathcal{F} $; 
@@ -186,13 +187,13 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 \osservazione{
     $ \sim_{\mathcal{F}} 
     $ è una relazione di equivalenza: simmetria e riflessività sono ovvie; per la transitività: siano $ \sequence[i \in I]{a_i}\mathrel{\sim_{\mathcal{F}}} \sequence[i \in I]{b_i} $, e $ \sequence[i \in I]{b_i}\mathrel{\sim_{\mathcal{F}}}\sequence[i \in I]{c_i} $. Allora \begin{align*}
-            X_{\sequence[i \in I]{a_i},\sequence[i \in I]{b_i}}&\coloneqq\{i \in I: a_i = b_i\} \in \mathcal{F}\\
-            X_{\sequence[i \in I]{b_i},\sequence[i \in I]{c_i}}&\coloneqq\{i \in I: b_i = c_i\} \in \mathcal{F}
+            X_{a,b}&\coloneqq\{i \in I: a_i = b_i\} \in \mathcal{F}\\
+            X_{b,c}&\coloneqq\{i \in I: b_i = c_i\} \in \mathcal{F}
         \end{align*}
 
-    Si deve dimostrare che l'insieme $ X_{\sequence[i \in I]{a_i},\sequence[i \in I]{c_i}} \coloneqq\{i \in I: a_i = b_i\} \in \mathcal{F}$, ma \[
-        X_{\sequence[i \in I]{a_i},\sequence[i \in I]{b_i}} \cap X_{\sequence[i \in I]{b_i},\sequence[i \in I]{c_i}} \subseteq X_{\sequence[i \in I]{a_i},\sequence[i \in I]{c_i}}   
-    \]ma $ X_{\sequence[i \in I]{a_i},\sequence[i \in I]{b_i}} \cap X_{\sequence[i \in I]{b_i},\sequence[i \in I]{c_i}} \in \mathcal{F} $, e dunque $ X_{\sequence[i \in I]{a_i},\sequence[i \in I]{c_i}} \in \mathcal{F} $.
+    Si deve dimostrare che l'insieme $ X_{a,c} \coloneqq\{i \in I: a_i = c_i\} \in \mathcal{F}$, ma \[
+        X_{a,b} \cap X_{b,c} \subseteq X_{a,c}   .
+    \]Siccome $ X_{a,b} \cap X_{b,c} \in \mathcal{F} $, allora $ X_{a,c} \in \mathcal{F} $.
 }
 \definizione{
     Il \emph{prodotto ridotto} $ \prod_{{\mathcal{F}}} A_{i}$ degli $ A_{i}  $ modulo $ \mathcal{F} $ è il quoziente \[
@@ -342,7 +343,7 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
     \end{itemize}
 }
 \paragrafo{Corollario}{%
-    Sia $ \mathcal{A} $ una $ \mathcal{L} $-struttura e $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \pi: \mathcal{A}\longrightarrow \mathcal{A}^{I}/\mathcal{U} $ definita da $ \pi(a)=\filtersequence[i \in I]{a_{i} } $ dove $ a_{i} \equiv a $ per ogni $ i \in I $. Allora $ \pi $ è un'immersione elementare e, in particolare, $ \mathcal{A} $ e $ \mathcal{A}^{I}/\mathcal{U} $ sono elementarmente equivalenti.
+    Sia $ \mathcal{A} $ una $ \mathcal{L} $-struttura e $ \mathcal{U} $ un ultrafiltro su $ I $. Sia $ \pi: \mathcal{A}\longrightarrow \mathcal{A}^{I}/\mathcal{U} $ definita da $ \pi(a)=\filtersequence[i \in I]{a } $ sequenza costante. Allora $ \pi $ è un'immersione elementare e, in particolare, $ \mathcal{A} $ e $ \mathcal{A}^{I}/\mathcal{U} $ sono elementarmente equivalenti.
 }{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn}{}
 \dimframmento{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn}{
     $ \pi $ è un morfismo. Questo segue banalmente dalla definizione degli elementi di $ \mathcal{A}^{I}/\mathcal{U} $, tenendo in considerazione che $ I \in \mathcal{U} $. 
@@ -355,9 +356,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \mathcal{A}^{I}/\mathcal{U}\vDash \phi\left[\pi(a^{0}),\pi(a^{1}), \dots, \pi(a^{n})\right]\label{eq:due}
     \end{gather}per qualche $ a^{0} \in A $.
 
-    Per il Teorema di Łoś, ricordando che $ \pi(a^{k}) = \filtersequence[i \in I]{a^{k}_i} $ in cui $ a^{k}_i \equiv a^{k}$ per ogni $ i \in I $, \eqref{eq:uno} è verificata se e solo se \begin{equation*}
+    Per il Teorema di Łoś, ricordando che $ \pi(a^{k}) = \filtersequence[i \in I]{a^{k}_i} $ in cui $ a^{k}_i = a^{k}$ per ogni $ i \in I $, \eqref{eq:uno} è verificata se e solo se \begin{equation*}
         X'  =\set{i \in I: \mathcal{A}\vDash \exists y\,\phi\left[y,a^{1}_i, \dots, a^{n}_i\right]}  \in \mathcal{U}
-    \end{equation*}Dal momento che $ a^{k}_i \equiv a^{k}$ per ogni $ i $, $ X' $ deve necessariamente essere $ I $ oppure $ \emptyset $. Facendo parte però di un ultrafiltro si ha che $ X'\neq \emptyset $, e pertanto $ X' = I $. 
+    \end{equation*}Dal momento che $ a^{k}_i = a^{k}$ per ogni $ i $, $ X' $ deve necessariamente essere $ I $ oppure $ \emptyset $. Facendo parte però di un ultrafiltro si ha che $ X'\neq \emptyset $, e pertanto $ X' = I $. 
 
     Segue dunque che \eqref{eq:uno} è equivalente a $ \mathcal{A}\vDash \exists y\,\phi\left[y,a^{1}, \dots, a^{n}\right] $, verificata se e solo se esiste $ a^0 \in A$ tale per cui \begin{equation*}
         \mathcal{A}\vDash \phi\left[a^{0},a^{1}, \dots, a^{n}\right]
@@ -367,9 +368,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \mathcal{A}^{I}/\mathcal{U}\vDash \phi\left[\pi(a^{0}),\pi(a^{1}), \dots, \pi(a^{n})\right].\qedd
     \end{equation*}
 }
-\osservazione{
+
     Il corollario di cui sopra definisce proprio il principio di transfer, ovvero l'immersione elementare di $ \R $ in $ \starR $.
-}
+
 \subsection{Iperreali come ultraprodotto}
 
 \proposizione{dkdkjncjdjdkjncjskjncjdkjncjdkjncjskjndkjckjkjnsd}{
@@ -382,11 +383,9 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
 
     Si consideri dunque il filtro di Fréchet su $ \N $: $ \mathcal{F}_{\text{Fr}}^{ \N} $. 
     
-    Per il Lemma \framref{doijcsoijoijoijoijoijoijoij} esiste $ \mathcal{U} $ ultrafiltro su $ \N $ tale che $ \mathcal{U}\supseteq \mathcal{F}_{\text{Fr}}^{ \N} $. Inoltre $ \mathcal{U} $ non può contenere alcun insieme finito. \qed
+    Per il Lemma \framref{doijcsoijoijoijoijoijoijoij} esiste $ \mathcal{U} $ ultrafiltro su $ \N $ tale che $ \mathcal{U}\supseteq \mathcal{F}_{\text{Fr}}^{ \N} $. Inoltre $ \mathcal{U} $ non può contenere alcun insieme finito.
     
-    % Infatti, se $ F \subseteq \N $ è finito e $ F \in \mathcal{U} $ 
-    
-    % $\implies$ $ \N\setminus F \in \mathcal{F}_{\text{Fr}}^{ \N}$ (per definizione di filtro di Fréchet) 
+    Infatti, se $ F \subseteq \N $ è finito e $ F \in \mathcal{U} $, allora $ \N\setminus F \in \mathcal{F}_{\text{Fr}}^{ \N}$. Siccome $ \mathcal{F}_{\text{Fr}}^{ \N} \subseteq \mathcal{U} $ è un ultrafiltro, questo è assurdo.\qed
     
     % $\implies$ $ \N\setminus F \in \mathcal{U}$ poiché $ \mathcal{F}_{\text{Fr}}^{ \N} \subseteq \mathcal{U} $ 
     
@@ -403,19 +402,17 @@ L'obiettivo di questa sezione è costruire $ \starR $ come ultraprodotto di $ \m
         \starR \coloneqq \R^{\N}/ \mathcal{U}.
     \]
 }
-\osservazione{
-    Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \sequence{a_{n}} $.
-}
-\paragrafo{Proprietà}{%
+% \osservazione{
+%     Dalla costruzione segue che gli elementi di $ \starR $ siano classi di equivalenza (rispetto alla relazione indotta dall'ultrafiltro) di successioni di numeri reali $ \sequence{a_{n}} $.
+% }
+
     Segue dal Corollario \framref{dkjnckjjjjjjjjjjjjjdjjjjjdjnkjnkjn} che \begin{align*}
     \pi: \mathcal{R} &\longrightarrow  \null^{*}\mathcal{R}\\
     a &\longmapsto \filtersequence{a}
-    \end{align*}è una immersione elementare, ed in particolare: \begin{itemize}
-        \item $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti;
-        \item questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'Example 3.21 di \cite{andretta_elements_2022}};
-        \item $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \nonstandard{a} $.
-    \end{itemize}
-}{}{}
+    \end{align*}è una immersione elementare, ed in particolare che $ \mathcal{R} $ e $ \null^{*} \mathcal{R} $ sono elementarmente equivalenti; questo garantisce che $ \starR $ sia un campo ordinato, poiché la proprietà ``essere un campo ordinato'' è esprimibile al prim'ordine\footnote{Si veda l'Example 3.21 di \cite{andretta_elements_2022}},
+    
+    Inoltre $ \R \subseteq \starR $ tramite l'immersione $ \pi $, che a ciascun numero reale $ a $ associa la classe di equivalenza della successione costante $ \sequence{a} $. Per indicare $ \pi(a) $ si utilizzerà la notazione $ \nonstandard{a} $.
+
 \osservazione{
     Segue immediatamente dalla costruzione di $ \starR $ che \begin{align*}
         0^{\null^{*}\mathcal{R}} &= \pi\left(0^{\mathcal{R}}\right) \eqqcolon \nonstandard{0};\\ 
@@ -432,7 +429,7 @@ In questa sezione si raccolgono alcune proprietà di $ \starR $, e si danno alcu
 \subsection{Struttura di campo ordinato di $ \starR $.}
 
 \paragrafo{Osservazione}{%
-    Facendo riferimento alla definizione di ultraprodotto fornita in \framref{dcjkklkmdjjjjultraprodottoinssimo}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\filtersequence{r_{n}}$, $s=\filtersequence{s_{n}}$\begin{align*}
+    Facendo riferimento alla definizione di ultraprodotto\footnote{Definizione \framref{dcjkklkmdjjjjultraprodottoinssimo}}, somma, prodotto e relazione d'ordine su $ \starR $ sono definite come segue: per due elementi $ r, s $ di $ \starR $, $ r=\filtersequence{r_{n}}$, $s=\filtersequence{s_{n}}$\begin{align*}
         r+s &=\filtersequence{r_{n}+s_{n}};\\
         r \cdot s &= \filtersequence{r_{n} \cdot s_{n}};\\
         r\le s\quad &\text{se e solo se}\quad \{n \in \N: r_{n}\le s_{n}  \} \in \mathcal{U}.
@@ -540,7 +537,7 @@ Le seguenti proprietà seguono dalle definizioni.
 
 \definizione{
     Sia $ X \subseteq \R $. Il sottoinsieme $ \nonstandard{X} \subseteq \starR $ si definisce come \begin{equation*}
-        \nonstandard{X} \coloneqq \set{\filtersequence{a_{n}}: a_{n} \in X, \forall\, n \in \N}.
+        \nonstandard{X} \coloneqq \set{\filtersequence{a_{n}}:\forall\, n \in \N\, a_{n} \in X}.
     \end{equation*}
 }
 \definizione{
@@ -553,9 +550,7 @@ Le seguenti proprietà seguono dalle definizioni.
     La definizione di valore assoluto su $ \starR $ dell'Osservazione \framref{ckjnskjndjcjskjndkjcnkjsnkjnckjndkjcn} è effettivamente l'estensione su $ \starR $ della mappa reale $ x \mapsto |x| $.
 }
 
-\osservazione{
-    Appare evidente che $ \restriction{\nonstandard{f}}{X} \equiv f $. 
-}
+Appare evidente che per ogni $ x \in X $, $ \nonstandard{f}(x)=f(x) $.
 
 \paragrafo{Osservazione}{%
     Date le definizioni di cui sopra, è possibile ampliare il principio di transfer. 
@@ -572,7 +567,7 @@ Si dimostra ora un teorema, tramite il principio di transfer, che consente di de
     Sia $ A \subseteq \R $, $ x_0 $ un punto di accumulazione di $ A $ e $ f: A \longrightarrow \R $ una funzione, e sia $ L \in \R $. Sono fatti equivalenti \begin{enumerate}
         \item Se $ x \in \nonstandard{A} $, $ x\approx x_0 $ e $ x \neq x_0 $ allora $ f(x)\approx L $; 
         \item $ \lim_{x\to x_0} f(x) = L $, ovvero \begin{equation*}
-            \forall\, \varepsilon>0\, \exists\, \delta >0: \quad x \in A \,\land\,0<|x-x_0|< \delta \,\implies\, \left|f(x)-L\right|< \varepsilon 
+            \forall\, \varepsilon>0\, \exists\, \delta >0\,\left(x \in A \,\land\,0<|x-x_0|< \delta \,\implies\, \left|f(x)-L\right|< \varepsilon \right)
         \end{equation*}
     \end{enumerate}
 }
@@ -593,17 +588,25 @@ Si dimostra ora un teorema, tramite il principio di transfer, che consente di de
     \end{itemize}
 }
 
-\osservazione{
-    La definizione di continuità classica è equivalente a richiedere che, se $ f: A \subseteq \R \longrightarrow \R $ e $ p \in A $ allora \begin{equation*}
-        \lim_{x\to p} f(x) = f(p)
-    \end{equation*}Pertanto non è necessario definire il concetto di funzione continua nell'ambito dell'analisi non standard, poiché questa segue dalla caratterizzazione dei limiti in termini di infinitesimi.
+È quindi immediata la seguente:
+
+\proposizione{cdkjnscjdkjnckjnskjnckjndj}{
+    Sia $ f: A \subseteq \R \longrightarrow \R $, e sia $ a \in A $. $ f $ è continua in $ a $ se e solo se per ogni $ x \in \nonstandard{A} $ con $ x\approx a $, $ \nonstandard{f}(x)\approx f(a)  $.
 }
 
+% \osservazione{
+%     La definizione di continuità classica è equivalente a richiedere che, se $ f: A \subseteq \R \longrightarrow \R $ e $ p \in A $ allora \begin{equation*}
+%         \lim_{x\to p} f(x) = f(p)
+%     \end{equation*}Pertanto si estende questa nozione anche all'estensione non standard delle funzioni: se $ f: A \longrightarrow \R $ è una 
+% }
+
 \definizione{
-    Sia $ A \subseteq \R $, $ x_0 $ un punto di accumulazione di $ A $ e $ f: A \longrightarrow \R $ una funzione, e sia $ L \in \R $. La \emph{derivata di $ f $} è la funzione \begin{equation*}
-        f'(x) = \st\left(\frac{f(x+\lambda)-f(x)}{\lambda}\right),\quad \forall\, \lambda\text{ infinitesimo}
-    \end{equation*}definita per tutti gli $ x $ tali per cui il rapporto incrementale esiste finito.
+    Sia $ A \subseteq \R $, $ x_0 $ un punto di accumulazione di $ A $ e $ f: A \longrightarrow \R $ una funzione, e sia $ L \in \R $. La \emph{derivata di $ f $} è la funzione: \begin{equation*}
+        f'(x) = \st\left(\frac{f(x+\lambda)-f(x)}{\lambda}\right)
+    \end{equation*}definita quando non dipende dall'infinitesimo $\lambda$ e per tutti e soli gli $ x \in A $ tali per cui il rapporto incrementale è finito.
 }
+
+Il Teorema \teoref{kjndjcjskjndjckjncjdjskkjncjdjdkjncjskjndjckjnskjnkn} garantisce che $ f'(x) $ sia esattamente la derivata di $ f $ intesa nel senso classico. Lo stesso teorema garantisce che se il rapporto incrementale dipende dalla scelta di $\lambda$, allora non ha senso parlare di derivata, poiché il limite non esiste.
 
 \subsection{Elementi interni}
 
@@ -615,7 +618,7 @@ Si riporta una versione più debole del Theorem 2.8.12 di \cite{loeb_nonstandard
 
 \teorema{teoriemidkjnkjnc}{
     Sia $ A $ un sottoinsieme interno di $ \starR $. \begin{enumerate}
-        \item Se $ \N \subseteq A $, allora contiene almeno un elemento di $ \nonstandard{\N} $ infinito. (Principio dell'\straniero{overspill}).
+        \item Se $ \N \subseteq A $, allora $ A $ contiene almeno un elemento di $ \nonstandard{\N} $ infinito. (Principio dell'\straniero{overspill}).
         \item Se $ A $ contiene tutti gli elementi infiniti di $ \nonstandard{\N} $, allora contiene almeno un elemento finito di $ \N $. (Principio dell'\straniero{underspill}).
     \end{enumerate}
 }
@@ -623,7 +626,7 @@ Si riporta una versione più debole del Theorem 2.8.12 di \cite{loeb_nonstandard
 \subsection{Numeri naturali e loro estensione}
 
 \teorema{dkjncjskjnskjncjdjckjnsjdkjnckjnskjnd}{
-    Ogni numero in $ \nonstandard{\N} $ finito è un numero naturale
+    Ogni numero in $ \nonstandard{\N} $ finito è un numero naturale.
 }
 \dimostrazione{dkjncjskjnskjncjdjckjnsjdkjnckjnskjnd}{
     Sia $ N \in \N $ fissato. I numeri naturali soddisfano la seguente formula: \begin{equation*}

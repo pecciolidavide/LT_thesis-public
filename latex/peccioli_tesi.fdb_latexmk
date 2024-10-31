@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber peccioli_tesi"] 1729806706 "peccioli_tesi.bcf" "peccioli_tesi.bbl" "peccioli_tesi" 1729806920
+["biber peccioli_tesi"] 1729806706 "peccioli_tesi.bcf" "peccioli_tesi.bbl" "peccioli_tesi" 1730364176
   "frontbackmatter/bibliografia.bib" 1729769278 3777 6244ad2ae53500dc4c568132b7f6a7d5 ""
   "peccioli_tesi.bcf" 1729806919 92509 fa474e7ea4517cb9106c6090e83260e2 "pdflatex"
   (generated)
   "peccioli_tesi.bbl"
   "peccioli_tesi.blg"
-["pdflatex"] 1729806916 "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.tex" "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" "peccioli_tesi" 1729806920
+["pdflatex"] 1729806916 "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.tex" "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf" "peccioli_tesi" 1730364176
   "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.aux" 1729806919 71648 8390bf1257ee4c6ab70c1bf21a0b06d2 ""
   "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.tex" 1729806916 1443 817626dab92ebbc36fb52afff84fafb0 ""
-  "/dev/null" 1729806919 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1730364171 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -459,13 +459,13 @@
   "peccioli_tesi.tex" 1729806916 1443 817626dab92ebbc36fb52afff84fafb0 ""
   "peccioli_tesi.toc" 1729806919 36419 8d0af0eb1a86ecf604421c9bfbb0fd6d "pdflatex"
   (generated)
-  "peccioli_tesi.auxlock"
-  "peccioli_tesi.log"
-  "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.log"
-  "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf"
-  "peccioli_tesi.bcf"
-  "peccioli_tesi.out"
-  "peccioli_tesi.toc"
   "peccioli_tesi.aux"
   "peccioli_tesi.pdf"
+  "peccioli_tesi.bcf"
   "peccioli_tesi.run.xml"
+  "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.log"
+  "peccioli_tesi.toc"
+  "peccioli_tesi.auxlock"
+  "/Users/davidepeccioli/Documents/2. Areas/Matematica_LT/TESI/latex/peccioli_tesi.pdf"
+  "peccioli_tesi.out"
+  "peccioli_tesi.log"

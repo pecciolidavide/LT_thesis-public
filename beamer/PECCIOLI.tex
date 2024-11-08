@@ -3,6 +3,7 @@
 % \usecolortheme{seahorse}
 % \usecolortheme{whale}
 \usecolortheme{spruce}
+\usefonttheme{professionalfonts}
 
 
 \input{header_beamer.tex}
@@ -13,8 +14,186 @@
 
 \begin{document}
 
+
 \begin{frame}
     \maketitle
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Prerequisiti}
+
+    Definizione di limite.
+
+    Elementi interni di $\nonstandard{V}(X) $.
+
+\end{frame}
+
+\begin{frame}
+    % \frametitle{}
+
+    Per $ r, s \in \starR $, si adotterà la seguente notazione: \begin{itemize}
+        \item $ r \prec s $ se $ r = a \cdot s $ per qualche $ a $ \emph{finito};
+        \item $ r \pprec s $ se $ r = \lambda \cdot s $ per qualche $ \lambda $ infinitesimo.
+    \end{itemize}
+
+    Questa definizione si estende naturalmente ad elementi di $ \nonstandard{(\R^n)} $. In particolare, se $ v \in \nonstandard{(\R^n)} $ e $ s \in \starR $, si adotta la seguente notazione: \begin{itemize}
+        \item $ v \prec s $ se $ \nonstandard{\norm{v}} \prec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+        \item $ v \pprec s $ se $ \nonstandard{\norm{v}} \pprec s $ per qualche norma $ \norm{ \cdot } $ su $ \R^{n} $;
+    \end{itemize}
+
+    Se $ v, w \in \nonstandard{(\R^n)} $, si scriverà $ v\approx w $ se $ v-w \pprec 1 $.
+
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+    Sia $ M $ una varietà differenziabile compatta fissata, e sia $\lambda \in \starR$ un infinitesimo fissato. 
+
+    Per $ p \in M $, si definisce $ \halo(p) \subseteq \nonstandard{M} $ l'insieme dei punti $ x \in \nonstandard{M} $ per i quali vi è un intorno coordinato $ U $ di $ p $ tale che $ x \in \nonstandard{U} $, e $ x \approx p $ in quelle date coordinate.
+
+    Per ogni $ A \subseteq M $ si definisce \emph{l'alone} di $ A $ come \begin{equation*}
+        \hhalo{A} = \bigcup_{a \in A}\halo(A). 
+    \end{equation*}I punti di $ \hhalo{M} $ si dicono \emph{quasi standard} e, per ogni $ a \in \hhalo{M} $, si definisce la \emph{parte standard} di $ a $, denotata con $ \st(a) $, come l'unico $ p \in M $ tale per cui $ a \in \halo(p) $. 
+
+    Poiché $ M $ è compatta, allora $ \hhalo{M} = \nonstandard{M} $. % Notare il discorso della compattezza
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+    \begin{block}{Definizione}
+        Sia $ a \in \hhalo{M} $. Un \emph{prevettore} in $ a $ è una coppia $ (a,x) $ con $ x \in \hhalo{M} $ tale che per ogni funzione differenziabile $ f: M \longrightarrow \R $, \[
+        \nonstandard{f}(x)-\nonstandard{f}(a)\prec \lambda
+    \]Si indicherà con $ P_{a}M  $ l'insieme dei prevettori in $ a $.
+    \end{block}
+
+    Si definisce una relazione di equivalenza $ \equiv $ in $ P_{a}M  $ come segue: \[
+        (a,x) \equiv (a,y) \qquad \text{se e solo se}\qquad \nonstandard{f}(y)-\nonstandard{f}(x)\pprec \lambda
+    \]per ogni funzione differenziabile $ f: M \longrightarrow \R $.
+
+    L'insieme delle classi di equivalenza $ P_{a}M/\equiv  $ si denoterà con $ T_{a}M  $, e la classi di equivalenza di $ (a,x) $ con $ \vec{ax} $. Inoltre, $ T_{a}M $ è uno spazio vettoriale reale $ n $-dimensionale, indipendente dalla scelta delle coordinate.
+
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+        Sia $ a \in \hhalo{M} $. e sia $ f:M \longrightarrow \R $ una funzione differenziabile. \begin{itemize}
+            \item Un prevettore $ (a,x) \in P_{a}M  $ agisce su una funzione differenziabile $ f: M \longrightarrow \R $ come segue: \[
+                (a,x)\,f \coloneqq \frac{1}{\lambda}\left(\nonstandard{f}(x)-\nonstandard{f}(a)\right) \in \starR
+            \]che è finito per definizione di prevettore.
+            \item Un vettore $ \vec{ax} \in T_{a}M  $ agisce come derivazione su $ f $ come segue: \[
+                \vec{ax} \,f = \st\left((a,x)\,f\right) \in \R.
+            \] 
+        \end{itemize}
+    
+    \begin{alertblock}{Teorema}
+        Ogni vettore classico $ X $ tangente ad $ M $ in $ a \in M$ definisce un unico vettore $ \vec{ax} \in T_{a} M  $ dove, in coordinate, $ x = a + \lambda X $.
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+
+    Si definisce \emph{campo di prevettori} su $ \nonstandard{M} $ una mappa \emph{interna} $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ tale che $ \left(a, F(a)\right) \in P_{a}M  $ per ogni $ a \in \hhalo{M} $. Equivalentemente, \begin{equation*}
+        F(a)-a\prec \lambda\quad \forall\,a \in \hhalo{M}.
+    \end{equation*}
+
+    Se $ G: \nonstandard{M} \longrightarrow \nonstandard{M} $ è un altro campo di prevettori, $ F $ e $ G $ si dicono \emph{equivalenti} (e si scrive $ F\equiv G $) se \begin{equation*}
+        \left(a,F(a)\right) \equiv \left(a,G(a)\right)\qquad \forall\,a \in \hhalo{M}
+    \end{equation*}
+
+    Inoltre, $ F $ \emph{realizza} un campo vettoriale classico $ X $ se per ogni funzione differenziabile \begin{equation*}
+            h : M \longrightarrow \R
+        \end{equation*}si ha che \begin{equation*}
+            X\,h(a) = \vec{a\, F(a)}\,h,\qquad \forall\, a \in U.
+        \end{equation*} 
+
+    
+    Il campo di prevettori definito in coordinate come \begin{equation*}
+        F(a) = a + \lambda \cdot X(a) \forall\, a \in \nonstandard{M}
+    \end{equation*}realizza $ X $. 
+
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+    Un campo di prevettori $ F $ è di classe $ D^{1} $ se per ogni $ a \in \hhalo{M} $ e $ v \in \nonstandard{(\R^{n})}$ con $ v \prec \lambda $ si ha, in coordinate \begin{equation*}
+        F(a)-F(a+v)+v \prec \lambda\norma{v}.
+    \end{equation*}
+
+    Si dimostra che $ F $ è invertibile, e $ F^{-1} $ è di classe $ D^{1} $.
+
+    Questa definizione è motivata dal modo in cui la condizione di Lipschitzianità su un campo vettoriale si trasmette sul campo di prevettori che lo realizza. Se $ X $ è un campo vettoriale Lipschitziano, allora il campo di prevettori $ F $ tale che in coordinate $ F(a) = a + \lambda \cdot X $ è di classe $ D^{1} $.
+
+    % Infatti, un campo vettoriale $ X: M \longrightarrow \R^{n} $ si dice Lipschitziano se esiste $ K \in \R $ tale per cui, per ogni $ a,b \in M $ \begin{equation}
+    %     \norma{X(a)-X(b)}\le K\,\norma{a-b}\label{eq:unino}
+    % \end{equation}Sia ora $ F $ il campo di prevettori che realizza $ X $, $ F(a)-a= \lambda\,X(a) $. La \eqref{eq:unino} diventa: \begin{equation*}
+    %     \norma{\left(F(a)-a\right)-\left(F(b)-b\right)}\le K\lambda\,\norma{a-b}
+    % \end{equation*}ovvero esattamente $ F $ di classe $ D^{1} $.
+
+    Similmente, un campo di prevettori $ G $ si dice di classe $ D^{2} $ se, per ogni $ a \in \hhalo{M} $ e per ogni $ v,w \in \nonstandard{(\R^n)} $, con $ v,w \prec \lambda  $, si ha, in coordinate, \begin{equation*}
+        G(a)-G(a+v)-G(a+w)+G(a+v+w) \prec \lambda\,\norma{v}\norma{w }. 
+    \end{equation*}Inoltre, $ G $ è di classe $ D^{1} $.
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+    Sia $ F: \nonstandard{M} \longrightarrow \nonstandard{M} $ un campo di prevettori, e, per $ 0\le t \in \starR $, sia $ n = n(t) = \floor{t/\lambda} $. Per ogni $ a \in \nonstandard{M} $ si definisce il \emph{flusso di $ F $ al tempo $ t $}, $ F_{t}(a) = F^{n}(a) $. 
+
+    Per definire $ F^{n}(a) $, sia $ \operatorname{Map}(M) $ è l'insieme di tutte le mappe $ f: M \longrightarrow M $ e sia $ \Phi $ la mappa\begin{align*}
+    \Phi:\operatorname{Map}(M) \times \N &\longrightarrow \operatorname{Map}(M) \\
+    (f,m) &\longmapsto \underset{m\text{ volte}}{\underbrace{f\circ \dots\circ f}}.
+    \end{align*}Presa la sua estensione non standard $ \nonstandard{\Phi}: \nonstandard{\operatorname{Map}(M)}\times \nonstandard{\N} \longrightarrow \nonstandard{\operatorname{Map}(M)} $, si definisce $ F^{n} \coloneqq \nonstandard{\Phi}(F,n) $.
+
+    Se $ F $ è invertibile (e questo accade per campi di prevettori di classe $ D^{1} $), si definisce $ F_{t}$ per $ t\le 0 $ come $ (F^{-1})_{-t} $.
+
+\end{frame}
+
+\begin{frame}
+    % \frametitle{<title>}
+
+    Sia $ F $ un campo di prevettori di classe $ D^{1} $, invertibile. % Questa ipotesi non è restrittiva, poiché è possibile ampliare la teoria dei campi di prevettori localmente, e tutti i campi di prevettori locali sono localmente invertibili.
+    Si dimostra che esiste esiste $ U \subseteq M $ aperto ed esiste un intervallo $ [-T,T] \subseteq \R $ tale per cui, se $ t \in [-T,T] $ è possibile definire il \emph{flusso standard} indotto da $ F $ come \begin{align*}
+        h_{t}^{F}: B &\longrightarrow M \\ 
+        x & \mapsto \st\left(F_{t}(x) \right).
+    \end{align*}Inoltre, se $ X $ è un campo vettoriale classico e $ F $ è il campo di prevettori che realizza $ X $, $ F(a) = a + \lambda\,X $, allora $ h_{t}^{F}$ è \emph{esattamente} il flusso di $ X $ nel senso classico. 
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Parentesi di Lie}
+
+    Siano $ F,G $ campi di prevettori di classe $ D^{1} $. La parentesi di Lie di $ F $ e $ G $ è il campo di prevettori \begin{equation*}
+        [F,G] = \left(G^{-1}\circ F^{-1}\circ G\circ F\right)^{\floor{1/\lambda}}.
+    \end{equation*}
+
+    Se inoltre $ F $ e $ G $ sono di classe $ D^{2} $, allora, per ogni $ a \in \nonstandard{M} $ si ha \begin{equation*}
+        [F,G](a) \equiv a + \frac{1}{\lambda} \left(G^{-1}\circ F^{-1}\circ G\circ F(a)-a\right)
+    \end{equation*}
+
+    \begin{alertblock}{Teorema}
+        Siano $ X,Y $ due campi vettoriali di classe $ C^{2} $, e sia $ [X,Y]_{\text{cl}} $ la loro parentesi di Lie classica. 
+
+        Siano $ F,G $ due campi di prevettori che realizzino $ X,Y $ rispettivamente. Allora $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+    
+    Il risultato precedente può essere giustificato ricordando che i flussi $ h_{t}^{F} $ e $ h_{t}^{G} $ coincidono con i flussi di $ X $ e $ Y $ nel senso classico, e che, per la parentesi di Lie vale il ben noto risultato \begin{equation*}
+        [X,Y]_{\text{cl}} (p) = \lim_{t\to 0} \frac{1}{t^{2}}\left(\left(h_{t}^{G} \right)^{-1} \circ \left(h_{t}^{F} \right)^{-1}\circ h_{t}^{G}\circ h_{t}^{F} - p \right).
+    \end{equation*}Dunque, sfruttando la definizione di limite nell'analisi non standard, si ha \begin{equation*}
+        [X,Y]_{\text{cl}} (p) \approx \frac{1}{\lambda^{2}}\left(\left(h_{\lambda}^{G} \right)^{-1} \circ \left(h_{\lambda}^{F} \right)^{-1}\circ h_{\lambda}^{G}\circ h_{\lambda}^{F}(p) - p \right)
+    \end{equation*}Dunque $ [X,Y]_{\text{cl}} $ è realizzato dal campo di prevettori \begin{equation*}
+        p\mapsto p + \frac{1}{\lambda}\left(\left(h_{\lambda}^{G} \right)^{-1} \circ \left(h_{\lambda}^{F} \right)^{-1}\circ h_{\lambda}^{G}\circ h_{\lambda}^{F} (p)- p \right)
+    \end{equation*}che è equivalente al campo $ [F,G] $, siccome si dimostra che $ F \equiv h_{\lambda}^{F}  $ e $ G \equiv h_{\lambda}^{G}  $, e dunque $ [F,G] $ realizza $ [X,Y]_{\text{cl}} $.
+
 \end{frame}
 
 \end{document}

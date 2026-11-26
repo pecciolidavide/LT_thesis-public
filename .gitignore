@@ -1,0 +1,29 @@
+# File ausiliari LaTeX
+*.aux
+*.auxlock
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+
+# PDF generati nelle cartelle dei sorgenti (le versioni finali sono nella root)
+tesi/*.pdf
+presentazione/*.pdf
+tesi/figures/
+
+# macOS
+.DS_Store
